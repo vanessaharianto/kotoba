@@ -1,0 +1,2571 @@
+{
+  "categories": [
+    {
+      "key": "n5-basics",
+      "label": "N5 · Basics",
+      "level": "N5"
+    },
+    {
+      "key": "n5-qwords",
+      "label": "N5 · Question words",
+      "level": "N5"
+    },
+    {
+      "key": "n5-particles",
+      "label": "N5 · Particles",
+      "level": "N5"
+    },
+    {
+      "key": "n5-verbs",
+      "label": "N5 · Verb forms",
+      "level": "N5"
+    },
+    {
+      "key": "n5-adjectives",
+      "label": "N5 · Adjectives",
+      "level": "N5"
+    },
+    {
+      "key": "n5-existence",
+      "label": "N5 · Existence & location",
+      "level": "N5"
+    },
+    {
+      "key": "n5-comparison",
+      "label": "N5 · Comparison",
+      "level": "N5"
+    },
+    {
+      "key": "n5-giving",
+      "label": "N5 · Giving & receiving",
+      "level": "N5"
+    },
+    {
+      "key": "n4-guessing-hearsay-and-probability",
+      "label": "N4 · Guessing, hearsay and probability",
+      "level": "N4"
+    },
+    {
+      "key": "n4-advice-obligation-and-plans",
+      "label": "N4 · Advice, obligation and plans",
+      "level": "N4"
+    },
+    {
+      "key": "n4-verb-extensions",
+      "label": "N4 · Verb extensions",
+      "level": "N4"
+    },
+    {
+      "key": "n4-passive-causative-and-keigo",
+      "label": "N4 · Passive, causative and keigo",
+      "level": "N4"
+    },
+    {
+      "key": "n4-conditionals-and-connectors",
+      "label": "N4 · Conditionals and connectors",
+      "level": "N4"
+    },
+    {
+      "key": "n3-cause-reason-and-logical-conclusion",
+      "label": "N3 · Cause, reason and logical conclusion",
+      "level": "N3"
+    },
+    {
+      "key": "n3-time-and-the-flow-of-actions",
+      "label": "N3 · Time and the flow of actions",
+      "level": "N3"
+    },
+    {
+      "key": "n3-certainty-tendency-and-judgment",
+      "label": "N3 · Certainty, tendency and judgment",
+      "level": "N3"
+    },
+    {
+      "key": "n3-relating-things-topic-comparison-viewpoint",
+      "label": "N3 · Relating things: topic, comparison, viewpoint",
+      "level": "N3"
+    },
+    {
+      "key": "n3-other-useful-n3-patterns",
+      "label": "N3 · Other useful N3 patterns",
+      "level": "N3"
+    }
+  ],
+  "entries": [
+    {
+      "id": "b1",
+      "cat": "n5-basics",
+      "title": "Nは Nです",
+      "meaning": "States that Noun 1 is Noun 2 — the basic \"A is B\" sentence. です is the polite copula and does not change based on the subject.",
+      "examples": [
+        {
+          "jp": "私[わたし]は学生[がくせい]です。",
+          "en": "I am a student."
+        },
+        {
+          "jp": "これは本[ほん]です。",
+          "en": "This is a book."
+        }
+      ],
+      "level": "N5",
+      "category": "N5 · Basics",
+      "formation": ""
+    },
+    {
+      "id": "b2",
+      "cat": "n5-basics",
+      "title": "Nは Nですか",
+      "meaning": "Turns a です sentence into a yes/no question by adding か at the end. No question mark is needed.",
+      "examples": [
+        {
+          "jp": "田中[たなか]さんは先生[せんせい]ですか。",
+          "en": "Is Mr./Ms. Tanaka a teacher?"
+        },
+        {
+          "jp": "これはあなたの傘[かさ]ですか。",
+          "en": "Is this your umbrella?"
+        }
+      ],
+      "notes": "Answer with <b>はい、そうです</b> (yes) or <b>いいえ、ちがいます</b> (no).",
+      "level": "N5",
+      "category": "N5 · Basics",
+      "formation": ""
+    },
+    {
+      "id": "b3",
+      "cat": "n5-basics",
+      "title": "Nは Nじゃありません",
+      "meaning": "The negative form of です — \"is not\". じゃありません is casual/spoken; ではありません is slightly more formal, but both mean the same thing.",
+      "examples": [
+        {
+          "jp": "これは肉[にく]じゃありません。",
+          "en": "This is not meat."
+        },
+        {
+          "jp": "私[わたし]は先生[せんせい]ではありません。学生[がくせい]です。",
+          "en": "I'm not a teacher. I'm a student."
+        }
+      ],
+      "level": "N5",
+      "category": "N5 · Basics",
+      "formation": ""
+    },
+    {
+      "id": "b4",
+      "cat": "n5-basics",
+      "title": "Nは Nでした / じゃありませんでした",
+      "meaning": "The past tense of です. でした = \"was\", じゃありませんでした = \"was not\".",
+      "examples": [
+        {
+          "jp": "昨日[きのう]は休[やす]みでした。",
+          "en": "Yesterday was a day off."
+        },
+        {
+          "jp": "テストは簡単[かんたん]じゃありませんでした。",
+          "en": "The test wasn't easy."
+        }
+      ],
+      "level": "N5",
+      "category": "N5 · Basics",
+      "formation": ""
+    },
+    {
+      "id": "b5",
+      "cat": "n5-basics",
+      "title": "NのN",
+      "meaning": "Connects two nouns to show possession or description — like English's or of. The order is reversed from English: Noun1's Noun2.",
+      "examples": [
+        {
+          "jp": "これは私[わたし]の本[ほん]です。",
+          "en": "This is my book."
+        },
+        {
+          "jp": "日本語[にほんご]の先生[せんせい]です。",
+          "en": "(He/She) is a Japanese language teacher."
+        }
+      ],
+      "level": "N5",
+      "category": "N5 · Basics",
+      "formation": ""
+    },
+    {
+      "id": "b6",
+      "cat": "n5-basics",
+      "title": "これ・それ・あれ・どれ",
+      "meaning": "\"This / that / that over there / which one\" — used alone as a pronoun, not directly in front of a noun. これ = near speaker, それ = near listener, あれ = far from both, どれ = which (of three or more).",
+      "examples": [
+        {
+          "jp": "これは何[なん]ですか。",
+          "en": "What is this?"
+        },
+        {
+          "jp": "それは私[わたし]の傘[かさ]です。",
+          "en": "That is my umbrella."
+        }
+      ],
+      "level": "N5",
+      "category": "N5 · Basics",
+      "formation": ""
+    },
+    {
+      "id": "b7",
+      "cat": "n5-basics",
+      "title": "この・その・あの・どの + N",
+      "meaning": "\"This / that / that / which\" placed directly before a noun. Unlike これ/それ/あれ/どれ, these words cannot stand alone.",
+      "examples": [
+        {
+          "jp": "この本[ほん]は面白[おもしろ]いです。",
+          "en": "This book is interesting."
+        },
+        {
+          "jp": "あの人[ひと]は誰[だれ]ですか。",
+          "en": "Who is that person over there?"
+        }
+      ],
+      "level": "N5",
+      "category": "N5 · Basics",
+      "formation": ""
+    },
+    {
+      "id": "q1",
+      "cat": "n5-qwords",
+      "title": "ここ・そこ・あそこ・どこ",
+      "meaning": "\"Here / there / over there / where\" — for locations, following the same near/far logic as これ・それ・あれ・どれ.",
+      "examples": [
+        {
+          "jp": "トイレはどこですか。",
+          "en": "Where is the restroom?"
+        },
+        {
+          "jp": "ここは駅[えき]です。",
+          "en": "Here is the station."
+        }
+      ],
+      "level": "N5",
+      "category": "N5 · Question words",
+      "formation": ""
+    },
+    {
+      "id": "q2",
+      "cat": "n5-qwords",
+      "title": "何[なに] / 何[なん]",
+      "meaning": "\"What\". Read なに on its own or before most particles; read なん before です/だ, の, or a counter.",
+      "examples": [
+        {
+          "jp": "これは何[なん]ですか。",
+          "en": "What is this?"
+        },
+        {
+          "jp": "何[なに]を食[た]べますか。",
+          "en": "What will you eat?"
+        }
+      ],
+      "level": "N5",
+      "category": "N5 · Question words",
+      "formation": ""
+    },
+    {
+      "id": "q3",
+      "cat": "n5-qwords",
+      "title": "だれ・どなた",
+      "meaning": "\"Who\" — どなた is the more polite version of だれ, used for people you should be respectful toward.",
+      "examples": [
+        {
+          "jp": "あの方[かた]はどなたですか。",
+          "en": "Who is that person? (polite)"
+        },
+        {
+          "jp": "だれが来[き]ますか。",
+          "en": "Who is coming?"
+        }
+      ],
+      "level": "N5",
+      "category": "N5 · Question words",
+      "formation": ""
+    },
+    {
+      "id": "q4",
+      "cat": "n5-qwords",
+      "title": "いつ",
+      "meaning": "\"When\" — asks about a point in time. No particle is needed directly after it.",
+      "examples": [
+        {
+          "jp": "誕生日[たんじょうび]はいつですか。",
+          "en": "When is your birthday?"
+        }
+      ],
+      "level": "N5",
+      "category": "N5 · Question words",
+      "formation": ""
+    },
+    {
+      "id": "q5",
+      "cat": "n5-qwords",
+      "title": "いくつ・いくら",
+      "meaning": "いくつ = \"how many\" (or \"what age\", casually); いくら = \"how much\" (price).",
+      "examples": [
+        {
+          "jp": "りんごをいくつ買[か]いますか。",
+          "en": "How many apples will you buy?"
+        },
+        {
+          "jp": "これはいくらですか。",
+          "en": "How much is this?"
+        }
+      ],
+      "level": "N5",
+      "category": "N5 · Question words",
+      "formation": ""
+    },
+    {
+      "id": "p1",
+      "cat": "n5-particles",
+      "title": "は (topic marker)",
+      "meaning": "Marks the topic of the sentence — what you are talking about. Pronounced \"wa\" when used this way.",
+      "examples": [
+        {
+          "jp": "私[わたし]は毎日[まいにち]日本語[にほんご]を勉強[べんきょう]します。",
+          "en": "As for me, I study Japanese every day."
+        }
+      ],
+      "level": "N5",
+      "category": "N5 · Particles",
+      "formation": ""
+    },
+    {
+      "id": "p2",
+      "cat": "n5-particles",
+      "title": "が (subject marker)",
+      "meaning": "Marks the grammatical subject, often introducing new information or answering a \"who/what\" question. This is one of the trickiest contrasts for learners: が highlights specific/new information, while は sets the general topic.",
+      "examples": [
+        {
+          "jp": "だれが来[き]ましたか。",
+          "en": "Who came?"
+        },
+        {
+          "jp": "山田[やまだ]さんが来[き]ました。",
+          "en": "Mr./Ms. Yamada came."
+        }
+      ],
+      "level": "N5",
+      "category": "N5 · Particles",
+      "formation": ""
+    },
+    {
+      "id": "p3",
+      "cat": "n5-particles",
+      "title": "を (object marker)",
+      "meaning": "Marks the direct object of a verb — the thing an action is done to.",
+      "examples": [
+        {
+          "jp": "コーヒーを飲[の]みます。",
+          "en": "I drink coffee."
+        }
+      ],
+      "level": "N5",
+      "category": "N5 · Particles",
+      "formation": ""
+    },
+    {
+      "id": "p4",
+      "cat": "n5-particles",
+      "title": "に (time / target)",
+      "meaning": "Marks a specific point in time, or the target/destination of an action.",
+      "examples": [
+        {
+          "jp": "7時[しちじ]に起[お]きます。",
+          "en": "I get up at 7 o'clock."
+        },
+        {
+          "jp": "友達[ともだち]に電話[でんわ]をします。",
+          "en": "I'll call my friend."
+        }
+      ],
+      "level": "N5",
+      "category": "N5 · Particles",
+      "formation": ""
+    },
+    {
+      "id": "p5",
+      "cat": "n5-particles",
+      "title": "で (place of action / means)",
+      "meaning": "Marks where an action takes place, or the tool/method used to do it.",
+      "examples": [
+        {
+          "jp": "図書館[としょかん]で勉強[べんきょう]します。",
+          "en": "I study at the library."
+        },
+        {
+          "jp": "バスで学校[がっこう]へ行[い]きます。",
+          "en": "I go to school by bus."
+        }
+      ],
+      "level": "N5",
+      "category": "N5 · Particles",
+      "formation": ""
+    },
+    {
+      "id": "p6",
+      "cat": "n5-particles",
+      "title": "へ (direction)",
+      "meaning": "Marks the direction of movement, like \"toward\". Often interchangeable with に for destinations. Pronounced \"e\" when used this way.",
+      "examples": [
+        {
+          "jp": "来週[らいしゅう]日本[にほん]へ行[い]きます。",
+          "en": "Next week I'm going to Japan."
+        }
+      ],
+      "level": "N5",
+      "category": "N5 · Particles",
+      "formation": ""
+    },
+    {
+      "id": "p7",
+      "cat": "n5-particles",
+      "title": "と (and / with)",
+      "meaning": "Connects nouns to mean a complete \"and\" list, or marks \"together with\" someone.",
+      "examples": [
+        {
+          "jp": "パンとたまごを買[か]いました。",
+          "en": "I bought bread and eggs."
+        },
+        {
+          "jp": "友達[ともだち]と映画[えいが]を見[み]ます。",
+          "en": "I'll watch a movie with a friend."
+        }
+      ],
+      "level": "N5",
+      "category": "N5 · Particles",
+      "formation": ""
+    },
+    {
+      "id": "p8",
+      "cat": "n5-particles",
+      "title": "も (also / too)",
+      "meaning": "Replaces は or が to mean \"also\" or \"too\".",
+      "examples": [
+        {
+          "jp": "私[わたし]は学生[がくせい]です。田中[たなか]さんも学生[がくせい]です。",
+          "en": "I am a student. Mr. Tanaka is also a student."
+        }
+      ],
+      "level": "N5",
+      "category": "N5 · Particles",
+      "formation": ""
+    },
+    {
+      "id": "p9",
+      "cat": "n5-particles",
+      "title": "の (nominalizer)",
+      "meaning": "Used without a following noun to mean \"the one belonging to...\".",
+      "examples": [
+        {
+          "jp": "これは私[わたし]のです。",
+          "en": "This is mine."
+        }
+      ],
+      "level": "N5",
+      "category": "N5 · Particles",
+      "formation": ""
+    },
+    {
+      "id": "p10",
+      "cat": "n5-particles",
+      "title": "から〜まで",
+      "meaning": "\"From ~ to ~\", used for ranges of time or place.",
+      "examples": [
+        {
+          "jp": "9時[くじ]から5時[ごじ]まで働[はたら]きます。",
+          "en": "I work from 9 to 5."
+        },
+        {
+          "jp": "家[いえ]から駅[えき]まで歩[ある]きます。",
+          "en": "I walk from home to the station."
+        }
+      ],
+      "level": "N5",
+      "category": "N5 · Particles",
+      "formation": ""
+    },
+    {
+      "id": "p11",
+      "cat": "n5-particles",
+      "title": "や (and, among others)",
+      "meaning": "Lists a couple of examples out of a larger group — \"and ... and other things\" — unlike と, which lists everything.",
+      "examples": [
+        {
+          "jp": "机[つくえ]の上[うえ]に本[ほん]やペンがあります。",
+          "en": "There are things like books and pens on the desk."
+        }
+      ],
+      "level": "N5",
+      "category": "N5 · Particles",
+      "formation": ""
+    },
+    {
+      "id": "p12",
+      "cat": "n5-particles",
+      "title": "か (or)",
+      "meaning": "Connects nouns to mean \"or\". Different from the sentence-ending か used for questions.",
+      "examples": [
+        {
+          "jp": "コーヒーか紅茶[こうちゃ]を飲[の]みます。",
+          "en": "I'll drink coffee or tea."
+        }
+      ],
+      "level": "N5",
+      "category": "N5 · Particles",
+      "formation": ""
+    },
+    {
+      "id": "v1",
+      "cat": "n5-verbs",
+      "title": "ます形[けい] (~ます)",
+      "meaning": "The polite present/future form of verbs. ます is affirmative, ません is negative. The same form covers both present and future.",
+      "examples": [
+        {
+          "jp": "毎日[まいにち]日本語[にほんご]を勉強[べんきょう]します。",
+          "en": "I study Japanese every day."
+        },
+        {
+          "jp": "朝[あさ]、コーヒーを飲[の]みません。",
+          "en": "I don't drink coffee in the morning."
+        }
+      ],
+      "level": "N5",
+      "category": "N5 · Verb forms",
+      "formation": ""
+    },
+    {
+      "id": "v2",
+      "cat": "n5-verbs",
+      "title": "~ました / ~ませんでした",
+      "meaning": "The past tense of the ます form — \"did\" / \"did not do\".",
+      "examples": [
+        {
+          "jp": "昨日[きのう]映画[えいが]を見[み]ました。",
+          "en": "I watched a movie yesterday."
+        },
+        {
+          "jp": "今朝[けさ]朝[あさ]ごはんを食[た]べませんでした。",
+          "en": "I didn't eat breakfast this morning."
+        }
+      ],
+      "level": "N5",
+      "category": "N5 · Verb forms",
+      "formation": ""
+    },
+    {
+      "id": "v3",
+      "cat": "n5-verbs",
+      "title": "~ています",
+      "meaning": "Describes an ongoing action (\"is doing\") or a resulting state (\"has become / is currently\"). Formed from the て-form + います.",
+      "examples": [
+        {
+          "jp": "今[いま]、雨[あめ]が降[ふ]っています。",
+          "en": "It is raining right now."
+        },
+        {
+          "jp": "田中[たなか]さんは結婚[けっこん]しています。",
+          "en": "Mr. Tanaka is married."
+        }
+      ],
+      "level": "N5",
+      "category": "N5 · Verb forms",
+      "formation": ""
+    },
+    {
+      "id": "v4",
+      "cat": "n5-verbs",
+      "title": "~てください",
+      "meaning": "\"Please do ~\" — a polite request.",
+      "examples": [
+        {
+          "jp": "ここに名前[なまえ]を書[か]いてください。",
+          "en": "Please write your name here."
+        }
+      ],
+      "level": "N5",
+      "category": "N5 · Verb forms",
+      "formation": ""
+    },
+    {
+      "id": "v5",
+      "cat": "n5-verbs",
+      "title": "~てもいいです",
+      "meaning": "\"You may ~ / it is okay to ~\" — giving or asking for permission.",
+      "examples": [
+        {
+          "jp": "ここで写真[しゃしん]を撮[と]ってもいいですか。",
+          "en": "Is it okay if I take a photo here?"
+        },
+        {
+          "jp": "はい、撮[と]ってもいいです。",
+          "en": "Yes, you may take one."
+        }
+      ],
+      "level": "N5",
+      "category": "N5 · Verb forms",
+      "formation": ""
+    },
+    {
+      "id": "v6",
+      "cat": "n5-verbs",
+      "title": "~てはいけません",
+      "meaning": "\"You must not ~\" — prohibition.",
+      "examples": [
+        {
+          "jp": "ここでたばこを吸[す]ってはいけません。",
+          "en": "You must not smoke here."
+        }
+      ],
+      "level": "N5",
+      "category": "N5 · Verb forms",
+      "formation": ""
+    },
+    {
+      "id": "v7",
+      "cat": "n5-verbs",
+      "title": "ない形[けい] (~ない)",
+      "meaning": "The plain negative form of a verb. This is casual/spoken style — the polite equivalent is ~ません. It is also the base for other patterns such as ~ないでください.",
+      "examples": [
+        {
+          "jp": "今日[きょう]は学校[がっこう]へ行[い]かない。",
+          "en": "I'm not going to school today. (plain speech)"
+        }
+      ],
+      "level": "N5",
+      "category": "N5 · Verb forms",
+      "formation": ""
+    },
+    {
+      "id": "v8",
+      "cat": "n5-verbs",
+      "title": "~ないでください",
+      "meaning": "\"Please don't ~\".",
+      "examples": [
+        {
+          "jp": "教室[きょうしつ]で食[た]べないでください。",
+          "en": "Please don't eat in the classroom."
+        }
+      ],
+      "level": "N5",
+      "category": "N5 · Verb forms",
+      "formation": ""
+    },
+    {
+      "id": "v9",
+      "cat": "n5-verbs",
+      "title": "~たいです",
+      "meaning": "\"Want to ~\" — expresses the speaker's own desire to do something. Conjugates like an い-adjective: たい → たくない (negative), たかった (past).",
+      "examples": [
+        {
+          "jp": "日本[にほん]へ行[い]きたいです。",
+          "en": "I want to go to Japan."
+        },
+        {
+          "jp": "何[なに]も食[た]べたくないです。",
+          "en": "I don't want to eat anything."
+        }
+      ],
+      "level": "N5",
+      "category": "N5 · Verb forms",
+      "formation": ""
+    },
+    {
+      "id": "v10",
+      "cat": "n5-verbs",
+      "title": "~ながら",
+      "meaning": "\"While doing ~\" — two actions performed at the same time, by the same person.",
+      "examples": [
+        {
+          "jp": "音楽[おんがく]を聞[き]きながら勉強[べんきょう]します。",
+          "en": "I study while listening to music."
+        }
+      ],
+      "level": "N5",
+      "category": "N5 · Verb forms",
+      "formation": ""
+    },
+    {
+      "id": "v11",
+      "cat": "n5-verbs",
+      "title": "~たり~たりします",
+      "meaning": "Lists a few example actions out of many — \"doing things like A and B (among others)\".",
+      "examples": [
+        {
+          "jp": "週末[しゅうまつ]は本[ほん]を読[よ]んだり、映画[えいが]を見[み]たりします。",
+          "en": "On weekends I do things like read books and watch movies."
+        }
+      ],
+      "level": "N5",
+      "category": "N5 · Verb forms",
+      "formation": ""
+    },
+    {
+      "id": "v12",
+      "cat": "n5-verbs",
+      "title": "~たことがあります",
+      "meaning": "\"Have done ~ before\" — talks about past experience.",
+      "examples": [
+        {
+          "jp": "寿司[すし]を食[た]べたことがあります。",
+          "en": "I have eaten sushi before."
+        },
+        {
+          "jp": "富士山[ふじさん]に登[のぼ]ったことがありません。",
+          "en": "I have never climbed Mt. Fuji."
+        }
+      ],
+      "level": "N5",
+      "category": "N5 · Verb forms",
+      "formation": ""
+    },
+    {
+      "id": "v13",
+      "cat": "n5-verbs",
+      "title": "~まえに / ~たあとで",
+      "meaning": "\"Before doing ~\" and \"after doing ~\". まえに uses the dictionary form of the verb; あとで uses the た-form.",
+      "examples": [
+        {
+          "jp": "寝[ね]るまえに歯[は]を磨[みが]きます。",
+          "en": "I brush my teeth before sleeping."
+        },
+        {
+          "jp": "晩[ばん]ごはんを食[た]べたあとで、宿題[しゅくだい]をします。",
+          "en": "I do homework after eating dinner."
+        }
+      ],
+      "level": "N5",
+      "category": "N5 · Verb forms",
+      "formation": ""
+    },
+    {
+      "id": "v14",
+      "cat": "n5-verbs",
+      "title": "~ことができます",
+      "meaning": "\"Can do ~\" — expresses ability, built on the dictionary form of the verb.",
+      "examples": [
+        {
+          "jp": "漢字[かんじ]を読[よ]むことができます。",
+          "en": "I can read kanji."
+        },
+        {
+          "jp": "ピアノを弾[ひ]くことができません。",
+          "en": "I can't play the piano."
+        }
+      ],
+      "level": "N5",
+      "category": "N5 · Verb forms",
+      "formation": ""
+    },
+    {
+      "id": "v15",
+      "cat": "n5-verbs",
+      "title": "~ましょう",
+      "meaning": "\"Let's ~\" — suggesting an action together.",
+      "examples": [
+        {
+          "jp": "いっしょに昼[ひる]ごはんを食[た]べましょう。",
+          "en": "Let's eat lunch together."
+        }
+      ],
+      "level": "N5",
+      "category": "N5 · Verb forms",
+      "formation": ""
+    },
+    {
+      "id": "v16",
+      "cat": "n5-verbs",
+      "title": "~ましょうか / ~ませんか",
+      "meaning": "~ましょうか = \"shall I/we ~?\" (offering to do something); ~ませんか = \"won't you ~?\" (inviting someone).",
+      "examples": [
+        {
+          "jp": "荷物[にもつ]を持[も]ちましょうか。",
+          "en": "Shall I carry your bags?"
+        },
+        {
+          "jp": "いっしょに映画[えいが]を見[み]ませんか。",
+          "en": "Won't you watch a movie with me?"
+        }
+      ],
+      "level": "N5",
+      "category": "N5 · Verb forms",
+      "formation": ""
+    },
+    {
+      "id": "a1",
+      "cat": "n5-adjectives",
+      "title": "い形容詞[けいようし] (present)",
+      "meaning": "い-adjectives end in い. Negative: drop the final い and add くないです.",
+      "examples": [
+        {
+          "jp": "この店[みせ]のラーメンはおいしいです。",
+          "en": "This shop's ramen is delicious."
+        },
+        {
+          "jp": "今日[きょう]は暑[あつ]くないです。",
+          "en": "It's not hot today."
+        }
+      ],
+      "level": "N5",
+      "category": "N5 · Adjectives",
+      "formation": ""
+    },
+    {
+      "id": "a2",
+      "cat": "n5-adjectives",
+      "title": "い形容詞[けいようし] (past)",
+      "meaning": "Past affirmative: drop い, add かったです. Past negative: drop い, add くなかったです.",
+      "examples": [
+        {
+          "jp": "昨日[きのう]は寒[さむ]かったです。",
+          "en": "It was cold yesterday."
+        },
+        {
+          "jp": "テストは難[むずか]しくなかったです。",
+          "en": "The test wasn't difficult."
+        }
+      ],
+      "level": "N5",
+      "category": "N5 · Adjectives",
+      "formation": ""
+    },
+    {
+      "id": "a3",
+      "cat": "n5-adjectives",
+      "title": "な形容詞[けいようし] (present)",
+      "meaning": "な-adjectives attach directly to です. Negative: じゃないです / じゃありません.",
+      "examples": [
+        {
+          "jp": "この町[まち]はにぎやかです。",
+          "en": "This town is lively."
+        },
+        {
+          "jp": "彼[かれ]は親切[しんせつ]じゃないです。",
+          "en": "He isn't kind."
+        }
+      ],
+      "level": "N5",
+      "category": "N5 · Adjectives",
+      "formation": ""
+    },
+    {
+      "id": "a4",
+      "cat": "n5-adjectives",
+      "title": "な形容詞[けいようし] (past)",
+      "meaning": "Past: ~でした. Past negative: ~じゃなかったです.",
+      "examples": [
+        {
+          "jp": "子[こ]供[ども]のとき、この公園[こうえん]は静[しず]かでした。",
+          "en": "This park was quiet when I was a child."
+        }
+      ],
+      "level": "N5",
+      "category": "N5 · Adjectives",
+      "formation": ""
+    },
+    {
+      "id": "a5",
+      "cat": "n5-adjectives",
+      "title": "~くて / ~で (connecting adjectives)",
+      "meaning": "Joins two adjectives in one sentence (\"... and ...\"). い-adjectives: drop い, add くて. な-adjectives/nouns: add で.",
+      "examples": [
+        {
+          "jp": "この部屋[へや]は広[ひろ]くて明[あか]るいです。",
+          "en": "This room is spacious and bright."
+        },
+        {
+          "jp": "彼女[かのじょ]はきれいで親切[しんせつ]です。",
+          "en": "She is pretty and kind."
+        }
+      ],
+      "level": "N5",
+      "category": "N5 · Adjectives",
+      "formation": ""
+    },
+    {
+      "id": "e1",
+      "cat": "n5-existence",
+      "title": "~があります",
+      "meaning": "\"There is/are ~\" — used for inanimate objects (things, plants). Pattern: Location + に + Noun + が + あります.",
+      "examples": [
+        {
+          "jp": "机[つくえ]の上[うえ]に本[ほん]があります。",
+          "en": "There is a book on the desk."
+        }
+      ],
+      "level": "N5",
+      "category": "N5 · Existence & location",
+      "formation": ""
+    },
+    {
+      "id": "e2",
+      "cat": "n5-existence",
+      "title": "~がいます",
+      "meaning": "\"There is/are ~\" — used for animate beings (people, animals). Same pattern as あります, but for living things.",
+      "examples": [
+        {
+          "jp": "教室[きょうしつ]に学生[がくせい]がいます。",
+          "en": "There are students in the classroom."
+        },
+        {
+          "jp": "公園[こうえん]に猫[ねこ]がいます。",
+          "en": "There is a cat in the park."
+        }
+      ],
+      "level": "N5",
+      "category": "N5 · Existence & location",
+      "formation": ""
+    },
+    {
+      "id": "c1",
+      "cat": "n5-comparison",
+      "title": "AはBより~",
+      "meaning": "\"A is more ~ than B\" — the basic comparison pattern.",
+      "examples": [
+        {
+          "jp": "新幹線[しんかんせん]はバスより速[はや]いです。",
+          "en": "The bullet train is faster than the bus."
+        }
+      ],
+      "level": "N5",
+      "category": "N5 · Comparison",
+      "formation": ""
+    },
+    {
+      "id": "c2",
+      "cat": "n5-comparison",
+      "title": "AとBとどちらが~",
+      "meaning": "\"Between A and B, which is more ~?\" — comparing exactly two things.",
+      "examples": [
+        {
+          "jp": "犬[いぬ]と猫[ねこ]とどちらが好[す]きですか。",
+          "en": "Between dogs and cats, which do you like more?"
+        }
+      ],
+      "level": "N5",
+      "category": "N5 · Comparison",
+      "formation": ""
+    },
+    {
+      "id": "c3",
+      "cat": "n5-comparison",
+      "title": "~の中[なか]で~が一番[いちばん]",
+      "meaning": "\"Among ~, ~ is the most\" — the superlative pattern, used when comparing three or more things.",
+      "examples": [
+        {
+          "jp": "果物[くだもの]の中[なか]でりんごが一番[いちばん]好[す]きです。",
+          "en": "Among fruits, I like apples the most."
+        }
+      ],
+      "level": "N5",
+      "category": "N5 · Comparison",
+      "formation": ""
+    },
+    {
+      "id": "g1",
+      "cat": "n5-giving",
+      "title": "~をあげます",
+      "meaning": "\"(I) give ~ to someone\" — used when the speaker, or someone on the speaker's side, gives something to another person.",
+      "examples": [
+        {
+          "jp": "友達[ともだち]に誕生日[たんじょうび]プレゼントをあげます。",
+          "en": "I'll give my friend a birthday present."
+        }
+      ],
+      "level": "N5",
+      "category": "N5 · Giving & receiving",
+      "formation": ""
+    },
+    {
+      "id": "g2",
+      "cat": "n5-giving",
+      "title": "~をもらいます",
+      "meaning": "\"(I) receive ~ from someone\". The receiver is the subject; the giver is marked with に or から.",
+      "examples": [
+        {
+          "jp": "田中[たなか]さんに花[はな]をもらいました。",
+          "en": "I received flowers from Mr. Tanaka."
+        }
+      ],
+      "level": "N5",
+      "category": "N5 · Giving & receiving",
+      "formation": ""
+    },
+    {
+      "id": "n4-1",
+      "level": "N4",
+      "cat": "n4-guessing-hearsay-and-probability",
+      "category": "Guessing, hearsay and probability",
+      "title": "ます形＋そうです",
+      "meaning": "looks like / seems about to",
+      "formation": "V-ます stem, い-adj (drop い), な-adj (drop な) + そうです",
+      "examples": [
+        {
+          "jp": "雨[あめ]が降[ふ]りそうです。",
+          "en": "It looks like it's going to rain."
+        },
+        {
+          "jp": "このケーキはおいしそうです。",
+          "en": "This cake looks delicious."
+        }
+      ]
+    },
+    {
+      "id": "n4-2",
+      "level": "N4",
+      "cat": "n4-guessing-hearsay-and-probability",
+      "category": "Guessing, hearsay and probability",
+      "title": "plain form＋そうです",
+      "meaning": "I heard that",
+      "formation": "plain form + そうです",
+      "examples": [
+        {
+          "jp": "明日[あした]は雪[ゆき]が降[ふ]るそうです。",
+          "en": "I heard it will snow tomorrow."
+        },
+        {
+          "jp": "田中[たなか]さんは来月[らいげつ]結婚[けっこん]するそうです。",
+          "en": "I heard Tanaka is getting married next month."
+        }
+      ]
+    },
+    {
+      "id": "n4-3",
+      "level": "N4",
+      "cat": "n4-guessing-hearsay-and-probability",
+      "category": "Guessing, hearsay and probability",
+      "title": "〜ようです / 〜みたいです",
+      "meaning": "seems like, appears that",
+      "formation": "plain form + ようです (な-adj + な, N + の)",
+      "examples": [
+        {
+          "jp": "誰[だれ]もいないようです。",
+          "en": "It seems nobody is here."
+        },
+        {
+          "jp": "彼[かれ]は疲[つか]れているみたいです。",
+          "en": "He seems tired."
+        }
+      ]
+    },
+    {
+      "id": "n4-4",
+      "level": "N4",
+      "cat": "n4-guessing-hearsay-and-probability",
+      "category": "Guessing, hearsay and probability",
+      "title": "〜らしい",
+      "meaning": "I hear / apparently / typical of",
+      "formation": "plain form + らしい; N + らしい for \"typical of\".",
+      "examples": [
+        {
+          "jp": "先生[せんせい]は来週[らいしゅう]出張[しゅっちょう]するらしいです。",
+          "en": "Apparently the teacher is going on a business trip next week."
+        },
+        {
+          "jp": "彼[かれ]は男[おとこ]らしい人[ひと]です。",
+          "en": "He is a manly person."
+        }
+      ]
+    },
+    {
+      "id": "n4-5",
+      "level": "N4",
+      "cat": "n4-guessing-hearsay-and-probability",
+      "category": "Guessing, hearsay and probability",
+      "title": "〜かもしれません",
+      "meaning": "might, maybe",
+      "formation": "plain form + かもしれません (N / な-adj without だ).",
+      "examples": [
+        {
+          "jp": "明日[あした]は雨[あめ]かもしれません。",
+          "en": "It might rain tomorrow."
+        },
+        {
+          "jp": "彼[かれ]はもう帰[かえ]ったかもしれません。",
+          "en": "He may have already gone home."
+        }
+      ]
+    },
+    {
+      "id": "n4-6",
+      "level": "N4",
+      "cat": "n4-guessing-hearsay-and-probability",
+      "category": "Guessing, hearsay and probability",
+      "title": "〜はずです",
+      "meaning": "should be, is expected to",
+      "formation": "plain form + はずです (な-adj + な, N + の).",
+      "examples": [
+        {
+          "jp": "彼[かれ]はもうすぐ来[く]るはずです。",
+          "en": "He should be here soon."
+        },
+        {
+          "jp": "そんなことがあるはずがない。",
+          "en": "There's no way that could happen."
+        }
+      ]
+    },
+    {
+      "id": "n4-7",
+      "level": "N4",
+      "cat": "n4-guessing-hearsay-and-probability",
+      "category": "Guessing, hearsay and probability",
+      "title": "〜でしょう / 〜だろう",
+      "meaning": "probably",
+      "formation": "",
+      "examples": [
+        {
+          "jp": "明日[あした]は晴[は]れるでしょう。",
+          "en": "It will probably be sunny tomorrow."
+        },
+        {
+          "jp": "試験[しけん]は難[むずか]しかっただろう。",
+          "en": "The exam was probably difficult."
+        }
+      ]
+    },
+    {
+      "id": "n4-8",
+      "level": "N4",
+      "cat": "n4-advice-obligation-and-plans",
+      "category": "Advice, obligation and plans",
+      "title": "〜たほうがいい / 〜ないほうがいい",
+      "meaning": "you should / you should not",
+      "formation": "V-た + ほうがいい, V-ない + ほうがいい.",
+      "examples": [
+        {
+          "jp": "早[はや]く寝[ね]たほうがいいですよ。",
+          "en": "You should go to bed early."
+        },
+        {
+          "jp": "夜[よる]はコーヒーを飲[の]まないほうがいいです。",
+          "en": "You shouldn't drink coffee at night."
+        }
+      ]
+    },
+    {
+      "id": "n4-9",
+      "level": "N4",
+      "cat": "n4-advice-obligation-and-plans",
+      "category": "Advice, obligation and plans",
+      "title": "〜なければなりません / 〜なくてはいけません",
+      "meaning": "must, have to",
+      "formation": "V-ない, drop い, + ければなりません / くてはいけません",
+      "examples": [
+        {
+          "jp": "毎日[まいにち]薬[くすり]を飲[の]まなければなりません。",
+          "en": "I have to take medicine every day."
+        },
+        {
+          "jp": "レポートを出[だ]さなくてはいけません。",
+          "en": "I have to submit the report."
+        }
+      ]
+    },
+    {
+      "id": "n4-10",
+      "level": "N4",
+      "cat": "n4-advice-obligation-and-plans",
+      "category": "Advice, obligation and plans",
+      "title": "〜なくてもいいです",
+      "meaning": "you don't have to",
+      "formation": "V-ない, drop い, + くてもいいです.",
+      "examples": [
+        {
+          "jp": "明日[あした]は来[こ]なくてもいいです。",
+          "en": "You don't have to come tomorrow."
+        }
+      ]
+    },
+    {
+      "id": "n4-11",
+      "level": "N4",
+      "cat": "n4-advice-obligation-and-plans",
+      "category": "Advice, obligation and plans",
+      "title": "〜つもりです",
+      "meaning": "intend to",
+      "formation": "V-dict / V-ない + つもりです.",
+      "examples": [
+        {
+          "jp": "来年[らいねん]日本[にほん]に留学[りゅうがく]するつもりです。",
+          "en": "I intend to study abroad in Japan next year."
+        },
+        {
+          "jp": "お酒[さけ]は飲[の]まないつもりです。",
+          "en": "I don't intend to drink alcohol."
+        }
+      ]
+    },
+    {
+      "id": "n4-12",
+      "level": "N4",
+      "cat": "n4-advice-obligation-and-plans",
+      "category": "Advice, obligation and plans",
+      "title": "〜予定[よてい]です",
+      "meaning": "scheduled to",
+      "formation": "V-dict / N の + 予定です.",
+      "examples": [
+        {
+          "jp": "来週[らいしゅう]の月曜日[げつようび]に出発[しゅっぱつ]する予定[よてい]です。",
+          "en": "I'm scheduled to leave next Monday."
+        }
+      ]
+    },
+    {
+      "id": "n4-13",
+      "level": "N4",
+      "cat": "n4-advice-obligation-and-plans",
+      "category": "Advice, obligation and plans",
+      "title": "volitional form＋と思[おも]っています",
+      "meaning": "I'm thinking of doing",
+      "formation": "",
+      "examples": [
+        {
+          "jp": "夏休[なつやす]みに北海道[ほっかいどう]へ行[い]こうと思[おも]っています。",
+          "en": "I'm thinking of going to Hokkaido over summer break."
+        }
+      ]
+    },
+    {
+      "id": "n4-14",
+      "level": "N4",
+      "cat": "n4-advice-obligation-and-plans",
+      "category": "Advice, obligation and plans",
+      "title": "〜ことにする / 〜ことにしている",
+      "meaning": "decide to",
+      "formation": "",
+      "examples": [
+        {
+          "jp": "今日[きょう]から毎朝[まいあさ]走[はし]ることにしました。",
+          "en": "I decided to run every morning starting today."
+        },
+        {
+          "jp": "毎日[まいにち]日本語[にほんご]を勉強[べんきょう]することにしています。",
+          "en": "I make a point of studying Japanese every day."
+        }
+      ]
+    },
+    {
+      "id": "n4-15",
+      "level": "N4",
+      "cat": "n4-advice-obligation-and-plans",
+      "category": "Advice, obligation and plans",
+      "title": "〜ことになる / 〜ことになっている",
+      "meaning": "it has been decided that",
+      "formation": "",
+      "examples": [
+        {
+          "jp": "来月[らいげつ]、大阪[おおさか]に転勤[てんきん]することになりました。",
+          "en": "It's been decided that I'll be transferred to Osaka next month."
+        },
+        {
+          "jp": "ここでは靴[くつ]を脱[ぬ]ぐことになっています。",
+          "en": "The rule here is to take off your shoes."
+        }
+      ]
+    },
+    {
+      "id": "n4-16",
+      "level": "N4",
+      "cat": "n4-advice-obligation-and-plans",
+      "category": "Advice, obligation and plans",
+      "title": "〜ようにする",
+      "meaning": "try to / make sure to",
+      "formation": "V-dict / V-ない + ようにする.",
+      "examples": [
+        {
+          "jp": "野菜[やさい]をたくさん食[た]べるようにしています。",
+          "en": "I try to eat lots of vegetables."
+        },
+        {
+          "jp": "遅刻[ちこく]しないようにします。",
+          "en": "I'll make sure not to be late."
+        }
+      ]
+    },
+    {
+      "id": "n4-17",
+      "level": "N4",
+      "cat": "n4-advice-obligation-and-plans",
+      "category": "Advice, obligation and plans",
+      "title": "〜ようになる",
+      "meaning": "come to / become able to",
+      "formation": "V-dict / V-potential + ようになる.",
+      "examples": [
+        {
+          "jp": "日本語[にほんご]が話[はな]せるようになりました。",
+          "en": "I've become able to speak Japanese."
+        }
+      ]
+    },
+    {
+      "id": "n4-18",
+      "level": "N4",
+      "cat": "n4-advice-obligation-and-plans",
+      "category": "Advice, obligation and plans",
+      "title": "〜ために / 〜ように",
+      "meaning": "in order to",
+      "formation": "",
+      "examples": [
+        {
+          "jp": "日本[にほん]で働[はたら]くために、日本語[にほんご]を勉強[べんきょう]しています。",
+          "en": "I'm studying Japanese in order to work in Japan."
+        },
+        {
+          "jp": "忘[わす]れないように、メモします。",
+          "en": "I take notes so that I don't forget."
+        }
+      ]
+    },
+    {
+      "id": "n4-19",
+      "level": "N4",
+      "cat": "n4-verb-extensions",
+      "category": "Verb extensions",
+      "title": "〜すぎる",
+      "meaning": "too much",
+      "formation": "V-ます stem, い-adj (drop い), な-adj + すぎる",
+      "examples": [
+        {
+          "jp": "昨日[きのう]は食[た]べすぎました。",
+          "en": "I ate too much yesterday."
+        },
+        {
+          "jp": "この部屋[へや]は暑[あつ]すぎます。",
+          "en": "This room is too hot."
+        }
+      ]
+    },
+    {
+      "id": "n4-20",
+      "level": "N4",
+      "cat": "n4-verb-extensions",
+      "category": "Verb extensions",
+      "title": "〜やすい / 〜にくい",
+      "meaning": "easy to / hard to",
+      "formation": "V-ます stem + やすい / にくい.",
+      "examples": [
+        {
+          "jp": "このペンは書[か]きやすいです。",
+          "en": "This pen is easy to write with."
+        },
+        {
+          "jp": "この漢字[かんじ]は覚[おぼ]えにくいです。",
+          "en": "This kanji is hard to remember."
+        }
+      ]
+    },
+    {
+      "id": "n4-21",
+      "level": "N4",
+      "cat": "n4-verb-extensions",
+      "category": "Verb extensions",
+      "title": "〜てみる",
+      "meaning": "try doing",
+      "formation": "",
+      "examples": [
+        {
+          "jp": "一度[いちど]、納豆[なっとう]を食[た]べてみます。",
+          "en": "I'll try eating natto once."
+        }
+      ]
+    },
+    {
+      "id": "n4-22",
+      "level": "N4",
+      "cat": "n4-verb-extensions",
+      "category": "Verb extensions",
+      "title": "〜ておく",
+      "meaning": "do in advance",
+      "formation": "",
+      "examples": [
+        {
+          "jp": "旅行[りょこう]の前[まえ]にホテルを予約[よやく]しておきます。",
+          "en": "I'll book a hotel before the trip."
+        }
+      ]
+    },
+    {
+      "id": "n4-23",
+      "level": "N4",
+      "cat": "n4-verb-extensions",
+      "category": "Verb extensions",
+      "title": "〜てしまう",
+      "meaning": "finish completely",
+      "formation": "",
+      "examples": [
+        {
+          "jp": "宿題[しゅくだい]を全部[ぜんぶ]やってしまいました。",
+          "en": "I finished all my homework."
+        },
+        {
+          "jp": "財布[さいふ]を忘[わす]れてしまいました。",
+          "en": "I (regrettably) forgot my wallet."
+        }
+      ]
+    },
+    {
+      "id": "n4-24",
+      "level": "N4",
+      "cat": "n4-verb-extensions",
+      "category": "Verb extensions",
+      "title": "〜てある",
+      "meaning": "has been done (and the result remains)",
+      "formation": "",
+      "examples": [
+        {
+          "jp": "窓[まど]が開[あ]けてあります。",
+          "en": "The window has been opened (by someone, on purpose)."
+        },
+        {
+          "jp": "壁[かべ]に絵[え]がかけてあります。",
+          "en": "A picture has been hung on the wall."
+        }
+      ]
+    },
+    {
+      "id": "n4-25",
+      "level": "N4",
+      "cat": "n4-verb-extensions",
+      "category": "Verb extensions",
+      "title": "〜てあげる / 〜てくれる / 〜てもらう",
+      "meaning": "giving and receiving favors",
+      "formation": "",
+      "examples": [
+        {
+          "jp": "友達[ともだち]に本[ほん]を貸[か]してあげました。",
+          "en": "I lent my friend a book."
+        },
+        {
+          "jp": "先生[せんせい]が作文[さくぶん]を直[なお]してくれました。",
+          "en": "The teacher corrected my essay for me."
+        },
+        {
+          "jp": "母[はは]に弁当[べんとう]を作[つく]ってもらいました。",
+          "en": "I had my mother make me a lunch."
+        }
+      ]
+    },
+    {
+      "id": "n4-26",
+      "level": "N4",
+      "cat": "n4-verb-extensions",
+      "category": "Verb extensions",
+      "title": "〜てほしい",
+      "meaning": "want someone to do",
+      "formation": "V-て + ほしい",
+      "examples": [
+        {
+          "jp": "友達[ともだち]に手伝[てつだ]ってほしいです。",
+          "en": "I want my friend to help me."
+        }
+      ]
+    },
+    {
+      "id": "n4-27",
+      "level": "N4",
+      "cat": "n4-verb-extensions",
+      "category": "Verb extensions",
+      "title": "〜がる / 〜たがる",
+      "meaning": "shows signs of wanting / feeling",
+      "formation": "い-adj stem / V-ます stem + がる / たがる.",
+      "examples": [
+        {
+          "jp": "弟[おとうと]はゲームをしたがっています。",
+          "en": "My younger brother wants to play games."
+        },
+        {
+          "jp": "子供[こども]が暑[あつ]がっています。",
+          "en": "The child is feeling hot."
+        }
+      ]
+    },
+    {
+      "id": "n4-28",
+      "level": "N4",
+      "cat": "n4-passive-causative-and-keigo",
+      "category": "Passive, causative and keigo",
+      "title": "Passive (受身形 / うけみけい)",
+      "meaning": "The passive describes something done to the subject; the person who does it is marked with に. The \"indirect\" passive often carries a sense of being inconvenienced.",
+      "formation": "G1 u → あ + れる (書く → 書かれる); G2 る → られる (食べる → 食べられる); する → される; 来る → 来[こ]られる",
+      "examples": [
+        {
+          "jp": "先生[せんせい]にほめられました。",
+          "en": "I was praised by the teacher."
+        },
+        {
+          "jp": "雨[あめ]に降[ふ]られて、服[ふく]がぬれました。",
+          "en": "I got rained on, and my clothes got wet."
+        }
+      ]
+    },
+    {
+      "id": "n4-29",
+      "level": "N4",
+      "cat": "n4-passive-causative-and-keigo",
+      "category": "Passive, causative and keigo",
+      "title": "Causative (使役形 / しえきけい)",
+      "meaning": "\"Make / let someone do\". Formation: G1 u → あ + せる (書く → 書かせる); G2 る → させる; する → させる; 来る → 来[こ]させる.",
+      "formation": "G1 u → あ + せる (書く → 書かせる); G2 る → させる; する → させる; 来る → 来[こ]させる.",
+      "examples": [
+        {
+          "jp": "先生[せんせい]は学生[がくせい]に作文[さくぶん]を書[か]かせました。",
+          "en": "The teacher made the students write an essay."
+        },
+        {
+          "jp": "子供[こども]に好[す]きなものを食[た]べさせます。",
+          "en": "I let my child eat what he likes."
+        }
+      ]
+    },
+    {
+      "id": "n4-30",
+      "level": "N4",
+      "cat": "n4-passive-causative-and-keigo",
+      "category": "Passive, causative and keigo",
+      "title": "Honorific and humble speech (敬語 / けいご)",
+      "meaning": "Honorific (raises the other person): お + V-ます stem + になる, or special verbs like いらっしゃる (be, go, come), おっしゃる (say), 召[め]し上[あ]がる (eat), なさる (do), くださる (give). Humble (lowers yourself): お + V-ます stem + する, or special verbs like 参[まい]る (go, come), 申[もう]す (say), いただく (receive, eat), 伺[うかが]う (visit, ask), いたす (do), 拝見[はいけん]する (see).",
+      "formation": "",
+      "examples": [
+        {
+          "jp": "先生[せんせい]は何時[なんじ]にいらっしゃいますか。",
+          "en": "What time will the teacher come?"
+        },
+        {
+          "jp": "私[わたし]がお持[も]ちします。",
+          "en": "Let me carry that for you."
+        },
+        {
+          "jp": "田中[たなか]と申[もう]します。",
+          "en": "My name is Tanaka."
+        }
+      ]
+    },
+    {
+      "id": "n4-31",
+      "level": "N4",
+      "cat": "n4-conditionals-and-connectors",
+      "category": "Conditionals and connectors",
+      "title": "〜ば",
+      "meaning": "if",
+      "formation": "G1 u → え + ば (書く → 書けば); G2 る → れば; い-adj → ければ; negative → なければ; N / な-adj → なら(ば).",
+      "examples": [
+        {
+          "jp": "安[やす]ければ、買[か]います。",
+          "en": "If it's cheap, I'll buy it."
+        },
+        {
+          "jp": "勉強[べんきょう]すれば、合格[ごうかく]できます。",
+          "en": "If you study, you can pass."
+        }
+      ]
+    },
+    {
+      "id": "n4-32",
+      "level": "N4",
+      "cat": "n4-conditionals-and-connectors",
+      "category": "Conditionals and connectors",
+      "title": "〜たら",
+      "meaning": "if / when",
+      "formation": "past plain form + ら",
+      "examples": [
+        {
+          "jp": "駅[えき]に着[つ]いたら、電話[でんわ]してください。",
+          "en": "Please call me when you arrive at the station."
+        },
+        {
+          "jp": "雨[あめ]が降[ふ]ったら、行[い]きません。",
+          "en": "If it rains, I won't go."
+        }
+      ]
+    },
+    {
+      "id": "n4-33",
+      "level": "N4",
+      "cat": "n4-conditionals-and-connectors",
+      "category": "Conditionals and connectors",
+      "title": "〜なら",
+      "meaning": "if (that's the case) / as for",
+      "formation": "plain form (N / な-adj without だ) + なら.",
+      "examples": [
+        {
+          "jp": "京都[きょうと]へ行[い]くなら、秋[あき]がいいですよ。",
+          "en": "If you're going to Kyoto, autumn is good."
+        }
+      ]
+    },
+    {
+      "id": "n4-34",
+      "level": "N4",
+      "cat": "n4-conditionals-and-connectors",
+      "category": "Conditionals and connectors",
+      "title": "〜と",
+      "meaning": "if / whenever",
+      "formation": "V-dict / V-ない / い-adj plain + と",
+      "examples": [
+        {
+          "jp": "春[はる]になると、桜[さくら]が咲[さ]きます。",
+          "en": "When spring comes, cherry blossoms bloom."
+        },
+        {
+          "jp": "このボタンを押[お]すと、ドアが開[あ]きます。",
+          "en": "If you press this button, the door opens."
+        }
+      ]
+    },
+    {
+      "id": "n4-35",
+      "level": "N4",
+      "cat": "n4-conditionals-and-connectors",
+      "category": "Conditionals and connectors",
+      "title": "〜ても / 〜でも",
+      "meaning": "even if / even though",
+      "formation": "V-て, い-adj (くて), + も; な-adj / N + でも.",
+      "examples": [
+        {
+          "jp": "雨[あめ]が降[ふ]っても、行[い]きます。",
+          "en": "Even if it rains, I'll go."
+        },
+        {
+          "jp": "高[たか]くても、買[か]いたいです。",
+          "en": "Even if it's expensive, I want to buy it."
+        }
+      ]
+    },
+    {
+      "id": "n4-36",
+      "level": "N4",
+      "cat": "n4-conditionals-and-connectors",
+      "category": "Conditionals and connectors",
+      "title": "〜のに",
+      "meaning": "although / despite",
+      "formation": "plain form + のに (な-adj + なのに, N + なのに).",
+      "examples": [
+        {
+          "jp": "一生懸命[いっしょうけんめい]勉強[べんきょう]したのに、不合格[ふごうかく]でした。",
+          "en": "Even though I studied hard, I failed."
+        }
+      ]
+    },
+    {
+      "id": "n4-37",
+      "level": "N4",
+      "cat": "n4-conditionals-and-connectors",
+      "category": "Conditionals and connectors",
+      "title": "〜ので",
+      "meaning": "because",
+      "formation": "plain form + ので (な-adj + なので, N + なので).",
+      "examples": [
+        {
+          "jp": "熱[ねつ]があるので、今日[きょう]は休[やす]みます。",
+          "en": "Since I have a fever, I'll rest today."
+        }
+      ]
+    },
+    {
+      "id": "n4-38",
+      "level": "N4",
+      "cat": "n4-conditionals-and-connectors",
+      "category": "Conditionals and connectors",
+      "title": "〜し",
+      "meaning": "and, what's more",
+      "formation": "plain form + し.",
+      "examples": [
+        {
+          "jp": "この店[みせ]は安[やす]いし、おいしいし、よく来[き]ます。",
+          "en": "This place is cheap and tasty, so I come often."
+        }
+      ]
+    },
+    {
+      "id": "n4-39",
+      "level": "N4",
+      "cat": "n4-conditionals-and-connectors",
+      "category": "Conditionals and connectors",
+      "title": "〜たばかり",
+      "meaning": "just did",
+      "formation": "V-た + ばかり (+ です / だ)",
+      "examples": [
+        {
+          "jp": "昼[ひる]ご飯[はん]を食[た]べたばかりです。",
+          "en": "I just ate lunch."
+        }
+      ]
+    },
+    {
+      "id": "n4-40",
+      "level": "N4",
+      "cat": "n4-conditionals-and-connectors",
+      "category": "Conditionals and connectors",
+      "title": "〜ところ",
+      "meaning": "three tenses of \"in the middle of\"",
+      "formation": "",
+      "examples": [
+        {
+          "jp": "今[いま]、出[で]かけるところです。",
+          "en": "I'm just about to head out."
+        },
+        {
+          "jp": "今[いま]、ご飯[はん]を食[た]べているところです。",
+          "en": "I'm in the middle of eating."
+        },
+        {
+          "jp": "今[いま]、帰[かえ]ったところです。",
+          "en": "I've just gotten home."
+        }
+      ]
+    },
+    {
+      "id": "n4-41",
+      "level": "N4",
+      "cat": "n4-conditionals-and-connectors",
+      "category": "Conditionals and connectors",
+      "title": "〜間[あいだ]に",
+      "meaning": "while (during)",
+      "formation": "V-dict / V-ている / い-adj / N の + 間に.",
+      "examples": [
+        {
+          "jp": "留守[るす]の間[あいだ]に、友達[ともだち]が来[き]ました。",
+          "en": "While I was out, a friend came by."
+        }
+      ]
+    },
+    {
+      "id": "n4-42",
+      "level": "N4",
+      "cat": "n4-conditionals-and-connectors",
+      "category": "Conditionals and connectors",
+      "title": "〜によると",
+      "meaning": "according to",
+      "formation": "",
+      "examples": [
+        {
+          "jp": "天気予報[てんきよほう]によると、明日[あした]は雨[あめ]だそうです。",
+          "en": "According to the weather forecast, it will rain tomorrow."
+        }
+      ]
+    },
+    {
+      "id": "n4-43",
+      "level": "N4",
+      "cat": "n4-conditionals-and-connectors",
+      "category": "Conditionals and connectors",
+      "title": "〜かどうか",
+      "meaning": "whether or not",
+      "formation": "plain form + かどうか",
+      "examples": [
+        {
+          "jp": "彼[かれ]が来[く]るかどうか分[わ]かりません。",
+          "en": "I don't know whether he's coming."
+        }
+      ]
+    },
+    {
+      "id": "n4-44",
+      "level": "N4",
+      "cat": "n4-conditionals-and-connectors",
+      "category": "Conditionals and connectors",
+      "title": "〜という / 〜といいます",
+      "meaning": "called / named",
+      "formation": "",
+      "examples": [
+        {
+          "jp": "これは「おにぎり」という食[た]べ物[もの]です。",
+          "en": "This is a food called onigiri."
+        }
+      ]
+    },
+    {
+      "id": "n4-45",
+      "level": "N4",
+      "cat": "n4-conditionals-and-connectors",
+      "category": "Conditionals and connectors",
+      "title": "Imperative and prohibition",
+      "meaning": "Imperative: G1 u → え (書く → 書け), G2 る → ろ (食べる → 食べろ), する → しろ, 来る → 来[こ]い. Prohibition: V-dict + な. Both are rough, mostly for signs, sports and male speech. The polite command is 〜なさい (V-ます stem + なさい), used by parents or teachers.",
+      "formation": "",
+      "examples": [
+        {
+          "jp": "早[はや]く行[い]け！",
+          "en": "Hurry up and go!"
+        },
+        {
+          "jp": "ここに入[はい]るな。",
+          "en": "Don't enter here."
+        },
+        {
+          "jp": "早[はや]く寝[ね]なさい。",
+          "en": "Go to bed early."
+        }
+      ]
+    },
+    {
+      "id": "n3-46",
+      "level": "N3",
+      "cat": "n3-cause-reason-and-logical-conclusion",
+      "category": "Cause, reason and logical conclusion",
+      "title": "〜せいで / 〜おかげで",
+      "meaning": "because of (bad) / thanks to (good)",
+      "formation": "plain form (な-adj + な, N + の) + せいで / おかげで.",
+      "examples": [
+        {
+          "jp": "電車[でんしゃ]が遅[おく]れたせいで、会議[かいぎ]に遅刻[ちこく]しました。",
+          "en": "Because the train was late, I was late to the meeting."
+        },
+        {
+          "jp": "先生[せんせい]のおかげで、試験[しけん]に合格[ごうかく]できました。",
+          "en": "Thanks to my teacher, I passed the exam."
+        }
+      ]
+    },
+    {
+      "id": "n3-47",
+      "level": "N3",
+      "cat": "n3-cause-reason-and-logical-conclusion",
+      "category": "Cause, reason and logical conclusion",
+      "title": "〜わけだ",
+      "meaning": "no wonder / that's why",
+      "formation": "plain form (な-adj + な, N + の) + わけだ.",
+      "examples": [
+        {
+          "jp": "十年[じゅうねん]も住[す]んでいたのか。日本語[にほんご]が上手[じょうず]なわけだ。",
+          "en": "He lived there for ten years? No wonder his Japanese is good."
+        }
+      ]
+    },
+    {
+      "id": "n3-48",
+      "level": "N3",
+      "cat": "n3-cause-reason-and-logical-conclusion",
+      "category": "Cause, reason and logical conclusion",
+      "title": "〜わけではない",
+      "meaning": "it doesn't mean that",
+      "formation": "plain form + わけではない.",
+      "examples": [
+        {
+          "jp": "嫌[きら]いなわけではありませんが、あまり食[た]べません。",
+          "en": "It's not that I dislike it, but I don't eat it much."
+        }
+      ]
+    },
+    {
+      "id": "n3-49",
+      "level": "N3",
+      "cat": "n3-cause-reason-and-logical-conclusion",
+      "category": "Cause, reason and logical conclusion",
+      "title": "〜わけにはいかない",
+      "meaning": "can't (because of circumstances)",
+      "formation": "V-dict + わけにはいかない.",
+      "examples": [
+        {
+          "jp": "明日[あした]試験[しけん]があるので、遊[あそ]ぶわけにはいきません。",
+          "en": "I have an exam tomorrow, so I can't afford to play."
+        }
+      ]
+    },
+    {
+      "id": "n3-50",
+      "level": "N3",
+      "cat": "n3-time-and-the-flow-of-actions",
+      "category": "Time and the flow of actions",
+      "title": "〜うちに",
+      "meaning": "while still / before it changes",
+      "formation": "V-dict / V-ている / V-ない / い-adj / な-adj + な / N + の + うちに.",
+      "examples": [
+        {
+          "jp": "若[わか]いうちに、いろいろな経験[けいけん]をしたほうがいいです。",
+          "en": "You should have many experiences while you're young."
+        },
+        {
+          "jp": "忘[わす]れないうちに、メモしておきます。",
+          "en": "I'll note it down before I forget."
+        }
+      ]
+    },
+    {
+      "id": "n3-51",
+      "level": "N3",
+      "cat": "n3-time-and-the-flow-of-actions",
+      "category": "Time and the flow of actions",
+      "title": "〜たとたん(に)",
+      "meaning": "the moment (something) happened",
+      "formation": "V-た + とたん(に).",
+      "examples": [
+        {
+          "jp": "家[いえ]を出[で]たとたん、雨[あめ]が降[ふ]り出[だ]しました。",
+          "en": "The moment I left the house, it began to rain."
+        }
+      ]
+    },
+    {
+      "id": "n3-52",
+      "level": "N3",
+      "cat": "n3-time-and-the-flow-of-actions",
+      "category": "Time and the flow of actions",
+      "title": "〜ようとする",
+      "meaning": "try to / be about to",
+      "formation": "volitional + とする",
+      "examples": [
+        {
+          "jp": "家[いえ]を出[で]ようとしたとき、電話[でんわ]が鳴[な]りました。",
+          "en": "Just as I was about to leave, the phone rang."
+        }
+      ]
+    },
+    {
+      "id": "n3-53",
+      "level": "N3",
+      "cat": "n3-time-and-the-flow-of-actions",
+      "category": "Time and the flow of actions",
+      "title": "〜かける / 〜かけの",
+      "meaning": "halfway through",
+      "formation": "V-ます stem + かける / かけの + N.",
+      "examples": [
+        {
+          "jp": "読[よ]みかけの本[ほん]が机[つくえ]の上[うえ]にあります。",
+          "en": "A half-read book is on the desk."
+        }
+      ]
+    },
+    {
+      "id": "n3-54",
+      "level": "N3",
+      "cat": "n3-time-and-the-flow-of-actions",
+      "category": "Time and the flow of actions",
+      "title": "〜続[つづ]ける / 〜始[はじ]める / 〜出[だ]す / 〜終[お]わる",
+      "meaning": "aspect verbs",
+      "formation": "",
+      "examples": [
+        {
+          "jp": "三時間[さんじかん]話[はな]し続[つづ]けました。",
+          "en": "We kept talking for three hours."
+        },
+        {
+          "jp": "急[きゅう]に雨[あめ]が降[ふ]り出[だ]しました。",
+          "en": "It suddenly started to rain."
+        },
+        {
+          "jp": "この本[ほん]はもう読[よ]み終[お]わりました。",
+          "en": "I've already finished this book."
+        }
+      ]
+    },
+    {
+      "id": "n3-55",
+      "level": "N3",
+      "cat": "n3-time-and-the-flow-of-actions",
+      "category": "Time and the flow of actions",
+      "title": "〜たびに",
+      "meaning": "every time",
+      "formation": "V-dict / N + の + たびに.",
+      "examples": [
+        {
+          "jp": "この曲[きょく]を聞[き]くたびに、故郷[ふるさと]を思[おも]い出[だ]します。",
+          "en": "Every time I hear this song, I remember my hometown."
+        }
+      ]
+    },
+    {
+      "id": "n3-56",
+      "level": "N3",
+      "cat": "n3-time-and-the-flow-of-actions",
+      "category": "Time and the flow of actions",
+      "title": "〜ついでに",
+      "meaning": "while I'm at it",
+      "formation": "V-dict / V-た / N + の + ついでに.",
+      "examples": [
+        {
+          "jp": "買[か]い物[もの]のついでに、郵便局[ゆうびんきょく]に寄[よ]りました。",
+          "en": "I stopped by the post office while I was out shopping."
+        }
+      ]
+    },
+    {
+      "id": "n3-57",
+      "level": "N3",
+      "cat": "n3-time-and-the-flow-of-actions",
+      "category": "Time and the flow of actions",
+      "title": "〜まま",
+      "meaning": "as it is / without changing",
+      "formation": "V-た / V-ない / い-adj / な-adj + な / N + の + まま.",
+      "examples": [
+        {
+          "jp": "電気[でんき]をつけたまま寝[ね]てしまいました。",
+          "en": "I fell asleep with the light on."
+        }
+      ]
+    },
+    {
+      "id": "n3-58",
+      "level": "N3",
+      "cat": "n3-time-and-the-flow-of-actions",
+      "category": "Time and the flow of actions",
+      "title": "〜っぱなし",
+      "meaning": "left in that state",
+      "formation": "V-ます stem + っぱなし.",
+      "examples": [
+        {
+          "jp": "ドアを開[あ]けっぱなしにしないでください。",
+          "en": "Please don't leave the door open."
+        }
+      ]
+    },
+    {
+      "id": "n3-59",
+      "level": "N3",
+      "cat": "n3-time-and-the-flow-of-actions",
+      "category": "Time and the flow of actions",
+      "title": "〜最中[さいちゅう]に",
+      "meaning": "right in the middle of",
+      "formation": "V-ている / N + の + 最中に.",
+      "examples": [
+        {
+          "jp": "会議[かいぎ]の最中[さいちゅう]に、携帯[けいたい]が鳴[な]りました。",
+          "en": "My phone rang in the middle of the meeting."
+        }
+      ]
+    },
+    {
+      "id": "n3-60",
+      "level": "N3",
+      "cat": "n3-certainty-tendency-and-judgment",
+      "category": "Certainty, tendency and judgment",
+      "title": "〜に違[ちが]いない",
+      "meaning": "must be / no doubt",
+      "formation": "plain form (な-adj / N without だ) + に違いない.",
+      "examples": [
+        {
+          "jp": "あの二人[ふたり]は兄弟[きょうだい]に違[ちが]いない。",
+          "en": "Those two must be brothers."
+        }
+      ]
+    },
+    {
+      "id": "n3-61",
+      "level": "N3",
+      "cat": "n3-certainty-tendency-and-judgment",
+      "category": "Certainty, tendency and judgment",
+      "title": "〜とは限[かぎ]らない",
+      "meaning": "not necessarily",
+      "formation": "plain form + とは限らない.",
+      "examples": [
+        {
+          "jp": "高[たか]い物[もの]がいい物[もの]とは限[かぎ]りません。",
+          "en": "Expensive things aren't necessarily good."
+        }
+      ]
+    },
+    {
+      "id": "n3-62",
+      "level": "N3",
+      "cat": "n3-certainty-tendency-and-judgment",
+      "category": "Certainty, tendency and judgment",
+      "title": "〜がち",
+      "meaning": "tends to (usually undesirable)",
+      "formation": "V-ます stem / N + がち.",
+      "examples": [
+        {
+          "jp": "冬[ふゆ]は風邪[かぜ]をひきがちです。",
+          "en": "In winter people tend to catch colds."
+        }
+      ]
+    },
+    {
+      "id": "n3-63",
+      "level": "N3",
+      "cat": "n3-certainty-tendency-and-judgment",
+      "category": "Certainty, tendency and judgment",
+      "title": "〜っぽい",
+      "meaning": "-ish / has the quality of",
+      "formation": "N / V-ます stem / い-adj stem + っぽい",
+      "examples": [
+        {
+          "jp": "彼[かれ]は怒[おこ]りっぽいです。",
+          "en": "He is short-tempered."
+        },
+        {
+          "jp": "子供[こども]っぽい服[ふく]",
+          "en": "childish clothes"
+        }
+      ]
+    },
+    {
+      "id": "n3-64",
+      "level": "N3",
+      "cat": "n3-certainty-tendency-and-judgment",
+      "category": "Certainty, tendency and judgment",
+      "title": "〜ふりをする",
+      "meaning": "pretend to",
+      "formation": "plain form (な-adj + な, N + の) + ふりをする.",
+      "examples": [
+        {
+          "jp": "彼女[かのじょ]は寝[ね]ているふりをしていました。",
+          "en": "She was pretending to be asleep."
+        }
+      ]
+    },
+    {
+      "id": "n3-65",
+      "level": "N3",
+      "cat": "n3-certainty-tendency-and-judgment",
+      "category": "Certainty, tendency and judgment",
+      "title": "〜べき",
+      "meaning": "should / ought to",
+      "formation": "V-dict + べきだ",
+      "examples": [
+        {
+          "jp": "約束[やくそく]は守[まも]るべきです。",
+          "en": "You should keep your promises."
+        }
+      ]
+    },
+    {
+      "id": "n3-66",
+      "level": "N3",
+      "cat": "n3-certainty-tendency-and-judgment",
+      "category": "Certainty, tendency and judgment",
+      "title": "〜ことはない",
+      "meaning": "no need to",
+      "formation": "V-dict + ことはない.",
+      "examples": [
+        {
+          "jp": "心配[しんぱい]することはありませんよ。",
+          "en": "There's no need to worry."
+        }
+      ]
+    },
+    {
+      "id": "n3-67",
+      "level": "N3",
+      "cat": "n3-certainty-tendency-and-judgment",
+      "category": "Certainty, tendency and judgment",
+      "title": "〜ことだ",
+      "meaning": "you should (advice)",
+      "formation": "V-dict / V-ない + ことだ.",
+      "examples": [
+        {
+          "jp": "健康[けんこう]のためには、早[はや]く寝[ね]ることです。",
+          "en": "For your health, you should go to bed early."
+        }
+      ]
+    },
+    {
+      "id": "n3-68",
+      "level": "N3",
+      "cat": "n3-certainty-tendency-and-judgment",
+      "category": "Certainty, tendency and judgment",
+      "title": "〜ものだ",
+      "meaning": "it's natural that / used to",
+      "formation": "V-dict + ものだ; V-た + ものだ = \"used to\".",
+      "examples": [
+        {
+          "jp": "子供[こども]は遊[あそ]ぶものです。",
+          "en": "Children are meant to play."
+        },
+        {
+          "jp": "学生[がくせい]のころは、よく夜遅[よるおそ]くまで勉強[べんきょう]したものです。",
+          "en": "When I was a student I used to study until late at night."
+        }
+      ]
+    },
+    {
+      "id": "n3-69",
+      "level": "N3",
+      "cat": "n3-certainty-tendency-and-judgment",
+      "category": "Certainty, tendency and judgment",
+      "title": "〜ようがない",
+      "meaning": "no way to",
+      "formation": "V-ます stem + ようがない.",
+      "examples": [
+        {
+          "jp": "連絡先[れんらくさき]が分[わ]からないので、連絡[れんらく]しようがありません。",
+          "en": "I don't know the contact info, so there's no way to reach them."
+        }
+      ]
+    },
+    {
+      "id": "n3-70",
+      "level": "N3",
+      "cat": "n3-certainty-tendency-and-judgment",
+      "category": "Certainty, tendency and judgment",
+      "title": "〜てたまらない",
+      "meaning": "can't stand it / extremely",
+      "formation": "V-て / い-adj (くて) / な-adj (で) + たまらない.",
+      "examples": [
+        {
+          "jp": "眠[ねむ]くてたまりません。",
+          "en": "I'm unbearably sleepy."
+        },
+        {
+          "jp": "試合[しあい]の結果[けっか]が気[き]になってたまりません。",
+          "en": "I can't stop wondering about the result of the match."
+        }
+      ]
+    },
+    {
+      "id": "n3-71",
+      "level": "N3",
+      "cat": "n3-relating-things-topic-comparison-viewpoint",
+      "category": "Relating things: topic, comparison, viewpoint",
+      "title": "〜について / 〜に関[かん]して",
+      "meaning": "about, regarding",
+      "formation": "",
+      "examples": [
+        {
+          "jp": "日本[にほん]の文化[ぶんか]について調[しら]べています。",
+          "en": "I'm researching Japanese culture."
+        },
+        {
+          "jp": "この問題[もんだい]に関[かん]して、ご意見[いけん]をお聞[き]かせください。",
+          "en": "Please share your opinion regarding this issue."
+        }
+      ]
+    },
+    {
+      "id": "n3-72",
+      "level": "N3",
+      "cat": "n3-relating-things-topic-comparison-viewpoint",
+      "category": "Relating things: topic, comparison, viewpoint",
+      "title": "〜に対[たい]して",
+      "meaning": "toward / in contrast to",
+      "formation": "",
+      "examples": [
+        {
+          "jp": "お客様[きゃくさま]に対[たい]して、失礼[しつれい]なことを言[い]ってはいけません。",
+          "en": "You must not say rude things to customers."
+        },
+        {
+          "jp": "兄[あに]は社交的[しゃこうてき]なのに対[たい]して、弟[おとうと]は内気[うちき]です。",
+          "en": "My older brother is outgoing, whereas my younger brother is shy."
+        }
+      ]
+    },
+    {
+      "id": "n3-73",
+      "level": "N3",
+      "cat": "n3-relating-things-topic-comparison-viewpoint",
+      "category": "Relating things: topic, comparison, viewpoint",
+      "title": "〜に比[くら]べて",
+      "meaning": "compared to",
+      "formation": "",
+      "examples": [
+        {
+          "jp": "去年[きょねん]に比[くら]べて、今年[ことし]は雨[あめ]が少[すく]ないです。",
+          "en": "Compared to last year, there's less rain this year."
+        }
+      ]
+    },
+    {
+      "id": "n3-74",
+      "level": "N3",
+      "cat": "n3-relating-things-topic-comparison-viewpoint",
+      "category": "Relating things: topic, comparison, viewpoint",
+      "title": "〜によって",
+      "meaning": "depending on / by means of / by (passive agent)",
+      "formation": "",
+      "examples": [
+        {
+          "jp": "国[くに]によって、習慣[しゅうかん]が違[ちが]います。",
+          "en": "Customs differ from country to country."
+        },
+        {
+          "jp": "この絵[え]はピカソによって描[か]かれました。",
+          "en": "This picture was painted by Picasso."
+        }
+      ]
+    },
+    {
+      "id": "n3-75",
+      "level": "N3",
+      "cat": "n3-relating-things-topic-comparison-viewpoint",
+      "category": "Relating things: topic, comparison, viewpoint",
+      "title": "〜として",
+      "meaning": "as (a role or capacity)",
+      "formation": "",
+      "examples": [
+        {
+          "jp": "留学生[りゅうがくせい]として、日本[にほん]に来[き]ました。",
+          "en": "I came to Japan as an exchange student."
+        }
+      ]
+    },
+    {
+      "id": "n3-76",
+      "level": "N3",
+      "cat": "n3-relating-things-topic-comparison-viewpoint",
+      "category": "Relating things: topic, comparison, viewpoint",
+      "title": "〜にとって",
+      "meaning": "for (from the viewpoint of)",
+      "formation": "",
+      "examples": [
+        {
+          "jp": "私[わたし]にとって、家族[かぞく]は一番[いちばん]大切[たいせつ]です。",
+          "en": "For me, family is the most important thing."
+        }
+      ]
+    },
+    {
+      "id": "n3-77",
+      "level": "N3",
+      "cat": "n3-relating-things-topic-comparison-viewpoint",
+      "category": "Relating things: topic, comparison, viewpoint",
+      "title": "〜とおり(に)",
+      "meaning": "just as",
+      "formation": "V-dict / V-た / N + の + とおり(に)",
+      "examples": [
+        {
+          "jp": "先生[せんせい]が言[い]ったとおりにやってください。",
+          "en": "Please do it just as the teacher said."
+        },
+        {
+          "jp": "予定[よてい]どおり、会議[かいぎ]は三時[さんじ]に始[はじ]まりました。",
+          "en": "As planned, the meeting began at three."
+        }
+      ]
+    },
+    {
+      "id": "n3-78",
+      "level": "N3",
+      "cat": "n3-relating-things-topic-comparison-viewpoint",
+      "category": "Relating things: topic, comparison, viewpoint",
+      "title": "〜ば〜ほど",
+      "meaning": "the more... the more...",
+      "formation": "V-ば + same V-dict + ほど; い-adj ければ + い-adj dict + ほど; な-adj なら + な-adj + ほど.",
+      "examples": [
+        {
+          "jp": "読[よ]めば読[よ]むほど、おもしろくなります。",
+          "en": "The more I read, the more interesting it gets."
+        },
+        {
+          "jp": "安[やす]ければ安[やす]いほど、いいです。",
+          "en": "The cheaper, the better."
+        }
+      ]
+    },
+    {
+      "id": "n3-79",
+      "level": "N3",
+      "cat": "n3-relating-things-topic-comparison-viewpoint",
+      "category": "Relating things: topic, comparison, viewpoint",
+      "title": "〜くらい / 〜ぐらい / 〜ほど",
+      "meaning": "about / to the extent of",
+      "formation": "",
+      "examples": [
+        {
+          "jp": "駅[えき]まで十分[じゅっぷん]ぐらいかかります。",
+          "en": "It takes about ten minutes to the station."
+        },
+        {
+          "jp": "涙[なみだ]が出[で]るほど笑[わら]いました。",
+          "en": "I laughed so hard that I cried."
+        }
+      ]
+    },
+    {
+      "id": "n3-80",
+      "level": "N3",
+      "cat": "n3-relating-things-topic-comparison-viewpoint",
+      "category": "Relating things: topic, comparison, viewpoint",
+      "title": "〜向[む]け / 〜向[む]き",
+      "meaning": "aimed at / suited for",
+      "formation": "",
+      "examples": [
+        {
+          "jp": "これは子供[こども]向[む]けの映画[えいが]です。",
+          "en": "This is a movie aimed at children."
+        },
+        {
+          "jp": "この料理[りょうり]は夏[なつ]向[む]きです。",
+          "en": "This dish suits summer."
+        }
+      ]
+    },
+    {
+      "id": "n3-81",
+      "level": "N3",
+      "cat": "n3-other-useful-n3-patterns",
+      "category": "Other useful N3 patterns",
+      "title": "〜ないで / 〜ずに",
+      "meaning": "without doing",
+      "formation": "V-ない + で, or V-ない stem (without ない) + ずに",
+      "examples": [
+        {
+          "jp": "朝[あさ]ご飯[はん]を食[た]べないで、学校[がっこう]へ行[い]きました。",
+          "en": "I went to school without eating breakfast."
+        },
+        {
+          "jp": "何[なに]も言[い]わずに、部屋[へや]を出[で]ていきました。",
+          "en": "He left the room without saying anything."
+        }
+      ]
+    },
+    {
+      "id": "n3-82",
+      "level": "N3",
+      "cat": "n3-other-useful-n3-patterns",
+      "category": "Other useful N3 patterns",
+      "title": "Causative-passive (使役受身 / しえきうけみ)",
+      "meaning": "be made to do",
+      "formation": "causative + られる",
+      "examples": [
+        {
+          "jp": "子供[こども]のころ、毎日[まいにち]ピアノを練習[れんしゅう]させられました。",
+          "en": "As a child, I was made to practice piano every day."
+        }
+      ]
+    },
+    {
+      "id": "n3-83",
+      "level": "N3",
+      "cat": "n3-other-useful-n3-patterns",
+      "category": "Other useful N3 patterns",
+      "title": "〜ように言[い]う / 頼[たの]む / 注意[ちゅうい]する",
+      "meaning": "indirect commands",
+      "formation": "V-dict / V-ない + ように言う",
+      "examples": [
+        {
+          "jp": "医者[いしゃ]に、お酒[さけ]を飲[の]まないように言[い]われました。",
+          "en": "The doctor told me not to drink alcohol."
+        }
+      ]
+    },
+    {
+      "id": "n3-84",
+      "level": "N3",
+      "cat": "n3-other-useful-n3-patterns",
+      "category": "Other useful N3 patterns",
+      "title": "〜くせに",
+      "meaning": "even though (criticism)",
+      "formation": "plain form (な-adj + な, N + の) + くせに.",
+      "examples": [
+        {
+          "jp": "知[し]っているくせに、教[おし]えてくれません。",
+          "en": "Even though he knows, he won't tell me."
+        }
+      ]
+    },
+    {
+      "id": "n3-85",
+      "level": "N3",
+      "cat": "n3-other-useful-n3-patterns",
+      "category": "Other useful N3 patterns",
+      "title": "〜てばかりいる",
+      "meaning": "do nothing but",
+      "formation": "V-て + ばかりいる.",
+      "examples": [
+        {
+          "jp": "彼[かれ]は毎日[まいにち]ゲームをしてばかりいます。",
+          "en": "He does nothing but play games every day."
+        }
+      ]
+    },
+    {
+      "id": "n3-86",
+      "level": "N3",
+      "cat": "n3-other-useful-n3-patterns",
+      "category": "Other useful N3 patterns",
+      "title": "〜だけ",
+      "meaning": "only / as much as",
+      "formation": "",
+      "examples": [
+        {
+          "jp": "食[た]べられるだけ食[た]べてください。",
+          "en": "Please eat as much as you can."
+        }
+      ]
+    },
+    {
+      "id": "n3-87",
+      "level": "N3",
+      "cat": "n3-other-useful-n3-patterns",
+      "category": "Other useful N3 patterns",
+      "title": "〜ことに(は)",
+      "meaning": "to my (emotion)",
+      "formation": "emotional word + ことに(は)",
+      "examples": [
+        {
+          "jp": "驚[おどろ]いたことに、彼[かれ]はもう結婚[けっこん]していました。",
+          "en": "To my surprise, he was already married."
+        }
+      ]
+    }
+  ],
+  "comparisons": [
+    {
+      "patterns": "そうです (stem) vs そうです (plain)",
+      "difference": "Stem + そう = it looks like; plain form + そう = I heard that",
+      "example": "降りそう (looks like rain) / 降るそう (I heard it'll rain)"
+    },
+    {
+      "patterns": "ようです vs らしい vs そうです (hearsay)",
+      "difference": "ようです = my own judgment; らしい / そうです = reported information",
+      "example": "疲れているようです (he seems tired)"
+    },
+    {
+      "patterns": "ば vs たら vs なら vs と",
+      "difference": "ば = general condition; たら = once done / hypothetical; なら = based on what's just been said; と = automatic result",
+      "example": "押すと開く (press and it opens)"
+    },
+    {
+      "patterns": "ことにする vs ことになる",
+      "difference": "You decide vs it was decided (by others or circumstances)",
+      "example": "留学することにした / 転勤することになった"
+    },
+    {
+      "patterns": "ようにする vs ようになる",
+      "difference": "Make an effort vs a change has come about",
+      "example": "食べるようにする / 話せるようになる"
+    },
+    {
+      "patterns": "ために vs ように",
+      "difference": "ため = controllable actions; よう = potential, negative or non-volitional",
+      "example": "働くために / 忘れないように"
+    },
+    {
+      "patterns": "ので vs から",
+      "difference": "ので is objective and softer; から is subjective and can carry requests or commands",
+      "example": "熱があるので休みます"
+    },
+    {
+      "patterns": "のに vs くせに",
+      "difference": "のに = unexpected contrast; くせに = same, with blame",
+      "example": "勉強したのに / 知っているくせに"
+    },
+    {
+      "patterns": "せいで vs おかげで",
+      "difference": "Blame (bad result) vs credit (good result)",
+      "example": "雨のせいで / 先生のおかげで"
+    },
+    {
+      "patterns": "〜ところだ (3 forms)",
+      "difference": "V-dict = about to; V-ている = in the middle of; V-た = just finished",
+      "example": "出かけるところ / 食べているところ / 帰ったところ"
+    },
+    {
+      "patterns": "たばかり vs たところ",
+      "difference": "たばかり feels recent by the speaker's sense; たところ is the literal moment right after",
+      "example": "食べたばかりです"
+    },
+    {
+      "patterns": "べき vs ことだ vs ほうがいい",
+      "difference": "べき = duty or logic; ことだ = advice from the speaker; ほうがいい = soft suggestion",
+      "example": "守るべき / 寝ることだ / 寝たほうがいい"
+    },
+    {
+      "patterns": "てしまう vs ておく vs てある",
+      "difference": "Completion or regret vs doing in advance vs resulting state of a deliberate action",
+      "example": "忘れてしまった / 予約しておく / 開けてある"
+    },
+    {
+      "patterns": "わけだ vs わけではない vs わけにはいかない",
+      "difference": "Natural conclusion vs \"doesn't mean\" vs \"can't, given circumstances\"",
+      "example": "上手なわけだ / 嫌いなわけではない / 遊ぶわけにはいかない"
+    },
+    {
+      "patterns": "について vs に対して vs にとって",
+      "difference": "About vs toward / in contrast to vs from the viewpoint of",
+      "example": "文化について / 客に対して / 私にとって"
+    }
+  ]
+}

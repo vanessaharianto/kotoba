@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kotoba — Japanese Study</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<link rel="stylesheet" href="css/styles.css?v=22">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1><span class="mark">言</span>Kotoba</h1>
+    <div class="header-right"><p id="deck-count"></p>
+      <label class="visually-hidden" for="theme-picker">Color theme</label>
+      <select id="theme-picker" class="theme-picker" aria-label="Color theme">
+        <option value="classic">Original</option>
+        <option value="ember">Moss &amp; terracotta</option>
+        <option value="rose">Rose &amp; olive</option>
+        <option value="moon">Moonlit blossom</option>
+        <option value="olive-night">Olive after dark</option>
+      </select>
+    </div>
+  </header>
+  <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+    <button type="button" class="active" data-page="home">Home</button>
+    <button type="button" data-page="flashcards">Flashcards</button>
+    <button type="button" data-page="readings">Reading</button>
+    <button type="button" data-page="kanji">Kanji</button>
+    <button type="button" data-page="grammar">Grammar</button>
+  </nav>
+
+  <main id="home-view" class="page-view">
+    <section class="home-hero">
+      <p class="eyebrow">五分だけ、でもOK</p>
+      <h2 class="home-greeting-line"><span id="time-greeting" lang="ja">おはよう</span><span class="home-ready">Ready for some <span lang="ja">ことば</span>?</span></h2>
+      <button type="button" class="daily-encouragement" id="daily-encouragement" aria-expanded="false" aria-label="Show or hide the English translation">
+        <span class="sub-jp" id="encouragement-japanese" lang="ja"></span>
+        <span class="sub-en" id="encouragement-english" aria-hidden="true"></span>
+      </button>
+      <div class="loading-note" id="built-in-loading">Loading your study library…</div>
+    </section>
+    <section class="word-day" aria-labelledby="word-day-heading">
+      <div class="word-day-top"><p class="eyebrow" id="word-day-heading">WORD OF THE DAY</p><span id="word-day-date"></span></div>
+      <div class="word-day-word" id="word-day-word">読み込み中</div>
+      <p class="word-day-meaning" id="word-day-meaning"></p>
+      <div class="word-day-bottom"><span class="level-tag" id="word-day-level"></span><button type="button" class="text-link" data-page="flashcards">Explore flashcards →</button></div>
+    </section>
+    <section class="home-section review-overview">
+      <div class="section-heading"><div><p class="eyebrow">KEEP IT FRESH</p><h2>Your word review queue</h2><p id="review-summary">Words you miss in flashcards will appear here when they are ready to review.</p></div></div>
+      <div class="review-actions"><button type="button" class="deck-start" id="review-words-button">Review due words</button><button type="button" class="header-btn" id="saved-words-home">Saved list</button></div><div class="home-saved-words"><h3>Saved words</h3><div id="saved-review-preview" class="saved-review-preview"></div></div>
+    </section>
+    <section class="home-section">
+      <div class="section-heading"><div><p class="eyebrow">CHOOSE YOUR PRACTICE</p><h2>What are we studying today?</h2></div></div>
+      <div class="feature-grid">
+        <button type="button" class="feature-card" data-page="flashcards"><span class="feature-icon">札</span><span class="feature-title">Flashcards</span><span class="feature-copy">Drill words until they stick. Conjugation too, sadly.</span><span class="feature-link">Choose a deck →</span></button>
+        <button type="button" class="feature-card" data-page="readings"><span class="feature-icon">読</span><span class="feature-title">Guided reading</span><span class="feature-copy">Little stories with furigana, so you can read real Japanese without panicking. Quick quiz after.</span><span class="feature-link">Read a story →</span></button>
+        <button type="button" class="feature-card" data-page="kanji"><span class="feature-icon">書</span><span class="feature-title">Kanji practice</span><span class="feature-copy">Grab a brush</span><span class="feature-link">Practise writing →</span></button>
+        <button type="button" class="feature-card" data-page="grammar"><span class="feature-icon">文</span><span class="feature-title">Grammar</span><span class="feature-copy">は or が? ば or たら? Sort it out here.</span><span class="feature-link">Study grammar →</span></button>
+      </div>
+    </section>
+  </main>
+
+  <main id="flashcards-view" class="page-view" style="display:none">
+    <div class="page-heading"><p class="eyebrow">VOCABULARY & GRAMMAR</p><h2>Flashcards</h2><p>Choose a deck, then study cards or practise changing word forms.</p></div>
+    <div class="deck-grid" id="deck-list"></div>
+    <details class="custom-workbook">
+      <summary>Use a different workbook</summary>
+      <label class="dropzone" id="dropzone">
+        <div class="glyph">単</div>
+        <div class="title">Choose a vocabulary spreadsheet</div>
+        <div class="hint">.xlsx, .xls, or .csv<br>Columns: Kanji · Furigana · Romaji · Meaning · Group</div>
+        <input type="file" id="file-input" accept=".xlsx,.xls,.csv">
+      </label>
+      <div class="error-msg" id="error-msg"></div>
+    </details>
+  </main>
+
+  <main id="readings-view" class="page-view" style="display:none">
+    <div class="page-heading"><p class="eyebrow">READ & UNDERSTAND</p><h2>Guided reading</h2><p>Little stories with furigana, so you can read real Japanese without panicking. Quick quiz after.</p><button type="button" class="header-btn" id="saved-words-open-list">Saved words</button></div>
+    <div class="story-grid" id="story-list"></div>
+  </main>
+
+  <main id="grammar-view" class="page-view" style="display:none">
+    <div class="page-heading"><p class="eyebrow">BUILD YOUR SENTENCES</p><h2>Grammar</h2><p>Choose a level and topic, learn one pattern at a time, then practise what you have learned.</p></div>
+    <div class="grammar-mode-tabs" id="grammar-mode-tabs" role="tablist" aria-label="Grammar activities">
+      <button type="button" class="active" data-grammar-mode="learn">Learn</button>
+      <button type="button" data-grammar-mode="quiz">Practice</button>
+      <button type="button" data-grammar-mode="reference">Reference</button>
+      <button type="button" data-grammar-mode="compare">Confusions</button>
+    </div>
+    <div class="grammar-level-filters" id="grammar-level-filters" aria-label="JLPT level">
+      <button type="button" class="active" data-grammar-level="all">All levels</button>
+      <button type="button" data-grammar-level="N5">N5</button>
+      <button type="button" data-grammar-level="N4">N4</button>
+      <button type="button" data-grammar-level="N3">N3</button>
+    </div>
+    <section id="grammar-learn-view"></section>
+    <section id="grammar-reference-view" style="display:none">
+      <label class="visually-hidden" for="grammar-search">Search grammar patterns</label>
+      <input id="grammar-search" class="grammar-search" type="search" placeholder="Search by pattern, meaning, or example">
+      <div id="grammar-reference-list"></div>
+    </section>
+    <section id="grammar-compare-view" style="display:none">
+      <p class="grammar-intro">These pairs are easy to mix up. Compare what each pattern emphasizes.</p>
+      <div id="grammar-comparison-list"></div>
+    </section>
+    <section id="grammar-quiz-view" style="display:none"></section>
+    <p id="grammar-load-error" class="loading-note" style="display:none">Grammar could not be loaded. Check that json/grammar.json is available.</p>
+  </main>
+
+  <main id="kanji-view" class="page-view" style="display:none">
+    <div class="page-heading"><p class="eyebrow">WRITE & REMEMBER</p><h2>Kanji practice</h2><p>Choose a kanji from your study library. Draw each stroke in order with a mouse or touchscreen.</p></div>
+    <label class="kanji-search-label" for="kanji-search">Find a kanji</label>
+    <input id="kanji-search" class="kanji-search" type="search" placeholder="Search by kanji, reading, or meaning">
+    <div class="kanji-grid" id="kanji-list"></div>
+  </main>
+
+  <main id="kanji-practice-view" class="page-view" style="display:none">
+    <div class="reader-toolbar">
+      <button type="button" class="header-btn" id="kanji-back">← All kanji</button>
+      <button type="button" class="text-link" id="kanji-next">Next kanji →</button>
+    </div>
+    <section class="kanji-practice-card">
+      <div class="kanji-prompt">
+        <p class="eyebrow" id="kanji-practice-label">WRITE THIS KANJI</p>
+        <p class="kanji-round-label" id="kanji-round-label"></p>
+        <h2 id="kanji-practice-character" lang="ja"></h2>
+        <p id="kanji-practice-reading" lang="ja"></p>
+        <p id="kanji-practice-meaning"></p>
+        <p id="kanji-practice-context" class="kanji-context"></p>
+        <p id="kanji-instruction" class="kanji-instruction"></p>
+      </div>
+      <div id="kanji-drawing" class="kanji-drawing" aria-label="Kanji writing practice"></div>
+      <p id="kanji-status" class="kanji-status" aria-live="polite">Loading Japanese stroke-order guide…</p>
+      <div class="kanji-actions">
+        <button type="button" class="header-btn" id="kanji-show-order" disabled>Show stroke order</button>
+        <button type="button" class="header-btn" id="kanji-retry" disabled>Restart round</button>
+        <button type="button" class="deck-start" id="kanji-continue-round" style="display:none">Next round →</button>
+      </div>
+      <p class="kanjivg-credit">Stroke order: KanjiVG by Ulrich Apel — <a href="https://github.com/KanjiVG/kanjivg" target="_blank" rel="noreferrer">source</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noreferrer">CC BY-SA 3.0</a>.</p>
+    </section>
+  </main>
+
+  <main id="story-reader" class="page-view" style="display:none">
+    <div class="reader-toolbar">
+      <button type="button" class="header-btn" id="reader-back">← All stories</button>
+      <button type="button" class="header-btn" id="saved-words-open">Saved words</button>
+      <label class="furigana-toggle"><input type="checkbox" id="furigana-toggle" checked> Show furigana</label>
+    </div>
+    <div id="story-reader-content"></div>
+  </main>
+
+  <main id="saved-words-view" class="page-view" style="display:none">
+    <div class="reader-toolbar"><button type="button" class="header-btn" id="saved-words-back">← Back to reading</button><span class="saved-words-count" id="saved-words-count"></span></div>
+    <div class="page-heading"><p class="eyebrow">YOUR PERSONAL VOCABULARY</p><h2>Saved words</h2><p>Words you save while reading stay in this browser for your next study session.</p></div>
+    <div class="saved-word-list" id="saved-word-list"></div>
+  </main>
+
+  <div id="study">
+    <div class="study-top">
+      <button class="back-btn" id="tabs-btn">← Flashcards</button>
+      <span class="study-title" id="study-title"></span>
+    </div>
+    <div class="toolbar">
+      <div class="groups" id="groups"></div>
+    </div>
+    <div class="tools-row" id="tools-row">
+      <div class="mode-switch" id="mode-switch">
+        <button data-mode="cards" class="active">Cards</button>
+        <button data-mode="drill">Conjugation drill</button>
+      </div>
+      <button class="header-btn" id="cheat-btn" style="display:none">📋 Cheat sheet</button>
+    </div>
+    <div class="settings-row" id="settings-row">
+      <button class="header-btn" id="settings-btn" aria-expanded="false">⚙ Settings · <span id="settings-summary"></span> <span id="settings-caret">▾</span></button>
+    </div>
+    <div class="settings" id="settings">
+      <div class="settings-sec">
+        <div class="settings-h">Forms to show <span class="sub">(back of the cards and the drill)</span>
+          <button class="linkbtn" id="set-all">All</button><button class="linkbtn" id="set-none">None</button><button class="linkbtn" id="set-default">N5 only</button>
+        </div>
+        <div id="set-forms"></div>
+      </div>
+      <div class="settings-sec">
+        <div class="settings-h">Drill options</div>
+        <label class="opt"><input type="checkbox" id="opt-reading"> Show the reading (kana) above the word</label>
+        <label class="opt"><input type="checkbox" id="opt-form-label"> Show the Japanese form name in each prompt</label>
+        <label class="opt">Show a hint after <input type="number" id="opt-hint" min="1" max="10"> mistakes on the same form</label>
+      </div>
+    </div>
+    <div class="cheat" id="cheat"></div>
+    <div class="drill-empty" id="drill-empty">Nothing to practise yet.<br>Open <b>⚙ Settings</b> and tick at least one form.</div>
+    <div class="progress-row">
+      <span id="progress-label">0 / 0</span>
+      <div class="progress-bar"><div class="progress-fill" id="progress-fill" style="width:0%"></div></div>
+      <span id="known-label">0 known</span>
+    </div>
+
+    <div class="stage" id="stage">
+      <div class="card" id="card">
+        <div class="face front">
+          <span class="group-tag" id="tag-front"></span>
+          <span class="idx" id="idx-front"></span>
+          <div class="kanji" id="front-kanji"></div>
+          <div class="front-furigana" id="front-furigana"></div>
+          <div class="tap-hint">tap to reveal</div>
+        </div>
+        <div class="face back">
+          <span class="group-tag" id="tag-back"></span>
+          <span class="idx" id="idx-back"></span>
+          <div class="back-inner">
+            <div class="furigana" id="back-furigana"></div>
+            <div class="romaji" id="back-romaji"></div>
+            <div class="meaning" id="back-meaning"></div>
+            <div class="extras" id="back-extras"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="drill" id="drill">
+      <div class="drill-card">
+        <span class="group-tag" id="d-tag"></span>
+        <span class="idx" id="d-idx"></span>
+        <div class="d-word" id="d-word"></div>
+        <div class="d-reading" id="d-reading"></div>
+        <div class="d-meaning" id="d-meaning"></div>
+        <div class="d-prompt" id="d-prompt"></div>
+        <input id="d-input" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Type in English letters, e.g. akete → あけて">
+        <div class="d-feedback" id="d-feedback"></div>
+        <div class="d-hint" id="d-hint"></div>
+        <div class="extras" id="d-extras"></div>
+      </div>
+      <div class="controls" id="d-controls">
+        <button class="hint-btn" id="d-hint-btn" style="display:none">💡 Hint</button>
+        <button class="again" id="d-show">Show answer</button>
+        <button class="know" id="d-primary">Check</button>
+      </div>
+    </div>
+
+    <div style="text-align:center"><button class="mem-reset" id="mem-reset" style="display:none">Reset practice memory</button></div>
+
+    <div class="controls" id="controls">
+      <button class="nav" id="prev-btn">← Prev</button>
+      <button class="again" id="again-btn">Study again</button>
+      <button class="know" id="know-btn">Got it ✓</button>
+      <button class="nav" id="next-btn">Next →</button>
+    </div>
+
+    <div class="done" id="done-screen" style="display:none">
+      <div class="glyph">完</div>
+      <h2>Deck complete</h2>
+      <p id="done-summary"></p>
+      <button id="restart-btn">Study again</button>
+    </div>
+  </div>
+</div>
+
+<script src="js/app.js?v=36" defer></script>
+</body>
+</html>

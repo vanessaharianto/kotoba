@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kotoba database builder</title>
+<style>
+body{font-family:system-ui,sans-serif;max-width:720px;margin:48px auto;padding:0 20px;background:#f5f0e6;color:#29251e;line-height:1.55}h1{font-family:Georgia,serif}main{background:#fffaf1;border:1px solid #d8d0c0;padding:24px;border-radius:8px}label{display:block;margin:18px 0}button{background:#3c4b66;color:white;border:0;border-radius:5px;padding:11px 16px;font:inherit;font-weight:600;cursor:pointer}#status{margin-top:18px;white-space:pre-wrap;color:#574e40}.note{color:#726958;font-size:.92rem}.warning{border-left:4px solid #ad8a4e;padding-left:12px}
+</style>
+</head>
+<body>
+<main>
+<h1>Kotoba database builder</h1>
+<p>Use this on your computer when you edit your Excel vocabulary file. It converts study sheets into <code>database.json</code> and hint sheets into <code>hints.json</code>; the website loads both automatically. The workbook is processed in this browser; it is not uploaded.</p>
+<label><input id="exclude-tracker" type="checkbox" checked> Exclude the personal “Recognition - Active” tracker</label>
+<label>Choose your updated workbook: <input id="file" type="file" accept=".xlsx,.xls"></label>
+<button id="build" disabled>Prepare JSON files</button>
+<div id="downloads" style="display:none;gap:10px;flex-wrap:wrap;margin-top:14px"><button id="download-database">Download database.json</button><button id="download-hints">Download hints.json</button></div>
+<p class="note warning">The generated database is readable by site visitors. Keeping the Excel workbook out of GitHub prevents direct workbook downloads, but it does not hide the vocabulary used by the public site.</p>
+<div id="status" role="status"></div>
+</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<script>
+const meanings={
+  'Ending':'Word ending or special type used to choose the pattern.','ます':'Polite non-past affirmative form.','て-form':'Links actions; also used for requests and helper grammar.','た-form':'Casual past affirmative form.','ない':'Casual present negative form.','なかった':'Casual past negative form.','Potential':'Ability: can or be able to do something.','Volitional':'Suggestion or intention: let’s / I will.','ば-form':'Conditional: if…','たら-form':'Conditional: if or when…','なければ':'If not…; often used to mean must…','なかったら':'If something did not happen…','なさい':'Gentle or familiar command.','Imperative':'Direct, blunt command.','Passive':'Passive voice: something is done to someone/something.','Causative':'Cause or allow someone to do something.','Causative-passive':'Be made or forced to do something.','ず':'Formal or literary negative: without doing / not doing.','ずに':'Without doing; often links to the next action.','ぬ':'Formal or literary negative ending (not / never).','ん':'Casual spoken negative ending.','く-form':'Adverb form of an い-adjective.','かった-form':'Casual past affirmative form of an い-adjective.','くない-form':'Casual present negative form of an い-adjective.','くて-form':'Links an い-adjective to another phrase or action.','くなかった-form':'Casual past negative form of an い-adjective.','に-form':'Adverb form of a な-adjective.','だった-form':'Casual past affirmative form of a な-adjective.','じゃない-form':'Casual present negative form of a な-adjective.','です-form':'Polite affirmative form of a な-adjective.','で-form':'Links a な-adjective to another phrase or action.','じゃなかった-form':'Casual past negative form of a な-adjective.','Note':'Usage notes and exceptions for the pattern.'
+};
+function describe(h){
+  if(!h)return '';
+  const s=String(h).trim();
+  for(const [key,value] of Object.entries(meanings)) if(s===key||s.startsWith(key+' ')) return value;
+  return /^notes?$/i.test(s)?meanings.Note:'Form label; see examples below.';
+}
+function cleanRows(ws){
+  const rows=XLSX.utils.sheet_to_json(ws,{header:1,raw:true,defval:null});
+  for(const row of rows) while(row.length && row[row.length-1]===null) row.pop();
+  while(rows.length && !rows[rows.length-1].some(v=>v!==null&&v!=='')) rows.pop();
+  return rows;
+}
+function hasUncachedFormula(ws){
+  return Object.keys(ws).some(k=>!k.startsWith('!') && ws[k] && ws[k].f && (ws[k].v===undefined || ws[k].v===null));
+}
+const input=document.getElementById('file'), build=document.getElementById('build'), status=document.getElementById('status');
+const downloads=document.getElementById('downloads');
+let outputFiles=null;
+function downloadJson(filename,content){const blob=new Blob([content],{type:'application/json;charset=utf-8'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=filename;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}
+document.getElementById('download-database').addEventListener('click',()=>outputFiles&&downloadJson('database.json',outputFiles.database));
+document.getElementById('download-hints').addEventListener('click',()=>outputFiles&&downloadJson('hints.json',outputFiles.hints));
+input.addEventListener('change',()=>{build.disabled=!input.files.length;status.textContent='';downloads.style.display='none';outputFiles=null;});
+build.addEventListener('click',async()=>{
+  build.disabled=true; status.textContent='Reading workbook…';
+  try{
+    const file=input.files[0], wb=XLSX.read(await file.arrayBuffer(),{type:'array'}), decks={}, hints={};
+    let excluded=0, missingFormulaValues=false;
+    wb.SheetNames.forEach(name=>{
+      if(document.getElementById('exclude-tracker').checked && name==='Recognition - Active'){excluded++;return;}
+      const ws=wb.Sheets[name]; if(hasUncachedFormula(ws)) missingFormulaValues=true;
+      const rows=cleanRows(ws); if(!rows.length)return;
+      const isHint=/^\s*hints?(\b|[^a-z])/i.test(name);
+      if(isHint && !(rows[1] && String(rows[1][0]||'').trim().toLowerCase()==='form meaning')){
+        rows.splice(1,0,['Form meaning',...rows[0].slice(1).map(describe)]);
+      }
+      (isHint?hints:decks)[name]=rows;
+    });
+    outputFiles={database:JSON.stringify({version:1,sheets:decks},null,2),hints:JSON.stringify({version:1,sheets:hints},null,2)};
+    downloads.style.display='flex';
+    status.textContent=`Prepared ${Object.keys(decks).length} study sheets and ${Object.keys(hints).length} hint sheets. Click each download button, then place both files in the website’s json/ folder. ${excluded?'The personal Recognition - Active sheet was excluded. ':''}`+
+      (missingFormulaValues?'\n\nWarning: Some formulas have no saved result. Open the workbook in Excel, recalculate it, save it, and build again.':'');
+  }catch(err){status.textContent='Could not read the workbook. '+err.message;}
+  build.disabled=false;
+});
+</script>
+</body>
+</html>
+

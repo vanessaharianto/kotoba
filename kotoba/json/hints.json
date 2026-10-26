@@ -1,0 +1,696 @@
+{
+  "version": 1,
+  "sheets": {
+    "Hint - Godan te-ta": [
+      [
+        "Ending",
+        "て-form",
+        "た-form",
+        "Note"
+      ],
+      [
+        "Form meaning",
+        "Links actions; also used for requests and helper grammar.",
+        "Casual past affirmative form.",
+        "Usage notes and exceptions for the pattern."
+      ],
+      [
+        "う・つ・る",
+        "って",
+        "った",
+        "Small っ || Connects / requests / used with other grammar"
+      ],
+      [
+        "む・ぶ・ぬ",
+        "んで",
+        "んだ",
+        "ん sound || Past / completed"
+      ],
+      [
+        "く",
+        "いて",
+        "いた",
+        "Exception: 行く（いく）uses って／った."
+      ],
+      [
+        "ぐ",
+        "いで",
+        "いだ",
+        "Voiced: で / だ"
+      ],
+      [
+        "す",
+        "して",
+        "した",
+        "This pattern is different from the others."
+      ],
+      [
+        "行く・いく",
+        "行って・いって",
+        "行った・いった",
+        "Exception: 行く follows the う・つ・る pattern, not く"
+      ]
+    ],
+    "Hint - Godan masu-nai": [
+      [
+        "Ending",
+        "ます",
+        "ない",
+        "Note"
+      ],
+      [
+        "Form meaning",
+        "Polite non-past affirmative form.",
+        "Casual present negative form.",
+        "Usage notes and exceptions for the pattern."
+      ],
+      [
+        "う",
+        "います",
+        "わない",
+        "う becomes わ (not あ) before ない"
+      ],
+      [
+        "く",
+        "きます",
+        "かない"
+      ],
+      [
+        "ぐ",
+        "ぎます",
+        "がない"
+      ],
+      [
+        "す",
+        "します",
+        "さない"
+      ],
+      [
+        "つ",
+        "ちます",
+        "たない"
+      ],
+      [
+        "ぬ",
+        "にます",
+        "なない"
+      ],
+      [
+        "ぶ",
+        "びます",
+        "ばない"
+      ],
+      [
+        "む",
+        "みます",
+        "まない"
+      ],
+      [
+        "る",
+        "ります",
+        "らない"
+      ]
+    ],
+    "Hint - Godan a-row": [
+      [
+        "Ending",
+        "Passive",
+        "Causative",
+        "Causative-passive",
+        "ず",
+        "ずに",
+        "ぬ",
+        "ん",
+        "Note"
+      ],
+      [
+        "Form meaning",
+        "Passive voice: something is done to someone/something.",
+        "Cause or allow someone to do something.",
+        "Be made or forced to do something.",
+        "Formal or literary negative: without doing / not doing.",
+        "Without doing; often links to the next action.",
+        "Formal or literary negative ending (not / never).",
+        "Casual spoken negative ending.",
+        "Usage notes and exceptions for the pattern."
+      ],
+      [
+        "う",
+        "われる",
+        "わせる",
+        "わせられる",
+        "わず",
+        "わずに",
+        "わぬ",
+        "わん",
+        "う becomes わ (not あ)"
+      ],
+      [
+        "く",
+        "かれる",
+        "かせる",
+        "かせられる",
+        "かず",
+        "かずに",
+        "かぬ",
+        "かん",
+        "Change the ending to its あ-row sound (あ・か・が・さ・た・な・ば・ま・ら), then add the ending"
+      ],
+      [
+        "ぐ",
+        "がれる",
+        "がせる",
+        "がせられる",
+        "がず",
+        "がずに",
+        "がぬ",
+        "がん"
+      ],
+      [
+        "す",
+        "される",
+        "させる",
+        "させられる",
+        "さず",
+        "さずに",
+        "さぬ",
+        "さん"
+      ],
+      [
+        "つ",
+        "たれる",
+        "たせる",
+        "たせられる",
+        "たず",
+        "たずに",
+        "たぬ",
+        "たん"
+      ],
+      [
+        "ぬ",
+        "なれる",
+        "なせる",
+        "なせられる",
+        "なず",
+        "なずに",
+        "なぬ",
+        "なん"
+      ],
+      [
+        "ぶ",
+        "ばれる",
+        "ばせる",
+        "ばせられる",
+        "ばず",
+        "ばずに",
+        "ばぬ",
+        "ばん"
+      ],
+      [
+        "む",
+        "まれる",
+        "ませる",
+        "ませられる",
+        "まず",
+        "まずに",
+        "まぬ",
+        "まん"
+      ],
+      [
+        "る",
+        "られる",
+        "らせる",
+        "らせられる",
+        "らず",
+        "らずに",
+        "らぬ",
+        "らん"
+      ]
+    ],
+    "Hint - Godan e-row": [
+      [
+        "Ending",
+        "Potential",
+        "ば-form",
+        "Imperative",
+        "Note"
+      ],
+      [
+        "Form meaning",
+        "Ability: can or be able to do something.",
+        "Conditional: if…",
+        "Direct, blunt command.",
+        "Usage notes and exceptions for the pattern."
+      ],
+      [
+        "う",
+        "える",
+        "えば",
+        "え",
+        "Potential means \"can\"; imperative is a direct command."
+      ],
+      [
+        "く",
+        "ける",
+        "けば",
+        "け",
+        "Everything use the え-row sound (え・け・げ・せ・て・ね・べ・め・れ) || Potential: can do / Imperative: blunt command"
+      ],
+      [
+        "ぐ",
+        "げる",
+        "げば",
+        "げ"
+      ],
+      [
+        "す",
+        "せる",
+        "せば",
+        "せ"
+      ],
+      [
+        "つ",
+        "てる",
+        "てば",
+        "て"
+      ],
+      [
+        "ぬ",
+        "ねる",
+        "ねば",
+        "ね"
+      ],
+      [
+        "ぶ",
+        "べる",
+        "べば",
+        "べ"
+      ],
+      [
+        "む",
+        "める",
+        "めば",
+        "め"
+      ],
+      [
+        "る",
+        "れる",
+        "れば",
+        "れ"
+      ]
+    ],
+    "Hint - Godan o-row": [
+      [
+        "Ending",
+        "Volitional",
+        "Note"
+      ],
+      [
+        "Form meaning",
+        "Suggestion or intention: let’s / I will.",
+        "Usage notes and exceptions for the pattern."
+      ],
+      [
+        "う・く・ぐ・す・つ・ぬ・ぶ・む・る",
+        "Change the final kana to its お-row sound, then add う.\n書く → 書こう（かこう）\n読む → 読もう（よもう）",
+        "Row changes: う→お, く→こ, ぐ→ご, す→そ, つ→と, ぬ→の, ぶ→ぼ, む→も, る→ろ. This is the casual “let’s / I’ll” form."
+      ]
+    ],
+    "Hint - Verb": [
+      [
+        "Ending",
+        "なかった",
+        "たら-form (if… when..)",
+        "なければ",
+        "なかったら",
+        "なさい",
+        "Note"
+      ],
+      [
+        "Form meaning",
+        "Casual past negative form.",
+        "Conditional: if or when…",
+        "If not…; often used to mean must…",
+        "If something did not happen…",
+        "Gentle or familiar command.",
+        "Usage notes and exceptions for the pattern."
+      ],
+      [
+        "*",
+        "ない-form: drop い, add かった",
+        "たら-form",
+        "ない-form: drop い, add ければ",
+        "なかった-form + ら",
+        "ます-stem + なさい",
+        "Same for every verb (Godan, Ichidan and irregular) || 書かない → 書かなかった / 書いた → 書いたら / 書きます → 書きなさい"
+      ]
+    ],
+    "Hint - Ichidan": [
+      [
+        "Ending",
+        "ます",
+        "て",
+        "ない",
+        "た",
+        "なかった",
+        "Potential",
+        "Volitional",
+        "ば-form",
+        "たら-form",
+        "なければ",
+        "なかったら",
+        "なさい",
+        "Imperative",
+        "Passive",
+        "Causative",
+        "Causative-passive",
+        "ず",
+        "ずに",
+        "ぬ",
+        "ん",
+        "Note"
+      ],
+      [
+        "Form meaning",
+        "Polite non-past affirmative form.",
+        "Form label; see the examples below.",
+        "Casual present negative form.",
+        "Form label; see the examples below.",
+        "Casual past negative form.",
+        "Ability: can or be able to do something.",
+        "Suggestion or intention: let’s / I will.",
+        "Conditional: if…",
+        "Conditional: if or when…",
+        "If not…; often used to mean must…",
+        "If something did not happen…",
+        "Gentle or familiar command.",
+        "Direct, blunt command.",
+        "Passive voice: something is done to someone/something.",
+        "Cause or allow someone to do something.",
+        "Be made or forced to do something.",
+        "Formal or literary negative: without doing / not doing.",
+        "Without doing; often links to the next action.",
+        "Formal or literary negative ending (not / never).",
+        "Casual spoken negative ending.",
+        "Usage notes and exceptions for the pattern."
+      ],
+      [
+        "る",
+        "ます",
+        "て",
+        "ない",
+        "た",
+        "なかった",
+        "られる",
+        "よう",
+        "れば",
+        "たら",
+        "なければ",
+        "なかったら",
+        "なさい",
+        "ろ",
+        "られる",
+        "させる",
+        "させられる",
+        "ず",
+        "ずに",
+        "ぬ",
+        "ん",
+        "Drop る, then add the ending. || Usually ends in いる／える, but there are exceptions. A verb ending in る is not automatically Ichidan: 帰る is Godan."
+      ]
+    ],
+    "Hint - Irregular": [
+      [
+        "Ending",
+        "ます",
+        "て",
+        "ない",
+        "た",
+        "なかった",
+        "Potential",
+        "Volitional",
+        "ば-form",
+        "たら-form",
+        "なければ",
+        "なかったら",
+        "なさい",
+        "Imperative",
+        "Passive",
+        "Causative",
+        "Causative-passive",
+        "ず",
+        "ずに",
+        "ぬ",
+        "ん",
+        "Note"
+      ],
+      [
+        "Form meaning",
+        "Polite non-past affirmative form.",
+        "Form label; see the examples below.",
+        "Casual present negative form.",
+        "Form label; see the examples below.",
+        "Casual past negative form.",
+        "Ability: can or be able to do something.",
+        "Suggestion or intention: let’s / I will.",
+        "Conditional: if…",
+        "Conditional: if or when…",
+        "If not…; often used to mean must…",
+        "If something did not happen…",
+        "Gentle or familiar command.",
+        "Direct, blunt command.",
+        "Passive voice: something is done to someone/something.",
+        "Cause or allow someone to do something.",
+        "Be made or forced to do something.",
+        "Formal or literary negative: without doing / not doing.",
+        "Without doing; often links to the next action.",
+        "Formal or literary negative ending (not / never).",
+        "Casual spoken negative ending.",
+        "Usage notes and exceptions for the pattern."
+      ],
+      [
+        "する",
+        "します",
+        "して",
+        "しない",
+        "した",
+        "しなかった",
+        "できる",
+        "しよう",
+        "すれば",
+        "したら",
+        "しなければ",
+        "しなかったら",
+        "しなさい",
+        "しろ",
+        "される",
+        "させる",
+        "させられる",
+        "せず",
+        "せずに",
+        "せぬ",
+        "せん",
+        "Any word ending in する (勉強する, 運転する…)"
+      ],
+      [
+        "愛する・あいする",
+        "愛します・あいします",
+        "愛して・あいして",
+        "愛さない・あいさない",
+        "愛した・あいした",
+        "愛さなかった・あいさなかった",
+        "愛せる・あいせる",
+        "愛そう・あいそう",
+        "愛せば・あいせば",
+        "愛したら・あいしたら",
+        "愛さなければ・あいさなければ",
+        "愛さなかったら・あいさなかったら",
+        "愛しなさい・あいしなさい",
+        "愛せ・あいせ",
+        "愛される・あいされる",
+        "愛させる・あいさせる",
+        "愛させられる・あいさせられる",
+        "愛さず・あいさず",
+        "愛さずに・あいさずに",
+        "愛さぬ・あいさぬ",
+        "愛さん・あいさん",
+        "Exception: 愛する uses さない, not しない"
+      ],
+      [
+        "くる",
+        "きます",
+        "きて",
+        "こない",
+        "きた",
+        "こなかった",
+        "こられる",
+        "こよう",
+        "くれば",
+        "きたら",
+        "こなければ",
+        "こなかったら",
+        "きなさい",
+        "こい",
+        "こられる",
+        "こさせる",
+        "こさせられる",
+        "こず",
+        "こずに",
+        "こぬ",
+        "こん",
+        "Watch out: こない, but きます / きて / きた"
+      ],
+      [
+        "ある",
+        "あります",
+        "あって",
+        "ない",
+        "あった",
+        "なかった",
+        null,
+        "あろう",
+        "あれば",
+        "あったら",
+        "なければ",
+        "なかったら",
+        null,
+        null,
+        null,
+        null,
+        null,
+        "あらず",
+        "あらずに",
+        "あらぬ",
+        "あらん",
+        "Negative is ない (not あらない)"
+      ],
+      [
+        "ゃる",
+        "ゃいます",
+        "ゃって",
+        "ゃらない",
+        "ゃった",
+        "ゃらなかった",
+        null,
+        null,
+        "ゃれば",
+        "ゃったら",
+        "ゃらなければ",
+        "ゃらなかったら",
+        "ゃい",
+        "ゃい",
+        null,
+        null,
+        null,
+        "ゃらず",
+        "ゃらずに",
+        "ゃらぬ",
+        "ゃらん",
+        "Honorific (いらっしゃる, おっしゃる): ます form uses い, not り"
+      ],
+      [
+        "さる",
+        "さいます",
+        "さって",
+        "さらない",
+        "さった",
+        "さらなかった",
+        null,
+        null,
+        "されば",
+        "さったら",
+        "さらなければ",
+        "さらなかったら",
+        "さい",
+        "さい",
+        null,
+        null,
+        null,
+        "さらず",
+        "さらずに",
+        "さらぬ",
+        "さらん",
+        "Honorific (くださる, なさる): ます form uses い, not り"
+      ]
+    ],
+    "Hint - い-adjectives": [
+      [
+        "Ending",
+        "く-form",
+        "かった-form",
+        "くない-form",
+        "くて-form",
+        "くなかった-form",
+        "Note"
+      ],
+      [
+        "Form meaning",
+        "Adverb form of an い-adjective.",
+        "Casual past affirmative form of an い-adjective.",
+        "Casual present negative form of an い-adjective.",
+        "Links an い-adjective to another phrase or action.",
+        "Casual past negative form of an い-adjective.",
+        "Usage notes and exceptions for the pattern."
+      ],
+      [
+        "い",
+        "く",
+        "かった",
+        "くない",
+        "くて",
+        "くなかった",
+        "Replace い"
+      ],
+      [
+        "「いい」",
+        "よく",
+        "よかった",
+        "よくない",
+        "よくて",
+        "よくなかった",
+        "Irregular: いい changes to よ-"
+      ],
+      [
+        "こいい",
+        "こよく",
+        "こよかった",
+        "こよくない",
+        "こよくて",
+        "こよくなかった",
+        "Irregular: かっこいい → かっこよく (drop いい, add よく)"
+      ]
+    ],
+    "Hint - な-Adjectives": [
+      [
+        "Ending",
+        "に-form",
+        "だった-form",
+        "じゃない-form",
+        "です-form",
+        "で-form",
+        "じゃなかった-form",
+        "Note"
+      ],
+      [
+        "Form meaning",
+        "Adverb form of a な-adjective.",
+        "Casual past affirmative form of a な-adjective.",
+        "Casual present negative form of a な-adjective.",
+        "Polite affirmative form of a な-adjective.",
+        "Links a な-adjective to another phrase or action.",
+        "Casual past negative form of a な-adjective.",
+        "Usage notes and exceptions for the pattern."
+      ],
+      [
+        "*",
+        "add に",
+        "add だった",
+        "add じゃない",
+        "add です",
+        "add で",
+        "add じゃなかった",
+        "Keep the word as it is and add the ending (きれい → きれいに)"
+      ]
+    ]
+  }
+}

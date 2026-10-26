@@ -1,0 +1,1507 @@
+{
+  "stories": [
+    {
+      "id": "rainbow-park",
+      "title": "A Rainbow in the Park",
+      "level": "N5",
+      "summary": "A quiet Sunday walk after the rain.",
+      "minutes": 4,
+      "segments": [
+        {
+          "html": "<ruby>日曜日<rt>にちようび</rt></ruby>の<ruby>朝<rt>あさ</rt></ruby>、あきは<ruby>少<rt>すこ</rt></ruby>し<ruby>早<rt>はや</rt></ruby>く<ruby>起<rt>お</rt></ruby>きました。<ruby>外<rt>そと</rt></ruby>を見ると、<ruby>雨<rt>あめ</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>っていました。でも、あきは<ruby>公園<rt>こうえん</rt></ruby>へ<ruby>行<rt>い</rt></ruby>きたかったので、かさを<ruby>持<rt>も</rt></ruby>って<ruby>家<rt>いえ</rt></ruby>を<ruby>出<rt>で</rt></ruby>ました。",
+          "translation": "On Sunday morning, Aki got up a little early. When she looked outside, it was raining. But she wanted to go to the park, so she took an umbrella and left home.",
+          "question": "Where did Aki want to go?",
+          "questionJa": "あきはどこへ<ruby>行<rt>い</rt></ruby>きたかったですか。",
+          "options": [
+            "To the park",
+            "To the library",
+            "To the station"
+          ],
+          "answerIndex": 0,
+          "explanation": "あきは公園へ行きたかったです。",
+          "optionsJa": [
+            "公園",
+            "<ruby>図書館<rt>としょかん</rt></ruby>",
+            "<ruby>駅<rt>えき</rt></ruby>"
+          ]
+        },
+        {
+          "html": "<ruby>公園<rt>こうえん</rt></ruby>に<ruby>着<rt>つ</rt></ruby>いたとき、<ruby>雨<rt>あめ</rt></ruby>がやみました。あきはかさを<ruby>閉<rt>と</rt></ruby>じて、<ruby>池<rt>いけ</rt></ruby>のそばをゆっくり<ruby>歩<rt>ある</rt></ruby>きました。すると、<ruby>雲<rt>くも</rt></ruby>の<ruby>間<rt>あいだ</rt></ruby>から<ruby>太陽<rt>たいよう</rt></ruby>が<ruby>出<rt>で</rt></ruby>て、<ruby>空<rt>そら</rt></ruby>に<ruby>大<rt>おお</rt></ruby>きな<ruby>虹<rt>にじ</rt></ruby>が<ruby>見<rt>み</rt></ruby>えました。",
+          "translation": "When Aki arrived at the park, the rain stopped. She closed her umbrella and walked slowly beside the pond. Then the sun came out from between the clouds, and she saw a big rainbow in the sky.",
+          "question": "What did Aki see in the sky?",
+          "questionJa": "あきは<ruby>空<rt>そら</rt></ruby>に<ruby>何<rt>なに</rt></ruby>を<ruby>見<rt>み</rt></ruby>ましたか。",
+          "options": [
+            "A bright moon",
+            "A big rainbow",
+            "A small bird"
+          ],
+          "answerIndex": 1,
+          "explanation": "空に大きな虹が見えました。",
+          "optionsJa": [
+            "<ruby>明<rt>あか</rt></ruby>るい<ruby>月<rt>つき</rt></ruby>",
+            "<ruby>大<rt>おお</rt></ruby>きな<ruby>虹<rt>にじ</rt></ruby>",
+            "<ruby>小<rt>ちい</rt></ruby>さい<ruby>鳥<rt>とり</rt></ruby>"
+          ]
+        },
+        {
+          "html": "あきは<ruby>写真<rt>しゃしん</rt></ruby>を<ruby>何枚<rt>なんまい</rt></ruby>かとりました。それから<ruby>家<rt>いえ</rt></ruby>へ<ruby>帰<rt>かえ</rt></ruby>って、お<ruby>母<rt>かあ</rt></ruby>さんと<ruby>写真<rt>しゃしん</rt></ruby>を見ました。お<ruby>母<rt>かあ</rt></ruby>さんは「きれいな<ruby>虹<rt>にじ</rt></ruby>だね」と<ruby>言<rt>い</rt></ruby>いました。あきはまた<ruby>晴<rt>は</rt></ruby>れた<ruby>日<rt>ひ</rt></ruby>に<ruby>公園<rt>こうえん</rt></ruby>へ<ruby>行<rt>い</rt></ruby>きたいと<ruby>思<rt>おも</rt></ruby>いました。",
+          "translation": "Aki took several photos. Then she went home and looked at them with her mother. Her mother said, “What a beautiful rainbow.” Aki thought she wanted to go to the park again on a sunny day.",
+          "question": "What did Aki do after she got home?",
+          "questionJa": "あきは<ruby>家<rt>いえ</rt></ruby>へ<ruby>帰<rt>かえ</rt></ruby>ってから、<ruby>何<rt>なに</rt></ruby>をしましたか。",
+          "options": [
+            "She went back to the park",
+            "She made dinner",
+            "She looked at the photos with her mother"
+          ],
+          "answerIndex": 2,
+          "explanation": "お母さんと写真を見ました。",
+          "optionsJa": [
+            "<ruby>公園<rt>こうえん</rt></ruby>へ<ruby>戻<rt>もど</rt></ruby>った",
+            "<ruby>夕食<rt>ゆうしょく</rt></ruby>を<ruby>作<rt>つく</rt></ruby>った",
+            "お<ruby>母<rt>かあ</rt></ruby>さんと<ruby>写真<rt>しゃしん</rt></ruby>を<ruby>見<rt>み</rt></ruby>た"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "library-book",
+      "title": "A New Book at the Library",
+      "level": "N5",
+      "summary": "Yuta returns a book and finds a new favorite subject.",
+      "minutes": 4,
+      "segments": [
+        {
+          "html": "<ruby>学校<rt>がっこう</rt></ruby>が<ruby>終<rt>お</rt></ruby>わったあと、ゆうたは<ruby>友達<rt>ともだち</rt></ruby>と<ruby>図書館<rt>としょかん</rt></ruby>へ<ruby>行<rt>い</rt></ruby>きました。<ruby>外<rt>そと</rt></ruby>は<ruby>寒<rt>さむ</rt></ruby>かったので、二人はあたたかい<ruby>図書館<rt>としょかん</rt></ruby>で少し<ruby>休<rt>やす</rt></ruby>みました。",
+          "translation": "After school, Yuta went to the library with his friend. It was cold outside, so the two of them rested for a while in the warm library.",
+          "question": "Where did Yuta go after school?",
+          "questionJa": "ゆうたは<ruby>学校<rt>がっこう</rt></ruby>のあと、どこへ<ruby>行<rt>い</rt></ruby>きましたか。",
+          "options": [
+            "To the park",
+            "To the library",
+            "To a friend's house"
+          ],
+          "answerIndex": 1,
+          "explanation": "ゆうたは図書館へ行きました。",
+          "optionsJa": [
+            "公園",
+            "<ruby>図書館<rt>としょかん</rt></ruby>",
+            "<ruby>友達<rt>ともだち</rt></ruby>の<ruby>家<rt>いえ</rt></ruby>"
+          ]
+        },
+        {
+          "html": "ゆうたは<ruby>先週<rt>せんしゅう</rt></ruby><ruby>借<rt>か</rt></ruby>りた<ruby>本<rt>ほん</rt></ruby>をカウンターで<ruby>返<rt>かえ</rt></ruby>しました。<ruby>図書館<rt>としょかん</rt></ruby>の人が「この<ruby>本<rt>ほん</rt></ruby>はどうでしたか」と<ruby>聞<rt>き</rt></ruby>きました。ゆうたは「とてもおもしろかったです」と<ruby>答<rt>こた</rt></ruby>えました。",
+          "translation": "Yuta returned at the counter the book he had borrowed last week. The librarian asked, “How was this book?” Yuta answered, “It was very interesting.”",
+          "question": "What did Yuta return?",
+          "questionJa": "ゆうたは<ruby>何<rt>なに</rt></ruby>を<ruby>返<rt>かえ</rt></ruby>しましたか。",
+          "options": [
+            "An umbrella",
+            "A pencil",
+            "A book"
+          ],
+          "answerIndex": 2,
+          "explanation": "先週借りた本を返しました。",
+          "optionsJa": [
+            "<ruby>傘<rt>かさ</rt></ruby>",
+            "<ruby>鉛筆<rt>えんぴつ</rt></ruby>",
+            "<ruby>本<rt>ほん</rt></ruby>"
+          ]
+        },
+        {
+          "html": "それから、ゆうたは<ruby>動物<rt>どうぶつ</rt></ruby>の<ruby>本<rt>ほん</rt></ruby>を<ruby>探<rt>さが</rt></ruby>しました。<ruby>友達<rt>ともだち</rt></ruby>は<ruby>電車<rt>でんしゃ</rt></ruby>の<ruby>本<rt>ほん</rt></ruby>を<ruby>選<rt>えら</rt></ruby>びました。二人は<ruby>本<rt>ほん</rt></ruby>を<ruby>一冊<rt>いっさつ</rt></ruby>ずつ<ruby>借<rt>か</rt></ruby>りて、<ruby>帰<rt>かえ</rt></ruby>りのバスで<ruby>読<rt>よ</rt></ruby>みました。",
+          "translation": "Then Yuta looked for a book about animals. His friend chose a book about trains. They each borrowed a book and read on the bus home.",
+          "question": "What kind of book did Yuta choose?",
+          "questionJa": "ゆうたはどんな<ruby>本<rt>ほん</rt></ruby>を<ruby>選<rt>えら</rt></ruby>びましたか。",
+          "options": [
+            "A book about animals",
+            "A book about trains",
+            "A book about cooking"
+          ],
+          "answerIndex": 0,
+          "explanation": "動物の本を選びました。",
+          "optionsJa": [
+            "<ruby>動物<rt>どうぶつ</rt></ruby>の<ruby>本<rt>ほん</rt></ruby>",
+            "<ruby>電車<rt>でんしゃ</rt></ruby>の<ruby>本<rt>ほん</rt></ruby>",
+            "<ruby>料理<rt>りょうり</rt></ruby>の<ruby>本<rt>ほん</rt></ruby>"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lunchbox",
+      "title": "Mika's Lunchbox",
+      "level": "N5",
+      "summary": "Mika prepares lunch with her mother and shares it at school.",
+      "minutes": 4,
+      "segments": [
+        {
+          "html": "みかは<ruby>朝<rt>あさ</rt></ruby>、お<ruby>母<rt>かあ</rt></ruby>さんといっしょにおべんとうを<ruby>作<rt>つく</rt></ruby>りました。お<ruby>母<rt>かあ</rt></ruby>さんはごはんを<ruby>入<rt>い</rt></ruby>れて、みかは<ruby>卵<rt>たまご</rt></ruby>を<ruby>焼<rt>や</rt></ruby>きました。",
+          "translation": "In the morning, Mika made a lunchbox with her mother. Her mother put in the rice, and Mika cooked an egg.",
+          "question": "Who made lunch with Mika?",
+          "questionJa": "みかは<ruby>誰<rt>だれ</rt></ruby>とおべんとうを<ruby>作<rt>つく</rt></ruby>りましたか。",
+          "options": [
+            "Her teacher",
+            "Her friend Ken",
+            "Her mother"
+          ],
+          "answerIndex": 2,
+          "explanation": "お母さんと作りました。",
+          "optionsJa": [
+            "<ruby>先生<rt>せんせい</rt></ruby>",
+            "<ruby>友達<rt>ともだち</rt></ruby>のけん",
+            "お<ruby>母<rt>かあ</rt></ruby>さん"
+          ]
+        },
+        {
+          "html": "<ruby>昼休<rt>ひるやす</rt></ruby>みになると、みかは<ruby>友達<rt>ともだち</rt></ruby>のけんと<ruby>庭<rt>にわ</rt></ruby>へ<ruby>行<rt>い</rt></ruby>きました。二人は<ruby>木<rt>き</rt></ruby>の<ruby>下<rt>した</rt></ruby>に<ruby>座<rt>すわ</rt></ruby>って、おべんとうを<ruby>食<rt>た</rt></ruby>べました。",
+          "translation": "When lunch break began, Mika went to the garden with her friend Ken. They sat under a tree and ate their lunch.",
+          "question": "Where did Mika and Ken eat?",
+          "questionJa": "みかとけんはどこで<ruby>食<rt>た</rt></ruby>べましたか。",
+          "options": [
+            "In the garden",
+            "In the library",
+            "At home"
+          ],
+          "answerIndex": 0,
+          "explanation": "庭で食べました。",
+          "optionsJa": [
+            "<ruby>庭<rt>にわ</rt></ruby>",
+            "<ruby>図書館<rt>としょかん</rt></ruby>",
+            "<ruby>家<rt>いえ</rt></ruby>"
+          ]
+        },
+        {
+          "html": "おべんとうには、<ruby>卵<rt>たまご</rt></ruby>と<ruby>小<rt>ちい</rt></ruby>さなおにぎりが<ruby>入<rt>はい</rt></ruby>っていました。けんは「おいしそうだね」と<ruby>言<rt>い</rt></ruby>いました。みかはおにぎりを一つけんにあげて、二人で<ruby>笑<rt>わら</rt></ruby>いました。",
+          "translation": "There was an egg and small rice balls in the lunchbox. Ken said, “That looks delicious.” Mika gave Ken one rice ball, and they laughed together.",
+          "question": "What did Mika give Ken?",
+          "questionJa": "みかはけんに<ruby>何<rt>なに</rt></ruby>をあげましたか。",
+          "options": [
+            "An egg",
+            "A rice ball",
+            "A drink"
+          ],
+          "answerIndex": 1,
+          "explanation": "おにぎりを一つあげました。",
+          "optionsJa": [
+            "<ruby>卵<rt>たまご</rt></ruby>",
+            "おにぎり",
+            "<ruby>飲<rt>の</rt></ruby>み<ruby>物<rt>もの</rt></ruby>"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rainy-day-cafe",
+      "title": "A Rainy Day at the Café",
+      "level": "N4",
+      "summary": "Haruka waits out the rain and meets an old classmate.",
+      "minutes": 7,
+      "segments": [
+        {
+          "html": "<ruby>土曜日<rt>どようび</rt></ruby>の<ruby>午後<rt>ごご</rt></ruby>、はるかは<ruby>駅前<rt>えきまえ</rt></ruby>の<ruby>本屋<rt>ほんや</rt></ruby>へ<ruby>向<rt>む</rt></ruby>かっていました。<ruby>家<rt>いえ</rt></ruby>を出たときはいい<ruby>天気<rt>てんき</rt></ruby>でしたが、<ruby>歩<rt>ある</rt></ruby>いているうちに、だんだん<ruby>空<rt>そら</rt></ruby>が<ruby>暗<rt>くら</rt></ruby>くなりました。",
+          "translation": "On Saturday afternoon, Haruka was on her way to the bookstore in front of the station. The weather was nice when she left home, but the sky gradually grew dark as she walked.",
+          "question": "Where was Haruka going?",
+          "questionJa": "はるかはどこへ<ruby>向<rt>む</rt></ruby>かっていましたか。",
+          "options": [
+            "To the bookstore",
+            "To the station café",
+            "To the library"
+          ],
+          "answerIndex": 0,
+          "explanation": "駅前の本屋へ向かっていました。",
+          "optionsJa": [
+            "<ruby>本屋<rt>ほんや</rt></ruby>",
+            "<ruby>駅<rt>えき</rt></ruby>のカフェ",
+            "<ruby>図書館<rt>としょかん</rt></ruby>"
+          ]
+        },
+        {
+          "html": "<ruby>急<rt>きゅう</rt></ruby>に<ruby>雨<rt>あめ</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>り<ruby>始<rt>はじ</rt></ruby>め、はるかは<ruby>近<rt>ちか</rt></ruby>くのカフェに入りました。<ruby>傘<rt>かさ</rt></ruby>を持っていなかったので、雨がやむまでここで<ruby>待<rt>ま</rt></ruby>つことにしました。カフェは小さくて、窓のそばの席が一つだけ空いていました。",
+          "translation": "Suddenly it began to rain, so Haruka went into a nearby café. She had not brought an umbrella, so she decided to wait there until the rain stopped. The café was small, and only one seat by the window was free.",
+          "question": "Why did Haruka go into the café?",
+          "questionJa": "はるかはどうしてカフェに<ruby>入<rt>はい</rt></ruby>りましたか。",
+          "options": [
+            "She wanted to meet a friend",
+            "It started raining and she had no umbrella",
+            "The bookstore was closed"
+          ],
+          "answerIndex": 1,
+          "explanation": "傘を持っていなかったので、雨がやむまで待つことにしました。",
+          "optionsJa": [
+            "<ruby>友達<rt>ともだち</rt></ruby>に<ruby>会<rt>あ</rt></ruby>いたかったから",
+            "<ruby>雨<rt>あめ</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>り<ruby>始<rt>はじ</rt></ruby>めて、<ruby>傘<rt>かさ</rt></ruby>を<ruby>持<rt>も</rt></ruby>っていなかったから",
+            "<ruby>本屋<rt>ほんや</rt></ruby>が<ruby>閉<rt>し</rt></ruby>まっていたから"
+          ]
+        },
+        {
+          "html": "飲み物を<ruby>注文<rt>ちゅうもん</rt></ruby>して本を読んでいると、「はるかさんですか」と声をかけられました。<ruby>振<rt>ふ</rt></ruby>り<ruby>返<rt>かえ</rt></ruby>ると、<ruby>高校<rt>こうこう</rt></ruby>のときのクラスメート、まいが立っていました。二人は<ruby>卒業<rt>そつぎょう</rt></ruby>してから、しばらく会っていませんでした。",
+          "translation": "While reading a book after ordering a drink, someone said, “Haruka?” When she turned around, Mai, her classmate from high school, was standing there. They had not seen each other for a while since graduating.",
+          "question": "Who did Haruka meet at the café?",
+          "questionJa": "はるかはカフェで<ruby>誰<rt>だれ</rt></ruby>に<ruby>会<rt>あ</rt></ruby>いましたか。",
+          "options": [
+            "Her younger sister",
+            "A bookstore worker",
+            "Mai, her high school classmate"
+          ],
+          "answerIndex": 2,
+          "explanation": "高校のクラスメートのまいに会いました。",
+          "optionsJa": [
+            "<ruby>妹<rt>いもうと</rt></ruby>",
+            "<ruby>本屋<rt>ほんや</rt></ruby>の<ruby>店員<rt>てんいん</rt></ruby>",
+            "<ruby>高校<rt>こうこう</rt></ruby>のクラスメートのまい"
+          ]
+        },
+        {
+          "html": "二人は近況について話しました。まいは<ruby>仕事<rt>しごと</rt></ruby>で<ruby>忙<rt>いそが</rt></ruby>しいけれど、週末に<ruby>料理<rt>りょうり</rt></ruby>をするのが<ruby>楽<rt>たの</rt></ruby>しいと言いました。はるかは、来週いっしょに<ruby>昼<rt>ひる</rt></ruby>ごはんを食べようと<ruby>誘<rt>さそ</rt></ruby>いました。雨がやむころ、二人は次の<ruby>約束<rt>やくそく</rt></ruby>を決めていました。",
+          "translation": "The two talked about what they had been doing. Mai said she was busy with work, but enjoyed cooking on weekends. Haruka invited her to have lunch together the next week. By the time the rain stopped, they had made plans to meet again.",
+          "question": "What did Haruka invite Mai to do?",
+          "questionJa": "はるかはまいを<ruby>何<rt>なに</rt></ruby>に<ruby>誘<rt>さそ</rt></ruby>いましたか。",
+          "options": [
+            "Have lunch together next week",
+            "Go to the bookstore that day",
+            "Cook dinner at Haruka's home"
+          ],
+          "answerIndex": 0,
+          "explanation": "来週いっしょに昼ごはんを食べようと誘いました。",
+          "optionsJa": [
+            "<ruby>来週<rt>らいしゅう</rt></ruby>いっしょに<ruby>昼<rt>ひる</rt></ruby>ごはんを<ruby>食<rt>た</rt></ruby>べる",
+            "その<ruby>日<rt>ひ</rt></ruby>に<ruby>本屋<rt>ほんや</rt></ruby>へ<ruby>行<rt>い</rt></ruby>く",
+            "はるかの<ruby>家<rt>いえ</rt></ruby>で<ruby>夕食<rt>ゆうしょく</rt></ruby>を<ruby>作<rt>つく</rt></ruby>る"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "missed-train",
+      "title": "The Train She Almost Missed",
+      "level": "N4",
+      "summary": "Sota rushes to an appointment and learns to leave earlier.",
+      "minutes": 7,
+      "segments": [
+        {
+          "html": "そうたは<ruby>朝<rt>あさ</rt></ruby>、<ruby>病院<rt>びょういん</rt></ruby>へ行くために家を出ました。<ruby>予約<rt>よやく</rt></ruby>は十時でしたが、駅まで<ruby>歩<rt>ある</rt></ruby>いて十五分かかるので、九時半の電車に乗るつもりでした。ところが、<ruby>財布<rt>さいふ</rt></ruby>を家に忘れたことに駅で気がつきました。",
+          "translation": "In the morning, Sota left home to go to the hospital. His appointment was at ten, and because it took fifteen minutes to walk to the station, he planned to take the 9:30 train. But at the station he realized he had forgotten his wallet at home.",
+          "question": "Why was Sota going to the hospital?",
+          "questionJa": "そうたはどうして<ruby>病院<rt>びょういん</rt></ruby>へ<ruby>行<rt>い</rt></ruby>くところでしたか。",
+          "options": [
+            "He wanted to visit a friend",
+            "He had an appointment",
+            "He worked there"
+          ],
+          "answerIndex": 1,
+          "explanation": "病院の予約がありました。",
+          "optionsJa": [
+            "<ruby>友達<rt>ともだち</rt></ruby>に<ruby>会<rt>あ</rt></ruby>いたかったから",
+            "<ruby>予約<rt>よやく</rt></ruby>があったから",
+            "そこで<ruby>働<rt>はたら</rt></ruby>いていたから"
+          ]
+        },
+        {
+          "html": "そうたは急いで家に戻り、財布を取って、もう一度駅へ走りました。しかし、九時半の電車はちょうど出たところでした。次の電車は二十分後です。そうたは少し困りましたが、病院に電話して、遅れるかもしれないと伝えました。",
+          "translation": "Sota hurried back home, got his wallet, and ran to the station again. But the 9:30 train had just left. The next train was in twenty minutes. Sota was worried, but he called the hospital and told them he might be late.",
+          "question": "What happened when Sota returned to the station?",
+          "questionJa": "そうたが<ruby>駅<rt>えき</rt></ruby>に<ruby>戻<rt>もど</rt></ruby>ったとき、<ruby>何<rt>なに</rt></ruby>がありましたか。",
+          "options": [
+            "The train was delayed for an hour",
+            "He found his wallet there",
+            "The 9:30 train had already left"
+          ],
+          "answerIndex": 2,
+          "explanation": "九時半の電車はちょうど出たところでした。",
+          "optionsJa": [
+            "<ruby>電車<rt>でんしゃ</rt></ruby>が<ruby>一時間<rt>いちじかん</rt></ruby><ruby>遅<rt>おく</rt></ruby>れていた",
+            "<ruby>駅<rt>えき</rt></ruby>で<ruby>財布<rt>さいふ</rt></ruby>を<ruby>見<rt>み</rt></ruby>つけた",
+            "<ruby>九時半<rt>くじはん</rt></ruby>の<ruby>電車<rt>でんしゃ</rt></ruby>はもう<ruby>出<rt>で</rt></ruby>ていた"
+          ]
+        },
+        {
+          "html": "病院の人は「大丈夫ですよ。着いたら受付に来てください」と言いました。そうたは次の電車に乗り、駅から病院までタクシーを使いました。予約の時間には少し遅れましたが、医者に診てもらうことができました。",
+          "translation": "The hospital staff said, “That’s all right. Please come to reception when you arrive.” Sota took the next train and used a taxi from the station to the hospital. He was a little late for his appointment, but he was able to see the doctor.",
+          "question": "How did Sota travel from the station to the hospital?",
+          "questionJa": "そうたは<ruby>駅<rt>えき</rt></ruby>から<ruby>病院<rt>びょういん</rt></ruby>までどうやって<ruby>行<rt>い</rt></ruby>きましたか。",
+          "options": [
+            "By taxi",
+            "By bus",
+            "On foot"
+          ],
+          "answerIndex": 0,
+          "explanation": "駅から病院までタクシーを使いました。",
+          "optionsJa": [
+            "タクシーで",
+            "バスで",
+            "<ruby>歩<rt>ある</rt></ruby>いて"
+          ]
+        },
+        {
+          "html": "帰り道、そうたは次からは出かける前に持ち物を<ruby>確認<rt>かくにん</rt></ruby>しようと思いました。家に着くと、玄関に「財布、鍵、スマートフォン」と書いた小さなメモを貼りました。それからは、電車に乗り遅れることが少なくなりました。",
+          "translation": "On the way home, Sota decided that from then on he would check his belongings before leaving. When he got home, he put a small note by the entrance that said “wallet, keys, smartphone.” After that, he missed the train less often.",
+          "question": "What did Sota put by the entrance?",
+          "questionJa": "そうたは<ruby>玄関<rt>げんかん</rt></ruby>に<ruby>何<rt>なに</rt></ruby>を<ruby>貼<rt>は</rt></ruby>りましたか。",
+          "options": [
+            "A train schedule",
+            "A note reminding him what to bring",
+            "A hospital map"
+          ],
+          "answerIndex": 1,
+          "explanation": "持ち物を確認するためのメモを貼りました。",
+          "optionsJa": [
+            "<ruby>電車<rt>でんしゃ</rt></ruby>の<ruby>時刻表<rt>じこくひょう</rt></ruby>",
+            "<ruby>持<rt>も</rt></ruby>ち<ruby>物<rt>もの</rt></ruby>を<ruby>思<rt>おも</rt></ruby>い<ruby>出<rt>だ</rt></ruby>すためのメモ",
+            "<ruby>病院<rt>びょういん</rt></ruby>の<ruby>地図<rt>ちず</rt></ruby>"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reading-n5-01",
+      "title": "My day",
+      "japaneseTitle": "私の一日",
+      "level": "N5",
+      "summary": "私の一日 · 3 questions",
+      "minutes": 2,
+      "html": "<ruby>私<rt>わたし</rt></ruby>は<ruby>山田<rt>やまだ</rt></ruby>ゆきです。<ruby>大学生<rt>だいがくせい</rt></ruby>です。<ruby>毎朝<rt>まいあさ</rt></ruby><ruby>七時<rt>しちじ</rt></ruby>に<ruby>起<rt>お</rt></ruby>きます。<ruby>朝<rt>あさ</rt></ruby>ご<ruby>飯<rt>はん</rt></ruby>はパンと<ruby>牛乳<rt>ぎゅうにゅう</rt></ruby>です。<ruby>八時<rt>はちじ</rt></ruby>に<ruby>家<rt>いえ</rt></ruby>を<ruby>出<rt>で</rt></ruby>て、<ruby>電車<rt>でんしゃ</rt></ruby>で<ruby>大学<rt>だいがく</rt></ruby>へ<ruby>行<rt>い</rt></ruby>きます。<ruby>大学<rt>だいがく</rt></ruby>まで<ruby>四十分<rt>よんじゅっぷん</rt></ruby>かかります。",
+      "translation": "I'm Yuki Yamada, a university student. I get up at 7 every morning. Breakfast is bread and milk. I leave the house at 8 and go to university by train. It takes 40 minutes to get there.",
+      "questions": [
+        {
+          "question": "",
+          "questionJa": "<ruby>山田<rt>やまだ</rt></ruby>さんは<ruby>何時<rt>なんじ</rt></ruby>に<ruby>起<rt>お</rt></ruby>きますか。",
+          "options": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answerIndex": 1,
+          "explanation": "正解：七時（しちじ）",
+          "optionsJa": [
+            "<ruby>六時<rt>ろくじ</rt></ruby>",
+            "<ruby>七時<rt>しちじ</rt></ruby>",
+            "<ruby>八時<rt>はちじ</rt></ruby>",
+            "<ruby>九時<rt>くじ</rt></ruby>"
+          ]
+        },
+        {
+          "question": "",
+          "questionJa": "<ruby>朝<rt>あさ</rt></ruby>ご<ruby>飯<rt>はん</rt></ruby>は<ruby>何<rt>なん</rt></ruby>ですか。",
+          "options": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answerIndex": 0,
+          "explanation": "正解：パンと牛乳（ぎゅうにゅう）",
+          "optionsJa": [
+            "パンと<ruby>牛乳<rt>ぎゅうにゅう</rt></ruby>",
+            "ご<ruby>飯<rt>はん</rt></ruby>とみそ<ruby>汁<rt>しる</rt></ruby>",
+            "パンとコーヒー",
+            "<ruby>食<rt>た</rt></ruby>べません"
+          ]
+        },
+        {
+          "question": "",
+          "questionJa": "<ruby>山田<rt>やまだ</rt></ruby>さんはどうやって<ruby>大学<rt>だいがく</rt></ruby>へ<ruby>行<rt>い</rt></ruby>きますか。",
+          "options": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answerIndex": 1,
+          "explanation": "正解：電車（でんしゃ）",
+          "optionsJa": [
+            "バス",
+            "<ruby>電車<rt>でんしゃ</rt></ruby>",
+            "<ruby>自転車<rt>じてんしゃ</rt></ruby>",
+            "<ruby>歩<rt>ある</rt></ruby>いて"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reading-n5-02",
+      "title": "Last Saturday",
+      "japaneseTitle": "昨日の土曜日",
+      "level": "N5",
+      "summary": "昨日の土曜日 · 3 questions",
+      "minutes": 2,
+      "html": "<ruby>昨日<rt>きのう</rt></ruby>は<ruby>土曜日<rt>どようび</rt></ruby>でした。<ruby>天気<rt>てんき</rt></ruby>がよかったので、<ruby>友達<rt>ともだち</rt></ruby>と<ruby>公園<rt>こうえん</rt></ruby>へ<ruby>行<rt>い</rt></ruby>きました。<ruby>公園<rt>こうえん</rt></ruby>でサンドイッチを<ruby>食<rt>た</rt></ruby>べて、<ruby>写真<rt>しゃしん</rt></ruby>をたくさん<ruby>撮<rt>と</rt></ruby>りました。それから、<ruby>本屋<rt>ほんや</rt></ruby>で<ruby>日本語<rt>にほんご</rt></ruby>の<ruby>本<rt>ほん</rt></ruby>を<ruby>買<rt>か</rt></ruby>いました。とても<ruby>楽<rt>たの</rt></ruby>しかったです。",
+      "translation": "Yesterday was Saturday. Because the weather was good, I went to the park with a friend. At the park we ate sandwiches and took lots of photos. After that, I bought a Japanese book at the bookstore. It was a lot of fun.",
+      "questions": [
+        {
+          "question": "",
+          "questionJa": "<ruby>昨日<rt>きのう</rt></ruby>の<ruby>天気<rt>てんき</rt></ruby>はどうでしたか。",
+          "options": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answerIndex": 2,
+          "explanation": "正解：よかったです",
+          "optionsJa": [
+            "<ruby>雨<rt>あめ</rt></ruby>でした",
+            "<ruby>寒<rt>さむ</rt></ruby>かったです",
+            "よかったです",
+            "<ruby>曇<rt>くも</rt></ruby>りでした"
+          ]
+        },
+        {
+          "question": "",
+          "questionJa": "<ruby>公園<rt>こうえん</rt></ruby>で<ruby>何<rt>なに</rt></ruby>をしましたか。",
+          "options": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answerIndex": 1,
+          "explanation": "正解：サンドイッチを食（た）べました",
+          "optionsJa": [
+            "<ruby>勉強<rt>べんきょう</rt></ruby>しました",
+            "サンドイッチを<ruby>食<rt>た</rt></ruby>べました",
+            "<ruby>本<rt>ほん</rt></ruby>を<ruby>買<rt>か</rt></ruby>いました",
+            "<ruby>泳<rt>およ</rt></ruby>ぎました"
+          ]
+        },
+        {
+          "question": "",
+          "questionJa": "<ruby>本屋<rt>ほんや</rt></ruby>で<ruby>何<rt>なに</rt></ruby>を<ruby>買<rt>か</rt></ruby>いましたか。",
+          "options": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answerIndex": 2,
+          "explanation": "正解：日本語（にほんご）の本（ほん）",
+          "optionsJa": [
+            "<ruby>英語<rt>えいご</rt></ruby>の<ruby>本<rt>ほん</rt></ruby>",
+            "<ruby>地図<rt>ちず</rt></ruby>",
+            "<ruby>日本語<rt>にほんご</rt></ruby>の<ruby>本<rt>ほん</rt></ruby>",
+            "<ruby>雑誌<rt>ざっし</rt></ruby>"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reading-n5-03",
+      "title": "Party notice",
+      "japaneseTitle": "パーティーのお知らせ",
+      "level": "N5",
+      "summary": "パーティーのお知らせ · 3 questions",
+      "minutes": 2,
+      "html": "<ruby>来週<rt>らいしゅう</rt></ruby>の<ruby>金曜日<rt>きんようび</rt></ruby>、クラスでパーティーをします。<ruby>時間<rt>じかん</rt></ruby>は<ruby>五時<rt>ごじ</rt></ruby>から<ruby>七時<rt>しちじ</rt></ruby>までです。<ruby>場所<rt>ばしょ</rt></ruby>は<ruby>二階<rt>にかい</rt></ruby>の<ruby>教室<rt>きょうしつ</rt></ruby>です。<ruby>飲<rt>の</rt></ruby>み<ruby>物<rt>もの</rt></ruby>は<ruby>先生<rt>せんせい</rt></ruby>が<ruby>買<rt>か</rt></ruby>います。<ruby>食<rt>た</rt></ruby>べ<ruby>物<rt>もの</rt></ruby>は、みんな<ruby>一<rt>ひと</rt></ruby>つ<ruby>持<rt>も</rt></ruby>って<ruby>来<rt>き</rt></ruby>てください。",
+      "translation": "Next Friday we're having a class party. It's from 5 to 7, in the classroom on the second floor. The teacher will buy drinks. Everyone, please bring one food item.",
+      "questions": [
+        {
+          "question": "",
+          "questionJa": "パーティーはいつですか。",
+          "options": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answerIndex": 1,
+          "explanation": "正解：来週（らいしゅう）の金曜日（きんようび）",
+          "optionsJa": [
+            "<ruby>来週<rt>らいしゅう</rt></ruby>の<ruby>木曜日<rt>もくようび</rt></ruby>",
+            "<ruby>来週<rt>らいしゅう</rt></ruby>の<ruby>金曜日<rt>きんようび</rt></ruby>",
+            "<ruby>今週<rt>こんしゅう</rt></ruby>の<ruby>金曜日<rt>きんようび</rt></ruby>",
+            "<ruby>来週<rt>らいしゅう</rt></ruby>の<ruby>土曜日<rt>どようび</rt></ruby>"
+          ]
+        },
+        {
+          "question": "",
+          "questionJa": "パーティーはどこでしますか。",
+          "options": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answerIndex": 1,
+          "explanation": "正解：二階（にかい）の教室（きょうしつ）",
+          "optionsJa": [
+            "<ruby>一階<rt>いっかい</rt></ruby>の<ruby>教室<rt>きょうしつ</rt></ruby>",
+            "<ruby>二階<rt>にかい</rt></ruby>の<ruby>教室<rt>きょうしつ</rt></ruby>",
+            "<ruby>公園<rt>こうえん</rt></ruby>",
+            "<ruby>先生<rt>せんせい</rt></ruby>の<ruby>家<rt>いえ</rt></ruby>"
+          ]
+        },
+        {
+          "question": "",
+          "questionJa": "<ruby>学生<rt>がくせい</rt></ruby>は<ruby>何<rt>なに</rt></ruby>を<ruby>持<rt>も</rt></ruby>って<ruby>行<rt>い</rt></ruby>きますか。",
+          "options": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answerIndex": 2,
+          "explanation": "正解：食（た）べ物（もの）",
+          "optionsJa": [
+            "<ruby>飲<rt>の</rt></ruby>み<ruby>物<rt>もの</rt></ruby>",
+            "お<ruby>金<rt>かね</rt></ruby>",
+            "<ruby>食<rt>た</rt></ruby>べ<ruby>物<rt>もの</rt></ruby>",
+            "<ruby>何<rt>なに</rt></ruby>も<ruby>持<rt>も</rt></ruby>って<ruby>行<rt>い</rt></ruby>きません"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reading-n5-04",
+      "title": "My room",
+      "japaneseTitle": "私の部屋",
+      "level": "N5",
+      "summary": "私の部屋 · 3 questions",
+      "minutes": 2,
+      "html": "<ruby>私<rt>わたし</rt></ruby>の<ruby>部屋<rt>へや</rt></ruby>はあまり<ruby>大<rt>おお</rt></ruby>きくないです。ドアの<ruby>右<rt>みぎ</rt></ruby>にベッドがあります。ベッドの<ruby>隣<rt>となり</rt></ruby>に<ruby>机<rt>つくえ</rt></ruby>があります。<ruby>机<rt>つくえ</rt></ruby>の<ruby>上<rt>うえ</rt></ruby>にパソコンと<ruby>本<rt>ほん</rt></ruby>があります。<ruby>窓<rt>まど</rt></ruby>の<ruby>前<rt>まえ</rt></ruby>に<ruby>小<rt>ちい</rt></ruby>さいいすがあります。<ruby>猫<rt>ねこ</rt></ruby>のミミはいつもそのいすの<ruby>上<rt>うえ</rt></ruby>にいます。",
+      "translation": "My room isn't very big. There's a bed to the right of the door. Next to the bed is a desk. On the desk are a computer and books. In front of the window is a small chair. My cat Mimi is always on that chair.",
+      "questions": [
+        {
+          "question": "",
+          "questionJa": "ベッドはどこにありますか。",
+          "options": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answerIndex": 2,
+          "explanation": "正解：ドアの右（みぎ）",
+          "optionsJa": [
+            "ドアの<ruby>左<rt>ひだり</rt></ruby>",
+            "<ruby>窓<rt>まど</rt></ruby>の<ruby>前<rt>まえ</rt></ruby>",
+            "ドアの<ruby>右<rt>みぎ</rt></ruby>",
+            "<ruby>机<rt>つくえ</rt></ruby>の<ruby>上<rt>うえ</rt></ruby>"
+          ]
+        },
+        {
+          "question": "",
+          "questionJa": "<ruby>机<rt>つくえ</rt></ruby>の<ruby>上<rt>うえ</rt></ruby>に<ruby>何<rt>なに</rt></ruby>がありますか。",
+          "options": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answerIndex": 1,
+          "explanation": "正解：パソコンと本（ほん）",
+          "optionsJa": [
+            "ベッドとかばん",
+            "パソコンと<ruby>本<rt>ほん</rt></ruby>",
+            "<ruby>猫<rt>ねこ</rt></ruby>と<ruby>本<rt>ほん</rt></ruby>",
+            "<ruby>何<rt>なに</rt></ruby>もありません"
+          ]
+        },
+        {
+          "question": "",
+          "questionJa": "<ruby>猫<rt>ねこ</rt></ruby>のミミはどこにいますか。",
+          "options": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answerIndex": 3,
+          "explanation": "正解：いすの上（うえ）",
+          "optionsJa": [
+            "ベッドの<ruby>上<rt>うえ</rt></ruby>",
+            "<ruby>机<rt>つくえ</rt></ruby>の<ruby>上<rt>うえ</rt></ruby>",
+            "<ruby>窓<rt>まど</rt></ruby>の<ruby>外<rt>そと</rt></ruby>",
+            "いすの<ruby>上<rt>うえ</rt></ruby>"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reading-n5-05",
+      "title": "Buying a bag",
+      "japaneseTitle": "かばんを買う",
+      "level": "N5",
+      "summary": "かばんを買う · 3 questions",
+      "minutes": 2,
+      "html": "<ruby>店員<rt>てんいん</rt></ruby>：いらっしゃいませ。<br><ruby>田中<rt>たなか</rt></ruby>：すみません、この<ruby>赤<rt>あか</rt></ruby>いかばんはいくらですか。<br><ruby>店員<rt>てんいん</rt></ruby>：<ruby>五千円<rt>ごせんえん</rt></ruby>です。<br><ruby>田中<rt>たなか</rt></ruby>：ちょっと<ruby>高<rt>たか</rt></ruby>いですね。あの<ruby>青<rt>あお</rt></ruby>いかばんはいくらですか。<br><ruby>店員<rt>てんいん</rt></ruby>：<ruby>三千円<rt>さんぜんえん</rt></ruby>です。<br><ruby>田中<rt>たなか</rt></ruby>：じゃ、それをください。",
+      "translation": "Clerk: Welcome. Tanaka: Excuse me, how much is this red bag? Clerk: 5,000 yen. Tanaka: A bit expensive. How much is that blue bag? Clerk: 3,000 yen. Tanaka: Then I'll take that one.",
+      "questions": [
+        {
+          "question": "",
+          "questionJa": "<ruby>赤<rt>あか</rt></ruby>いかばんはいくらですか。",
+          "options": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answerIndex": 2,
+          "explanation": "正解：五千円（ごせんえん）",
+          "optionsJa": [
+            "<ruby>三千円<rt>さんぜんえん</rt></ruby>",
+            "<ruby>四千円<rt>よんせんえん</rt></ruby>",
+            "<ruby>五千円<rt>ごせんえん</rt></ruby>",
+            "<ruby>八千円<rt>はっせんえん</rt></ruby>"
+          ]
+        },
+        {
+          "question": "",
+          "questionJa": "<ruby>田中<rt>たなか</rt></ruby>さんはどのかばんを<ruby>買<rt>か</rt></ruby>いますか。",
+          "options": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answerIndex": 1,
+          "explanation": "正解：青（あお）いかばん",
+          "optionsJa": [
+            "<ruby>赤<rt>あか</rt></ruby>いかばん",
+            "<ruby>青<rt>あお</rt></ruby>いかばん",
+            "<ruby>白<rt>しろ</rt></ruby>いかばん",
+            "<ruby>買<rt>か</rt></ruby>いません"
+          ]
+        },
+        {
+          "question": "",
+          "questionJa": "<ruby>田中<rt>たなか</rt></ruby>さんはどうして<ruby>赤<rt>あか</rt></ruby>いかばんを<ruby>買<rt>か</rt></ruby>いませんでしたか。",
+          "options": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answerIndex": 2,
+          "explanation": "正解：高（たか）いから",
+          "optionsJa": [
+            "<ruby>小<rt>ちい</rt></ruby>さいから",
+            "<ruby>重<rt>おも</rt></ruby>いから",
+            "<ruby>高<rt>たか</rt></ruby>いから",
+            "<ruby>好<rt>す</rt></ruby>きじゃないから"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reading-n5-06",
+      "title": "Favorite fruit",
+      "japaneseTitle": "好きな果物",
+      "level": "N5",
+      "summary": "好きな果物 · 3 questions",
+      "minutes": 2,
+      "html": "<ruby>私<rt>わたし</rt></ruby>は<ruby>果物<rt>くだもの</rt></ruby>が<ruby>好<rt>す</rt></ruby>きです。りんごもみかんも<ruby>好<rt>す</rt></ruby>きですが、りんごのほうが<ruby>好<rt>す</rt></ruby>きです。みかんはすっぱいので、あまり<ruby>食<rt>た</rt></ruby>べません。<ruby>弟<rt>おとうと</rt></ruby>は<ruby>果物<rt>くだもの</rt></ruby>が<ruby>嫌<rt>きら</rt></ruby>いです。でも、チョコレートが<ruby>大好<rt>だいす</rt></ruby>きで、<ruby>毎日<rt>まいにち</rt></ruby><ruby>食<rt>た</rt></ruby>べます。",
+      "translation": "I like fruit. I like both apples and mandarins, but I like apples more. Mandarins are sour, so I don't eat them much. My younger brother dislikes fruit. But he loves chocolate and eats it every day.",
+      "questions": [
+        {
+          "question": "",
+          "questionJa": "「<ruby>私<rt>わたし</rt></ruby>」はどちらのほうが<ruby>好<rt>す</rt></ruby>きですか。",
+          "options": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answerIndex": 1,
+          "explanation": "正解：りんご",
+          "optionsJa": [
+            "みかん",
+            "りんご",
+            "バナナ",
+            "チョコレート"
+          ]
+        },
+        {
+          "question": "",
+          "questionJa": "どうしてみかんをあまり<ruby>食<rt>た</rt></ruby>べませんか。",
+          "options": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answerIndex": 2,
+          "explanation": "正解：すっぱいから",
+          "optionsJa": [
+            "<ruby>高<rt>たか</rt></ruby>いから",
+            "<ruby>小<rt>ちい</rt></ruby>さいから",
+            "すっぱいから",
+            "<ruby>嫌<rt>きら</rt></ruby>いだから"
+          ]
+        },
+        {
+          "question": "",
+          "questionJa": "<ruby>弟<rt>おとうと</rt></ruby>について、<ruby>正<rt>ただ</rt></ruby>しいのはどれですか。",
+          "options": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answerIndex": 1,
+          "explanation": "正解：チョコレートを毎日（まいにち）食（た）べる",
+          "optionsJa": [
+            "<ruby>果物<rt>くだもの</rt></ruby>が<ruby>大好<rt>だいす</rt></ruby>きだ",
+            "チョコレートを<ruby>毎日<rt>まいにち</rt></ruby><ruby>食<rt>た</rt></ruby>べる",
+            "りんごだけ<ruby>食<rt>た</rt></ruby>べる",
+            "<ruby>何<rt>なに</rt></ruby>も<ruby>食<rt>た</rt></ruby>べない"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reading-n4-01",
+      "title": "Mike's Japanese",
+      "japaneseTitle": "マイクさんの日本語",
+      "level": "N4",
+      "summary": "マイクさんの日本語 · 4 questions",
+      "minutes": 3,
+      "html": "マイクさんは<ruby>日本<rt>にほん</rt></ruby>に<ruby>来<rt>き</rt></ruby>て、<ruby>半年<rt>はんとし</rt></ruby>になります。<ruby>最初<rt>さいしょ</rt></ruby>は<ruby>日本語<rt>にほんご</rt></ruby>が<ruby>全然<rt>ぜんぜん</rt></ruby><ruby>話<rt>はな</rt></ruby>せなかったので、<ruby>店<rt>みせ</rt></ruby>で<ruby>何<rt>なに</rt></ruby>も<ruby>注文<rt>ちゅうもん</rt></ruby>できませんでした。そこで、<ruby>毎日<rt>まいにち</rt></ruby><ruby>寝<rt>ね</rt></ruby>る<ruby>前<rt>まえ</rt></ruby>に<ruby>三十分<rt>さんじゅっぷん</rt></ruby>、ニュースを<ruby>聞<rt>き</rt></ruby>くようにしました。<ruby>今<rt>いま</rt></ruby>は、<ruby>友達<rt>ともだち</rt></ruby>と<ruby>日本語<rt>にほんご</rt></ruby>で<ruby>話<rt>はな</rt></ruby>せるようになりました。でも、<ruby>漢字<rt>かんじ</rt></ruby>はまだ<ruby>難<rt>むずか</rt></ruby>しいので、<ruby>来月<rt>らいげつ</rt></ruby>から<ruby>漢字<rt>かんじ</rt></ruby>の<ruby>教室<rt>きょうしつ</rt></ruby>に<ruby>通<rt>かよ</rt></ruby>うつもりです。",
+      "translation": "It's been half a year since Mike came to Japan. At first he couldn't speak Japanese at all, so he couldn't order anything at shops. So every night before bed he started listening to the news for thirty minutes. Now he can talk with friends in Japanese. But kanji is still hard, so he plans to attend a kanji class from next month.",
+      "questions": [
+        {
+          "question": "",
+          "questionJa": "マイクさんが<ruby>最初<rt>さいしょ</rt></ruby>、<ruby>店<rt>みせ</rt></ruby>で<ruby>注文<rt>ちゅうもん</rt></ruby>できなかったのはなぜですか。",
+          "options": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answerIndex": 1,
+          "explanation": "正解：日本語（にほんご）が話（はな）せなかったから",
+          "optionsJa": [
+            "お<ruby>金<rt>かね</rt></ruby>がなかったから",
+            "<ruby>日本語<rt>にほんご</rt></ruby>が<ruby>話<rt>はな</rt></ruby>せなかったから",
+            "<ruby>店<rt>みせ</rt></ruby>が<ruby>閉<rt>し</rt></ruby>まっていたから",
+            "<ruby>病気<rt>びょうき</rt></ruby>だったから"
+          ]
+        },
+        {
+          "question": "",
+          "questionJa": "マイクさんは<ruby>毎日<rt>まいにち</rt></ruby>、<ruby>寝<rt>ね</rt></ruby>る<ruby>前<rt>まえ</rt></ruby>に<ruby>何<rt>なに</rt></ruby>をしていますか。",
+          "options": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answerIndex": 2,
+          "explanation": "正解：ニュースを聞（き）く",
+          "optionsJa": [
+            "<ruby>漢字<rt>かんじ</rt></ruby>を<ruby>書<rt>か</rt></ruby>く",
+            "<ruby>友達<rt>ともだち</rt></ruby>と<ruby>話<rt>はな</rt></ruby>す",
+            "ニュースを<ruby>聞<rt>き</rt></ruby>く",
+            "<ruby>日本語<rt>にほんご</rt></ruby>の<ruby>本<rt>ほん</rt></ruby>を<ruby>読<rt>よ</rt></ruby>む"
+          ]
+        },
+        {
+          "question": "",
+          "questionJa": "マイクさんは<ruby>来月<rt>らいげつ</rt></ruby>から<ruby>何<rt>なに</rt></ruby>をするつもりですか。",
+          "options": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answerIndex": 1,
+          "explanation": "正解：漢字（かんじ）の教室（きょうしつ）に通（かよ）う",
+          "optionsJa": [
+            "<ruby>日本<rt>にほん</rt></ruby>に<ruby>来<rt>く</rt></ruby>る",
+            "<ruby>漢字<rt>かんじ</rt></ruby>の<ruby>教室<rt>きょうしつ</rt></ruby>に<ruby>通<rt>かよ</rt></ruby>う",
+            "<ruby>日本語<rt>にほんご</rt></ruby>を<ruby>話<rt>はな</rt></ruby>す",
+            "<ruby>店<rt>みせ</rt></ruby>で<ruby>働<rt>はたら</rt></ruby>く"
+          ]
+        },
+        {
+          "question": "",
+          "questionJa": "<ruby>今<rt>いま</rt></ruby>のマイクさんについて、<ruby>正<rt>ただ</rt></ruby>しいのはどれですか。",
+          "options": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answerIndex": 1,
+          "explanation": "正解：日本語（にほんご）で友達（ともだち）と話（はな）せる",
+          "optionsJa": [
+            "<ruby>漢字<rt>かんじ</rt></ruby>も<ruby>全部<rt>ぜんぶ</rt></ruby><ruby>読<rt>よ</rt></ruby>める",
+            "<ruby>日本語<rt>にほんご</rt></ruby>で<ruby>友達<rt>ともだち</rt></ruby>と<ruby>話<rt>はな</rt></ruby>せる",
+            "まだ<ruby>何<rt>なに</rt></ruby>も<ruby>話<rt>はな</rt></ruby>せない",
+            "<ruby>日本<rt>にほん</rt></ruby>に<ruby>来<rt>き</rt></ruby>たばかりだ"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reading-n4-02",
+      "title": "Meeting time change",
+      "japaneseTitle": "会議の時間の変更",
+      "level": "N4",
+      "summary": "会議の時間の変更 · 4 questions",
+      "minutes": 3,
+      "html": "<ruby>件名<rt>けんめい</rt></ruby>：<ruby>会議<rt>かいぎ</rt></ruby>の<ruby>時間<rt>じかん</rt></ruby>について<br><ruby>山本<rt>やまもと</rt></ruby>さん<br><ruby>明日<rt>あした</rt></ruby>の<ruby>会議<rt>かいぎ</rt></ruby>は<ruby>午後<rt>ごご</rt></ruby><ruby>二時<rt>にじ</rt></ruby>からでしたが、<ruby>社長<rt>しゃちょう</rt></ruby>が<ruby>出張<rt>しゅっちょう</rt></ruby>から<ruby>帰<rt>かえ</rt></ruby>るのが<ruby>遅<rt>おそ</rt></ruby>くなるので、<ruby>三時<rt>さんじ</rt></ruby>からに<ruby>変<rt>か</rt></ruby>わりました。<ruby>場所<rt>ばしょ</rt></ruby>は<ruby>同<rt>おな</rt></ruby>じ<ruby>会議室<rt>かいぎしつ</rt></ruby>です。<ruby>資料<rt>しりょう</rt></ruby>は、<ruby>会議<rt>かいぎ</rt></ruby>の<ruby>前<rt>まえ</rt></ruby>に<ruby>人数分<rt>にんずうぶん</rt></ruby>コピーしておいてください。お<ruby>願<rt>ねが</rt></ruby>いします。",
+      "translation": "Subject: About the meeting time. To Mr./Ms. Yamamoto: Tomorrow's meeting was at 2 p.m., but because the president will return late from his business trip, it has been changed to 3. The place is the same meeting room. Please make copies of the materials for everyone before the meeting. Thank you.",
+      "questions": [
+        {
+          "question": "",
+          "questionJa": "<ruby>会議<rt>かいぎ</rt></ruby>は<ruby>何時<rt>なんじ</rt></ruby>からになりましたか。",
+          "options": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answerIndex": 2,
+          "explanation": "正解：三時（さんじ）",
+          "optionsJa": [
+            "<ruby>一時<rt>いちじ</rt></ruby>",
+            "<ruby>二時<rt>にじ</rt></ruby>",
+            "<ruby>三時<rt>さんじ</rt></ruby>",
+            "<ruby>四時<rt>よじ</rt></ruby>"
+          ]
+        },
+        {
+          "question": "",
+          "questionJa": "<ruby>時間<rt>じかん</rt></ruby>が<ruby>変<rt>か</rt></ruby>わったのはなぜですか。",
+          "options": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answerIndex": 2,
+          "explanation": "正解：社長（しゃちょう）の帰（かえ）りが遅（おそ）くなるから",
+          "optionsJa": [
+            "<ruby>会議室<rt>かいぎしつ</rt></ruby>が<ruby>使<rt>つか</rt></ruby>えないから",
+            "<ruby>山本<rt>やまもと</rt></ruby>さんが<ruby>休<rt>やす</rt></ruby>むから",
+            "<ruby>社長<rt>しゃちょう</rt></ruby>の<ruby>帰<rt>かえ</rt></ruby>りが<ruby>遅<rt>おそ</rt></ruby>くなるから",
+            "<ruby>資料<rt>しりょう</rt></ruby>ができていないから"
+          ]
+        },
+        {
+          "question": "",
+          "questionJa": "<ruby>山本<rt>やまもと</rt></ruby>さんは<ruby>何<rt>なに</rt></ruby>をしなければなりませんか。",
+          "options": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answerIndex": 2,
+          "explanation": "正解：資料（しりょう）をコピーしておく",
+          "optionsJa": [
+            "<ruby>会議室<rt>かいぎしつ</rt></ruby>を<ruby>予約<rt>よやく</rt></ruby>する",
+            "<ruby>社長<rt>しゃちょう</rt></ruby>に<ruby>電話<rt>でんわ</rt></ruby>する",
+            "<ruby>資料<rt>しりょう</rt></ruby>をコピーしておく",
+            "<ruby>出張<rt>しゅっちょう</rt></ruby>に<ruby>行<rt>い</rt></ruby>く"
+          ]
+        },
+        {
+          "question": "",
+          "questionJa": "<ruby>会議<rt>かいぎ</rt></ruby>の<ruby>場所<rt>ばしょ</rt></ruby>はどうなりましたか。",
+          "options": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answerIndex": 1,
+          "explanation": "正解：同（おな）じ",
+          "optionsJa": [
+            "<ruby>変<rt>か</rt></ruby>わった",
+            "<ruby>同<rt>おな</rt></ruby>じ",
+            "<ruby>社長<rt>しゃちょう</rt></ruby>の<ruby>部屋<rt>へや</rt></ruby>になった",
+            "<ruby>書<rt>か</rt></ruby>いていない"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reading-n4-03",
+      "title": "A rainy day",
+      "japaneseTitle": "雨の日",
+      "level": "N4",
+      "summary": "雨の日 · 4 questions",
+      "minutes": 3,
+      "html": "<ruby>朝<rt>あさ</rt></ruby>、<ruby>空<rt>そら</rt></ruby>が<ruby>暗<rt>くら</rt></ruby>かったのに、<ruby>私<rt>わたし</rt></ruby>は<ruby>傘<rt>かさ</rt></ruby>を<ruby>持<rt>も</rt></ruby>たないで<ruby>出<rt>で</rt></ruby>かけてしまいました。<ruby>昼<rt>ひる</rt></ruby>ごろ、<ruby>急<rt>きゅう</rt></ruby>に<ruby>雨<rt>あめ</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>り<ruby>出<rt>だ</rt></ruby>して、<ruby>駅<rt>えき</rt></ruby>まで<ruby>走<rt>はし</rt></ruby>りましたが、<ruby>全部<rt>ぜんぶ</rt></ruby>ぬれてしまいました。<ruby>駅<rt>えき</rt></ruby>で<ruby>困<rt>こま</rt></ruby>っていると、<ruby>知<rt>し</rt></ruby>らないおばあさんが「よかったら、<ruby>使<rt>つか</rt></ruby>ってください」と<ruby>言<rt>い</rt></ruby>って、<ruby>傘<rt>かさ</rt></ruby>を<ruby>貸<rt>か</rt></ruby>してくれました。<ruby>私<rt>わたし</rt></ruby>は<ruby>何度<rt>なんど</rt></ruby>もお<ruby>礼<rt>れい</rt></ruby>を<ruby>言<rt>い</rt></ruby>いました。<ruby>今度<rt>こんど</rt></ruby>からは、<ruby>天気予報<rt>てんきよほう</rt></ruby>を<ruby>見<rt>み</rt></ruby>てから<ruby>出<rt>で</rt></ruby>かけるようにします。",
+      "translation": "In the morning the sky was dark, yet I left home without taking an umbrella. Around noon it suddenly started raining, and I ran to the station, but I got completely soaked. While I was in trouble at the station, an old woman I didn't know said, \"If you like, please use this,\" and lent me her umbrella. I thanked her many times. From now on I'll check the weather forecast before going out.",
+      "questions": [
+        {
+          "question": "",
+          "questionJa": "<ruby>朝<rt>あさ</rt></ruby>の<ruby>空<rt>そら</rt></ruby>はどうでしたか。",
+          "options": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answerIndex": 1,
+          "explanation": "正解：暗（くら）かった",
+          "optionsJa": [
+            "<ruby>晴<rt>は</rt></ruby>れていた",
+            "<ruby>暗<rt>くら</rt></ruby>かった",
+            "<ruby>雪<rt>ゆき</rt></ruby>だった",
+            "<ruby>星<rt>ほし</rt></ruby>が<ruby>出<rt>で</rt></ruby>ていた"
+          ]
+        },
+        {
+          "question": "",
+          "questionJa": "<ruby>駅<rt>えき</rt></ruby>で「<ruby>私<rt>わたし</rt></ruby>」を<ruby>助<rt>たす</rt></ruby>けたのはだれですか。",
+          "options": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answerIndex": 2,
+          "explanation": "正解：知（し）らないおばあさん",
+          "optionsJa": [
+            "<ruby>友達<rt>ともだち</rt></ruby>",
+            "<ruby>駅員<rt>えきいん</rt></ruby>",
+            "<ruby>知<rt>し</rt></ruby>らないおばあさん",
+            "<ruby>家族<rt>かぞく</rt></ruby>"
+          ]
+        },
+        {
+          "question": "",
+          "questionJa": "「<ruby>私<rt>わたし</rt></ruby>」は<ruby>雨<rt>あめ</rt></ruby>でどうなりましたか。",
+          "options": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answerIndex": 2,
+          "explanation": "正解：全部（ぜんぶ）ぬれてしまった",
+          "optionsJa": [
+            "<ruby>風邪<rt>かぜ</rt></ruby>をひいた",
+            "<ruby>電車<rt>でんしゃ</rt></ruby>に<ruby>乗<rt>の</rt></ruby>れなかった",
+            "<ruby>全部<rt>ぜんぶ</rt></ruby>ぬれてしまった",
+            "<ruby>傘<rt>かさ</rt></ruby>をなくした"
+          ]
+        },
+        {
+          "question": "",
+          "questionJa": "<ruby>今度<rt>こんど</rt></ruby>から「<ruby>私<rt>わたし</rt></ruby>」は<ruby>何<rt>なに</rt></ruby>をしますか。",
+          "options": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answerIndex": 1,
+          "explanation": "正解：天気予報（てんきよほう）を見（み）てから出（で）かける",
+          "optionsJa": [
+            "<ruby>毎日<rt>まいにち</rt></ruby><ruby>傘<rt>かさ</rt></ruby>を<ruby>持<rt>も</rt></ruby>つ",
+            "<ruby>天気予報<rt>てんきよほう</rt></ruby>を<ruby>見<rt>み</rt></ruby>てから<ruby>出<rt>で</rt></ruby>かける",
+            "<ruby>駅<rt>えき</rt></ruby>まで<ruby>走<rt>はし</rt></ruby>る",
+            "<ruby>家<rt>いえ</rt></ruby>にいる"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reading-n4-04",
+      "title": "I decided to walk",
+      "japaneseTitle": "歩くことにした",
+      "level": "N4",
+      "summary": "歩くことにした · 4 questions",
+      "minutes": 3,
+      "html": "<ruby>最近<rt>さいきん</rt></ruby>、<ruby>運動<rt>うんどう</rt></ruby>をする<ruby>時間<rt>じかん</rt></ruby>がなくて、<ruby>体<rt>からだ</rt></ruby>が<ruby>重<rt>おも</rt></ruby>く<ruby>感<rt>かん</rt></ruby>じます。<ruby>先週<rt>せんしゅう</rt></ruby>、<ruby>医者<rt>いしゃ</rt></ruby>に「<ruby>毎日<rt>まいにち</rt></ruby><ruby>少<rt>すこ</rt></ruby>しでもいいから、<ruby>歩<rt>ある</rt></ruby>いたほうがいいですよ」と<ruby>言<rt>い</rt></ruby>われました。それで、<ruby>会社<rt>かいしゃ</rt></ruby>へ<ruby>行<rt>い</rt></ruby>くとき、<ruby>一<rt>ひと</rt></ruby>つ<ruby>前<rt>まえ</rt></ruby>の<ruby>駅<rt>えき</rt></ruby>で<ruby>降<rt>お</rt></ruby>りて、<ruby>歩<rt>ある</rt></ruby>くことにしました。<ruby>最初<rt>さいしょ</rt></ruby>は<ruby>疲<rt>つか</rt></ruby>れましたが、<ruby>一週間<rt>いっしゅうかん</rt></ruby>たって、<ruby>朝<rt>あさ</rt></ruby>ごはんがおいしく<ruby>食<rt>た</rt></ruby>べられるようになりました。",
+      "translation": "Lately I haven't had time to exercise, and my body feels heavy. Last week a doctor told me, \"Even a little each day is fine, you should walk.\" So when I go to work, I decided to get off one station early and walk. At first I got tired, but after a week I could enjoy breakfast again.",
+      "questions": [
+        {
+          "question": "",
+          "questionJa": "<ruby>医者<rt>いしゃ</rt></ruby>は<ruby>何<rt>なん</rt></ruby>と<ruby>言<rt>い</rt></ruby>いましたか。",
+          "options": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answerIndex": 0,
+          "explanation": "正解：毎日（まいにち）少（すこ）しでも歩（ある）いたほうがいい",
+          "optionsJa": [
+            "<ruby>毎日<rt>まいにち</rt></ruby><ruby>少<rt>すこ</rt></ruby>しでも<ruby>歩<rt>ある</rt></ruby>いたほうがいい",
+            "もっと<ruby>寝<rt>ね</rt></ruby>たほうがいい",
+            "<ruby>会社<rt>かいしゃ</rt></ruby>を<ruby>休<rt>やす</rt></ruby>んだほうがいい",
+            "<ruby>運動<rt>うんどう</rt></ruby>をしないほうがいい"
+          ]
+        },
+        {
+          "question": "",
+          "questionJa": "「<ruby>私<rt>わたし</rt></ruby>」は<ruby>何<rt>なに</rt></ruby>をすることにしましたか。",
+          "options": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answerIndex": 1,
+          "explanation": "正解：一（ひと）つ前（まえ）の駅（えき）で降（お）りて歩（ある）く",
+          "optionsJa": [
+            "<ruby>毎朝<rt>まいあさ</rt></ruby><ruby>走<rt>はし</rt></ruby>る",
+            "<ruby>一<rt>ひと</rt></ruby>つ<ruby>前<rt>まえ</rt></ruby>の<ruby>駅<rt>えき</rt></ruby>で<ruby>降<rt>お</rt></ruby>りて<ruby>歩<rt>ある</rt></ruby>く",
+            "ジムに<ruby>入<rt>はい</rt></ruby>る",
+            "<ruby>自転車<rt>じてんしゃ</rt></ruby>で<ruby>通<rt>かよ</rt></ruby>う"
+          ]
+        },
+        {
+          "question": "",
+          "questionJa": "<ruby>一週間<rt>いっしゅうかん</rt></ruby>たって、どうなりましたか。",
+          "options": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answerIndex": 0,
+          "explanation": "正解：朝（あさ）ごはんがおいしく食（た）べられるようになった",
+          "optionsJa": [
+            "<ruby>朝<rt>あさ</rt></ruby>ごはんがおいしく<ruby>食<rt>た</rt></ruby>べられるようになった",
+            "<ruby>病気<rt>びょうき</rt></ruby>が<ruby>治<rt>なお</rt></ruby>った",
+            "<ruby>会社<rt>かいしゃ</rt></ruby>を<ruby>辞<rt>や</rt></ruby>めた",
+            "<ruby>体<rt>からだ</rt></ruby>が<ruby>重<rt>おも</rt></ruby>くなった"
+          ]
+        },
+        {
+          "question": "",
+          "questionJa": "<ruby>歩<rt>ある</rt></ruby>き<ruby>始<rt>はじ</rt></ruby>めたころ、「<ruby>私<rt>わたし</rt></ruby>」はどうでしたか。",
+          "options": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answerIndex": 1,
+          "explanation": "正解：疲（つか）れた",
+          "optionsJa": [
+            "とても<ruby>元気<rt>げんき</rt></ruby>だった",
+            "<ruby>疲<rt>つか</rt></ruby>れた",
+            "<ruby>暇<rt>ひま</rt></ruby>だった",
+            "<ruby>眠<rt>ねむ</rt></ruby>かった"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reading-n4-05",
+      "title": "Kyoto trip plan",
+      "japaneseTitle": "京都旅行の予定",
+      "level": "N4",
+      "summary": "京都旅行の予定 · 4 questions",
+      "minutes": 3,
+      "html": "<ruby>来月<rt>らいげつ</rt></ruby>、<ruby>友達<rt>ともだち</rt></ruby>と<ruby>京都<rt>きょうと</rt></ruby>へ<ruby>旅行<rt>りょこう</rt></ruby>に<ruby>行<rt>い</rt></ruby>く<ruby>予定<rt>よてい</rt></ruby>です。ホテルはもう<ruby>予約<rt>よやく</rt></ruby>しておきました。インターネットによると、<ruby>秋<rt>あき</rt></ruby>の<ruby>京都<rt>きょうと</rt></ruby>はとてもきれいですが、<ruby>人<rt>ひと</rt></ruby>が<ruby>多<rt>おお</rt></ruby>いそうです。だから、<ruby>有名<rt>ゆうめい</rt></ruby>なお<ruby>寺<rt>てら</rt></ruby>には、<ruby>朝<rt>あさ</rt></ruby><ruby>早<rt>はや</rt></ruby>く<ruby>行<rt>い</rt></ruby>くつもりです。<ruby>私<rt>わたし</rt></ruby>は<ruby>歴史<rt>れきし</rt></ruby>が<ruby>好<rt>す</rt></ruby>きなので、お<ruby>寺<rt>てら</rt></ruby>を<ruby>見<rt>み</rt></ruby>るのが<ruby>楽<rt>たの</rt></ruby>しみです。<ruby>友達<rt>ともだち</rt></ruby>は、おいしいお<ruby>菓子<rt>かし</rt></ruby>を<ruby>食<rt>た</rt></ruby>べたがっています。",
+      "translation": "Next month I'm planning to go on a trip to Kyoto with a friend. I've already booked the hotel. According to the internet, Kyoto in autumn is very beautiful but crowded. So I intend to go to the famous temples early in the morning. I like history, so I'm looking forward to seeing the temples. My friend wants to eat delicious sweets.",
+      "questions": [
+        {
+          "question": "",
+          "questionJa": "ホテルについて、<ruby>正<rt>ただ</rt></ruby>しいのはどれですか。",
+          "options": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answerIndex": 1,
+          "explanation": "正解：もう予約（よやく）してある",
+          "optionsJa": [
+            "まだ<ruby>予約<rt>よやく</rt></ruby>していない",
+            "もう<ruby>予約<rt>よやく</rt></ruby>してある",
+            "<ruby>高<rt>たか</rt></ruby>くて<ruby>予約<rt>よやく</rt></ruby>できなかった",
+            "<ruby>友達<rt>ともだち</rt></ruby>が<ruby>予約<rt>よやく</rt></ruby>する"
+          ]
+        },
+        {
+          "question": "",
+          "questionJa": "<ruby>秋<rt>あき</rt></ruby>の<ruby>京都<rt>きょうと</rt></ruby>について、インターネットは<ruby>何<rt>なん</rt></ruby>と<ruby>言<rt>い</rt></ruby>っていますか。",
+          "options": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answerIndex": 1,
+          "explanation": "正解：きれいだが人（ひと）が多（おお）い",
+          "optionsJa": [
+            "<ruby>寒<rt>さむ</rt></ruby>くて<ruby>人<rt>ひと</rt></ruby>が<ruby>少<rt>すく</rt></ruby>ない",
+            "きれいだが<ruby>人<rt>ひと</rt></ruby>が<ruby>多<rt>おお</rt></ruby>い",
+            "<ruby>雨<rt>あめ</rt></ruby>が<ruby>多<rt>おお</rt></ruby>い",
+            "<ruby>何<rt>なに</rt></ruby>もない"
+          ]
+        },
+        {
+          "question": "",
+          "questionJa": "なぜ<ruby>朝<rt>あさ</rt></ruby><ruby>早<rt>はや</rt></ruby>くお<ruby>寺<rt>てら</rt></ruby>に<ruby>行<rt>い</rt></ruby>くつもりですか。",
+          "options": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answerIndex": 1,
+          "explanation": "正解：人（ひと）が多（おお）いから",
+          "optionsJa": [
+            "<ruby>暑<rt>あつ</rt></ruby>いから",
+            "<ruby>人<rt>ひと</rt></ruby>が<ruby>多<rt>おお</rt></ruby>いから",
+            "<ruby>寝<rt>ね</rt></ruby>たくないから",
+            "<ruby>店<rt>みせ</rt></ruby>が<ruby>早<rt>はや</rt></ruby>く<ruby>開<rt>あ</rt></ruby>くから"
+          ]
+        },
+        {
+          "question": "",
+          "questionJa": "<ruby>友達<rt>ともだち</rt></ruby>は<ruby>何<rt>なに</rt></ruby>をしたがっていますか。",
+          "options": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answerIndex": 2,
+          "explanation": "正解：お菓子（かし）を食（た）べる",
+          "optionsJa": [
+            "お<ruby>寺<rt>てら</rt></ruby>を<ruby>見<rt>み</rt></ruby>る",
+            "<ruby>写真<rt>しゃしん</rt></ruby>を<ruby>撮<rt>と</rt></ruby>る",
+            "お<ruby>菓子<rt>かし</rt></ruby>を<ruby>食<rt>た</rt></ruby>べる",
+            "<ruby>買<rt>か</rt></ruby>い<ruby>物<rt>もの</rt></ruby>をする"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reading-n3-01",
+      "title": "On the train",
+      "japaneseTitle": "電車の中で",
+      "level": "N3",
+      "summary": "電車の中で · 4 questions",
+      "minutes": 4,
+      "html": "<ruby>最近<rt>さいきん</rt></ruby>、<ruby>電車<rt>でんしゃ</rt></ruby>の<ruby>中<rt>なか</rt></ruby>で<ruby>本<rt>ほん</rt></ruby>を<ruby>読<rt>よ</rt></ruby>んでいる<ruby>人<rt>ひと</rt></ruby>がずいぶん<ruby>減<rt>へ</rt></ruby>った。ほとんどの<ruby>人<rt>ひと</rt></ruby>がスマートフォンを<ruby>見<rt>み</rt></ruby>ている。<ruby>便利<rt>べんり</rt></ruby>なのはわかるが、<ruby>画面<rt>がめん</rt></ruby>を<ruby>見<rt>み</rt></ruby><ruby>続<rt>つづ</rt></ruby>けていると、<ruby>目<rt>め</rt></ruby>が<ruby>疲<rt>つか</rt></ruby>れやすくなるし、<ruby>考<rt>かんが</rt></ruby>える<ruby>時間<rt>じかん</rt></ruby>も<ruby>少<rt>すく</rt></ruby>なくなりがちだ。<ruby>先日<rt>せんじつ</rt></ruby>、<ruby>私<rt>わたし</rt></ruby>は<ruby>思<rt>おも</rt></ruby>い<ruby>切<rt>き</rt></ruby>って、<ruby>通勤<rt>つうきん</rt></ruby>の<ruby>間<rt>あいだ</rt></ruby>はスマホをかばんにしまい、<ruby>本<rt>ほん</rt></ruby>を<ruby>読<rt>よ</rt></ruby>むことにした。<ruby>最初<rt>さいしょ</rt></ruby>は<ruby>落<rt>お</rt></ruby>ち<ruby>着<rt>つ</rt></ruby>かなかったが、<ruby>続<rt>つづ</rt></ruby>けるうちに、<ruby>一日<rt>いちにち</rt></ruby>のうちで<ruby>一番<rt>いちばん</rt></ruby><ruby>静<rt>しず</rt></ruby>かな<ruby>時間<rt>じかん</rt></ruby>になった。もちろん、スマホが<ruby>悪<rt>わる</rt></ruby>いと<ruby>言<rt>い</rt></ruby>いたいわけではない。ただ、<ruby>使<rt>つか</rt></ruby>い<ruby>方<rt>かた</rt></ruby>を<ruby>自分<rt>じぶん</rt></ruby>で<ruby>決<rt>き</rt></ruby>めることが<ruby>大切<rt>たいせつ</rt></ruby>だと<ruby>思<rt>おも</rt></ruby>う。",
+      "translation": "Lately, far fewer people read books on the train. Most people are looking at smartphones. I understand it's convenient, but if you keep staring at the screen your eyes tire easily, and you tend to have less time to think. The other day, I made up my mind to put my phone in my bag during my commute and read a book instead. At first I felt restless, but as I kept at it, it became the quietest time of my day. Of course, I'm not saying smartphones are bad. I just think it's important to decide for yourself how you use them.",
+      "questions": [
+        {
+          "question": "",
+          "questionJa": "<ruby>筆者<rt>ひっしゃ</rt></ruby>は<ruby>電車<rt>でんしゃ</rt></ruby>の<ruby>中<rt>なか</rt></ruby>でどんな<ruby>変化<rt>へんか</rt></ruby>に<ruby>気<rt>き</rt></ruby>づきましたか。",
+          "options": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answerIndex": 1,
+          "explanation": "正解：本（ほん）を読（よ）む人（ひと）が減（へ）った",
+          "optionsJa": [
+            "<ruby>電車<rt>でんしゃ</rt></ruby>が<ruby>静<rt>しず</rt></ruby>かになった",
+            "<ruby>本<rt>ほん</rt></ruby>を<ruby>読<rt>よ</rt></ruby>む<ruby>人<rt>ひと</rt></ruby>が<ruby>減<rt>へ</rt></ruby>った",
+            "スマホを<ruby>使<rt>つか</rt></ruby>う<ruby>人<rt>ひと</rt></ruby>が<ruby>減<rt>へ</rt></ruby>った",
+            "<ruby>乗<rt>の</rt></ruby>る<ruby>人<rt>ひと</rt></ruby>が<ruby>増<rt>ふ</rt></ruby>えた"
+          ]
+        },
+        {
+          "question": "",
+          "questionJa": "<ruby>筆者<rt>ひっしゃ</rt></ruby>が<ruby>通勤中<rt>つうきんちゅう</rt></ruby>に<ruby>始<rt>はじ</rt></ruby>めたことはどれですか。",
+          "options": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answerIndex": 2,
+          "explanation": "正解：スマホをしまって本（ほん）を読（よ）む",
+          "optionsJa": [
+            "スマホでニュースを<ruby>見<rt>み</rt></ruby>る",
+            "<ruby>音楽<rt>おんがく</rt></ruby>を<ruby>聞<rt>き</rt></ruby>く",
+            "スマホをしまって<ruby>本<rt>ほん</rt></ruby>を<ruby>読<rt>よ</rt></ruby>む",
+            "<ruby>寝<rt>ね</rt></ruby>る"
+          ]
+        },
+        {
+          "question": "",
+          "questionJa": "<ruby>続<rt>つづ</rt></ruby>けるうちに、<ruby>筆者<rt>ひっしゃ</rt></ruby>は<ruby>通勤<rt>つうきん</rt></ruby>の<ruby>時間<rt>じかん</rt></ruby>をどう<ruby>感<rt>かん</rt></ruby>じるようになりましたか。",
+          "options": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answerIndex": 1,
+          "explanation": "正解：一日（いちにち）で一番（いちばん）静（しず）かな時間（じかん）",
+          "optionsJa": [
+            "<ruby>退屈<rt>たいくつ</rt></ruby>で<ruby>長<rt>なが</rt></ruby>い<ruby>時間<rt>じかん</rt></ruby>",
+            "<ruby>一日<rt>いちにち</rt></ruby>で<ruby>一番<rt>いちばん</rt></ruby><ruby>静<rt>しず</rt></ruby>かな<ruby>時間<rt>じかん</rt></ruby>",
+            "<ruby>疲<rt>つか</rt></ruby>れる<ruby>時間<rt>じかん</rt></ruby>",
+            "<ruby>急<rt>いそ</rt></ruby>ぐ<ruby>時間<rt>じかん</rt></ruby>"
+          ]
+        },
+        {
+          "question": "",
+          "questionJa": "<ruby>筆者<rt>ひっしゃ</rt></ruby>が<ruby>一番<rt>いちばん</rt></ruby><ruby>言<rt>い</rt></ruby>いたいことは<ruby>何<rt>なん</rt></ruby>ですか。",
+          "options": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answerIndex": 2,
+          "explanation": "正解：スマホの使（つか）い方（かた）を自分（じぶん）で決（き）めることが大切（たいせつ）だ",
+          "optionsJa": [
+            "スマホは<ruby>使<rt>つか</rt></ruby>ってはいけない",
+            "<ruby>本<rt>ほん</rt></ruby>はスマホより<ruby>役<rt>やく</rt></ruby>に<ruby>立<rt>た</rt></ruby>つ",
+            "スマホの<ruby>使<rt>つか</rt></ruby>い<ruby>方<rt>かた</rt></ruby>を<ruby>自分<rt>じぶん</rt></ruby>で<ruby>決<rt>き</rt></ruby>めることが<ruby>大切<rt>たいせつ</rt></ruby>だ",
+            "<ruby>通勤<rt>つうきん</rt></ruby>は<ruby>電車<rt>でんしゃ</rt></ruby>より<ruby>車<rt>くるま</rt></ruby>がいい"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reading-n3-02",
+      "title": "Library notice",
+      "japaneseTitle": "図書館からのお知らせ",
+      "level": "N3",
+      "summary": "図書館からのお知らせ · 4 questions",
+      "minutes": 4,
+      "html": "<ruby>市立<rt>しりつ</rt></ruby><ruby>図書館<rt>としょかん</rt></ruby>では、<ruby>来月<rt>らいげつ</rt></ruby>から<ruby>利用<rt>りよう</rt></ruby>のルールが<ruby>一部<rt>いちぶ</rt></ruby><ruby>変<rt>か</rt></ruby>わります。まず、<ruby>本<rt>ほん</rt></ruby>を<ruby>借<rt>か</rt></ruby>りられる<ruby>期間<rt>きかん</rt></ruby>が<ruby>二週間<rt>にしゅうかん</rt></ruby>から<ruby>三週間<rt>さんしゅうかん</rt></ruby>に<ruby>延<rt>の</rt></ruby>びます。また、<ruby>予約<rt>よやく</rt></ruby>した<ruby>本<rt>ほん</rt></ruby>は、<ruby>連絡<rt>れんらく</rt></ruby>をもらってから<ruby>一週間<rt>いっしゅうかん</rt></ruby><ruby>以内<rt>いない</rt></ruby>に<ruby>取<rt>と</rt></ruby>りに<ruby>来<rt>こ</rt></ruby>なければなりません。それを<ruby>過<rt>す</rt></ruby>ぎると、<ruby>予約<rt>よやく</rt></ruby>は<ruby>自動的<rt>じどうてき</rt></ruby>に<ruby>取<rt>と</rt></ruby>り<ruby>消<rt>け</rt></ruby>されます。なお、<ruby>日曜日<rt>にちようび</rt></ruby>は、これまで<ruby>午後<rt>ごご</rt></ruby><ruby>五時<rt>ごじ</rt></ruby>までだった<ruby>開館時間<rt>かいかんじかん</rt></ruby>が、<ruby>午後<rt>ごご</rt></ruby><ruby>七時<rt>しちじ</rt></ruby>まで<ruby>延長<rt>えんちょう</rt></ruby>されます。ただし、<ruby>祝日<rt>しゅくじつ</rt></ruby>は<ruby>今<rt>いま</rt></ruby>までどおり<ruby>休館<rt>きゅうかん</rt></ruby>です。",
+      "translation": "At the city library, some usage rules will change from next month. First, the loan period will be extended from two weeks to three. Also, reserved books must be picked up within one week of being notified. After that, the reservation is automatically canceled. In addition, Sunday opening hours, previously until 5 p.m., will be extended to 7 p.m. However, the library will remain closed on public holidays as before.",
+      "questions": [
+        {
+          "question": "",
+          "questionJa": "<ruby>来月<rt>らいげつ</rt></ruby>から、<ruby>本<rt>ほん</rt></ruby>を<ruby>借<rt>か</rt></ruby>りられる<ruby>期間<rt>きかん</rt></ruby>はどうなりますか。",
+          "options": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answerIndex": 2,
+          "explanation": "正解：三週間（さんしゅうかん）になる",
+          "optionsJa": [
+            "<ruby>一週間<rt>いっしゅうかん</rt></ruby>になる",
+            "<ruby>二週間<rt>にしゅうかん</rt></ruby>のまま",
+            "<ruby>三週間<rt>さんしゅうかん</rt></ruby>になる",
+            "一か<ruby>月<rt>いっかげつ</rt></ruby>になる"
+          ]
+        },
+        {
+          "question": "",
+          "questionJa": "<ruby>予約<rt>よやく</rt></ruby>した<ruby>本<rt>ほん</rt></ruby>を、<ruby>連絡<rt>れんらく</rt></ruby>から<ruby>一週間<rt>いっしゅうかん</rt></ruby><ruby>以内<rt>いない</rt></ruby>に<ruby>取<rt>と</rt></ruby>りに<ruby>行<rt>い</rt></ruby>かないと、どうなりますか。",
+          "options": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answerIndex": 0,
+          "explanation": "正解：予約（よやく）が自動的（じどうてき）に取（と）り消（け）される",
+          "optionsJa": [
+            "<ruby>予約<rt>よやく</rt></ruby>が<ruby>自動的<rt>じどうてき</rt></ruby>に<ruby>取<rt>と</rt></ruby>り<ruby>消<rt>け</rt></ruby>される",
+            "お<ruby>金<rt>かね</rt></ruby>を<ruby>払<rt>はら</rt></ruby>わなければならない",
+            "<ruby>別<rt>べつ</rt></ruby>の<ruby>本<rt>ほん</rt></ruby>を<ruby>借<rt>か</rt></ruby>りられる",
+            "<ruby>何<rt>なに</rt></ruby>も<ruby>起<rt>お</rt></ruby>こらない"
+          ]
+        },
+        {
+          "question": "",
+          "questionJa": "<ruby>日曜日<rt>にちようび</rt></ruby>の<ruby>開館時間<rt>かいかんじかん</rt></ruby>はどう<ruby>変<rt>か</rt></ruby>わりますか。",
+          "options": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answerIndex": 1,
+          "explanation": "正解：午後（ごご）七時（しちじ）までになる",
+          "optionsJa": [
+            "<ruby>午後<rt>ごご</rt></ruby><ruby>五時<rt>ごじ</rt></ruby>までになる",
+            "<ruby>午後<rt>ごご</rt></ruby><ruby>七時<rt>しちじ</rt></ruby>までになる",
+            "<ruby>休館<rt>きゅうかん</rt></ruby>になる",
+            "<ruby>変<rt>か</rt></ruby>わらない"
+          ]
+        },
+        {
+          "question": "",
+          "questionJa": "<ruby>祝日<rt>しゅくじつ</rt></ruby>について、<ruby>正<rt>ただ</rt></ruby>しいのはどれですか。",
+          "options": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answerIndex": 1,
+          "explanation": "正解：今（いま）までどおり休館（きゅうかん）",
+          "optionsJa": [
+            "<ruby>開館時間<rt>かいかんじかん</rt></ruby>が<ruby>延<rt>の</rt></ruby>びる",
+            "<ruby>今<rt>いま</rt></ruby>までどおり<ruby>休館<rt>きゅうかん</rt></ruby>",
+            "<ruby>予約<rt>よやく</rt></ruby>ができない",
+            "<ruby>本<rt>ほん</rt></ruby>が<ruby>借<rt>か</rt></ruby>りられない"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reading-n3-03",
+      "title": "First time living alone",
+      "japaneseTitle": "初めての一人暮らし",
+      "level": "N3",
+      "summary": "初めての一人暮らし · 4 questions",
+      "minutes": 4,
+      "html": "<ruby>大学<rt>だいがく</rt></ruby>に<ruby>入<rt>はい</rt></ruby>って、<ruby>初<rt>はじ</rt></ruby>めて<ruby>一人暮<rt>ひとりぐ</rt></ruby>らしを<ruby>始<rt>はじ</rt></ruby>めた。<ruby>最初<rt>さいしょ</rt></ruby>の一か<ruby>月<rt>いっかげつ</rt></ruby>は、<ruby>自由<rt>じゆう</rt></ruby>で<ruby>楽<rt>たの</rt></ruby>しいことばかりだと<ruby>思<rt>おも</rt></ruby>っていた。ところが、<ruby>実際<rt>じっさい</rt></ruby>に<ruby>生活<rt>せいかつ</rt></ruby>してみると、<ruby>料理<rt>りょうり</rt></ruby>も、<ruby>洗濯<rt>せんたく</rt></ruby>も、<ruby>掃除<rt>そうじ</rt></ruby>も、<ruby>全部<rt>ぜんぶ</rt></ruby><ruby>自分<rt>じぶん</rt></ruby>でやらなければならない。<ruby>実家<rt>じっか</rt></ruby>にいたときは、<ruby>母<rt>はは</rt></ruby>がやってくれるのが<ruby>当<rt>あ</rt></ruby>たり<ruby>前<rt>まえ</rt></ruby>だと<ruby>思<rt>おも</rt></ruby>っていた。<ruby>熱<rt>ねつ</rt></ruby>を<ruby>出<rt>だ</rt></ruby>して<ruby>寝<rt>ね</rt></ruby>ていたとき、<ruby>誰<rt>だれ</rt></ruby>も<ruby>助<rt>たす</rt></ruby>けてくれないのが、こんなに<ruby>不安<rt>ふあん</rt></ruby>なものだとは<ruby>知<rt>し</rt></ruby>らなかった。その<ruby>夜<rt>よる</rt></ruby>、<ruby>母<rt>はは</rt></ruby>に<ruby>電話<rt>でんわ</rt></ruby>をして「ありがとう」と<ruby>言<rt>い</rt></ruby>ったら、<ruby>母<rt>はは</rt></ruby>は「<ruby>急<rt>きゅう</rt></ruby>にどうしたの」と<ruby>笑<rt>わら</rt></ruby>った。",
+      "translation": "After entering university, I began living alone for the first time. For the first month I thought it would be all freedom and fun. But once I actually lived that way, I had to do cooking, laundry and cleaning all by myself. When I lived at my parents' home, I took it for granted that my mother did these things. When I had a fever and lay in bed, I didn't know how anxious it would feel to have no one to help me. That night I called my mother and said \"thank you,\" and she laughed, \"What's gotten into you all of a sudden?\"",
+      "questions": [
+        {
+          "question": "",
+          "questionJa": "<ruby>一人暮<rt>ひとりぐ</rt></ruby>らしを<ruby>始<rt>はじ</rt></ruby>める<ruby>前<rt>まえ</rt></ruby>、「<ruby>私<rt>わたし</rt></ruby>」はどう<ruby>思<rt>おも</rt></ruby>っていましたか。",
+          "options": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answerIndex": 1,
+          "explanation": "正解：自由（じゆう）で楽（たの）しいことばかりだ",
+          "optionsJa": [
+            "<ruby>大変<rt>たいへん</rt></ruby>なことばかりだ",
+            "<ruby>自由<rt>じゆう</rt></ruby>で<ruby>楽<rt>たの</rt></ruby>しいことばかりだ",
+            "お<ruby>金<rt>かね</rt></ruby>がかかる",
+            "すぐに<ruby>慣<rt>な</rt></ruby>れる"
+          ]
+        },
+        {
+          "question": "",
+          "questionJa": "<ruby>実際<rt>じっさい</rt></ruby>に<ruby>生活<rt>せいかつ</rt></ruby>してみて、「<ruby>私<rt>わたし</rt></ruby>」は<ruby>何<rt>なに</rt></ruby>がわかりましたか。",
+          "options": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answerIndex": 0,
+          "explanation": "正解：家事（かじ）を全部（ぜんぶ）自分（じぶん）でしなければならないこと",
+          "optionsJa": [
+            "<ruby>家事<rt>かじ</rt></ruby>を<ruby>全部<rt>ぜんぶ</rt></ruby><ruby>自分<rt>じぶん</rt></ruby>でしなければならないこと",
+            "<ruby>友達<rt>ともだち</rt></ruby>が<ruby>簡単<rt>かんたん</rt></ruby>にできること",
+            "<ruby>料理<rt>りょうり</rt></ruby>が<ruby>好<rt>す</rt></ruby>きになること",
+            "<ruby>母<rt>はは</rt></ruby>が<ruby>近<rt>ちか</rt></ruby>くに<ruby>住<rt>す</rt></ruby>んでいること"
+          ]
+        },
+        {
+          "question": "",
+          "questionJa": "<ruby>熱<rt>ねつ</rt></ruby>を<ruby>出<rt>だ</rt></ruby>したとき、「<ruby>私<rt>わたし</rt></ruby>」はどう<ruby>感<rt>かん</rt></ruby>じましたか。",
+          "options": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answerIndex": 2,
+          "explanation": "正解：不安（ふあん）だった",
+          "optionsJa": [
+            "うれしかった",
+            "<ruby>眠<rt>ねむ</rt></ruby>かった",
+            "<ruby>不安<rt>ふあん</rt></ruby>だった",
+            "<ruby>何<rt>なに</rt></ruby>も<ruby>感<rt>かん</rt></ruby>じなかった"
+          ]
+        },
+        {
+          "question": "",
+          "questionJa": "「<ruby>私<rt>わたし</rt></ruby>」が<ruby>母<rt>はは</rt></ruby>に「ありがとう」と<ruby>言<rt>い</rt></ruby>ったのはなぜですか。",
+          "options": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answerIndex": 1,
+          "explanation": "正解：母（はは）がいつも家事（かじ）をしてくれていたことの大（たい）きさに気（き）づいたから",
+          "optionsJa": [
+            "<ruby>母<rt>はは</rt></ruby>がお<ruby>金<rt>かね</rt></ruby>を<ruby>送<rt>おく</rt></ruby>ってくれたから",
+            "<ruby>母<rt>はは</rt></ruby>がいつも<ruby>家事<rt>かじ</rt></ruby>をしてくれていたことの<ruby>大<rt>たい</rt></ruby>きさに<ruby>気<rt>き</rt></ruby>づいたから",
+            "<ruby>母<rt>はは</rt></ruby>が<ruby>病院<rt>びょういん</rt></ruby>に<ruby>来<rt>き</rt></ruby>てくれたから",
+            "<ruby>母<rt>はは</rt></ruby>に<ruby>誕生日<rt>たんじょうび</rt></ruby>プレゼントをもらったから"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reading-n3-04",
+      "title": "Handwritten letters",
+      "japaneseTitle": "手書きの手紙",
+      "level": "N3",
+      "summary": "手書きの手紙 · 4 questions",
+      "minutes": 4,
+      "html": "メールやメッセージは<ruby>便利<rt>べんり</rt></ruby>で、すぐに<ruby>相手<rt>あいて</rt></ruby>に<ruby>届<rt>とど</rt></ruby>く。そのため、<ruby>手紙<rt>てがみ</rt></ruby>を<ruby>書<rt>か</rt></ruby>く<ruby>人<rt>ひと</rt></ruby>は<ruby>年々<rt>ねんねん</rt></ruby><ruby>減<rt>へ</rt></ruby>っている。しかし、<ruby>手書<rt>てが</rt></ruby>きの<ruby>手紙<rt>てがみ</rt></ruby>には、メールにはない<ruby>良<rt>よ</rt></ruby>さがあると<ruby>私<rt>わたし</rt></ruby>は<ruby>思<rt>おも</rt></ruby>う。<ruby>字<rt>じ</rt></ruby>を<ruby>書<rt>か</rt></ruby>くには<ruby>時間<rt>じかん</rt></ruby>がかかるので、<ruby>何<rt>なに</rt></ruby>を<ruby>伝<rt>つた</rt></ruby>えたいのか、じっくり<ruby>考<rt>かんが</rt></ruby>えるようになる。また、<ruby>字<rt>じ</rt></ruby>の<ruby>形<rt>かたち</rt></ruby>や<ruby>紙<rt>かみ</rt></ruby>の<ruby>選<rt>えら</rt></ruby>び<ruby>方<rt>かた</rt></ruby>から、<ruby>書<rt>か</rt></ruby>いた<ruby>人<rt>ひと</rt></ruby>の<ruby>気持<rt>きも</rt></ruby>ちが<ruby>伝<rt>つた</rt></ruby>わってくることもある。<ruby>先週<rt>せんしゅう</rt></ruby>、<ruby>留学<rt>りゅうがく</rt></ruby>している<ruby>友達<rt>ともだち</rt></ruby>から<ruby>手紙<rt>てがみ</rt></ruby>が<ruby>届<rt>とど</rt></ruby>いた。<ruby>内容<rt>ないよう</rt></ruby>は<ruby>短<rt>みじか</rt></ruby>かったが、<ruby>読<rt>よ</rt></ruby>んだとたん、<ruby>友達<rt>ともだち</rt></ruby>が<ruby>隣<rt>となり</rt></ruby>で<ruby>話<rt>はな</rt></ruby>しているような<ruby>気持<rt>きも</rt></ruby>ちになった。<ruby>便利<rt>べんり</rt></ruby>さだけを<ruby>求<rt>もと</rt></ruby>めるのではなく、ときには<ruby>時間<rt>じかん</rt></ruby>をかけて<ruby>気持<rt>きも</rt></ruby>ちを<ruby>伝<rt>つた</rt></ruby>えることも<ruby>大切<rt>たいせつ</rt></ruby>ではないだろうか。",
+      "translation": "Emails and messages are convenient and reach the other person right away. As a result, fewer people write letters every year. But I think handwritten letters have a quality that email lacks. Writing by hand takes time, so you think carefully about what you want to say. Also, the shape of the handwriting and the choice of paper can convey the writer's feelings. Last week, a letter arrived from a friend studying abroad. The content was short, but the moment I read it, I felt as if my friend were talking next to me. Rather than only seeking convenience, isn't it important sometimes to take time to convey your feelings?",
+      "questions": [
+        {
+          "question": "",
+          "questionJa": "<ruby>手紙<rt>てがみ</rt></ruby>を<ruby>書<rt>か</rt></ruby>く<ruby>人<rt>ひと</rt></ruby>が<ruby>減<rt>へ</rt></ruby>っているのはなぜですか。",
+          "options": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answerIndex": 2,
+          "explanation": "正解：メールのほうが便利（べんり）ですぐに届（とど）くから",
+          "optionsJa": [
+            "<ruby>切手<rt>きって</rt></ruby>が<ruby>高<rt>たか</rt></ruby>くなったから",
+            "<ruby>字<rt>じ</rt></ruby>を<ruby>書<rt>か</rt></ruby>くのが<ruby>嫌<rt>きら</rt></ruby>いな<ruby>人<rt>ひと</rt></ruby>が<ruby>増<rt>ふ</rt></ruby>えたから",
+            "メールのほうが<ruby>便利<rt>べんり</rt></ruby>ですぐに<ruby>届<rt>とど</rt></ruby>くから",
+            "<ruby>郵便局<rt>ゆうびんきょく</rt></ruby>が<ruby>少<rt>すく</rt></ruby>なくなったから"
+          ]
+        },
+        {
+          "question": "",
+          "questionJa": "<ruby>筆者<rt>ひっしゃ</rt></ruby>が<ruby>考<rt>かんが</rt></ruby>える<ruby>手書<rt>てが</rt></ruby>きの<ruby>手紙<rt>てがみ</rt></ruby>の<ruby>良<rt>よ</rt></ruby>さはどれですか。",
+          "options": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answerIndex": 1,
+          "explanation": "正解：何（なに）を伝（つた）えたいか、じっくり考（かんが）えられる",
+          "optionsJa": [
+            "<ruby>早<rt>はや</rt></ruby>く<ruby>届<rt>とど</rt></ruby>く",
+            "<ruby>何<rt>なに</rt></ruby>を<ruby>伝<rt>つた</rt></ruby>えたいか、じっくり<ruby>考<rt>かんが</rt></ruby>えられる",
+            "<ruby>安<rt>やす</rt></ruby>い",
+            "<ruby>何度<rt>なんど</rt></ruby>でも<ruby>書<rt>か</rt></ruby>き<ruby>直<rt>なお</rt></ruby>せる"
+          ]
+        },
+        {
+          "question": "",
+          "questionJa": "<ruby>友達<rt>ともだち</rt></ruby>の<ruby>手紙<rt>てがみ</rt></ruby>を<ruby>読<rt>よ</rt></ruby>んだとき、<ruby>筆者<rt>ひっしゃ</rt></ruby>はどんな<ruby>気持<rt>きも</rt></ruby>ちになりましたか。",
+          "options": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answerIndex": 1,
+          "explanation": "正解：友達（ともだち）が隣（となり）で話（はな）しているような気持（きも）ち",
+          "optionsJa": [
+            "<ruby>長<rt>なが</rt></ruby>い<ruby>手紙<rt>てがみ</rt></ruby>で<ruby>疲<rt>つか</rt></ruby>れた",
+            "<ruby>友達<rt>ともだち</rt></ruby>が<ruby>隣<rt>となり</rt></ruby>で<ruby>話<rt>はな</rt></ruby>しているような<ruby>気持<rt>きも</rt></ruby>ち",
+            "<ruby>返事<rt>へんじ</rt></ruby>を<ruby>書<rt>か</rt></ruby>くのが<ruby>面倒<rt>めんどう</rt></ruby>",
+            "<ruby>友達<rt>ともだち</rt></ruby>に<ruby>会<rt>あ</rt></ruby>いたくなくなった"
+          ]
+        },
+        {
+          "question": "",
+          "questionJa": "<ruby>筆者<rt>ひっしゃ</rt></ruby>の<ruby>意見<rt>いけん</rt></ruby>に<ruby>合<rt>あ</rt></ruby>うものはどれですか。",
+          "options": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answerIndex": 2,
+          "explanation": "正解：ときには時間（じかん）をかけて気持（きも）ちを伝（つた）えることも大切（たいせつ）だ",
+          "optionsJa": [
+            "<ruby>手紙<rt>てがみ</rt></ruby>はメールより<ruby>便利<rt>べんり</rt></ruby>だ",
+            "メールは<ruby>使<rt>つか</rt></ruby>わないほうがいい",
+            "ときには<ruby>時間<rt>じかん</rt></ruby>をかけて<ruby>気持<rt>きも</rt></ruby>ちを<ruby>伝<rt>つた</rt></ruby>えることも<ruby>大切<rt>たいせつ</rt></ruby>だ",
+            "<ruby>手紙<rt>てがみ</rt></ruby>は<ruby>短<rt>みじか</rt></ruby>いほうがいい"
+          ]
+        }
+      ]
+    }
+  ]
+}
