@@ -6,6 +6,14 @@ function loadTokenizer(){
   tokenizerPromise=new Promise((resolve,reject)=>{
     try{
       importScripts('https://cdn.jsdelivr.net/npm/kuromoji@0.1.2/build/kuromoji.js');
+      // Kuromoji's bundled path.join collapses the double slash in an https URL
+      // (https://cdn… becomes https:/cdn…), which the browser treats as a
+      // same-origin path. Restore the URL before the dictionary XHR is opened.
+      const originalOpen=XMLHttpRequest.prototype.open;
+      XMLHttpRequest.prototype.open=function(method,url,...args){
+        const fixedUrl=typeof url==='string'?url.replace(/^https:\/(?!\/)/,'https://'):url;
+        return originalOpen.call(this,method,fixedUrl,...args);
+      };
       self.kuromoji.builder({dicPath:'https://cdn.jsdelivr.net/npm/kuromoji@0.1.2/dict/'}).build((error,tokenizer)=>{
         if(error)reject(error);else resolve(tokenizer);
       });
