@@ -81,7 +81,18 @@
   </main>
 
   <main id="readings-view" class="page-view" style="display:none">
-    <div class="page-heading"><p class="eyebrow">READ & UNDERSTAND</p><h2>Guided reading</h2><p>Little stories with furigana, so you can read real Japanese without panicking. Quick quiz after.</p><button type="button" class="header-btn" id="saved-words-open-list">Saved words</button></div>
+    <div class="page-heading"><p class="eyebrow">READ & UNDERSTAND</p><h2>Guided reading</h2><p>Read short stories, or bring your own Japanese text and get furigana suggestions.</p><button type="button" class="header-btn" id="saved-words-open-list">Saved words</button> <button type="button" class="deck-start" id="add-reading-open">＋ Add your own reading</button></div>
+    <section class="custom-reading-editor" id="custom-reading-editor" hidden>
+      <h3>Create a personal reading</h3>
+      <p>Paste Japanese text without furigana. Kotoba will suggest readings on this device. You can correct the suggestions before saving.</p>
+      <label for="custom-reading-title">Title</label><input id="custom-reading-title" type="text" maxlength="80" placeholder="A title for your reading">
+      <label for="custom-reading-source">Japanese text</label><textarea id="custom-reading-source" rows="7" maxlength="5000" placeholder="Paste your Japanese passage here…"></textarea>
+      <div class="custom-reading-actions"><button type="button" class="header-btn" id="generate-furigana">Suggest furigana</button><span id="furigana-status" role="status"></span></div>
+      <label for="custom-reading-annotated">Review and edit readings <span class="form-help">Format: 漢字(かんじ)</span></label>
+      <textarea id="custom-reading-annotated" rows="7" placeholder="Suggested readings will appear here…" hidden></textarea>
+      <div class="custom-reading-preview" id="custom-reading-preview" hidden></div>
+      <div class="custom-reading-actions"><button type="button" class="deck-start" id="save-custom-reading" hidden>Save reading</button><button type="button" class="text-link" id="cancel-custom-reading">Cancel</button></div>
+    </section>
     <div class="story-grid" id="story-list"></div>
   </main>
 

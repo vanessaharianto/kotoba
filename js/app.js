@@ -58,6 +58,10 @@
   let knownCount = 0;
   let sessionTotal = 0;
   let readingStories = [];
+  let personalReadings = [];
+  const PERSONAL_READINGS_KEY='kotoba-personal-readings-v1';
+  try{personalReadings=JSON.parse(localStorage.getItem(PERSONAL_READINGS_KEY)||'[]');if(!Array.isArray(personalReadings))personalReadings=[];}catch(e){personalReadings=[];}
+  let kuromojiTokenizerPromise=null;
   let activeStory = null;
   let storySegmentIndex = 0;
   let storyQuestionIndex=0;
@@ -135,6 +139,48 @@
     setPage(page);
   }));
   document.getElementById('reader-back').addEventListener('click',()=>setPage('readings'));
+  const customReadingEditor=document.getElementById('custom-reading-editor');
+  const annotatedReadingInput=document.getElementById('custom-reading-annotated');
+  const customReadingPreview=document.getElementById('custom-reading-preview');
+  document.getElementById('add-reading-open').addEventListener('click',()=>{customReadingEditor.hidden=false;document.getElementById('custom-reading-title').focus();});
+  document.getElementById('cancel-custom-reading').addEventListener('click',()=>{customReadingEditor.hidden=true;});
+  document.getElementById('generate-furigana').addEventListener('click',async()=>{
+    const source=document.getElementById('custom-reading-source').value.trim();
+    const status=document.getElementById('furigana-status');
+    if(!source){status.textContent='Paste a Japanese passage first.';return;}
+    status.textContent='Loading the Japanese reading dictionary and suggesting furigana…';
+    const generate=document.getElementById('generate-furigana');generate.disabled=true;
+    try{
+      annotatedReadingInput.value=await suggestFurigana(source);
+      status.textContent='Suggestions are ready. Please check names and readings, then edit anything that looks wrong.';
+      annotatedReadingInput.hidden=false;customReadingPreview.hidden=false;document.getElementById('save-custom-reading').hidden=false;
+      customReadingPreview.innerHTML=annotatedReadingHtml(annotatedReadingInput.value);
+    }catch(error){
+      annotatedReadingInput.value=source;annotatedReadingInput.hidden=false;customReadingPreview.hidden=false;document.getElementById('save-custom-reading').hidden=false;
+      customReadingPreview.innerHTML=annotatedReadingHtml(source);
+      status.textContent='Automatic suggestions could not load. You can still add readings in 漢字(かんじ) format and save.';
+    }finally{generate.disabled=false;}
+  });
+  annotatedReadingInput.addEventListener('input',()=>{customReadingPreview.innerHTML=annotatedReadingHtml(annotatedReadingInput.value);});
+  document.getElementById('save-custom-reading').addEventListener('click',()=>{
+    const title=document.getElementById('custom-reading-title').value.trim()||'My reading';
+    const annotated=annotatedReadingInput.value.trim();
+    if(!annotated)return;
+    const id=`personal-${Date.now()}`;
+    const story={id,title,level:'Personal',summary:'A reading you added for your own study.',minutes:Math.max(1,Math.ceil(annotated.length/220)),html:annotatedReadingHtml(annotated),translation:'',questions:[],personal:true};
+    personalReadings.unshift(story);
+    try{localStorage.setItem(PERSONAL_READINGS_KEY,JSON.stringify(personalReadings));}
+    catch(error){personalReadings.shift();document.getElementById('furigana-status').textContent='This reading could not be saved in this browser. It may be out of storage space.';return;}
+    readingStories=[...readingStories.filter(item=>item.id!==id),story];
+    renderReadingList();customReadingEditor.hidden=true;
+    document.getElementById('custom-reading-title').value='';document.getElementById('custom-reading-source').value='';annotatedReadingInput.value='';annotatedReadingInput.hidden=true;customReadingPreview.replaceChildren();customReadingPreview.hidden=true;document.getElementById('save-custom-reading').hidden=true;document.getElementById('furigana-status').textContent='';
+  });
+  document.getElementById('story-list').addEventListener('click',event=>{
+    const remove=event.target.closest('[data-remove-reading]');if(!remove)return;
+    personalReadings=personalReadings.filter(story=>story.id!==remove.dataset.removeReading);
+    try{localStorage.setItem(PERSONAL_READINGS_KEY,JSON.stringify(personalReadings));}catch(e){}
+    readingStories=readingStories.filter(story=>story.id!==remove.dataset.removeReading);renderReadingList();
+  });
   document.getElementById('kanji-back').addEventListener('click',()=>setPage('kanji'));
   document.getElementById('kanji-next').addEventListener('click',()=>{
     if(kanjiTargets.length) openKanjiPractice((activeKanjiIndex+1)%kanjiTargets.length);
@@ -352,7 +398,17 @@
     const list=document.getElementById('deck-list');
     if(!list)return;
     list.innerHTML='';
-    sheetCandidates.forEach(c=>{
+    const jlptOrder={N5:0,N4:1,N3:2,N2:3,N1:4};
+    const orderedDecks=[...sheetCandidates].sort((a,b)=>{
+      const aLevel=jlptOrder[a.name],bLevel=jlptOrder[b.name];
+      if(aLevel!==undefined||bLevel!==undefined){
+        if(aLevel===undefined)return 1;
+        if(bLevel===undefined)return -1;
+        return aLevel-bLevel;
+      }
+      return sheetCandidates.indexOf(a)-sheetCandidates.indexOf(b);
+    });
+    orderedDecks.forEach(c=>{
       const article=document.createElement('article'); article.className='deck-card';
       const eyebrow=document.createElement('span'); eyebrow.className='level-tag';
       eyebrow.textContent=/^N[1-5]$/.test(c.name)?`JLPT ${c.name}`:(/verb/i.test(c.name)?'Grammar':'Vocabulary');
@@ -404,23 +460,77 @@
       const summary=document.createElement('p'); summary.textContent=story.summary;
       const button=document.createElement('button'); button.className='deck-start'; button.type='button'; button.textContent='Start reading →';
       button.addEventListener('click',()=>beginStory(story));
-      card.append(top,title,summary,button); list.appendChild(card);
+      card.append(top,title,summary,button);
+      if(story.personal){const remove=document.createElement('button');remove.type='button';remove.className='text-link remove-personal-reading';remove.textContent='Delete personal reading';remove.dataset.removeReading=story.id;card.appendChild(remove);}
+      list.appendChild(card);
     });
   }
 
+  function escapeReadingText(value){return String(value||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');}
+  function annotatedReadingHtml(value){
+    return escapeReadingText(value)
+      .replace(/([\u3400-\u4dbf\u4e00-\u9fff々〆ヶ]+)\(([ぁ-ゖゔァ-ヺー]+)\)/g,'<ruby>$1<rt>$2</rt></ruby>')
+      .replace(/\r?\n/g,'<br>');
+  }
+  function katakanaToHiragana(value){return Array.from(String(value||'')).map(char=>{const code=char.charCodeAt(0);return code>=0x30a1&&code<=0x30f6?String.fromCharCode(code-0x60):char;}).join('');}
+  function loadKuromojiTokenizer(){
+    if(kuromojiTokenizerPromise)return kuromojiTokenizerPromise;
+    if(window.kuromoji?.builder){
+      kuromojiTokenizerPromise=new Promise((resolve,reject)=>window.kuromoji.builder({dicPath:'https://cdn.jsdelivr.net/npm/kuromoji@0.1.2/dict/'}).build((error,tokenizer)=>error?reject(error):resolve(tokenizer))).catch(error=>{kuromojiTokenizerPromise=null;throw error;});
+      return kuromojiTokenizerPromise;
+    }
+    kuromojiTokenizerPromise=new Promise((resolve,reject)=>{
+      const script=document.createElement('script');script.src='https://cdn.jsdelivr.net/npm/kuromoji@0.1.2/build/kuromoji.js';script.async=true;
+      script.onload=()=>{if(!window.kuromoji?.builder){reject(new Error('The Japanese reading helper did not load.'));return;}build();};
+      script.onerror=()=>reject(new Error('Could not load the Japanese reading helper. Check your internet connection.'));
+      document.head.appendChild(script);
+      function build(){window.kuromoji.builder({dicPath:'https://cdn.jsdelivr.net/npm/kuromoji@0.1.2/dict/'}).build((error,tokenizer)=>error?reject(error):resolve(tokenizer));}
+    }).catch(error=>{kuromojiTokenizerPromise=null;throw error;});
+    return kuromojiTokenizerPromise;
+  }
+  async function suggestFurigana(source){
+    const tokenizer=await loadKuromojiTokenizer();
+    return String(source).split(/(\r?\n)/).map(part=>{
+      if(/^\r?\n$/.test(part))return part;
+      return tokenizer.tokenize(part).map(token=>{
+        const surface=token.surface_form||'';
+        if(!/[\u3400-\u4dbf\u4e00-\u9fff々〆ヶ]/.test(surface)||!token.reading||token.reading==='*')return surface;
+        const reading=katakanaToHiragana(token.reading);
+        const tail=(surface.match(/[ぁ-ゖァ-ヺー]+$/)||[''])[0];
+        const tailReading=katakanaToHiragana(tail);
+        if(tail&&reading.endsWith(tailReading)&&reading.length>tailReading.length){
+          return `${surface.slice(0,-tail.length)}(${reading.slice(0,-tailReading.length)})${tail}`;
+        }
+        return `${surface}(${reading})`;
+      }).join('');
+    }).join('');
+  }
+
   function persistSavedWords(){try{localStorage.setItem(SAVED_WORDS_KEY,JSON.stringify(savedWords));}catch(e){}}
-  function renderWordLookup(panel,base,reading,candidates){
+  function positionWordLookup(panel){
+    const anchor=panel._lookupAnchor;
+    if(!anchor||!anchor.isConnected){panel.hidden=true;return;}
+    const rect=anchor.getBoundingClientRect();
+    const box=panel.getBoundingClientRect();
+    const margin=12;
+    const left=Math.max(margin,Math.min(window.innerWidth-box.width-margin,rect.left+rect.width/2-box.width/2));
+    let top=rect.bottom+8;
+    if(top+box.height>window.innerHeight-margin)top=Math.max(margin,rect.top-box.height-8);
+    panel.style.left=`${left}px`;panel.style.top=`${top}px`;
+  }
+  function renderWordLookup(panel,base,reading,candidates,anchor){
     const usable=candidates.filter(card=>String(card.meaning||'').trim());
-    panel.replaceChildren();panel.hidden=false;
+    panel.replaceChildren();panel._lookupAnchor=anchor;panel.hidden=false;
     const term=document.createElement('strong');term.lang='ja';term.textContent=base+(reading&&reading!==base?`（${reading}）`:'');
-    const close=document.createElement('button');close.type='button';close.className='lookup-close';close.textContent='Close';close.addEventListener('click',()=>panel.hidden=true);
+    const close=document.createElement('button');close.type='button';close.className='lookup-close';close.textContent='Close';close.addEventListener('click',()=>{panel.hidden=true;panel._lookupAnchor=null;});
     panel.append(term,close);
-    if(!usable.length){const missing=document.createElement('span');missing.className='lookup-definition';missing.textContent='No translation is available for this word yet.';panel.appendChild(missing);return;}
+    if(!usable.length){const missing=document.createElement('span');missing.className='lookup-definition';missing.textContent='No translation is available for this word yet.';panel.appendChild(missing);positionWordLookup(panel);return;}
     const card=usable[0];
     const meaning=document.createElement('span');meaning.className='lookup-definition';meaning.textContent=card.meaning;panel.appendChild(meaning);
     const id=cardReviewKey(card);const saved=savedWords.some(word=>word.id===id);const save=document.createElement('button');save.type='button';save.className='save-word-button';save.textContent=saved?'Saved ✓':'Save word';save.disabled=saved;
     save.addEventListener('click',()=>{if(savedWords.some(word=>word.id===id))return;savedWords.unshift({id,japanese:card.kanji||card.front||base,reading:card.furigana||reading||'',meaning:card.meaning,savedAt:Date.now()});persistSavedWords();save.textContent='Saved ✓';save.disabled=true;const open=document.getElementById('saved-words-open');if(open)open.textContent=`Saved words (${savedWords.length})`;const openList=document.getElementById('saved-words-open-list');if(openList)openList.textContent=`Saved words (${savedWords.length})`;});
     panel.appendChild(save);
+    positionWordLookup(panel);
   }
   function exactLookupCandidates(base,reading=''){
     const normalize=value=>String(value||'').replace(/[\s　]/g,'');
@@ -428,13 +538,21 @@
   }
   function activateWordLookups(container,panel){
     if(!container||!panel)return;
-    container.querySelectorAll('ruby').forEach(ruby=>{const base=Array.from(ruby.childNodes).filter(node=>node.nodeType===Node.TEXT_NODE).map(node=>node.textContent).join('').trim();const rt=ruby.querySelector('rt');const reading=rt?rt.textContent.trim():'';if(!base)return;const button=document.createElement('button');button.type='button';button.className='lookup-word';button.setAttribute('aria-label',`Look up ${base}`);button.addEventListener('click',()=>renderWordLookup(panel,base,reading,exactLookupCandidates(base,reading)));ruby.parentNode.insertBefore(button,ruby);button.appendChild(ruby);});
+    container.querySelectorAll('ruby').forEach(ruby=>{const base=Array.from(ruby.childNodes).filter(node=>node.nodeType===Node.TEXT_NODE).map(node=>node.textContent).join('').trim();const rt=ruby.querySelector('rt');const reading=rt?rt.textContent.trim():'';if(!base)return;const button=document.createElement('button');button.type='button';button.className='lookup-word';button.setAttribute('aria-label',`Look up ${base}`);button.addEventListener('click',()=>renderWordLookup(panel,base,reading,exactLookupCandidates(base,reading),button));ruby.parentNode.insertBefore(button,ruby);button.appendChild(ruby);});
     if(typeof Intl.Segmenter!=='function')return;
     const segmenter=new Intl.Segmenter('ja',{granularity:'word'});
     const walker=document.createTreeWalker(container,NodeFilter.SHOW_TEXT,{acceptNode:node=>node.parentElement?.closest('ruby,button')?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT});
     const textNodes=[];while(walker.nextNode())textNodes.push(walker.currentNode);
-    textNodes.forEach(node=>{const source=node.textContent,parts=Array.from(segmenter.segment(source));if(!parts.some(part=>part.isWordLike&&/[぀-ヿ㐀-鿿]/.test(part.segment)))return;const fragment=document.createDocumentFragment();let changed=false;parts.forEach(part=>{const exact=part.isWordLike&&Array.from(part.segment).length>1?exactLookupCandidates(part.segment):[];if(exact.length){const button=document.createElement('button');button.type='button';button.className='lookup-word';button.setAttribute('aria-label',`Look up ${part.segment}`);button.textContent=part.segment;button.addEventListener('click',()=>renderWordLookup(panel,part.segment,'',exact));fragment.appendChild(button);changed=true;}else fragment.appendChild(document.createTextNode(part.segment));});if(changed)node.parentNode.replaceChild(fragment,node);});
+    textNodes.forEach(node=>{const source=node.textContent,parts=Array.from(segmenter.segment(source));if(!parts.some(part=>part.isWordLike&&/[぀-ヿ㐀-鿿]/.test(part.segment)))return;const fragment=document.createDocumentFragment();let changed=false;parts.forEach(part=>{const exact=part.isWordLike&&Array.from(part.segment).length>1?exactLookupCandidates(part.segment):[];if(exact.length){const button=document.createElement('button');button.type='button';button.className='lookup-word';button.setAttribute('aria-label',`Look up ${part.segment}`);button.textContent=part.segment;button.addEventListener('click',()=>renderWordLookup(panel,part.segment,'',exact,button));fragment.appendChild(button);changed=true;}else fragment.appendChild(document.createTextNode(part.segment));});if(changed)node.parentNode.replaceChild(fragment,node);});
   }
+  function repositionOpenLookups(){document.querySelectorAll('.word-lookup-panel:not([hidden])').forEach(positionWordLookup);}
+  window.addEventListener('scroll',repositionOpenLookups,true);
+  window.addEventListener('resize',repositionOpenLookups);
+  document.addEventListener('click',event=>{
+    document.querySelectorAll('.word-lookup-panel:not([hidden])').forEach(panel=>{
+      if(!panel.contains(event.target)&&!panel._lookupAnchor?.contains(event.target)){panel.hidden=true;panel._lookupAnchor=null;}
+    });
+  });
   function renderSavedWords(){
     const list=document.getElementById('saved-word-list');if(!list)return;list.replaceChildren();
     const count=document.getElementById('saved-words-count');count.textContent=`${savedWords.length} saved`;
@@ -520,14 +638,16 @@
       const japaneseTitle=document.createElement('p');japaneseTitle.className='reader-story-subtitle';japaneseTitle.lang='ja';japaneseTitle.textContent=activeStory.japaneseTitle||'';heading.appendChild(japaneseTitle);
       const passage=document.createElement('p');passage.className='reading-passage';passage.innerHTML=activeStory.html||'';root.appendChild(passage);
       const lookup=document.createElement('aside');lookup.className='word-lookup-panel';lookup.hidden=true;lookup.setAttribute('aria-live','polite');root.appendChild(lookup);activateWordLookups(passage,lookup);
-      const translationToggle=document.createElement('button');translationToggle.type='button';translationToggle.className='translation-toggle';translationToggle.textContent='Show passage translation';translationToggle.setAttribute('aria-expanded','false');
-      const translation=document.createElement('p');translation.className='passage-translation';translation.textContent=activeStory.translation||'A translation is not available for this passage.';translation.hidden=true;
-      translationToggle.addEventListener('click',()=>{const expanded=translationToggle.getAttribute('aria-expanded')==='true';translationToggle.setAttribute('aria-expanded',String(!expanded));translation.hidden=expanded;translationToggle.textContent=expanded?'Show passage translation':'Hide passage translation';});
-      root.append(translationToggle,translation);
+      if(activeStory.translation){
+        const translationToggle=document.createElement('button');translationToggle.type='button';translationToggle.className='translation-toggle';translationToggle.textContent='Show passage translation';translationToggle.setAttribute('aria-expanded','false');
+        const translation=document.createElement('p');translation.className='passage-translation';translation.textContent=activeStory.translation;translation.hidden=true;
+        translationToggle.addEventListener('click',()=>{const expanded=translationToggle.getAttribute('aria-expanded')==='true';translationToggle.setAttribute('aria-expanded',String(!expanded));translation.hidden=expanded;translationToggle.textContent=expanded?'Show passage translation':'Hide passage translation';});
+        root.append(translationToggle,translation);
+      }
     }
     root.querySelector('.multi-story-quiz')?.remove();
     if(storyQuestionIndex>=activeStory.questions.length){
-      const complete=document.createElement('section');complete.className='reader-complete multi-story-quiz';const glyph=document.createElement('div');glyph.className='glyph';glyph.textContent='読';const heading=document.createElement('h2');heading.textContent='Reading complete';const result=document.createElement('p');result.textContent=`You answered ${storyScore} of ${activeStory.questions.length} questions correctly.`;const again=document.createElement('button');again.type='button';again.className='deck-start';again.textContent='Choose another story';again.addEventListener('click',()=>setPage('readings'));complete.append(glyph,heading,result,again);root.appendChild(complete);return;
+      const complete=document.createElement('section');complete.className='reader-complete multi-story-quiz';const glyph=document.createElement('div');glyph.className='glyph';glyph.textContent='読';const heading=document.createElement('h2');heading.textContent=activeStory.personal?'Finished reading?':'Reading complete';const result=document.createElement('p');result.textContent=activeStory.personal?'Your personal passage stays saved in this browser.':`You answered ${storyScore} of ${activeStory.questions.length} questions correctly.`;const again=document.createElement('button');again.type='button';again.className='deck-start';again.textContent=activeStory.personal?'Back to readings':'Choose another story';again.addEventListener('click',()=>setPage('readings'));complete.append(glyph,heading,result,again);root.appendChild(complete);return;
     }
     const q=activeStory.questions[storyQuestionIndex];const quiz=document.createElement('section');quiz.className='story-quiz multi-story-quiz';
     const progress=document.createElement('p');progress.className='eyebrow';progress.textContent=`QUESTION ${storyQuestionIndex+1} OF ${activeStory.questions.length}`;
@@ -937,7 +1057,7 @@
       ]);
       if(!databaseResponse.ok || !hintsResponse.ok || !readingsResponse.ok) throw new Error('Could not fetch the built-in data files');
       const [database, hintDatabase, readingData] = await Promise.all([databaseResponse.json(), hintsResponse.json(), readingsResponse.json()]);
-      readingStories = Array.isArray(readingData.stories) ? readingData.stories : [];
+      readingStories = [...(Array.isArray(readingData.stories) ? readingData.stories : []),...personalReadings];
       buildKanaDecks(kanaResult);
       grammarEntries = grammarResult && Array.isArray(grammarResult.entries) ? grammarResult.entries : [];
       grammarCategories = grammarResult && Array.isArray(grammarResult.categories) ? grammarResult.categories : [];
@@ -1829,8 +1949,6 @@
       startScroll = el.scrollLeft;
       pid = e.pointerId;
       el.classList.add('dragging');
-      // NOTE: intentionally not calling setPointerCapture — that would redirect
-      // the eventual click to the container instead of the tapped chip button.
     });
     window.addEventListener('pointermove', (e)=>{
       if(!dragging || e.pointerId !== pid) return;
@@ -1845,7 +1963,6 @@
       dragging = false;
       el.classList.remove('dragging');
       if(moved){
-        // swallow just the next click, so a real drag doesn't also select a chip
         const suppress = (ev)=>{ ev.stopPropagation(); ev.preventDefault(); };
         el.addEventListener('click', suppress, { capture:true, once:true });
       }
