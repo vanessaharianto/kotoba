@@ -283,6 +283,28 @@ header p{margin:2px 0 0; font-size:.8rem; color:var(--ink-soft);}
 .feature-copy,.deck-card p,.story-card p{font-size:.8rem;line-height:1.55;color:var(--ink-soft);margin:0}
 .feature-link{margin-top:5px;color:var(--indigo);font-size:.76rem;font-weight:600}
 .page-heading{margin:8px 0 20px}
+.dictionary-tools{display:grid;grid-template-columns:minmax(0,1fr) auto auto;align-items:center;gap:10px;margin:16px 0 8px}
+.dictionary-tools input,.dictionary-tools select{min-width:0;border:1px solid var(--line);border-radius:7px;background:var(--card);color:var(--ink);font:inherit;padding:11px 13px}
+.dictionary-tools input:focus,.dictionary-tools select:focus{outline:2px solid var(--gold);outline-offset:1px}
+.dictionary-tools label{font-size:.8rem;color:var(--ink-soft)}
+.dictionary-count{font-size:.78rem;color:var(--ink-soft);margin:8px 0 12px}
+.dictionary-results{display:grid;gap:8px}
+.dictionary-card{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 12px;align-items:center;padding:13px 15px;border:1px solid var(--line);border-radius:7px;background:var(--card)}
+.dictionary-term{font:600 1.35rem 'Noto Serif JP',serif}
+.dictionary-term rt{font-size:.48em;color:var(--ink-soft)}
+.dictionary-details{display:flex;align-items:center;gap:9px;justify-self:end}
+.dictionary-romaji{color:var(--ink-soft);font-size:.76rem}
+.dictionary-meaning{grid-column:1/-1;color:var(--ink-soft);font-size:.84rem;line-height:1.5;margin:2px 0}
+.dictionary-study{grid-column:1/-1;justify-self:start}
+.dictionary-more{display:block;margin:14px auto}
+.word-game-card{padding:18px;border:1px solid var(--line);border-radius:8px;background:var(--card)}
+.word-game-meaning{margin:0 0 12px;color:var(--ink-soft);font-size:.9rem;line-height:1.55}
+.word-game-scramble{min-height:2.3em;margin:0 0 14px;color:var(--ink);font:600 1.5rem 'Noto Serif JP',serif;letter-spacing:.05em}
+.word-game-card input{display:block;width:100%;border:1px solid var(--line);border-radius:6px;background:var(--paper);color:var(--ink);font:1rem 'Noto Serif JP',serif;padding:11px 13px}
+.word-game-card input:focus{outline:2px solid var(--gold);outline-offset:1px}
+.word-game-actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:12px}
+.word-game-actions .deck-start{margin:0}
+.word-game-feedback{min-height:1.5em;margin:10px 0 0;color:var(--ink-soft);font-size:.82rem;line-height:1.5}
 .kana-decks-section{margin-top:30px}
 .kana-decks-section .section-heading h3{font-size:1.15rem;margin:0}
 .kana-decks-section .section-heading p:not(.eyebrow){color:var(--ink-soft);font-size:.84rem;line-height:1.6;margin:7px 0 0;max-width:550px}
@@ -340,6 +362,9 @@ header p{margin:2px 0 0; font-size:.8rem; color:var(--ink-soft);}
   .feature-card{padding:14px}
   .word-day{padding:17px}
   .reader-toolbar{flex-wrap:wrap;justify-content:flex-start}
+  .dictionary-tools{grid-template-columns:minmax(0,1fr) auto}
+  .dictionary-tools input{grid-column:1/-1;width:100%}
+  .dictionary-card{padding:12px}
   .reading-passage{font-size:var(--reading-font-size,1.15rem);line-height:2.25;padding:16px 13px}
 }
 @media(max-width:360px){.feature-grid{grid-template-columns:1fr}.reader-toolbar{align-items:flex-start;flex-direction:column}}
