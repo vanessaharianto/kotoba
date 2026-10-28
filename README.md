@@ -5,6 +5,7 @@ Kotoba is a free, mobile-friendly Japanese study site for building vocabulary, p
 ## What you can study
 
 - **Flashcards:** study vocabulary by deck and practise conjugation.
+- **Hiragana and katakana:** practise basic characters, voiced sounds, and combined sounds with kana-first recognition cards and optional device text-to-speech.
 - **Spaced review:** missed vocabulary returns to the word review queue; items you remember are scheduled at wider intervals. Progress is saved in the browser you use.
 - **Saved vocabulary:** tap underlined vocabulary in readings and grammar lessons to see its meaning, then save it to a personal list for later.
 - **Kanji writing:** practise stroke order with a mouse, stylus, or touchscreen, then work toward writing from memory.
@@ -22,7 +23,7 @@ Open the hosted site in a modern browser. The built-in study library loads autom
 index.html       Main page and study views
 css/styles.css   Layout, themes, and responsive styles
 js/app.js        Study interactions and application logic
-json/            Vocabulary, hints, readings, and grammar content
+json/            Vocabulary, kana, hints, readings, and grammar content
 ```
 
 ## Content and contributions

@@ -48,6 +48,8 @@
   let hintSheets = [];      // tabs whose name starts with "Hint"
   let currentSheetName = '';
   let sheetCandidates = []; // every usable tab from the uploaded file
+  let kanaDecks = [];
+  let isKanaDeck = false;
   let allCards = [];      // full parsed deck
   let activeGroup = 'All';
   let queue = [];         // indices into filteredCards for this session
@@ -360,6 +362,29 @@
       button.addEventListener('click',()=>{ allCards=c.cards; currentSheetName=c.name; startStudy(); });
       article.append(eyebrow,title,count,button); list.appendChild(article);
     });
+    const kanaList=document.getElementById('kana-deck-list');
+    if(kanaList){
+      kanaList.replaceChildren();
+      kanaDecks.forEach(deck=>{
+        const article=document.createElement('article');article.className='deck-card kana-deck-card';
+        const eyebrow=document.createElement('span');eyebrow.className='level-tag';eyebrow.textContent='Kana recognition';
+        const title=document.createElement('h3');title.textContent=deck.name;
+        const count=document.createElement('p');count.textContent=`${deck.cards.length} cards · basic, voiced & combined sounds`;
+        const button=document.createElement('button');button.className='deck-start';button.type='button';button.textContent='Study kana →';
+        button.addEventListener('click',()=>{allCards=deck.cards;currentSheetName=deck.name;startStudy();});
+        article.append(eyebrow,title,count,button);kanaList.appendChild(article);
+      });
+    }
+  }
+
+  function buildKanaDecks(data){
+    const groupNames={basic:'Basic',voiced:'Voiced sounds',combined:'Combined sounds'};
+    kanaDecks=(data?.sets||[]).map(set=>({
+      name:set.name,
+      cards:Object.entries(groupNames).flatMap(([key,group])=>(set[key]||[]).map(([kana,romaji])=>({
+        front:kana,kanji:'',furigana:'',romaji,meaning:'',group,extras:[],isKana:true
+      })))
+    })).filter(deck=>deck.cards.length);
   }
 
   function renderReadingList(){
@@ -905,13 +930,15 @@
     const dropzone = document.getElementById('dropzone');
     const loading = document.getElementById('built-in-loading');
     try{
-      const [databaseResponse, hintsResponse, readingsResponse, grammarResult] = await Promise.all([
+      const [databaseResponse, hintsResponse, readingsResponse, grammarResult, kanaResult] = await Promise.all([
         fetch('json/database.json'), fetch('json/hints.json'), fetch('json/readings.json'),
-        fetch('json/grammar.json').then(response=>response.ok?response.json():null).catch(()=>null)
+        fetch('json/grammar.json').then(response=>response.ok?response.json():null).catch(()=>null),
+        fetch('json/kana.json').then(response=>response.ok?response.json():null).catch(()=>null)
       ]);
       if(!databaseResponse.ok || !hintsResponse.ok || !readingsResponse.ok) throw new Error('Could not fetch the built-in data files');
       const [database, hintDatabase, readingData] = await Promise.all([databaseResponse.json(), hintsResponse.json(), readingsResponse.json()]);
       readingStories = Array.isArray(readingData.stories) ? readingData.stories : [];
+      buildKanaDecks(kanaResult);
       grammarEntries = grammarResult && Array.isArray(grammarResult.entries) ? grammarResult.entries : [];
       grammarCategories = grammarResult && Array.isArray(grammarResult.categories) ? grammarResult.categories : [];
       grammarComparisons = grammarResult && Array.isArray(grammarResult.comparisons) ? grammarResult.comparisons : [];
@@ -940,6 +967,7 @@
   }
 
   function startStudy(){
+    isKanaDeck=allCards.length>0&&allCards.every(card=>card.isKana);
     setPage('study');
     deckCount.textContent = allCards.length + ' cards loaded';
     document.getElementById('tabs-btn').style.display = 'inline-block';
@@ -952,7 +980,7 @@
     formLabels = collectFormLabels(allCards);
     buildSettings();
     buildGroupChips();
-    setGroup('All');
+    setGroup(isKanaDeck?'Basic':'All');
   }
 
   function buildGroupChips(){
@@ -1478,7 +1506,7 @@
     if(!hasHints) document.getElementById('cheat').style.display = 'none';
     else if(document.getElementById('cheat').style.display === 'block') renderCheat();
     const sw = document.getElementById('mode-switch');
-    sw.style.display = formLabels.length ? 'inline-flex' : 'none';
+    sw.style.display = formLabels.length && !isKanaDeck ? 'inline-flex' : 'none';
     sw.querySelectorAll('button').forEach(b => b.classList.toggle('active', b.dataset.mode === mode));
     refreshSettingsUI();
   }
@@ -1668,9 +1696,14 @@
     if(mode === 'drill'){ renderDrill(c); return; }
     document.getElementById('front-kanji').textContent = c.front;
     document.getElementById('front-furigana').textContent = (c.kanji && c.furigana) ? c.furigana : '';
+    const kanaSpeak=document.getElementById('kana-speak');
+    kanaSpeak.style.display=c.isKana?'inline-flex':'none';
+    kanaSpeak.setAttribute('aria-label',`Hear ${c.front}`);
+    kanaSpeak.disabled=!(window.speechSynthesis&&window.SpeechSynthesisUtterance);
+    kanaSpeak.title=kanaSpeak.disabled?'Japanese text-to-speech is not available in this browser':'Play Japanese pronunciation';
     document.getElementById('back-furigana').textContent = c.furigana || (c.kanji ? '' : '');
     document.getElementById('back-romaji').textContent = c.romaji || '';
-    document.getElementById('back-meaning').textContent = c.meaning || '—';
+    document.getElementById('back-meaning').textContent = c.isKana ? '' : (c.meaning || '—');
     const extrasEl = document.getElementById('back-extras');
     extrasEl.innerHTML = '';
     const shownC = shownExtras(c);
@@ -1709,6 +1742,20 @@
   document.getElementById('card').addEventListener('click', ()=>{
     document.getElementById('card').classList.toggle('flipped');
   });
+  document.getElementById('kana-speak').addEventListener('click',(event)=>{
+    event.stopPropagation();
+    const character=document.getElementById('front-kanji').textContent;
+    if(!character||!window.speechSynthesis||!window.SpeechSynthesisUtterance)return;
+    window.speechSynthesis.cancel();
+    const utterance=new SpeechSynthesisUtterance(character);
+    utterance.lang='ja-JP';utterance.rate=.85;
+    const japaneseVoice=window.speechSynthesis.getVoices().find(voice=>/^ja(-|_)?jp$/i.test(voice.lang))||window.speechSynthesis.getVoices().find(voice=>/^ja([-_]|$)/i.test(voice.lang));
+    if(japaneseVoice)utterance.voice=japaneseVoice;
+    const button=event.currentTarget;button.classList.add('is-speaking');
+    const clear=()=>button.classList.remove('is-speaking');
+    utterance.onend=clear;utterance.onerror=clear;
+    window.speechSynthesis.speak(utterance);
+  });
   document.getElementById('prev-btn').addEventListener('click', ()=>{
     if(pos>0){ pos--; renderCard(); }
   });
@@ -1716,13 +1763,13 @@
     if(pos < queue.length){ pos++; renderCard(); }
   });
   document.getElementById('know-btn').addEventListener('click', ()=>{
-    const current=filteredCards[queue[pos]];if(current)recordReview(cardReviewKey(current),true);updateReviewSummary();
+    const current=filteredCards[queue[pos]];if(current&&!current.isKana)recordReview(cardReviewKey(current),true);updateReviewSummary();
     knownCount++;
     pos++;
     renderCard();
   });
   document.getElementById('again-btn').addEventListener('click', ()=>{
-    const current=filteredCards[queue[pos]];if(current)recordReview(cardReviewKey(current),false);updateReviewSummary();
+    const current=filteredCards[queue[pos]];if(current&&!current.isKana)recordReview(cardReviewKey(current),false);updateReviewSummary();
     // move current card to the back of the queue for another pass
     const cur = queue[pos];
     queue.splice(pos,1);
