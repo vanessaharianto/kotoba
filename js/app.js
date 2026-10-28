@@ -61,7 +61,9 @@
   let personalReadings = [];
   const PERSONAL_READINGS_KEY='kotoba-personal-readings-v1';
   try{personalReadings=JSON.parse(localStorage.getItem(PERSONAL_READINGS_KEY)||'[]');if(!Array.isArray(personalReadings))personalReadings=[];}catch(e){personalReadings=[];}
-  let kuromojiTokenizerPromise=null;
+  let furiganaWorker=null;
+  let furiganaJobId=0;
+  const furiganaJobs=new Map();
   let activeStory = null;
   let storySegmentIndex = 0;
   let storyQuestionIndex=0;
@@ -142,13 +144,13 @@
   const customReadingEditor=document.getElementById('custom-reading-editor');
   const annotatedReadingInput=document.getElementById('custom-reading-annotated');
   const customReadingPreview=document.getElementById('custom-reading-preview');
-  document.getElementById('add-reading-open').addEventListener('click',()=>{customReadingEditor.hidden=false;document.getElementById('custom-reading-title').focus();});
+  document.getElementById('add-reading-open').addEventListener('click',()=>{customReadingEditor.hidden=false;document.getElementById('custom-reading-title').focus();prepareFuriganaWorker();});
   document.getElementById('cancel-custom-reading').addEventListener('click',()=>{customReadingEditor.hidden=true;});
   document.getElementById('generate-furigana').addEventListener('click',async()=>{
     const source=document.getElementById('custom-reading-source').value.trim();
     const status=document.getElementById('furigana-status');
     if(!source){status.textContent='Paste a Japanese passage first.';return;}
-    status.textContent='Loading the Japanese reading dictionary and suggesting furigana…';
+    status.textContent='Preparing the Japanese reading helper…';
     const generate=document.getElementById('generate-furigana');generate.disabled=true;
     try{
       annotatedReadingInput.value=await suggestFurigana(source);
@@ -472,38 +474,38 @@
       .replace(/([\u3400-\u4dbf\u4e00-\u9fff々〆ヶ]+)\(([ぁ-ゖゔァ-ヺー]+)\)/g,'<ruby>$1<rt>$2</rt></ruby>')
       .replace(/\r?\n/g,'<br>');
   }
-  function katakanaToHiragana(value){return Array.from(String(value||'')).map(char=>{const code=char.charCodeAt(0);return code>=0x30a1&&code<=0x30f6?String.fromCharCode(code-0x60):char;}).join('');}
-  function loadKuromojiTokenizer(){
-    if(kuromojiTokenizerPromise)return kuromojiTokenizerPromise;
-    if(window.kuromoji?.builder){
-      kuromojiTokenizerPromise=new Promise((resolve,reject)=>window.kuromoji.builder({dicPath:'https://cdn.jsdelivr.net/npm/kuromoji@0.1.2/dict/'}).build((error,tokenizer)=>error?reject(error):resolve(tokenizer))).catch(error=>{kuromojiTokenizerPromise=null;throw error;});
-      return kuromojiTokenizerPromise;
-    }
-    kuromojiTokenizerPromise=new Promise((resolve,reject)=>{
-      const script=document.createElement('script');script.src='https://cdn.jsdelivr.net/npm/kuromoji@0.1.2/build/kuromoji.js';script.async=true;
-      script.onload=()=>{if(!window.kuromoji?.builder){reject(new Error('The Japanese reading helper did not load.'));return;}build();};
-      script.onerror=()=>reject(new Error('Could not load the Japanese reading helper. Check your internet connection.'));
-      document.head.appendChild(script);
-      function build(){window.kuromoji.builder({dicPath:'https://cdn.jsdelivr.net/npm/kuromoji@0.1.2/dict/'}).build((error,tokenizer)=>error?reject(error):resolve(tokenizer));}
-    }).catch(error=>{kuromojiTokenizerPromise=null;throw error;});
-    return kuromojiTokenizerPromise;
-  }
-  async function suggestFurigana(source){
-    const tokenizer=await loadKuromojiTokenizer();
-    return String(source).split(/(\r?\n)/).map(part=>{
-      if(/^\r?\n$/.test(part))return part;
-      return tokenizer.tokenize(part).map(token=>{
-        const surface=token.surface_form||'';
-        if(!/[\u3400-\u4dbf\u4e00-\u9fff々〆ヶ]/.test(surface)||!token.reading||token.reading==='*')return surface;
-        const reading=katakanaToHiragana(token.reading);
-        const tail=(surface.match(/[ぁ-ゖァ-ヺー]+$/)||[''])[0];
-        const tailReading=katakanaToHiragana(tail);
-        if(tail&&reading.endsWith(tailReading)&&reading.length>tailReading.length){
-          return `${surface.slice(0,-tail.length)}(${reading.slice(0,-tailReading.length)})${tail}`;
+  function prepareFuriganaWorker(){
+    if(furiganaWorker)return;
+    if(!window.Worker)return;
+    try{
+      furiganaWorker=new Worker('js/furigana-worker.js');
+      furiganaWorker.onmessage=event=>{
+        const data=event.data||{};
+        if(data.type==='ready')return;
+        if(data.type==='status'){
+          const status=document.getElementById('furigana-status');
+          if(status&&data.message)status.textContent=data.message;
+          return;
         }
-        return `${surface}(${reading})`;
-      }).join('');
-    }).join('');
+        const job=furiganaJobs.get(data.id);if(!job)return;
+        furiganaJobs.delete(data.id);
+        if(data.type==='result')job.resolve(data.text);else job.reject(new Error(data.message||'Furigana generation failed.'));
+      };
+      furiganaWorker.onerror=()=>{
+        furiganaJobs.forEach(job=>job.reject(new Error('The Japanese reading helper could not start.')));
+        furiganaJobs.clear();furiganaWorker.terminate();furiganaWorker=null;
+      };
+      furiganaWorker.postMessage({type:'init'});
+    }catch(error){furiganaWorker=null;}
+  }
+  function suggestFurigana(source){
+    prepareFuriganaWorker();
+    if(!furiganaWorker)return Promise.reject(new Error('This browser does not support the Japanese reading helper.'));
+    const id=++furiganaJobId;
+    return new Promise((resolve,reject)=>{
+      furiganaJobs.set(id,{resolve,reject});
+      furiganaWorker.postMessage({type:'suggest',id,source:String(source)});
+    });
   }
 
   function persistSavedWords(){try{localStorage.setItem(SAVED_WORDS_KEY,JSON.stringify(savedWords));}catch(e){}}
@@ -1949,6 +1951,8 @@
       startScroll = el.scrollLeft;
       pid = e.pointerId;
       el.classList.add('dragging');
+      // NOTE: intentionally not calling setPointerCapture — that would redirect
+      // the eventual click to the container instead of the tapped chip button.
     });
     window.addEventListener('pointermove', (e)=>{
       if(!dragging || e.pointerId !== pid) return;
@@ -1963,6 +1967,7 @@
       dragging = false;
       el.classList.remove('dragging');
       if(moved){
+        // swallow just the next click, so a real drag doesn't also select a chip
         const suppress = (ev)=>{ ev.stopPropagation(); ev.preventDefault(); };
         el.addEventListener('click', suppress, { capture:true, once:true });
       }
