@@ -308,9 +308,11 @@ header p{margin:2px 0 0; font-size:.8rem; color:var(--ink-soft);}
 .custom-workbook .dropzone{padding:24px 16px}
 .reader-toolbar{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:16px}
 .reader-toolbar .header-btn{padding:8px 12px}
+.reading-zoom{display:flex;align-items:center;gap:5px}
+.reading-zoom .header-btn{min-width:38px;padding:7px 9px}
 .furigana-toggle{display:flex;align-items:center;gap:7px;color:var(--ink-soft);font-size:.78rem;cursor:pointer}
 .furigana-toggle input{accent-color:var(--indigo);width:16px;height:16px}
-.reading-passage{font-family:'Noto Serif JP',serif;font-size:1.3rem;line-height:2.35;margin:20px 0 26px;padding:20px 18px;border:1px solid var(--line);border-radius:7px;background:var(--card)}
+.reading-passage{font-family:'Noto Serif JP',serif;font-size:var(--reading-font-size,1.3rem);line-height:2.35;margin:20px 0 26px;padding:20px 18px;border:1px solid var(--line);border-radius:7px;background:var(--card)}
 .hide-furigana rt{visibility:hidden}
 .reader-story-heading{display:grid;grid-template-columns:1fr auto;align-items:center;gap:10px}
 .reader-story-heading h2{grid-column:1/-1;font-family:'Noto Serif JP',serif;font-size:1.35rem;margin:2px 0}
@@ -337,7 +339,8 @@ header p{margin:2px 0 0; font-size:.8rem; color:var(--ink-soft);}
   .feature-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
   .feature-card{padding:14px}
   .word-day{padding:17px}
-  .reading-passage{font-size:1.15rem;line-height:2.25;padding:16px 13px}
+  .reader-toolbar{flex-wrap:wrap;justify-content:flex-start}
+  .reading-passage{font-size:var(--reading-font-size,1.15rem);line-height:2.25;padding:16px 13px}
 }
 @media(max-width:360px){.feature-grid{grid-template-columns:1fr}.reader-toolbar{align-items:flex-start;flex-direction:column}}
 

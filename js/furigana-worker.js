@@ -35,6 +35,36 @@ function katakanaToHiragana(value){
   }).join('');
 }
 
+function kanaReading(value){return katakanaToHiragana(value);}
+
+function annotateToken(surface,reading){
+  if(!/[\u3400-\u4dbf\u4e00-\u9fff々〆ヶ]/.test(surface))return surface;
+  const chunks=surface.match(/[\u3400-\u4dbf\u4e00-\u9fff々〆ヶ]+|[ぁ-ゖァ-ヺー]+|[^\u3400-\u4dbf\u4e00-\u9fff々〆ヶぁ-ゖァ-ヺー]+/g)||[surface];
+  let cursor=0,output='';
+  for(let i=0;i<chunks.length;i++){
+    const chunk=chunks[i];
+    if(/[\u3400-\u4dbf\u4e00-\u9fff々〆ヶ]/.test(chunk)){
+      const nextKana=chunks.slice(i+1).find(part=>/^[ぁ-ゖァ-ヺー]+$/.test(part));
+      if(nextKana){
+        const kana=kanaReading(nextKana),index=reading.indexOf(kana,cursor);
+        if(index<cursor)return `${surface}(${reading})`;
+        const chunkReading=reading.slice(cursor,index);
+        output+=chunkReading?`${chunk}(${chunkReading})`:chunk;
+        cursor=index;
+      }else{
+        const chunkReading=reading.slice(cursor);
+        output+=chunkReading?`${chunk}(${chunkReading})`:chunk;
+        cursor=reading.length;
+      }
+    }else if(/^[ぁ-ゖァ-ヺー]+$/.test(chunk)){
+      const kana=kanaReading(chunk),index=reading.indexOf(kana,cursor);
+      if(index<cursor)return `${surface}(${reading})`;
+      output+=chunk;cursor=index+kana.length;
+    }else output+=chunk;
+  }
+  return cursor===reading.length?output:`${surface}(${reading})`;
+}
+
 function annotate(source,tokenizer){
   return String(source).split(/(\r?\n)/).map(part=>{
     if(/^\r?\n$/.test(part))return part;
@@ -42,12 +72,7 @@ function annotate(source,tokenizer){
       const surface=token.surface_form||'';
       if(!/[\u3400-\u4dbf\u4e00-\u9fff々〆ヶ]/.test(surface)||!token.reading||token.reading==='*')return surface;
       const reading=katakanaToHiragana(token.reading);
-      const tail=(surface.match(/[ぁ-ゖァ-ヺー]+$/)||[''])[0];
-      const tailReading=katakanaToHiragana(tail);
-      if(tail&&reading.endsWith(tailReading)&&reading.length>tailReading.length){
-        return `${surface.slice(0,-tail.length)}(${reading.slice(0,-tailReading.length)})${tail}`;
-      }
-      return `${surface}(${reading})`;
+      return annotateToken(surface,reading);
     }).join('');
   }).join('');
 }
@@ -58,9 +83,14 @@ self.onmessage=async event=>{
     try{await loadTokenizer();}catch(error){self.postMessage({type:'status',message:'Could not load the Japanese reading dictionary. Check your connection and try again.'});}
     return;
   }
-  if(data.type!=='suggest')return;
+  if(data.type!=='suggest'&&data.type!=='lookup')return;
   try{
     const tokenizer=await loadTokenizer();
+    if(data.type==='lookup'){
+      const lemmas=tokenizer.tokenize(String(data.word||'')).map(token=>({surface:token.surface_form||'',lemma:token.basic_form&&token.basic_form!=='*'?token.basic_form:token.surface_form||'',reading:token.reading&&token.reading!=='*'?katakanaToHiragana(token.reading):''}));
+      self.postMessage({type:'lookup-result',id:data.id,lemmas});
+      return;
+    }
     const text=annotate(data.source,tokenizer);
     self.postMessage({type:'result',id:data.id,text});
   }catch(error){
