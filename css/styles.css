@@ -279,6 +279,9 @@ header p{margin:2px 0 0; font-size:.8rem; color:var(--ink-soft);}
 .feature-copy,.deck-card p,.story-card p{font-size:.8rem;line-height:1.55;color:var(--ink-soft);margin:0}
 .feature-link{margin-top:5px;color:var(--indigo);font-size:.76rem;font-weight:600}
 .page-heading{margin:8px 0 20px}
+.kana-decks-section{margin-top:30px}
+.kana-decks-section .section-heading h3{font-size:1.15rem;margin:0}
+.kana-decks-section .section-heading p:not(.eyebrow){color:var(--ink-soft);font-size:.84rem;line-height:1.6;margin:7px 0 0;max-width:550px}
 .deck-card,.story-card{display:flex;flex-direction:column;align-items:flex-start;gap:9px}
 .deck-card h3,.story-card h3{font-size:1rem;margin:0;line-height:1.35}
 .deck-start{border:1px solid var(--indigo);border-radius:100px;background:var(--indigo);color:#F4F1E8;font:600 .8rem Inter,system-ui,sans-serif;padding:9px 14px;cursor:pointer;margin-top:auto}
