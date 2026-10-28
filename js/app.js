@@ -1696,6 +1696,11 @@
     if(mode === 'drill'){ renderDrill(c); return; }
     document.getElementById('front-kanji').textContent = c.front;
     document.getElementById('front-furigana').textContent = (c.kanji && c.furigana) ? c.furigana : '';
+    const kanaSpeak=document.getElementById('kana-speak');
+    kanaSpeak.style.display=c.isKana?'inline-flex':'none';
+    kanaSpeak.setAttribute('aria-label',`Hear ${c.front}`);
+    kanaSpeak.disabled=!(window.speechSynthesis&&window.SpeechSynthesisUtterance);
+    kanaSpeak.title=kanaSpeak.disabled?'Japanese text-to-speech is not available in this browser':'Play Japanese pronunciation';
     document.getElementById('back-furigana').textContent = c.furigana || (c.kanji ? '' : '');
     document.getElementById('back-romaji').textContent = c.romaji || '';
     document.getElementById('back-meaning').textContent = c.isKana ? '' : (c.meaning || '—');
@@ -1736,6 +1741,20 @@
 
   document.getElementById('card').addEventListener('click', ()=>{
     document.getElementById('card').classList.toggle('flipped');
+  });
+  document.getElementById('kana-speak').addEventListener('click',(event)=>{
+    event.stopPropagation();
+    const character=document.getElementById('front-kanji').textContent;
+    if(!character||!window.speechSynthesis||!window.SpeechSynthesisUtterance)return;
+    window.speechSynthesis.cancel();
+    const utterance=new SpeechSynthesisUtterance(character);
+    utterance.lang='ja-JP';utterance.rate=.85;
+    const japaneseVoice=window.speechSynthesis.getVoices().find(voice=>/^ja(-|_)?jp$/i.test(voice.lang))||window.speechSynthesis.getVoices().find(voice=>/^ja([-_]|$)/i.test(voice.lang));
+    if(japaneseVoice)utterance.voice=japaneseVoice;
+    const button=event.currentTarget;button.classList.add('is-speaking');
+    const clear=()=>button.classList.remove('is-speaking');
+    utterance.onend=clear;utterance.onerror=clear;
+    window.speechSynthesis.speak(utterance);
   });
   document.getElementById('prev-btn').addEventListener('click', ()=>{
     if(pos>0){ pos--; renderCard(); }
