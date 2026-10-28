@@ -93,6 +93,9 @@
   const SAVED_WORDS_KEY='kotoba-saved-words-v1';
   try{savedWords=JSON.parse(localStorage.getItem(SAVED_WORDS_KEY)||'[]');if(!Array.isArray(savedWords))savedWords=[];}catch(e){}
   let showFurigana = true;
+  let readingFontSize=1.3;
+  const READING_FONT_KEY='kotoba-reading-font-size-v1';
+  try{const savedSize=Number(localStorage.getItem(READING_FONT_KEY));if(savedSize>=1&&savedSize<=2.2)readingFontSize=savedSize;}catch(e){}
   const REVIEW_KEY='kotoba-spaced-review-v1';
   let reviewProgress={};
   let reviewSessionKeys=[];
@@ -156,14 +159,14 @@
       annotatedReadingInput.value=await suggestFurigana(source);
       status.textContent='Suggestions are ready. Please check names and readings, then edit anything that looks wrong.';
       annotatedReadingInput.hidden=false;customReadingPreview.hidden=false;document.getElementById('save-custom-reading').hidden=false;
-      customReadingPreview.innerHTML=annotatedReadingHtml(annotatedReadingInput.value);
+      renderCustomReadingPreview(annotatedReadingInput.value);
     }catch(error){
       annotatedReadingInput.value=source;annotatedReadingInput.hidden=false;customReadingPreview.hidden=false;document.getElementById('save-custom-reading').hidden=false;
-      customReadingPreview.innerHTML=annotatedReadingHtml(source);
+      renderCustomReadingPreview(source);
       status.textContent='Automatic suggestions could not load. You can still add readings in 漢字(かんじ) format and save.';
     }finally{generate.disabled=false;}
   });
-  annotatedReadingInput.addEventListener('input',()=>{customReadingPreview.innerHTML=annotatedReadingHtml(annotatedReadingInput.value);});
+  annotatedReadingInput.addEventListener('input',()=>renderCustomReadingPreview(annotatedReadingInput.value));
   document.getElementById('save-custom-reading').addEventListener('click',()=>{
     const title=document.getElementById('custom-reading-title').value.trim()||'My reading';
     const annotated=annotatedReadingInput.value.trim();
@@ -237,6 +240,11 @@
     try{localStorage.setItem('kotoba-show-furigana-v1',String(showFurigana));}catch(e){}
     document.getElementById('story-reader-content').classList.toggle('hide-furigana',!showFurigana);
   });
+  function updateReadingFontSize(){document.getElementById('story-reader-content').style.setProperty('--reading-font-size',`${readingFontSize}rem`);}
+  updateReadingFontSize();
+  document.getElementById('reading-zoom-out').addEventListener('click',()=>{readingFontSize=Math.max(1,Math.round((readingFontSize-.1)*10)/10);updateReadingFontSize();try{localStorage.setItem(READING_FONT_KEY,String(readingFontSize));}catch(e){}});
+  document.getElementById('reading-zoom-in').addEventListener('click',()=>{readingFontSize=Math.min(2.2,Math.round((readingFontSize+.1)*10)/10);updateReadingFontSize();try{localStorage.setItem(READING_FONT_KEY,String(readingFontSize));}catch(e){}});
+  document.getElementById('reading-zoom-reset').addEventListener('click',()=>{readingFontSize=1.3;updateReadingFontSize();try{localStorage.setItem(READING_FONT_KEY,String(readingFontSize));}catch(e){}});
 
   function normalizeHeader(h){
     return String(h||'').trim().toLowerCase();
@@ -381,8 +389,13 @@
       document.getElementById('word-day-level').textContent = '';
       return;
     }
-    let seed=0; for(let i=0;i<dateKey.length;i++) seed=(seed*31+dateKey.charCodeAt(i))>>>0;
-    const word=words[seed%words.length];
+    const stableScore=word=>{
+      const key=`${dateKey}|${word.level}|${word.kanji||word.front}|${word.furigana||''}`;
+      let hash=2166136261;
+      for(let i=0;i<key.length;i++){hash^=key.charCodeAt(i);hash=Math.imul(hash,16777619);}
+      return hash>>>0;
+    };
+    const word=words.reduce((best,candidate)=>stableScore(candidate)>stableScore(best)?candidate:best);
     renderRuby(document.getElementById('word-day-word'),word.kanji||word.front,word.furigana);
     document.getElementById('word-day-meaning').textContent=word.meaning;
     document.getElementById('word-day-level').textContent=word.level;
@@ -474,6 +487,11 @@
       .replace(/([\u3400-\u4dbf\u4e00-\u9fff々〆ヶ]+)\(([ぁ-ゖゔァ-ヺー]+)\)/g,'<ruby>$1<rt>$2</rt></ruby>')
       .replace(/\r?\n/g,'<br>');
   }
+  function renderCustomReadingPreview(value){
+    customReadingPreview.innerHTML=annotatedReadingHtml(value);
+    const lookup=document.createElement('aside');lookup.className='word-lookup-panel';lookup.hidden=true;lookup.setAttribute('aria-live','polite');customReadingPreview.appendChild(lookup);
+    activateWordLookups(customReadingPreview,lookup);
+  }
   function prepareFuriganaWorker(){
     if(furiganaWorker)return;
     if(!window.Worker)return;
@@ -489,7 +507,9 @@
         }
         const job=furiganaJobs.get(data.id);if(!job)return;
         furiganaJobs.delete(data.id);
-        if(data.type==='result')job.resolve(data.text);else job.reject(new Error(data.message||'Furigana generation failed.'));
+        if(data.type==='result')job.resolve(data.text);
+        else if(data.type==='lookup-result')job.resolve(data.lemmas||[]);
+        else job.reject(new Error(data.message||'Furigana generation failed.'));
       };
       furiganaWorker.onerror=()=>{
         furiganaJobs.forEach(job=>job.reject(new Error('The Japanese reading helper could not start.')));
@@ -507,6 +527,15 @@
       furiganaWorker.postMessage({type:'suggest',id,source:String(source)});
     });
   }
+  function lookupWordLemmas(word){
+    prepareFuriganaWorker();
+    if(!furiganaWorker)return Promise.reject(new Error('The Japanese dictionary is not available.'));
+    const id=++furiganaJobId;
+    return new Promise((resolve,reject)=>{
+      furiganaJobs.set(id,{resolve,reject});
+      furiganaWorker.postMessage({type:'lookup',id,word:String(word)});
+    });
+  }
 
   function persistSavedWords(){try{localStorage.setItem(SAVED_WORDS_KEY,JSON.stringify(savedWords));}catch(e){}}
   function positionWordLookup(panel){
@@ -520,15 +549,15 @@
     if(top+box.height>window.innerHeight-margin)top=Math.max(margin,rect.top-box.height-8);
     panel.style.left=`${left}px`;panel.style.top=`${top}px`;
   }
-  function renderWordLookup(panel,base,reading,candidates,anchor){
+  function renderWordLookup(panel,base,reading,candidates,anchor,meaningOverride=''){
     const usable=candidates.filter(card=>String(card.meaning||'').trim());
     panel.replaceChildren();panel._lookupAnchor=anchor;panel.hidden=false;
     const term=document.createElement('strong');term.lang='ja';term.textContent=base+(reading&&reading!==base?`（${reading}）`:'');
     const close=document.createElement('button');close.type='button';close.className='lookup-close';close.textContent='Close';close.addEventListener('click',()=>{panel.hidden=true;panel._lookupAnchor=null;});
     panel.append(term,close);
-    if(!usable.length){const missing=document.createElement('span');missing.className='lookup-definition';missing.textContent='No translation is available for this word yet.';panel.appendChild(missing);positionWordLookup(panel);return;}
+    if(!usable.length){const missing=document.createElement('span');missing.className='lookup-definition';missing.textContent='Meaning not available in the vocabulary decks.';panel.appendChild(missing);positionWordLookup(panel);return;}
     const card=usable[0];
-    const meaning=document.createElement('span');meaning.className='lookup-definition';meaning.textContent=card.meaning;panel.appendChild(meaning);
+    const meaning=document.createElement('span');meaning.className='lookup-definition';meaning.textContent=meaningOverride||card.meaning;panel.appendChild(meaning);
     const id=cardReviewKey(card);const saved=savedWords.some(word=>word.id===id);const save=document.createElement('button');save.type='button';save.className='save-word-button';save.textContent=saved?'Saved ✓':'Save word';save.disabled=saved;
     save.addEventListener('click',()=>{if(savedWords.some(word=>word.id===id))return;savedWords.unshift({id,japanese:card.kanji||card.front||base,reading:card.furigana||reading||'',meaning:card.meaning,savedAt:Date.now()});persistSavedWords();save.textContent='Saved ✓';save.disabled=true;const open=document.getElementById('saved-words-open');if(open)open.textContent=`Saved words (${savedWords.length})`;const openList=document.getElementById('saved-words-open-list');if(openList)openList.textContent=`Saved words (${savedWords.length})`;});
     panel.appendChild(save);
@@ -536,16 +565,95 @@
   }
   function exactLookupCandidates(base,reading=''){
     const normalize=value=>String(value||'').replace(/[\s　]/g,'');
-    return sheetCandidates.flatMap(deck=>deck.cards).filter(card=>String(card.meaning||'').trim()&&([card.kanji,card.front].some(value=>value&&normalize(value)===normalize(base))||(reading&&normalize(card.furigana)===normalize(reading))));
+    const cards=sheetCandidates.flatMap(deck=>deck.cards).filter(card=>String(card.meaning||'').trim());
+    const exact=cards.filter(card=>[card.kanji,card.front].some(value=>value&&normalize(value)===normalize(base)));
+    if(exact.length)return exact;
+    return reading?cards.filter(card=>normalize(card.furigana)===normalize(reading)):[];
+  }
+  function openWordLookup(panel,word,reading,anchor){
+    const direct=exactLookupCandidates(word,reading);
+    if(direct.length){renderWordLookup(panel,word,reading,direct,anchor);return;}
+    renderWordLookup(panel,word,reading,[],anchor);
+    const pending=panel.querySelector('.lookup-definition');if(pending)pending.textContent='Looking up the dictionary form…';
+    lookupWordLemmas(word).then(tokens=>{
+      if(panel._lookupAnchor!==anchor)return;
+      const negativeSuffix=word.match(/(?:くありませんでした|くありません|くなかった|くなくて|くない|ではありませんでした|ではありません|ではなかった|ではない|じゃなかった|じゃない|ありませんでした|ありません|なかった|なくて|ない|ませんでした|ません)$/);
+      const isNegative=!!negativeSuffix&&word.length>negativeSuffix[0].length;
+      const negativeAuxiliaries=new Set(['ない','無い','ありません','ありませんでした','ません','ませんでした','ぬ','ず']);
+      const lemmas=[...new Set(tokens.map(token=>token.lemma).filter(lemma=>lemma&&lemma!==word&&(!isNegative||!negativeAuxiliaries.has(lemma))))];
+      const candidates=[...new Map(lemmas.flatMap(lemma=>exactLookupCandidates(lemma,reading)).map(card=>[cardReviewKey(card),card])).values()];
+      const gloss=isNegative&&candidates.length?candidates[0].meaning.split(/\s*;\s*/).map(item=>/^not\b/i.test(item)?item:/^to\s+/i.test(item)?`not ${item.replace(/^to\s+/i,'')}`:`not ${item}`).join('; '):'';
+      renderWordLookup(panel,word,reading,candidates,anchor,gloss);
+    }).catch(()=>{
+      if(panel._lookupAnchor!==anchor)return;
+      const missing=panel.querySelector('.lookup-definition');if(missing)missing.textContent='Meaning not available in the vocabulary decks.';
+    });
+  }
+  function readingFromAnnotatedFragment(node){
+    if(node.nodeType===Node.TEXT_NODE)return node.textContent;
+    if(node.nodeType===Node.DOCUMENT_FRAGMENT_NODE)return Array.from(node.childNodes).map(readingFromAnnotatedFragment).join('');
+    if(node.nodeType!==Node.ELEMENT_NODE||node.tagName==='RT')return '';
+    if(node.tagName==='RUBY'){
+      const reading=node.querySelector('rt');
+      return reading?reading.textContent:Array.from(node.childNodes).map(readingFromAnnotatedFragment).join('');
+    }
+    return Array.from(node.childNodes).map(readingFromAnnotatedFragment).join('');
   }
   function activateWordLookups(container,panel){
     if(!container||!panel)return;
-    container.querySelectorAll('ruby').forEach(ruby=>{const base=Array.from(ruby.childNodes).filter(node=>node.nodeType===Node.TEXT_NODE).map(node=>node.textContent).join('').trim();const rt=ruby.querySelector('rt');const reading=rt?rt.textContent.trim():'';if(!base)return;const button=document.createElement('button');button.type='button';button.className='lookup-word';button.setAttribute('aria-label',`Look up ${base}`);button.addEventListener('click',()=>renderWordLookup(panel,base,reading,exactLookupCandidates(base,reading),button));ruby.parentNode.insertBefore(button,ruby);button.appendChild(ruby);});
-    if(typeof Intl.Segmenter!=='function')return;
+    if(typeof Intl.Segmenter!=='function'){
+      container.querySelectorAll('ruby').forEach(ruby=>{const base=Array.from(ruby.childNodes).filter(node=>node.nodeType===Node.TEXT_NODE).map(node=>node.textContent).join('').trim();const reading=ruby.querySelector('rt')?.textContent.trim()||'';if(!base)return;const button=document.createElement('button');button.type='button';button.className='lookup-word';button.setAttribute('aria-label',`Look up ${base}`);button.addEventListener('click',()=>openWordLookup(panel,base,reading,button));ruby.parentNode.insertBefore(button,ruby);button.appendChild(ruby);});
+      return;
+    }
     const segmenter=new Intl.Segmenter('ja',{granularity:'word'});
-    const walker=document.createTreeWalker(container,NodeFilter.SHOW_TEXT,{acceptNode:node=>node.parentElement?.closest('ruby,button')?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT});
-    const textNodes=[];while(walker.nextNode())textNodes.push(walker.currentNode);
-    textNodes.forEach(node=>{const source=node.textContent,parts=Array.from(segmenter.segment(source));if(!parts.some(part=>part.isWordLike&&/[぀-ヿ㐀-鿿]/.test(part.segment)))return;const fragment=document.createDocumentFragment();let changed=false;parts.forEach(part=>{const exact=part.isWordLike&&Array.from(part.segment).length>1?exactLookupCandidates(part.segment):[];if(exact.length){const button=document.createElement('button');button.type='button';button.className='lookup-word';button.setAttribute('aria-label',`Look up ${part.segment}`);button.textContent=part.segment;button.addEventListener('click',()=>renderWordLookup(panel,part.segment,'',exact,button));fragment.appendChild(button);changed=true;}else fragment.appendChild(document.createTextNode(part.segment));});if(changed)node.parentNode.replaceChild(fragment,node);});
+    let source='',units=[];
+    const walk=node=>{
+      if(node.nodeType===Node.TEXT_NODE){
+        for(let offset=0;offset<node.textContent.length;offset++){
+          const index=source.length;source+=node.textContent[offset];units.push({start:{node,offset},end:{node,offset:offset+1},index});
+        }
+        return;
+      }
+      if(node.nodeType!==Node.ELEMENT_NODE||node.matches('rt,button,.word-lookup-panel'))return;
+      if(node.matches('br')){
+        const parent=node.parentNode,index=Array.prototype.indexOf.call(parent.childNodes,node),at=source.length;
+        source+='\n';units.push({start:{node:parent,offset:index},end:{node:parent,offset:index+1},index:at});return;
+      }
+      if(node.matches('ruby')){
+        const base=Array.from(node.childNodes).filter(child=>child.nodeType===Node.TEXT_NODE||child.nodeType===Node.ELEMENT_NODE&&child.tagName!=='RT').map(child=>child.textContent||'').join('');
+        const parent=node.parentNode,index=Array.prototype.indexOf.call(parent.childNodes,node),start=source.length;
+        for(let offset=0;offset<base.length;offset++){source+=base[offset];units.push({start:{node:parent,offset:index},end:{node:parent,offset:index+1},rubyStart:start,rubyEnd:start+base.length,index:source.length-1});}
+        return;
+      }
+      Array.from(node.childNodes).forEach(walk);
+    };
+    walk(container);
+    const ranges=[];
+    for(const part of segmenter.segment(source)){
+      if(!part.isWordLike||!/[぀-ヿ㐀-鿿]/.test(part.segment))continue;
+      let start=part.index,end=part.index+part.segment.length;
+      for(let index=start;index<end;index++){const unit=units[index];if(unit?.rubyStart!=null){start=Math.min(start,unit.rubyStart);end=Math.max(end,unit.rubyEnd);}}
+      const last=ranges[ranges.length-1];if(last&&start<last.end)last.end=Math.max(last.end,end);else ranges.push({start,end});
+    }
+    const mergedRanges=[];
+    for(const range of ranges){
+      let current={...range},currentText=source.slice(current.start,current.end);
+      while(mergedRanges.length){
+        const previous=mergedRanges[mergedRanges.length-1],previousText=source.slice(previous.start,previous.end);
+        const negativeSuffix=/^(?:くない|くなかった|くなくて|くありません|ではない|ではなかった|ではありません|じゃない|じゃなかった|ない|なかった|なくて|ません)/;
+        const joinsNegative=previous.end===current.start&&(negativeSuffix.test(currentText)||previousText.endsWith('く')&&currentText.startsWith('ない'));
+        if(!joinsNegative)break;
+        current.start=previous.start;mergedRanges.pop();currentText=source.slice(current.start,current.end);
+      }
+      mergedRanges.push(current);
+    }
+    mergedRanges.reverse().forEach(({start,end})=>{
+      const first=units[start],last=units[end-1];if(!first||!last)return;
+      const range=document.createRange();range.setStart(first.start.node,first.start.offset);range.setEnd(last.end.node,last.end.offset);
+      const contents=range.extractContents();const word=source.slice(start,end);if(!word.trim()){range.insertNode(contents);return;}
+      const reading=readingFromAnnotatedFragment(contents)||(/^[ぁ-ゖァ-ヺー]+$/.test(word)?word:'');
+      const button=document.createElement('button');button.type='button';button.className='lookup-word';button.lang='ja';button.setAttribute('aria-label',`Look up ${word}`);button.addEventListener('click',()=>openWordLookup(panel,word,reading,button));button.appendChild(contents);range.insertNode(button);
+    });
   }
   function repositionOpenLookups(){document.querySelectorAll('.word-lookup-panel:not([hidden])').forEach(positionWordLookup);}
   window.addEventListener('scroll',repositionOpenLookups,true);

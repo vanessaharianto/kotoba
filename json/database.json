@@ -5922,6 +5922,76 @@
         "yori",
         "Used for comparison.",
         "Other"
+      ],
+      [
+        "ます",
+        "ます",
+        "masu",
+        "Polite verb ending; makes a verb polite (e.g. 読みます = read, politely).",
+        "Grammar & Expressions"
+      ],
+      [
+        "です",
+        "です",
+        "desu",
+        "Polite copula; makes a statement polite (roughly “is,” “am,” or “are”).",
+        "Grammar & Expressions"
+      ],
+      [
+        "だ",
+        "だ",
+        "da",
+        "Plain copula; casual “is,” “am,” or “are.”",
+        "Grammar & Expressions"
+      ],
+      [
+        "ない",
+        "ない",
+        "nai",
+        "Negative auxiliary; makes a verb or adjective negative (“not…”).",
+        "Grammar & Expressions"
+      ],
+      [
+        "た",
+        "た",
+        "ta",
+        "Past-tense auxiliary; marks a completed or past action.",
+        "Grammar & Expressions"
+      ],
+      [
+        "て",
+        "て",
+        "te",
+        "Te-form ending; connects actions and combines with forms such as ている and てください.",
+        "Grammar & Expressions"
+      ],
+      [
+        "ません",
+        "ません",
+        "masen",
+        "Polite negative verb ending (e.g. 読みません = do not read, politely).",
+        "Grammar & Expressions"
+      ],
+      [
+        "でした",
+        "でした",
+        "deshita",
+        "Polite past form of です; “was” or “were.”",
+        "Grammar & Expressions"
+      ],
+      [
+        "ませんでした",
+        "ませんでした",
+        "masendeshita",
+        "Polite past-negative verb ending (e.g. 読みませんでした = did not read).",
+        "Grammar & Expressions"
+      ],
+      [
+        "なかった",
+        "なかった",
+        "nakatta",
+        "Plain past-negative auxiliary; “did not…” or “was not…”.",
+        "Grammar & Expressions"
       ]
     ],
     "N4": [
