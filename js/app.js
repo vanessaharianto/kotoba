@@ -48,6 +48,11 @@
   let hintSheets = [];      // tabs whose name starts with "Hint"
   let currentSheetName = '';
   let sheetCandidates = []; // every usable tab from the uploaded file
+  let dictionaryItems=[];
+  let dictionaryLimit=60;
+  let dictionaryQuery='';
+  let dictionaryLevel='all';
+  let activeWordGame=null;
   let kanaDecks = [];
   let isKanaDeck = false;
   let allCards = [];      // full parsed deck
@@ -141,9 +146,23 @@
     if(page==='readings') renderReadingList();
     if(page==='kanji') renderKanjiPicker();
     if(page==='grammar') renderGrammarPage();
+    if(page==='dictionary') renderDictionary();
     setPage(page);
   }));
-  document.getElementById('reader-back').addEventListener('click',()=>setPage('readings'));
+  const dictionarySearch=document.getElementById('dictionary-search');
+  const dictionaryLevelSelect=document.getElementById('dictionary-level');
+  let dictionarySearchTimer;
+  dictionarySearch.addEventListener('input',()=>{clearTimeout(dictionarySearchTimer);dictionarySearchTimer=setTimeout(()=>{dictionaryQuery=dictionarySearch.value.trim();dictionaryLimit=60;renderDictionary();},120);});
+  dictionaryLevelSelect.addEventListener('change',()=>{dictionaryLevel=dictionaryLevelSelect.value;dictionaryLimit=60;renderDictionary();});
+  document.getElementById('dictionary-more').addEventListener('click',()=>{dictionaryLimit+=60;renderDictionary();});
+  document.getElementById('word-game-check').addEventListener('click',checkWordGameAnswer);
+  const wordGameAnswer=document.getElementById('word-game-answer');
+  wordGameAnswer.addEventListener('input',()=>convertWordGameRomaji(wordGameAnswer));
+  wordGameAnswer.addEventListener('compositionend',()=>convertWordGameRomaji(wordGameAnswer));
+  wordGameAnswer.addEventListener('keydown',event=>{if(event.key==='Enter')checkWordGameAnswer();});
+  document.getElementById('word-game-hint').addEventListener('click',showWordGameHint);
+  document.getElementById('word-game-next').addEventListener('click',startWordGameRound);
+  document.getElementById('reader-back').addEventListener('click',()=>goBackToPage('readings'));
   const customReadingEditor=document.getElementById('custom-reading-editor');
   const annotatedReadingInput=document.getElementById('custom-reading-annotated');
   const customReadingPreview=document.getElementById('custom-reading-preview');
@@ -186,7 +205,7 @@
     try{localStorage.setItem(PERSONAL_READINGS_KEY,JSON.stringify(personalReadings));}catch(e){}
     readingStories=readingStories.filter(story=>story.id!==remove.dataset.removeReading);renderReadingList();
   });
-  document.getElementById('kanji-back').addEventListener('click',()=>setPage('kanji'));
+  document.getElementById('kanji-back').addEventListener('click',()=>goBackToPage('kanji'));
   document.getElementById('kanji-next').addEventListener('click',()=>{
     if(kanjiTargets.length) openKanjiPractice((activeKanjiIndex+1)%kanjiTargets.length);
   });
@@ -217,7 +236,7 @@
   const openSavedWords=()=>{renderSavedWords();setPage('saved-words');};
   document.getElementById('saved-words-open').addEventListener('click',openSavedWords);
   document.getElementById('saved-words-open-list').addEventListener('click',openSavedWords);
-  document.getElementById('saved-words-back').addEventListener('click',()=>setPage('story-reader'));
+  document.getElementById('saved-words-back').addEventListener('click',()=>goBackToPage('story-reader'));
   document.getElementById('saved-word-list').addEventListener('click',event=>{const remove=event.target.closest('[data-remove-saved]');if(!remove)return;savedWords=savedWords.filter(word=>word.id!==remove.dataset.removeSaved);persistSavedWords();renderSavedWords();});
   document.getElementById('grammar-reference-list').addEventListener('click',event=>{
     const learn=event.target.closest('[data-grammar-learn]');
@@ -349,7 +368,11 @@
     return wb;
   }
 
-  function setPage(page){
+  function setPage(page,options={}){
+    if(options.history!==false){
+      const current=history.state?.kotobaPage;
+      if(current!==page)history.pushState({kotobaPage:page,kotobaPrevious:current||null},'',`#${page}`);
+    }
     document.querySelectorAll('.page-view').forEach(el => { el.style.display = 'none'; });
     studyScreen.style.display = 'none';
     if(page === 'study') studyScreen.style.display = 'flex';
@@ -361,6 +384,24 @@
     const activeNav = page === 'story-reader' ? 'readings' : (page === 'kanji-practice' ? 'kanji' : page);
     mainNav.querySelectorAll('button[data-page]').forEach(b => b.classList.toggle('active', b.dataset.page === activeNav));
   }
+
+  function goBackToPage(fallback){
+    if(history.state?.kotobaPrevious){history.back();return;}
+    setPage(fallback);
+  }
+
+  history.replaceState({...(history.state||{}),kotobaPage:'home'},'',location.pathname+location.search+'#home');
+  window.addEventListener('popstate',event=>{
+    const page=event.state?.kotobaPage;
+    if(!page)return;
+    if(page==='flashcards')renderDeckPicker();
+    if(page==='home')renderHome();
+    if(page==='readings')renderReadingList();
+    if(page==='kanji')renderKanjiPicker();
+    if(page==='grammar')renderGrammarPage();
+    if(page==='dictionary')renderDictionary();
+    setPage(page,{history:false});
+  });
 
   function renderRuby(target, base, reading){
     target.textContent = '';
@@ -375,6 +416,7 @@
 
   function renderHome(){
     updateTimeGreeting();updateReviewSummary();renderSavedWordPreview();
+    if(!activeWordGame)startWordGameRound();
     const pool = sheetCandidates
       .filter(deck => /^N[1-5]$/.test(deck.name))
       .flatMap(deck => deck.cards.filter(c => c.furigana && c.meaning && c.front).map(c => ({...c, level:deck.name})));
@@ -399,6 +441,104 @@
     renderRuby(document.getElementById('word-day-word'),word.kanji||word.front,word.furigana);
     document.getElementById('word-day-meaning').textContent=word.meaning;
     document.getElementById('word-day-level').textContent=word.level;
+  }
+
+  function splitKanaMorae(value){
+    const smallKana=new Set(Array.from('ぁぃぅぇぉゃゅょゎっゕゖ'));
+    const chars=Array.from(String(value||'').normalize('NFKC').replace(/[\s　・]/g,''));
+    const morae=[];
+    chars.forEach(char=>{
+      if(smallKana.has(char)&&morae.length)morae[morae.length-1]+=char;
+      else morae.push(char);
+    });
+    return morae;
+  }
+  const romajiKana={
+    a:'あ',i:'い',u:'う',e:'え',o:'お',
+    ka:'か',ki:'き',ku:'く',ke:'け',ko:'こ',
+    sa:'さ',shi:'し',si:'し',su:'す',se:'せ',so:'そ',
+    ta:'た',chi:'ち',ti:'ち',tsu:'つ',tu:'つ',te:'て',to:'と',
+    na:'な',ni:'に',nu:'ぬ',ne:'ね',no:'の',
+    ha:'は',hi:'ひ',fu:'ふ',hu:'ふ',he:'へ',ho:'ほ',
+    ma:'ま',mi:'み',mu:'む',me:'め',mo:'も',
+    ya:'や',yu:'ゆ',yo:'よ',
+    ra:'ら',ri:'り',ru:'る',re:'れ',ro:'ろ',
+    wa:'わ',wo:'を',nn:'ん',
+    ga:'が',gi:'ぎ',gu:'ぐ',ge:'げ',go:'ご',
+    za:'ざ',ji:'じ',zi:'じ',zu:'ず',ze:'ぜ',zo:'ぞ',
+    da:'だ',di:'ぢ',du:'づ',de:'で',do:'ど',
+    ba:'ば',bi:'び',bu:'ぶ',be:'べ',bo:'ぼ',
+    pa:'ぱ',pi:'ぴ',pu:'ぷ',pe:'ぺ',po:'ぽ',
+    kya:'きゃ',kyu:'きゅ',kyo:'きょ',
+    sha:'しゃ',shu:'しゅ',sho:'しょ',sya:'しゃ',syu:'しゅ',syo:'しょ',
+    cha:'ちゃ',chu:'ちゅ',cho:'ちょ',tya:'ちゃ',tyu:'ちゅ',tyo:'ちょ',
+    nya:'にゃ',nyu:'にゅ',nyo:'にょ',
+    hya:'ひゃ',hyu:'ひゅ',hyo:'ひょ',
+    mya:'みゃ',myu:'みゅ',myo:'みょ',
+    rya:'りゃ',ryu:'りゅ',ryo:'りょ',
+    gya:'ぎゃ',gyu:'ぎゅ',gyo:'ぎょ',
+    ja:'じゃ',ju:'じゅ',jo:'じょ',zya:'じゃ',zyu:'じゅ',zyo:'じょ',
+    bya:'びゃ',byu:'びゅ',byo:'びょ',pya:'ぴゃ',pyu:'ぴゅ',pyo:'ぴょ',
+    fa:'ふぁ',fi:'ふぃ',fe:'ふぇ',fo:'ふぉ',
+    va:'ゔぁ',vi:'ゔぃ',vu:'ゔ',ve:'ゔぇ',vo:'ゔぉ'
+  };
+  const romajiKeys=Object.keys(romajiKana).sort((a,b)=>b.length-a.length);
+  function romajiToHiragana(value,finalize=false){
+    const input=String(value||'').toLocaleLowerCase();let output='';
+    for(let i=0;i<input.length;){
+      const char=input[i];
+      if(/[ぁ-ゖァ-ヺー]/.test(char)){output+=char;i++;continue;}
+      if(char==='n'&&input[i+1]==="'"){output+='ん';i+=2;continue;}
+      if(char==='n'&&input[i+1]&&input[i+1]!=='y'&&!/[aiueo]/.test(input[i+1])){output+='ん';i++;continue;}
+      if(char===input[i+1]&&/[bcdfghjklmpqrstvwxyz]/.test(char)&&char!=='n'){output+='っ';i++;continue;}
+      const match=romajiKeys.find(key=>input.startsWith(key,i));
+      if(match){output+=romajiKana[match];i+=match.length;continue;}
+      const remaining=input.slice(i);
+      if(!finalize&&romajiKeys.some(key=>key.startsWith(remaining))){output+=remaining;break;}
+      if(finalize&&remaining==='n'){output+='ん';i++;continue;}
+      output+=char;i++;
+    }
+    return output;
+  }
+  function convertWordGameRomaji(input){
+    if(input.isComposing)return;
+    const start=input.selectionStart,end=input.selectionEnd;
+    const before=romajiToHiragana(input.value.slice(0,start));
+    const converted=romajiToHiragana(input.value);
+    if(converted!==input.value){input.value=converted;const caret=Math.min(before.length,converted.length);input.setSelectionRange(caret,caret);}
+  }
+  function startWordGameRound(){
+    const pool=sheetCandidates.filter(deck=>/^N[1-5]$/.test(deck.name)).flatMap(deck=>deck.cards.map(card=>({...card,level:deck.name})))
+      .filter(card=>card.furigana&&card.meaning&&splitKanaMorae(card.furigana).length>=3&&/^[ぁ-ゖー]+$/.test(String(card.furigana).normalize('NFKC').replace(/[\s　]/g,'')));
+    if(!pool.length){document.getElementById('word-game-meaning').textContent='A word puzzle will appear when the vocabulary deck is ready.';return;}
+    let selected=pool[Math.floor(Math.random()*pool.length)];
+    if(pool.length>1&&activeWordGame){let tries=0;while(selected.furigana===activeWordGame.furigana&&tries++<8)selected=pool[Math.floor(Math.random()*pool.length)];}
+    const answer=String(selected.furigana).normalize('NFKC').replace(/[\s　]/g,'');
+    const morae=splitKanaMorae(answer);let shuffled=morae.slice();
+    for(let tries=0;tries<8&&shuffled.join('')===answer;tries++){
+      for(let i=shuffled.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[shuffled[i],shuffled[j]]=[shuffled[j],shuffled[i]];}
+    }
+    activeWordGame={...selected,answer,morae};
+    document.getElementById('word-game-meaning').textContent=selected.meaning;
+    document.getElementById('word-game-scramble').textContent=shuffled.join(' ・ ');
+    const input=document.getElementById('word-game-answer');input.value='';input.disabled=false;
+    document.getElementById('word-game-feedback').textContent='';
+    document.getElementById('word-game-check').disabled=false;
+  }
+  function checkWordGameAnswer(){
+    if(!activeWordGame)return;
+    const input=document.getElementById('word-game-answer'),feedback=document.getElementById('word-game-feedback');
+    const answer=romajiToHiragana(String(input.value||''),true).normalize('NFKC').replace(/[\s　・]/g,'');
+    if(answer===activeWordGame.answer){
+      const kanji=activeWordGame.kanji||activeWordGame.front;
+      feedback.textContent=`Correct! ${kanji}（${activeWordGame.furigana}） · JLPT ${activeWordGame.level}`;
+      document.getElementById('word-game-check').disabled=true;input.disabled=true;
+    }else feedback.textContent='Not quite—check the kana order and try again.';
+  }
+  function showWordGameHint(){
+    const feedback=document.getElementById('word-game-feedback');
+    if(!activeWordGame){feedback.textContent='Start a new word to get a hint.';return;}
+    feedback.textContent=`First sound: ${activeWordGame.morae[0]}${activeWordGame.morae.length>1?' · '+activeWordGame.morae.length+' kana sounds':''}`;
   }
 
   function renderSavedWordPreview(){
@@ -446,6 +586,54 @@
         article.append(eyebrow,title,count,button);kanaList.appendChild(article);
       });
     }
+  }
+
+  function buildDictionaryItems(){
+    const byKey=new Map();
+    sheetCandidates.forEach(deck=>{
+      if(!/^N[1-5]$/.test(deck.name))return;
+      deck.cards.forEach(card=>{
+        if(!card.meaning||(!card.kanji&&!card.furigana))return;
+        const key=`${card.kanji||card.front}|${card.furigana||''}`;
+        const existing=byKey.get(key);
+        if(existing){
+          const meanings=new Set(existing.meaning.split(/\s*;\s*/).map(value=>value.trim().toLowerCase()));
+          if(!meanings.has(String(card.meaning).trim().toLowerCase()))existing.meaning+=`; ${card.meaning}`;
+          if(Number(deck.name.slice(1))<Number(existing.level.slice(1)))existing.level=deck.name;
+        }else byKey.set(key,{...card,level:deck.name});
+      });
+    });
+    dictionaryItems=[...byKey.values()];
+  }
+
+  function normalizeDictionaryText(value){return String(value||'').normalize('NFKC').toLocaleLowerCase().replace(/[\s　\-‐‑–—]/g,'');}
+  function renderDictionary(){
+    const results=document.getElementById('dictionary-results'),count=document.getElementById('dictionary-count'),more=document.getElementById('dictionary-more');
+    if(!results||!count||!more)return;
+    if(!dictionaryItems.length)buildDictionaryItems();
+    const query=normalizeDictionaryText(dictionaryQuery);
+    const terms=query.split(/[;,，、]+/).filter(Boolean);
+    let matches=dictionaryItems.filter(item=>dictionaryLevel==='all'||item.level===dictionaryLevel);
+    if(terms.length)matches=matches.filter(item=>{
+      const haystack=normalizeDictionaryText([item.kanji,item.front,item.furigana,item.romaji,item.meaning].join(' '));
+      return terms.every(term=>haystack.includes(term));
+    });
+    results.replaceChildren();
+    if(!matches.length){count.textContent='0 results';const empty=document.createElement('p');empty.className='loading-note';empty.textContent='No matching words. Try a different spelling or meaning.';results.appendChild(empty);more.hidden=true;return;}
+    matches.slice(0,dictionaryLimit).forEach(item=>{
+      const card=document.createElement('article');card.className='dictionary-card';
+      const term=document.createElement('div');term.className='dictionary-term';term.lang='ja';renderRuby(term,item.kanji||item.front,item.furigana);
+      const details=document.createElement('div');details.className='dictionary-details';
+      const reading=document.createElement('span');reading.className='dictionary-romaji';reading.textContent=item.romaji||'';
+      const level=document.createElement('span');level.className='level-tag';level.textContent=`JLPT ${item.level}`;
+      details.append(reading,level);
+      const meaning=document.createElement('p');meaning.className='dictionary-meaning';meaning.textContent=item.meaning;
+      const study=document.createElement('button');study.type='button';study.className='text-link dictionary-study';study.textContent='Study this word →';
+      study.addEventListener('click',()=>{allCards=[item];currentSheetName=`${item.level} lookup`;startStudy();});
+      card.append(term,details,meaning,study);results.appendChild(card);
+    });
+    count.textContent=terms.length||dictionaryLevel!=='all'?`${matches.length.toLocaleString()} result${matches.length===1?'':'s'}`:`Showing ${Math.min(matches.length,dictionaryLimit).toLocaleString()} of ${matches.length.toLocaleString()} words`;
+    more.hidden=matches.length<=dictionaryLimit;
   }
 
   function buildKanaDecks(data){
@@ -1149,9 +1337,10 @@
       return;
     }
     sheetCandidates = candidates;
+    dictionaryItems=[];
     window.__lastDebug = candidates.map(c => ({sheet:c.name, ...c.debug}));
     document.getElementById('built-in-loading').style.display='none';
-    rebuildKanjiTargets();renderDeckPicker(); renderHome(); renderReadingList(); renderKanjiPicker();
+    rebuildKanjiTargets();renderDeckPicker(); renderHome(); renderReadingList(); renderKanjiPicker();renderDictionary();
     if(options.custom) setPage('flashcards');
     else setPage('home');
   }
@@ -2010,7 +2199,7 @@
   function goToTabs(){
     deckCount.textContent = '';
     renderDeckPicker();
-    setPage('flashcards');
+    goBackToPage('flashcards');
   }
   document.getElementById('tabs-btn').addEventListener('click', goToTabs);
   document.getElementById('back-extras').addEventListener('click', (e)=>{ if(e.target.id === 'back-extras') e.stopPropagation(); });

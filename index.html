@@ -27,6 +27,7 @@
   </header>
   <nav class="main-nav" id="main-nav" aria-label="Main navigation">
     <button type="button" class="active" data-page="home">Home</button>
+    <button type="button" data-page="dictionary">Dictionary</button>
     <button type="button" data-page="flashcards">Flashcards</button>
     <button type="button" data-page="readings">Reading</button>
     <button type="button" data-page="kanji">Kanji</button>
@@ -53,15 +54,32 @@
       <div class="section-heading"><div><p class="eyebrow">KEEP IT FRESH</p><h2>Your word review queue</h2><p id="review-summary">Words you miss in flashcards will appear here when they are ready to review.</p></div></div>
       <div class="review-actions"><button type="button" class="deck-start" id="review-words-button">Review due words</button><button type="button" class="header-btn" id="saved-words-home">Saved list</button></div><div class="home-saved-words"><h3>Saved words</h3><div id="saved-review-preview" class="saved-review-preview"></div></div>
     </section>
-    <section class="home-section">
-      <div class="section-heading"><div><p class="eyebrow">CHOOSE YOUR PRACTICE</p><h2>What are we studying today?</h2></div></div>
-      <div class="feature-grid">
-        <button type="button" class="feature-card" data-page="flashcards"><span class="feature-icon">札</span><span class="feature-title">Flashcards</span><span class="feature-copy">Drill words until they stick. Conjugation too, sadly.</span><span class="feature-link">Choose a deck →</span></button>
-        <button type="button" class="feature-card" data-page="readings"><span class="feature-icon">読</span><span class="feature-title">Guided reading</span><span class="feature-copy">Little stories with furigana, so you can read real Japanese without panicking. Quick quiz after.</span><span class="feature-link">Read a story →</span></button>
-        <button type="button" class="feature-card" data-page="kanji"><span class="feature-icon">書</span><span class="feature-title">Kanji practice</span><span class="feature-copy">Grab a brush</span><span class="feature-link">Practise writing →</span></button>
-        <button type="button" class="feature-card" data-page="grammar"><span class="feature-icon">文</span><span class="feature-title">Grammar</span><span class="feature-copy">は or が? ば or たら? Sort it out here.</span><span class="feature-link">Study grammar →</span></button>
+    <section class="home-section word-game" aria-labelledby="word-game-heading">
+      <div class="section-heading"><div><p class="eyebrow">A TINY BRAIN BREAK</p><h2 id="word-game-heading">Kana scramble</h2><p>Unscramble the reading to match the meaning.</p></div></div>
+      <div class="word-game-card" id="word-game-card">
+        <p class="word-game-meaning" id="word-game-meaning">Your first word is getting ready…</p>
+        <p class="word-game-scramble" id="word-game-scramble" lang="ja"></p>
+        <label class="visually-hidden" for="word-game-answer">Type the Japanese reading</label>
+        <input id="word-game-answer" type="text" lang="ja" inputmode="text" autocomplete="off" placeholder="Type romaji or kana">
+        <div class="word-game-actions"><button type="button" class="deck-start" id="word-game-check">Check</button><button type="button" class="header-btn" id="word-game-hint">Hint</button><button type="button" class="text-link" id="word-game-next">New word</button></div>
+        <p class="word-game-feedback" id="word-game-feedback" aria-live="polite"></p>
       </div>
     </section>
+  </main>
+
+  <main id="dictionary-view" class="page-view" style="display:none">
+    <div class="page-heading"><p class="eyebrow">LOOK IT UP</p><h2>Japanese dictionary</h2><p>Search the vocabulary decks by Japanese, reading, romaji, or English meaning.</p></div>
+    <section class="dictionary-tools" aria-label="Dictionary search">
+      <label class="visually-hidden" for="dictionary-search">Search vocabulary</label>
+      <input id="dictionary-search" type="search" autocomplete="off" placeholder="e.g. 食べる, たべる, taberu, to eat">
+      <label for="dictionary-level">Level</label>
+      <select id="dictionary-level" aria-label="Filter by JLPT level">
+        <option value="all">All levels</option><option value="N5">N5</option><option value="N4">N4</option><option value="N3">N3</option><option value="N2">N2</option><option value="N1">N1</option>
+      </select>
+    </section>
+    <p id="dictionary-count" class="dictionary-count" aria-live="polite"></p>
+    <section id="dictionary-results" class="dictionary-results" aria-label="Vocabulary results"></section>
+    <button type="button" class="header-btn dictionary-more" id="dictionary-more" hidden>Show more</button>
   </main>
 
   <main id="flashcards-view" class="page-view" style="display:none">
