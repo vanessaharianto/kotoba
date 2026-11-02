@@ -6744,7 +6744,7 @@
       ],
       [
         "お菓子",
-        "okashi",
+        "おかし",
         "okashi",
         "confectionary, cake",
         "Food & Drinks"
@@ -7343,7 +7343,7 @@
       ],
       [
         "〜がります",
-        "~garimasu",
+        "〜がります",
         "3rd person wants to",
         null,
         "Grammar & Expressions"
@@ -7691,7 +7691,7 @@
       ],
       [
         "ケーキ",
-        "ke-ki",
+        "ケーキ",
         "Cake",
         null,
         "Food & Drinks"
@@ -7733,7 +7733,7 @@
       ],
       [
         "けれど/けれども",
-        "keredo/keredomo",
+        "けれど/けれども",
         "however",
         null,
         "Grammar & Expressions"
@@ -8010,7 +8010,7 @@
       ],
       [
         "コンサート",
-        "consa-to",
+        "コンサート",
         "Concert",
         null,
         "Other"
@@ -8024,7 +8024,7 @@
       ],
       [
         "コンピューター",
-        "conpu-ta-",
+        "コンピューター",
         "Computer",
         null,
         "Objects & Things"
@@ -10606,7 +10606,7 @@
       ],
       [
         "やはり/やっぱり",
-        "yahari/yappari",
+        "やはり/やっぱり",
         "as I thought",
         null,
         "Grammar & Expressions"
@@ -31453,14 +31453,14 @@
       ],
       [
         "味付け",
-        "あjいつけ",
+        "あじつけ",
         "ajitsuke",
         "seasoning; flavor",
         "Food & Drinks"
       ],
       [
         "赤字",
-        "あかjい",
+        "あかじ",
         "akaji",
         "(being in) the red; deficit; red letter; red writing; corrections (by a teacher or proofreader) written in red",
         "Communication"
@@ -31586,7 +31586,7 @@
       ],
       [
         "予め",
-        "あらかjいめ",
+        "あらかじめ",
         "arakajime",
         "beforehand; in advance; previously",
         "Grammar & Expressions"
@@ -31914,28 +31914,28 @@
       ],
       [
         "着実",
-        "ちゃくjいつ",
+        "ちゃくじつ",
         "chakujitsu",
         "steady; sound; solid; reliable; trustworthy",
         "Communication"
       ],
       [
         "縮める",
-        "ちdjいめる",
+        "ちぢめる",
         "chidjimeru",
         "to shorten; to reduce; to condense; to shrink; to make (one’s body) smaller; to draw in (one’s legs); to duck (one’s head)",
         "Body & Health"
       ],
       [
         "縮む",
-        "ちdjいむ",
+        "ちぢむ",
         "chidjimu",
         "to shrink; to contract; to diminish (in size)",
         "Daily Life & Actions"
       ],
       [
         "近々",
-        "ちかdjいか",
+        "ちかぢか",
         "chikadjika",
         "soon; nearness; before long",
         "Time & Calendar"
@@ -32124,7 +32124,7 @@
       ],
       [
         "忠実",
-        "ちゅうjいつ",
+        "ちゅうじつ",
         "chuujitsu",
         "faithful; devoted; loyal; honest; true",
         "Feelings & Thoughts"
@@ -32407,7 +32407,7 @@
       ],
       [
         "演じる",
-        "えんjいる",
+        "えんじる",
         "enjiru",
         "to perform (a play); to play (a part); to act (a part); to commit (a blunder)",
         "Daily Life & Actions"
@@ -32798,14 +32798,14 @@
       ],
       [
         "現代人",
-        "げんだいjいん",
+        "げんだいじん",
         "gendaijin",
         "modern person; people of today",
         "People & Family"
       ],
       [
         "現時点",
-        "げんjいてん",
+        "げんじてん",
         "genjiten",
         "present point (i.e. in history); at the present time",
         "Time & Calendar"
@@ -32952,7 +32952,7 @@
       ],
       [
         "後日",
-        "ごjいつ",
+        "ごじつ",
         "gojitsu",
         "in the future; another day; later",
         "Time & Calendar"
@@ -32987,7 +32987,7 @@
       ],
       [
         "行事",
-        "ぎょうjい",
+        "ぎょうじ",
         "gyouji",
         "event; function",
         "Other"
@@ -33137,7 +33137,7 @@
       ],
       [
         "恥",
-        "はjい",
+        "はじ",
         "haji",
         "shame; embarrassment; disgrace",
         "Feelings & Thoughts"
@@ -33690,7 +33690,7 @@
       ],
       [
         "本日",
-        "ほんjいつ",
+        "ほんじつ",
         "honjitsu",
         "today",
         "Time & Calendar"
@@ -33802,7 +33802,7 @@
       ],
       [
         "表示",
-        "ひょうjい",
+        "ひょうじ",
         "hyouji",
         "indication; expression; showing; manifestation; demonstration; display; displaying",
         "Communication"
@@ -33882,14 +33882,14 @@
       ],
       [
         "一時休業",
-        "いちjいきゅうぎょう",
+        "いちじきゅうぎょう",
         "ichijikyuugyou",
         "temporary suspension (of business); brief shutdown",
         "School & Work"
       ],
       [
         "著しい",
-        "いちjいるしい",
+        "いちじるしい",
         "ichijirushii",
         "striking; remarkable; considerable",
         "Descriptions"
@@ -33952,7 +33952,7 @@
       ],
       [
         "意地悪",
-        "いjいわる",
+        "いじわる",
         "ijiwaru",
         "malicious; ill-tempered; unkind",
         "Body & Health"
@@ -34029,7 +34029,7 @@
       ],
       [
         "育児",
-        "いくjい",
+        "いくじ",
         "ikuji",
         "childcare; child-rearing; nursing; upbringing",
         "People & Family"
@@ -34204,77 +34204,77 @@
       ],
       [
         "事物",
-        "jいぶつ",
+        "じぶつ",
         "jibutsu",
         "things; affairs",
         "Daily Life & Actions"
       ],
       [
         "実地",
-        "jいっち",
+        "じっち",
         "jicchi",
         "practice (as opposed to theory); actual practice; actual site; (at) the scene; (on) the spot",
         "School & Work"
       ],
       [
         "自治体",
-        "jいちたい",
+        "じちたい",
         "jichitai",
         "municipality; local government; self-governing body; autonomous body",
         "Body & Health"
       ],
       [
         "児童",
-        "jいどう",
+        "じどう",
         "jidou",
         "children; juvenile",
         "Other"
       ],
       [
         "次回",
-        "jいかい",
+        "じかい",
         "jikai",
         "next time (occasion)",
         "Time & Calendar"
       ],
       [
         "事業",
-        "jいぎょう",
+        "じぎょう",
         "jigyou",
         "project; enterprise; business; industry; operations; venture; service",
         "School & Work"
       ],
       [
         "時事",
-        "jいjい",
+        "じじ",
         "jiji",
         "events of the day; current affairs",
         "Time & Calendar"
       ],
       [
         "時間帯",
-        "jいかんたい",
+        "じかんたい",
         "jikantai",
         "period of time; time slot; time zone",
         "Time & Calendar"
       ],
       [
         "自覚",
-        "jいかく",
+        "じかく",
         "jikaku",
         "self-consciousness; self-awareness",
         "Other"
       ],
       [
         "実感",
-        "jいっかん",
+        "じっかん",
         "jikkan",
         "real feeling; actual feeling",
         "Feelings & Thoughts"
       ],
       [
         "実験者",
-        "jいっけんしゃ",
+        "じっけんしゃ",
         "jikkensha",
         "experimenter; researcher",
         "Other"
@@ -34294,161 +34294,161 @@
       ],
       [
         "自己",
-        "jいこ",
+        "じこ",
         "jiko",
         "self; oneself",
         "Other"
       ],
       [
         "時給",
-        "jいきゅう",
+        "じきゅう",
         "jikyuu",
         "hourly pay; hourly wage",
         "Daily Life & Actions"
       ],
       [
         "地元",
-        "jいもと",
+        "じもと",
         "jimoto",
         "home area; home town; local",
         "Places & Buildings"
       ],
       [
         "人工物",
-        "jいんこうぶつ",
+        "じんこうぶつ",
         "jinkoubutsu",
         "artificial object; man-made object; artifact; artefact",
         "Daily Life & Actions"
       ],
       [
         "人工知能",
-        "jいんこうちのう",
+        "じんこうちのう",
         "jinkouchinou",
         "artificial intelligence; AI",
         "Other"
       ],
       [
         "人材",
-        "jいんざい",
+        "じんざい",
         "jinzai",
         "capable person; talented person; human resources; personnel",
         "People & Family"
       ],
       [
         "事例",
-        "jいれい",
+        "じれい",
         "jirei",
         "example; precedent; case",
         "Grammar & Expressions"
       ],
       [
         "自律",
-        "jいりつ",
+        "じりつ",
         "jiritsu",
         "autonomy (philosophy); self-control",
         "Daily Life & Actions"
       ],
       [
         "持参",
-        "jいさん",
+        "じさん",
         "jisan",
         "bringing; taking; carrying",
         "Other"
       ],
       [
         "自社",
-        "jいしゃ",
+        "じしゃ",
         "jisha",
         "one’s company; company one works for",
         "School & Work"
       ],
       [
         "実質",
-        "jいっしつ",
+        "じっしつ",
         "jisshitsu",
         "substance; essence; real (in economics, vs. nominal, e.g. real interest rate); substantive; substantial; essential; tangible",
         "Numbers & Quantity"
       ],
       [
         "自主",
-        "jいしゅ",
+        "じしゅ",
         "jishu",
         "independence; autonomy; self-reliance",
         "Other"
       ],
       [
         "自習",
-        "jいしゅう",
+        "じしゅう",
         "jishuu",
         "self-study; teaching oneself",
         "School & Work"
       ],
       [
         "実績",
-        "jいっせき",
+        "じっせき",
         "jisseki",
         "achievements; actual results; accomplishments; past results; track record",
         "Time & Calendar"
       ],
       [
         "実践",
-        "jいっせん",
+        "じっせん",
         "jissen",
         "practice; putting into practice; implementation",
         "Daily Life & Actions"
       ],
       [
         "実施",
-        "jいっし",
+        "じっし",
         "jisshi",
         "enforcement; implementation; putting into practice; carrying out; operation; working (e.g. working parameters); enactment",
         "Daily Life & Actions"
       ],
       [
         "自体",
-        "jいたい",
+        "じたい",
         "jitai",
         "itself",
         "Other"
       ],
       [
         "辞退",
-        "jいたい",
+        "じたい",
         "jitai",
         "declining; refusal; nonacceptance; turning down; withdrawal (e.g. of candidacy); pulling out (e.g. of a race); excusing oneself",
         "Movement & Position"
       ],
       [
         "時点",
-        "jいてん",
+        "じてん",
         "jiten",
         "point in time; occasion",
         "Communication"
       ],
       [
         "事典",
-        "jいてん",
+        "じてん",
         "jiten",
         "encyclopedia; cyclopedia",
         "Communication"
       ],
       [
         "事前",
-        "jいぜん",
+        "じぜん",
         "jizen",
         "prior; beforehand; in advance; before the fact; ex ante",
         "Grammar & Expressions"
       ],
       [
         "慈善",
-        "jいぜん",
+        "じぜん",
         "jizen",
         "charity; philanthropy",
         "Other"
       ],
       [
         "持続",
-        "jいぞく",
+        "じぞく",
         "jizoku",
         "continuation; persisting; lasting; sustaining; enduring",
         "Other"
@@ -34661,7 +34661,7 @@
       ],
       [
         "充実感",
-        "じゅうjいつかん",
+        "じゅうじつかん",
         "juujitsukan",
         "sense of fulfillment; sense of completeness; sense of accomplishment; sense of contentment",
         "Other"
@@ -34682,7 +34682,7 @@
       ],
       [
         "充実",
-        "じゅうjいつ",
+        "じゅうじつ",
         "juujitsu",
         "fullness; completion; perfection; enhancement; improvement; enrichment; upgrading",
         "Other"
@@ -35000,7 +35000,7 @@
       ],
       [
         "果実",
-        "かjいつ",
+        "かじつ",
         "kajitsu",
         "fruit; nut; berry; profit",
         "Food & Drinks"
@@ -35098,7 +35098,7 @@
       ],
       [
         "各自",
-        "かくjい",
+        "かくじ",
         "kakuji",
         "each (person); everyone; individual; respective",
         "People & Family"
@@ -35224,7 +35224,7 @@
       ],
       [
         "感じ取る",
-        "かんjいとる",
+        "かんじとる",
         "kanjitoru",
         "to perceive; to sense; to take in; to grasp; to feel",
         "Daily Life & Actions"
@@ -35434,7 +35434,7 @@
       ],
       [
         "活字",
-        "かつjい",
+        "かつじ",
         "katsuji",
         "printing type; movable type; printed text; print",
         "Other"
@@ -35784,7 +35784,7 @@
       ],
       [
         "期日",
-        "きjいつ",
+        "きじつ",
         "kijitsu",
         "fixed date; settlement date",
         "Time & Calendar"
@@ -36036,7 +36036,7 @@
       ],
       [
         "個人差",
-        "こjいんさ",
+        "こじんさ",
         "kojinsa",
         "individual differences; personal equation",
         "People & Family"
@@ -36792,7 +36792,7 @@
       ],
       [
         "求人",
-        "きゅうjいん",
+        "きゅうじん",
         "kyuujin",
         "recruiting; job offer; job vacancy",
         "School & Work"
@@ -36830,7 +36830,7 @@
       ],
       [
         "間近",
-        "まdjいか",
+        "まぢか",
         "madjika",
         "proximity; nearness; soon; nearby",
         "Time & Calendar"
@@ -37005,7 +37005,7 @@
       ],
       [
         "明示",
-        "めいjい",
+        "めいじ",
         "meiji",
         "elucidation; explicit statement; specification",
         "Other"
@@ -37040,7 +37040,7 @@
       ],
       [
         "目印",
-        "めjいるし",
+        "めじるし",
         "mejirushi",
         "mark; sign; landmark; benchmark",
         "Other"
@@ -38393,7 +38393,7 @@
       ],
       [
         "臨時",
-        "りんjい",
+        "りんじ",
         "rinji",
         "temporary; provisional; interim; special; extraordinary; extra",
         "Descriptions"
@@ -39341,7 +39341,7 @@
       ],
       [
         "支持",
-        "しjい",
+        "しじ",
         "shiji",
         "support; backing; endorsement; approval",
         "Daily Life & Actions"
@@ -39768,7 +39768,7 @@
       ],
       [
         "生じる",
-        "しょうjいる",
+        "しょうじる",
         "shoujiru",
         "to produce; to yield; to cause; to result from; to arise; to be generated",
         "Other"
@@ -39880,7 +39880,7 @@
       ],
       [
         "主人公",
-        "しゅjいんこう",
+        "しゅじんこう",
         "shujinkou",
         "protagonist; main character; hero(ine) (of a story)",
         "Other"
@@ -39901,7 +39901,7 @@
       ],
       [
         "祝日",
-        "しゅくjいつ",
+        "しゅくじつ",
         "shukujitsu",
         "national holiday; public holiday",
         "Time & Calendar"
@@ -41003,7 +41003,7 @@
       ],
       [
         "提示",
-        "ていjい",
+        "ていじ",
         "teiji",
         "presentation; exhibit; suggest; citation",
         "Daily Life & Actions"
@@ -41108,7 +41108,7 @@
       ],
       [
         "展示",
-        "てんjい",
+        "てんじ",
         "tenji",
         "exhibition; display",
         "Other"
@@ -41241,7 +41241,7 @@
       ],
       [
         "閉じこもる",
-        "とjいこもる",
+        "とじこもる",
         "tojikomoru",
         "to seclude oneself; to shut oneself away",
         "Movement & Position"
@@ -41741,7 +41741,7 @@
       ],
       [
         "宇宙人",
-        "うちゅうjいん",
+        "うちゅうじん",
         "uchuujin",
         "space alien; alien; extraterrestrial being",
         "Daily Life & Actions"
@@ -42405,7 +42405,7 @@
       ],
       [
         "有人",
-        "ゆうjいん",
+        "ゆうじん",
         "yuujin",
         "manned; occupied; piloted",
         "People & Family"
@@ -95454,6 +95454,5090 @@
         "watto",
         "watt",
         "Other"
+      ]
+    ],
+    "Baking": [
+      [
+        "Kanji",
+        "Furigana",
+        "Romaji",
+        "Meaning",
+        "Group"
+      ],
+      [
+        "小麦粉",
+        "こむぎこ",
+        "komugiko",
+        "flour",
+        "Nouns"
+      ],
+      [
+        "薄力粉",
+        "はくりきこ",
+        "hakurikiko",
+        "cake/plain flour (low gluten)",
+        "Nouns"
+      ],
+      [
+        "強力粉",
+        "きょうりきこ",
+        "kyourikiko",
+        "bread flour (high gluten)",
+        "Nouns"
+      ],
+      [
+        "砂糖",
+        "さとう",
+        "satou",
+        "sugar",
+        "Nouns"
+      ],
+      [
+        "粉砂糖",
+        "こなざとう",
+        "konazatou",
+        "powdered sugar",
+        "Nouns"
+      ],
+      [
+        "バター",
+        "バター",
+        "bataa",
+        "butter",
+        "Nouns"
+      ],
+      [
+        "無塩バター",
+        "むえんバター",
+        "muenbataa",
+        "unsalted butter",
+        "Nouns"
+      ],
+      [
+        "卵",
+        "たまご",
+        "tamago",
+        "egg",
+        "Nouns"
+      ],
+      [
+        "卵黄",
+        "らんおう",
+        "ranou",
+        "egg yolk",
+        "Nouns"
+      ],
+      [
+        "卵白",
+        "らんぱく",
+        "ranpaku",
+        "egg white",
+        "Nouns"
+      ],
+      [
+        "牛乳",
+        "ぎゅうにゅう",
+        "gyuunyuu",
+        "milk",
+        "Nouns"
+      ],
+      [
+        "生クリーム",
+        "なまクリーム",
+        "namakuriimu",
+        "heavy cream",
+        "Nouns"
+      ],
+      [
+        "ベーキングパウダー",
+        "ベーキングパウダー",
+        "beekingupaudaa",
+        "baking powder",
+        "Nouns"
+      ],
+      [
+        "重曹",
+        "じゅうそう",
+        "juusou",
+        "baking soda",
+        "Nouns"
+      ],
+      [
+        "イースト",
+        "イースト",
+        "iisuto",
+        "yeast",
+        "Nouns"
+      ],
+      [
+        "塩",
+        "しお",
+        "shio",
+        "salt",
+        "Nouns"
+      ],
+      [
+        "バニラエッセンス",
+        "バニラエッセンス",
+        "baniraessensu",
+        "vanilla extract",
+        "Nouns"
+      ],
+      [
+        "ココア",
+        "ココア",
+        "kokoa",
+        "cocoa",
+        "Nouns"
+      ],
+      [
+        "チョコレート",
+        "チョコレート",
+        "chokoreeto",
+        "chocolate",
+        "Nouns"
+      ],
+      [
+        "はちみつ",
+        "はちみつ",
+        "hachimitsu",
+        "honey",
+        "Nouns"
+      ],
+      [
+        "アーモンドプードル",
+        "アーモンドプードル",
+        "aamondopuudoru",
+        "almond flour",
+        "Nouns"
+      ],
+      [
+        "抹茶",
+        "まっちゃ",
+        "matcha",
+        "matcha",
+        "Nouns"
+      ],
+      [
+        "オーブン",
+        "オーブン",
+        "oobun",
+        "oven",
+        "Nouns"
+      ],
+      [
+        "ボウル",
+        "ボウル",
+        "bouru",
+        "mixing bowl",
+        "Nouns"
+      ],
+      [
+        "泡立て器",
+        "あわだてき",
+        "awadateki",
+        "whisk",
+        "Nouns"
+      ],
+      [
+        "ハンドミキサー",
+        "ハンドミキサー",
+        "handomikisaa",
+        "hand mixer",
+        "Nouns"
+      ],
+      [
+        "ゴムべら",
+        "ゴムべら",
+        "gomubera",
+        "rubber spatula",
+        "Nouns"
+      ],
+      [
+        "ふるい",
+        "ふるい",
+        "furui",
+        "sifter / sieve",
+        "Nouns"
+      ],
+      [
+        "はかり",
+        "はかり",
+        "hakari",
+        "kitchen scale",
+        "Nouns"
+      ],
+      [
+        "計量カップ",
+        "けいりょうカップ",
+        "keiryoukappu",
+        "measuring cup",
+        "Nouns"
+      ],
+      [
+        "計量スプーン",
+        "けいりょうスプーン",
+        "keiryousupuun",
+        "measuring spoons",
+        "Nouns"
+      ],
+      [
+        "型",
+        "かた",
+        "kata",
+        "mold, cake pan",
+        "Nouns"
+      ],
+      [
+        "天板",
+        "てんばん",
+        "tenban",
+        "baking tray",
+        "Nouns"
+      ],
+      [
+        "クッキングシート",
+        "クッキングシート",
+        "kukkingushiito",
+        "parchment paper",
+        "Nouns"
+      ],
+      [
+        "めん棒",
+        "めんぼう",
+        "menbou",
+        "rolling pin",
+        "Nouns"
+      ],
+      [
+        "絞り袋",
+        "しぼりぶくろ",
+        "shiboribukuro",
+        "piping bag",
+        "Nouns"
+      ],
+      [
+        "刷毛",
+        "はけ",
+        "hake",
+        "pastry brush",
+        "Nouns"
+      ],
+      [
+        "網",
+        "あみ",
+        "ami",
+        "cooling rack (also ケーキクーラー)",
+        "Nouns"
+      ],
+      [
+        "鍋つかみ",
+        "なべつかみ",
+        "nabetsukami",
+        "oven mitt (also ミトン)",
+        "Nouns"
+      ],
+      [
+        "焼く",
+        "やく",
+        "yaku",
+        "to bake",
+        "Verbs"
+      ],
+      [
+        "混ぜる",
+        "まぜる",
+        "mazeru",
+        "to mix",
+        "Verbs"
+      ],
+      [
+        "泡立てる",
+        "あわだてる",
+        "awadateru",
+        "to whip, whisk",
+        "Verbs"
+      ],
+      [
+        "ふるう",
+        "ふるう",
+        "furuu",
+        "to sift",
+        "Verbs"
+      ],
+      [
+        "計る",
+        "はかる",
+        "hakaru",
+        "to measure, weigh",
+        "Verbs"
+      ],
+      [
+        "溶かす",
+        "とかす",
+        "tokasu",
+        "to melt",
+        "Verbs"
+      ],
+      [
+        "こねる",
+        "こねる",
+        "koneru",
+        "to knead",
+        "Verbs"
+      ],
+      [
+        "発酵させる",
+        "はっこうさせる",
+        "hakkousaseru",
+        "to let ferment, proof",
+        "Verbs"
+      ],
+      [
+        "予熱する",
+        "よねつする",
+        "yonetsusuru",
+        "to preheat",
+        "Verbs"
+      ],
+      [
+        "伸ばす",
+        "のばす",
+        "nobasu",
+        "to roll out",
+        "Verbs"
+      ],
+      [
+        "塗る",
+        "ぬる",
+        "nuru",
+        "to spread, brush on",
+        "Verbs"
+      ],
+      [
+        "振りかける",
+        "ふりかける",
+        "furikakeru",
+        "to sprinkle",
+        "Verbs"
+      ],
+      [
+        "加える",
+        "くわえる",
+        "kuwaeru",
+        "to add",
+        "Verbs"
+      ],
+      [
+        "冷やす",
+        "ひやす",
+        "hiyasu",
+        "to chill",
+        "Verbs"
+      ],
+      [
+        "冷ます",
+        "さます",
+        "samasu",
+        "to let cool",
+        "Verbs"
+      ],
+      [
+        "膨らむ",
+        "ふくらむ",
+        "fukuramu",
+        "to rise, puff up",
+        "Verbs"
+      ],
+      [
+        "焦げる",
+        "こげる",
+        "kogeru",
+        "to burn",
+        "Verbs"
+      ],
+      [
+        "パン",
+        "パン",
+        "pan",
+        "bread",
+        "Nouns"
+      ],
+      [
+        "食パン",
+        "しょくパン",
+        "shokupan",
+        "sandwich loaf",
+        "Nouns"
+      ],
+      [
+        "ケーキ",
+        "ケーキ",
+        "keeki",
+        "cake",
+        "Nouns"
+      ],
+      [
+        "クッキー",
+        "クッキー",
+        "kukkii",
+        "cookie",
+        "Nouns"
+      ],
+      [
+        "マフィン",
+        "マフィン",
+        "mafuin",
+        "muffin",
+        "Nouns"
+      ],
+      [
+        "スコーン",
+        "スコーン",
+        "sukoon",
+        "scone",
+        "Nouns"
+      ],
+      [
+        "パイ",
+        "パイ",
+        "pai",
+        "pie",
+        "Nouns"
+      ],
+      [
+        "タルト",
+        "タルト",
+        "taruto",
+        "tart",
+        "Nouns"
+      ],
+      [
+        "ブラウニー",
+        "ブラウニー",
+        "buraunii",
+        "brownie",
+        "Nouns"
+      ],
+      [
+        "マカロン",
+        "マカロン",
+        "makaron",
+        "macaron",
+        "Nouns"
+      ],
+      [
+        "シフォンケーキ",
+        "シフォンケーキ",
+        "shifuonkeeki",
+        "chiffon cake",
+        "Nouns"
+      ],
+      [
+        "カステラ",
+        "カステラ",
+        "kasutera",
+        "castella (sponge cake)",
+        "Nouns"
+      ],
+      [
+        "ロールケーキ",
+        "ロールケーキ",
+        "roorukeeki",
+        "roll cake",
+        "Nouns"
+      ],
+      [
+        "シュークリーム",
+        "シュークリーム",
+        "shuukuriimu",
+        "cream puff",
+        "Nouns"
+      ],
+      [
+        "クロワッサン",
+        "クロワッサン",
+        "kurowassan",
+        "croissant",
+        "Nouns"
+      ],
+      [
+        "ベーグル",
+        "ベーグル",
+        "beeguru",
+        "bagel",
+        "Nouns"
+      ],
+      [
+        "メロンパン",
+        "メロンパン",
+        "meronpan",
+        "melon pan (sweet bun)",
+        "Nouns"
+      ],
+      [
+        "生地",
+        "きじ",
+        "kiji",
+        "dough / batter",
+        "Nouns"
+      ],
+      [
+        "分量",
+        "ぶんりょう",
+        "bunryou",
+        "quantity, amount",
+        "Nouns"
+      ],
+      [
+        "レシピ",
+        "レシピ",
+        "reshipi",
+        "recipe",
+        "Nouns"
+      ],
+      [
+        "下準備",
+        "したじゅんび",
+        "shitajunbi",
+        "prep work",
+        "Nouns"
+      ],
+      [
+        "常温",
+        "じょうおん",
+        "jouon",
+        "room temperature",
+        "Nouns"
+      ],
+      [
+        "室温",
+        "しつおん",
+        "shitsuon",
+        "room temperature",
+        "Nouns"
+      ],
+      [
+        "一次発酵",
+        "いちじはっこう",
+        "ichijihakkou",
+        "first proof",
+        "Nouns"
+      ],
+      [
+        "二次発酵",
+        "にじはっこう",
+        "nijihakkou",
+        "second proof",
+        "Nouns"
+      ],
+      [
+        "焼き色",
+        "やきいろ",
+        "yakiiro",
+        "browning, bake colour",
+        "Nouns"
+      ],
+      [
+        "焼き時間",
+        "やきじかん",
+        "yakijikan",
+        "baking time",
+        "Nouns"
+      ],
+      [
+        "トッピング",
+        "トッピング",
+        "toppingu",
+        "topping",
+        "Nouns"
+      ],
+      [
+        "粗熱",
+        "あらねつ",
+        "aranetsu",
+        "residual heat (粗熱をとる = let it cool slightly)",
+        "Nouns"
+      ],
+      [
+        "ふわふわ",
+        "ふわふわ",
+        "fuwafuwa",
+        "light, fluffy",
+        "Descriptions"
+      ],
+      [
+        "サクサク",
+        "サクサク",
+        "sakusaku",
+        "crisp, flaky",
+        "Descriptions"
+      ],
+      [
+        "しっとり",
+        "しっとり",
+        "shittori",
+        "moist",
+        "Descriptions"
+      ],
+      [
+        "もちもち",
+        "もちもち",
+        "mochimochi",
+        "chewy, springy",
+        "Descriptions"
+      ],
+      [
+        "カリカリ",
+        "カリカリ",
+        "karikari",
+        "crunchy",
+        "Descriptions"
+      ],
+      [
+        "ほろほろ",
+        "ほろほろ",
+        "horohoro",
+        "crumbly, melt-in-the-mouth",
+        "Descriptions"
+      ],
+      [
+        "香ばしい",
+        "こうばしい",
+        "koubashii",
+        "fragrant, nicely toasted",
+        "Descriptions"
+      ],
+      [
+        "甘い",
+        "あまい",
+        "amai",
+        "sweet",
+        "Descriptions"
+      ]
+    ],
+    "School & University": [
+      [
+        "Kanji",
+        "Furigana",
+        "Romaji",
+        "Meaning",
+        "Group"
+      ],
+      [
+        "クラス",
+        "クラス",
+        "kurasu",
+        "class",
+        "Nouns"
+      ],
+      [
+        "授業",
+        "じゅぎょう",
+        "jugyou",
+        "lesson, class work",
+        "Nouns"
+      ],
+      [
+        "宿題",
+        "しゅくだい",
+        "shukudai",
+        "homework",
+        "Nouns"
+      ],
+      [
+        "テスト",
+        "テスト",
+        "tesuto",
+        "test",
+        "Nouns"
+      ],
+      [
+        "勉強",
+        "べんきょう",
+        "benkyou",
+        "to study",
+        "Verbs"
+      ],
+      [
+        "教育",
+        "きょういく",
+        "kyouiku",
+        "education",
+        "Nouns"
+      ],
+      [
+        "研究",
+        "けんきゅう",
+        "kenkyuu",
+        "research",
+        "Nouns"
+      ],
+      [
+        "研究室",
+        "けんきゅうしつ",
+        "kenkyuushitsu",
+        "study room, laboratory",
+        "Nouns"
+      ],
+      [
+        "講義",
+        "こうぎ",
+        "kougi",
+        "lecture",
+        "Nouns"
+      ],
+      [
+        "高校",
+        "こうこう",
+        "koukou",
+        "high school",
+        "Nouns"
+      ],
+      [
+        "高校生",
+        "こうこうせい",
+        "koukousei",
+        "high school students",
+        "Nouns"
+      ],
+      [
+        "高等学校",
+        "こうとうがっこう",
+        "koutougakkou",
+        "High school (full word)",
+        "Nouns"
+      ],
+      [
+        "試験",
+        "しけん",
+        "shiken",
+        "examination",
+        "Nouns"
+      ],
+      [
+        "小学校",
+        "しょうがっこう",
+        "shougakkou",
+        "elementary school",
+        "Nouns"
+      ],
+      [
+        "大学生",
+        "だいがくせい",
+        "daigakusei",
+        "university student",
+        "Nouns"
+      ],
+      [
+        "中学校",
+        "ちゅうがっこう",
+        "chuugakkou",
+        "junior high school, middle school",
+        "Nouns"
+      ],
+      [
+        "入学",
+        "にゅうがく",
+        "nyuugaku",
+        "to enter school or university",
+        "Verbs"
+      ],
+      [
+        "予習",
+        "よしゅう",
+        "yoshuu",
+        "preparation of a lesson",
+        "Nouns"
+      ],
+      [
+        "合格する",
+        "ごうかくする",
+        "goukakusuru",
+        "Pass (the exam)",
+        "Verbs"
+      ],
+      [
+        "進学する",
+        "しんがくする",
+        "shingakusuru",
+        "Go to school",
+        "Verbs"
+      ],
+      [
+        "研究する",
+        "けんきゅうする",
+        "kenkyuusuru",
+        "Study",
+        "Verbs"
+      ],
+      [
+        "大学院",
+        "だいがくいん",
+        "daigakuin",
+        "graduate school",
+        "Nouns"
+      ],
+      [
+        "段階",
+        "だんかい",
+        "dankai",
+        "grade; level; stage; class; phase; steps; order; gradation",
+        "Nouns"
+      ],
+      [
+        "学費",
+        "がくひ",
+        "gakuhi",
+        "tuition; school expenses",
+        "Nouns"
+      ],
+      [
+        "学年",
+        "がくねん",
+        "gakunen",
+        "academic year; school year; year in school, grade in school",
+        "Nouns"
+      ],
+      [
+        "学歴",
+        "がくれき",
+        "gakureki",
+        "academic background",
+        "Nouns"
+      ],
+      [
+        "学生課",
+        "がくせいか",
+        "gakuseika",
+        "student affairs office",
+        "Nouns"
+      ],
+      [
+        "保育所",
+        "ほいくしょ",
+        "hoikusho",
+        "nursery school; nursery",
+        "Nouns"
+      ],
+      [
+        "自習",
+        "じしゅう",
+        "jishuu",
+        "self-study; teaching oneself",
+        "Nouns"
+      ],
+      [
+        "受験生",
+        "じゅけんせい",
+        "jukensei",
+        "student preparing for or taking examinations (usu. entrance exams); test-taker",
+        "Nouns"
+      ],
+      [
+        "塾",
+        "じゅく",
+        "juku",
+        "coaching school; cramming school; juku",
+        "Nouns"
+      ],
+      [
+        "課題",
+        "かだい",
+        "kadai",
+        "subject; theme; issue; matter; homework; assignment; task; challenge; problem; question",
+        "Nouns"
+      ],
+      [
+        "講座",
+        "こうざ",
+        "kouza",
+        "course (e.g. of lectures); academic teaching unit; lectureship; professorial chair",
+        "Nouns"
+      ],
+      [
+        "教師",
+        "きょうし",
+        "kyoushi",
+        "teacher (classroom)",
+        "Nouns"
+      ],
+      [
+        "教養",
+        "きょうよう",
+        "kyouyou",
+        "cultivation; refinement; culture; education",
+        "Nouns"
+      ],
+      [
+        "名門",
+        "めいもん",
+        "meimon",
+        "noted family; noble family; prestigious school, organization, business, etc.",
+        "Nouns"
+      ],
+      [
+        "年度",
+        "ねんど",
+        "nendo",
+        "fiscal year (usu. April 1 to March 31 in Japan); financial year; academic year; school year; year, fiscal year, school year, term",
+        "Verbs"
+      ],
+      [
+        "日課",
+        "にっか",
+        "nikka",
+        "daily lesson; daily work; daily routine",
+        "Nouns"
+      ],
+      [
+        "転校生",
+        "てんこうせい",
+        "tenkousei",
+        "transfer student; student changing schools",
+        "Nouns"
+      ],
+      [
+        "登校",
+        "とうこう",
+        "toukou",
+        "attendance (at school); going to school",
+        "Verbs"
+      ],
+      [
+        "養成",
+        "ようせい",
+        "yousei",
+        "training; education; development; cultivation",
+        "Nouns"
+      ],
+      [
+        "在学",
+        "ざいがく",
+        "zaigaku",
+        "attending (school, college, etc.); being enrolled; being a student; (enrolled) in school",
+        "Nouns"
+      ],
+      [
+        "在籍",
+        "ざいせき",
+        "zaiseki",
+        "being enrolled (at a school); being registered; being a member (of a team, organization, etc.)",
+        "Nouns"
+      ]
+    ],
+    "Food & Drinks": [
+      [
+        "Kanji",
+        "Furigana",
+        "Romaji",
+        "Meaning",
+        "Group"
+      ],
+      [
+        "朝ご飯",
+        "あさごはん",
+        "asagohan",
+        "breakfast",
+        "Nouns"
+      ],
+      [
+        "甘い",
+        "あまい",
+        "amai",
+        "sweet",
+        "Other vocabulary"
+      ],
+      [
+        "美味しい",
+        "おいしい",
+        "oishii",
+        "tasty, delicious",
+        "Other vocabulary"
+      ],
+      [
+        "お菓子",
+        "おかし",
+        "okashi",
+        "confectionary, cake; sweets, candy",
+        "Nouns"
+      ],
+      [
+        "お酒",
+        "おさけ",
+        "osake",
+        "alcohol, sake; alcohol, rice wine",
+        "Nouns"
+      ],
+      [
+        "お茶",
+        "おちゃ",
+        "ocha",
+        "green tea",
+        "Nouns"
+      ],
+      [
+        "お弁当",
+        "おべんとう",
+        "obentou",
+        "lunchbox; boxed lunch",
+        "Nouns"
+      ],
+      [
+        "辛い",
+        "からい",
+        "karai",
+        "hot, spicy",
+        "Nouns"
+      ],
+      [
+        "牛肉",
+        "ぎゅうにく",
+        "gyuuniku",
+        "beef",
+        "Nouns"
+      ],
+      [
+        "牛乳",
+        "ぎゅうにゅう",
+        "gyuunyuu",
+        "milk",
+        "Nouns"
+      ],
+      [
+        "果物",
+        "くだもの",
+        "kudamono",
+        "fruit",
+        "Nouns"
+      ],
+      [
+        "御飯",
+        "ごはん",
+        "gohan",
+        "meal, cooked rice",
+        "Nouns"
+      ],
+      [
+        "魚",
+        "さかな",
+        "sakana",
+        "fish",
+        "Nouns"
+      ],
+      [
+        "砂糖",
+        "さとう",
+        "satou",
+        "sugar",
+        "Nouns"
+      ],
+      [
+        "塩",
+        "しお",
+        "shio",
+        "salt",
+        "Nouns"
+      ],
+      [
+        "醤油",
+        "しょうゆ",
+        "shouyu",
+        "soy sauce",
+        "Nouns"
+      ],
+      [
+        "スプーン",
+        "スプーン",
+        "supuun",
+        "spoon",
+        "Nouns"
+      ],
+      [
+        "食べ物",
+        "たべもの",
+        "tabemono",
+        "food",
+        "Nouns"
+      ],
+      [
+        "食べる",
+        "たべる",
+        "taberu",
+        "to eat",
+        "Verbs"
+      ],
+      [
+        "卵",
+        "たまご",
+        "tamago",
+        "egg",
+        "Nouns"
+      ],
+      [
+        "茶碗",
+        "ちゃわん",
+        "chawan",
+        "rice bowl",
+        "Nouns"
+      ],
+      [
+        "鶏肉",
+        "とりにく",
+        "toriniku",
+        "chicken meat",
+        "Nouns"
+      ],
+      [
+        "お肉",
+        "おにく",
+        "oniku",
+        "meat",
+        "Nouns"
+      ],
+      [
+        "飲物",
+        "のみもの",
+        "nomimono",
+        "drinks",
+        "Nouns"
+      ],
+      [
+        "箸",
+        "はし",
+        "hashi",
+        "chopsticks",
+        "Nouns"
+      ],
+      [
+        "バター",
+        "バター",
+        "bataa",
+        "butter",
+        "Nouns"
+      ],
+      [
+        "パン",
+        "パン",
+        "pan",
+        "bread",
+        "Nouns"
+      ],
+      [
+        "晩ご飯",
+        "ばんごはん",
+        "bangohan",
+        "dinner",
+        "Nouns"
+      ],
+      [
+        "昼ご飯",
+        "ひるごはん",
+        "hirugohan",
+        "lunch",
+        "Nouns"
+      ],
+      [
+        "フォーク",
+        "フォーク",
+        "fooku",
+        "fork",
+        "Nouns"
+      ],
+      [
+        "豚肉",
+        "ぶたにく",
+        "butaniku",
+        "pork",
+        "Nouns"
+      ],
+      [
+        "お水",
+        "おみず",
+        "omizu",
+        "water",
+        "Nouns"
+      ],
+      [
+        "野菜",
+        "やさい",
+        "yasai",
+        "vegetable",
+        "Nouns"
+      ],
+      [
+        "料理",
+        "りょうり",
+        "ryouri",
+        "cooking; cuisine",
+        "Nouns"
+      ],
+      [
+        "味",
+        "あじ",
+        "aji",
+        "taste, flavor; flavour",
+        "Nouns"
+      ],
+      [
+        "お菓子",
+        "おかし",
+        "okashi",
+        "confectionary, cake",
+        "Nouns"
+      ],
+      [
+        "",
+        "ごちそう",
+        "gochisou",
+        "a feast",
+        "Nouns"
+      ],
+      [
+        "米",
+        "こめ",
+        "kome",
+        "uncooked rice",
+        "Nouns"
+      ],
+      [
+        "サラダ",
+        "さらだ",
+        "sarada",
+        "salad",
+        "Nouns"
+      ],
+      [
+        "サンドイッチ",
+        "さんどいっち",
+        "sandoicchi",
+        "sandwich",
+        "Nouns"
+      ],
+      [
+        "ジャム",
+        "じゃむ",
+        "jamu",
+        "jam",
+        "Nouns"
+      ],
+      [
+        "食事",
+        "しょくじ",
+        "shokuji",
+        "to have a meal",
+        "Verbs"
+      ],
+      [
+        "食料品",
+        "しょくりょうひん",
+        "shokuryouhin",
+        "groceries",
+        "Nouns"
+      ],
+      [
+        "ステーキ",
+        "すてーき",
+        "sute-ki",
+        "steak",
+        "Nouns"
+      ],
+      [
+        "漬ける",
+        "つける",
+        "tsukeru",
+        "to soak, to pickle",
+        "Verbs"
+      ],
+      [
+        "苦い",
+        "にがい",
+        "nigai",
+        "bitter",
+        "Other vocabulary"
+      ],
+      [
+        "葡萄",
+        "ぶどう",
+        "budou",
+        "a grape; grapes",
+        "Nouns"
+      ],
+      [
+        "味噌",
+        "みそ",
+        "miso",
+        "bean paste",
+        "Nouns"
+      ],
+      [
+        "焼く",
+        "やく",
+        "yaku",
+        "to bake, to grill",
+        "Verbs"
+      ],
+      [
+        "焼ける",
+        "やける",
+        "yakeru",
+        "to burn, to be roasted",
+        "Verbs"
+      ],
+      [
+        "湯",
+        "ゆ",
+        "yu",
+        "hot water",
+        "Nouns"
+      ],
+      [
+        "沸かす",
+        "わかす",
+        "wakasu",
+        "to boil, to heat",
+        "Verbs"
+      ],
+      [
+        "沸く",
+        "わく",
+        "waku",
+        "to boil, to grow hot, to get excited",
+        "Verbs"
+      ],
+      [
+        "ごちそう",
+        "ごちそう",
+        "gochisou",
+        "Entertainment",
+        "Nouns"
+      ],
+      [
+        "食器",
+        "しょっき",
+        "shokki",
+        "Dishes",
+        "Nouns"
+      ],
+      [
+        "調理師",
+        "ちょうりし",
+        "chourishi",
+        "Chef",
+        "Nouns"
+      ],
+      [
+        "生",
+        "なま",
+        "nama",
+        "Fresh, new (unprocessed); (1) draft (beer),(2) raw, unprocessed",
+        "Nouns"
+      ],
+      [
+        "渇く",
+        "かわく",
+        "kawaku",
+        "Thirsty",
+        "Nouns"
+      ],
+      [
+        "嗅ぐ",
+        "かぐ",
+        "kagu",
+        "Smell",
+        "Nouns"
+      ],
+      [
+        "腐る",
+        "くさる",
+        "kusaru",
+        "Oh, rotten; to rot, to go bad",
+        "Verbs"
+      ],
+      [
+        "剥ける",
+        "むける",
+        "mukeru",
+        "Peel",
+        "Nouns"
+      ],
+      [
+        "剥く",
+        "むく",
+        "muku",
+        "Peel",
+        "Nouns"
+      ],
+      [
+        "燃える",
+        "もえる",
+        "moeru",
+        "On fire; to burn",
+        "Verbs"
+      ],
+      [
+        "燃やす",
+        "もやす",
+        "moyasu",
+        "Burn",
+        "Nouns"
+      ],
+      [
+        "お湯",
+        "おゆ",
+        "oyu",
+        "Hot/boiling water",
+        "Nouns"
+      ],
+      [
+        "薄い",
+        "うすい",
+        "usui",
+        "Pale, thin; Bland",
+        "Nouns"
+      ],
+      [
+        "濃い",
+        "こい",
+        "koi",
+        "Strong, bold; thick (as of color, liquid), dense, strong",
+        "Nouns"
+      ],
+      [
+        "酸っぱい",
+        "すっぱい",
+        "suppai",
+        "Sour",
+        "Other vocabulary"
+      ],
+      [
+        "臭い",
+        "くさい",
+        "kusai",
+        "rotten, fishy; odour, scent, smell, stench",
+        "Nouns"
+      ],
+      [
+        "うまい",
+        "うまい",
+        "umai",
+        "Tasty",
+        "Other vocabulary"
+      ],
+      [
+        "味付け",
+        "あじつけ",
+        "ajitsuke",
+        "seasoning; flavor",
+        "Nouns"
+      ],
+      [
+        "調味料",
+        "ちょうみりょう",
+        "choumiryou",
+        "seasoning; flavoring; flavouring; condiment",
+        "Nouns"
+      ],
+      [
+        "調理",
+        "ちょうり",
+        "chouri",
+        "cooking; food preparation",
+        "Nouns"
+      ],
+      [
+        "中華",
+        "ちゅうか",
+        "chuuka",
+        "Chinese food",
+        "Nouns"
+      ],
+      [
+        "出来上がる",
+        "できあがる",
+        "dekiagaru",
+        "to be completed; to be finished; to be ready (e.g. to serve or eat); (1) to be finished, to be ready, by definition,(2) to be very drunk",
+        "Verbs"
+      ],
+      [
+        "芸能",
+        "げいのう",
+        "geinou",
+        "public entertainment; performing arts; accomplishments; attainments",
+        "Nouns"
+      ],
+      [
+        "飲食店",
+        "いんしょくてん",
+        "inshokuten",
+        "restaurant",
+        "Nouns"
+      ],
+      [
+        "傷む",
+        "いたむ",
+        "itamu",
+        "to be spoiled (e.g. food); to be damaged",
+        "Verbs"
+      ],
+      [
+        "果実",
+        "かじつ",
+        "kajitsu",
+        "fruit; nut; berry; profit",
+        "Nouns"
+      ],
+      [
+        "焦げる",
+        "こげる",
+        "kogeru",
+        "to burn; to scorch; to char; to singe; to burn, to be burned",
+        "Verbs"
+      ],
+      [
+        "濁る",
+        "にごる",
+        "nigoru",
+        "to become muddy; to become cloudy; to get impure (of a liquid, gas, etc.)",
+        "Verbs"
+      ],
+      [
+        "緑茶",
+        "りょくちゃ",
+        "ryokucha",
+        "green tea; Japanese tea",
+        "Nouns"
+      ],
+      [
+        "絞る",
+        "しぼる",
+        "shiboru",
+        "to wring (towel, rag); to squeeze; to press; to extract; to milk; to extort; to exploit",
+        "Verbs"
+      ],
+      [
+        "渋い",
+        "しぶい",
+        "shibui",
+        "astringent; bitter; puckery; rough; harsh; tart; austere; elegant (and unobtrusive); refined; quiet (and simple); sober; sombre; subdued; tasteful (in a quiet way); understated; sour (look); glum; grim; sullen; sulky",
+        "Nouns"
+      ],
+      [
+        "食",
+        "しょく",
+        "shoku",
+        "(counter) meal",
+        "Nouns"
+      ],
+      [
+        "食費",
+        "しょくひ",
+        "shokuhi",
+        "food expense",
+        "Nouns"
+      ],
+      [
+        "消化",
+        "しょうか",
+        "shouka",
+        "digestion (of food); digestion (of information); assimilation; thorough understanding; consumption; absorption; using up; meeting (e.g. a quota); completion",
+        "Nouns"
+      ],
+      [
+        "好き嫌い",
+        "すききらい",
+        "sukikirai",
+        "likes and dislikes; pickiness (about food); choosiness; fussiness; tastes; preferences; likes and dislikes, taste",
+        "Nouns"
+      ],
+      [
+        "天候不順",
+        "てんこうふじゅん",
+        "tenkoufujun",
+        "unseasonable weather; fickle weather; bad weather",
+        "Nouns"
+      ],
+      [
+        "湧く",
+        "わく",
+        "waku",
+        "to well (up); to gush forth (of water); to spring out; to surge; to appear (esp. suddenly) (sweat, tears, etc.); to boil, to grow hot, to get excited, to gush forth",
+        "Verbs"
+      ],
+      [
+        "和食",
+        "わしょく",
+        "washoku",
+        "Japanese food; Japanese-style meal; Japanese cuisine",
+        "Nouns"
+      ],
+      [
+        "屋台",
+        "やたい",
+        "yatai",
+        "cart (esp. a food cart); stall; stand",
+        "Nouns"
+      ]
+    ],
+    "Places & Buildings": [
+      [
+        "Kanji",
+        "Furigana",
+        "Romaji",
+        "Meaning",
+        "Group"
+      ],
+      [
+        "アパート",
+        "アパート",
+        "apaato",
+        "apartment",
+        "Nouns"
+      ],
+      [
+        "家",
+        "いえ",
+        "ie",
+        "house, home",
+        "Nouns"
+      ],
+      [
+        "入口",
+        "いりぐち",
+        "iriguchi",
+        "entrance",
+        "Nouns"
+      ],
+      [
+        "内",
+        "うち",
+        "uchi",
+        "home",
+        "Nouns"
+      ],
+      [
+        "映画館",
+        "えいがかん",
+        "eigakan",
+        "cinema",
+        "Nouns"
+      ],
+      [
+        "駅",
+        "えき",
+        "eki",
+        "station",
+        "Nouns"
+      ],
+      [
+        "エレベータ",
+        "エレベータ",
+        "erebeeta",
+        "elevator",
+        "Nouns"
+      ],
+      [
+        "お手洗い",
+        "おてあらい",
+        "otearai",
+        "toilet, lavatory; bathroom",
+        "Nouns"
+      ],
+      [
+        "〜階",
+        "〜かい",
+        "~kai",
+        "~floor",
+        "Nouns"
+      ],
+      [
+        "外国",
+        "がいこく",
+        "gaikoku",
+        "foreign country",
+        "Nouns"
+      ],
+      [
+        "学校",
+        "がっこう",
+        "gakkou",
+        "school",
+        "Nouns"
+      ],
+      [
+        "角",
+        "かど",
+        "kado",
+        "a corner",
+        "Nouns"
+      ],
+      [
+        "喫茶店",
+        "きっさてん",
+        "kissaten",
+        "coffee shop; coffee lounge",
+        "Nouns"
+      ],
+      [
+        "教室",
+        "きょうしつ",
+        "kyoushitsu",
+        "class room; Classroom",
+        "Nouns"
+      ],
+      [
+        "銀行",
+        "ぎんこう",
+        "ginkou",
+        "bank",
+        "Nouns"
+      ],
+      [
+        "国",
+        "くに",
+        "kuni",
+        "country",
+        "Nouns"
+      ],
+      [
+        "玄関",
+        "げんかん",
+        "genkan",
+        "entrance of a house; entry hall",
+        "Nouns"
+      ],
+      [
+        "公園",
+        "こうえん",
+        "kouen",
+        "park, large garden",
+        "Nouns"
+      ],
+      [
+        "交番",
+        "こうばん",
+        "kouban",
+        "police box",
+        "Nouns"
+      ],
+      [
+        "こちら",
+        "こちら",
+        "kochira",
+        "this side, this place; this person or way",
+        "Nouns"
+      ],
+      [
+        "食堂",
+        "しょくどう",
+        "shokudou",
+        "dining room, canteen; dining hall",
+        "Nouns"
+      ],
+      [
+        "大学",
+        "だいがく",
+        "daigaku",
+        "university",
+        "Nouns"
+      ],
+      [
+        "大使館",
+        "たいしかん",
+        "taishikan",
+        "embassy",
+        "Nouns"
+      ],
+      [
+        "台所",
+        "だいどころ",
+        "daidokoro",
+        "kitchen",
+        "Nouns"
+      ],
+      [
+        "建物",
+        "たてもの",
+        "tatemono",
+        "building",
+        "Nouns"
+      ],
+      [
+        "出口",
+        "でぐち",
+        "deguchi",
+        "exit",
+        "Nouns"
+      ],
+      [
+        "デパート",
+        "デパート",
+        "depaato",
+        "department store",
+        "Nouns"
+      ],
+      [
+        "トイレ",
+        "トイレ",
+        "toire",
+        "toilet, lavatory",
+        "Nouns"
+      ],
+      [
+        "所",
+        "ところ",
+        "tokoro",
+        "place",
+        "Nouns"
+      ],
+      [
+        "図書館",
+        "としょかん",
+        "toshokan",
+        "library",
+        "Nouns"
+      ],
+      [
+        "庭",
+        "にわ",
+        "niwa",
+        "garden",
+        "Nouns"
+      ],
+      [
+        "橋",
+        "はし",
+        "hashi",
+        "bridge",
+        "Nouns"
+      ],
+      [
+        "病院",
+        "びょういん",
+        "byouin",
+        "hospital",
+        "Nouns"
+      ],
+      [
+        "プール",
+        "プール",
+        "puuru",
+        "swimming pool",
+        "Nouns"
+      ],
+      [
+        "お風呂",
+        "おふろ",
+        "ofuro",
+        "bath",
+        "Nouns"
+      ],
+      [
+        "部屋",
+        "へや",
+        "heya",
+        "room",
+        "Nouns"
+      ],
+      [
+        "ホテル",
+        "ホテル",
+        "hoteru",
+        "hotel",
+        "Nouns"
+      ],
+      [
+        "町",
+        "まち",
+        "machi",
+        "city, town",
+        "Nouns"
+      ],
+      [
+        "店",
+        "みせ",
+        "mise",
+        "shop",
+        "Nouns"
+      ],
+      [
+        "道",
+        "みち",
+        "michi",
+        "road; street",
+        "Nouns"
+      ],
+      [
+        "門",
+        "もん",
+        "mon",
+        "gate",
+        "Nouns"
+      ],
+      [
+        "〜屋",
+        "〜や",
+        "~ya",
+        "shop. store",
+        "Nouns"
+      ],
+      [
+        "八百屋",
+        "やおや",
+        "yaoya",
+        "vegetable shop; greengrocer",
+        "Nouns"
+      ],
+      [
+        "レストラン",
+        "レストラン",
+        "resutoran",
+        "restaurant",
+        "Nouns"
+      ],
+      [
+        "買物",
+        "かいもの",
+        "kaimono",
+        "shopping",
+        "Nouns"
+      ],
+      [
+        "帰る",
+        "かえる",
+        "kaeru",
+        "to return home",
+        "Verbs"
+      ],
+      [
+        "教会",
+        "きょうかい",
+        "kyoukai",
+        "church",
+        "Nouns"
+      ],
+      [
+        "近所",
+        "きんじょ",
+        "kinjo",
+        "neighbourhood",
+        "Nouns"
+      ],
+      [
+        "空港",
+        "くうこう",
+        "kuukou",
+        "airport",
+        "Nouns"
+      ],
+      [
+        "下宿",
+        "げしゅく",
+        "geshuku",
+        "lodging",
+        "Nouns"
+      ],
+      [
+        "郊外",
+        "こうがい",
+        "kougai",
+        "outskirts",
+        "Nouns"
+      ],
+      [
+        "工場",
+        "こうじょう",
+        "koujyou",
+        "factory",
+        "Nouns"
+      ],
+      [
+        "講堂",
+        "こうどう",
+        "koudou",
+        "auditorium",
+        "Nouns"
+      ],
+      [
+        "市",
+        "し",
+        "shi",
+        "city",
+        "Nouns"
+      ],
+      [
+        "事務所",
+        "じむしょ",
+        "jimusho",
+        "office",
+        "Nouns"
+      ],
+      [
+        "住所",
+        "じゅうしょ",
+        "jyuusho",
+        "an address, a residence",
+        "Nouns"
+      ],
+      [
+        "神社",
+        "じんじゃ",
+        "jinja",
+        "Shinto shrine",
+        "Nouns"
+      ],
+      [
+        "駐車場",
+        "ちゅうしゃじょう",
+        "chuushajou",
+        "parking lot",
+        "Nouns"
+      ],
+      [
+        "寺",
+        "てら",
+        "tera",
+        "temple",
+        "Nouns"
+      ],
+      [
+        "展覧会",
+        "てんらんかい",
+        "tenrankai",
+        "exhibition",
+        "Nouns"
+      ],
+      [
+        "都",
+        "と",
+        "to",
+        "metropolitan",
+        "Nouns"
+      ],
+      [
+        "動物園",
+        "どうぶつえん",
+        "doubutsuen",
+        "zoo",
+        "Nouns"
+      ],
+      [
+        "床屋",
+        "とこや",
+        "tokoya",
+        "a barber shop",
+        "Nouns"
+      ],
+      [
+        "飛行場",
+        "ひこうじょう",
+        "hikoujou",
+        "an airport",
+        "Nouns"
+      ],
+      [
+        "美術館",
+        "びじゅつかん",
+        "bijyutsukan",
+        "art gallery",
+        "Nouns"
+      ],
+      [
+        "ビル",
+        "びる",
+        "biru",
+        "building or bill",
+        "Nouns"
+      ],
+      [
+        "周り",
+        "まわり",
+        "mawari",
+        "surroundings",
+        "Nouns"
+      ],
+      [
+        "旅館",
+        "りょかん",
+        "ryokan",
+        "Japanese style hotel",
+        "Nouns"
+      ],
+      [
+        "都市",
+        "とし",
+        "toshi",
+        "town, city, municipal, urban; City",
+        "Nouns"
+      ],
+      [
+        "博物館",
+        "はくぶつかん",
+        "hakubutsukan",
+        "Museum",
+        "Nouns"
+      ],
+      [
+        "中心",
+        "ちゅうしん",
+        "chuushin",
+        "center, core, heart, pivot, emphasis, balance",
+        "Nouns"
+      ],
+      [
+        "辺り",
+        "あたり",
+        "atari",
+        "Around; vicinity, nearby",
+        "Nouns"
+      ],
+      [
+        "地面",
+        "じめん",
+        "jimen",
+        "Ground",
+        "Nouns"
+      ],
+      [
+        "都心",
+        "としん",
+        "toshin",
+        "Center",
+        "Nouns"
+      ],
+      [
+        "地方",
+        "ちほう",
+        "chihou",
+        "area, locality, district, region, the coast",
+        "Nouns"
+      ],
+      [
+        "空き地",
+        "あきち",
+        "akichi",
+        "vacant land; unoccupied ground; empty lot",
+        "Nouns"
+      ],
+      [
+        "別荘",
+        "べっそう",
+        "bessou",
+        "holiday house; vacation home; villa; prison; jail",
+        "Nouns"
+      ],
+      [
+        "美容院",
+        "びよういん",
+        "biyouin",
+        "beauty parlor; beauty salon; hairdressing salon",
+        "Nouns"
+      ],
+      [
+        "牧場",
+        "ぼくじょう",
+        "bokujou",
+        "farm (livestock); ranch (US); pasture land; meadow; grazing land",
+        "Nouns"
+      ],
+      [
+        "膨大",
+        "ぼうだい",
+        "boudai",
+        "huge; vast; enormous; colossal; extensive; large; swelling; expansion; huge, bulky, enormous, extensive, swelling, expansion",
+        "Nouns"
+      ],
+      [
+        "蓄積",
+        "ちくせき",
+        "chikuseki",
+        "accumulation; accumulate; store",
+        "Nouns"
+      ],
+      [
+        "地帯",
+        "ちたい",
+        "chitai",
+        "area; zone; belt (of land)",
+        "Nouns"
+      ],
+      [
+        "地点",
+        "ちてん",
+        "chiten",
+        "site; point on a map; spot",
+        "Nouns"
+      ],
+      [
+        "電気屋",
+        "でんきや",
+        "denkiya",
+        "electric appliance store",
+        "Nouns"
+      ],
+      [
+        "土台",
+        "どだい",
+        "dodai",
+        "foundation; base; basis",
+        "Nouns"
+      ],
+      [
+        "不動産",
+        "ふどうさん",
+        "fudousan",
+        "real estate",
+        "Nouns"
+      ],
+      [
+        "不動産屋",
+        "ふどうさん'や",
+        "fudousan’ya",
+        "real estate agent; realtor",
+        "Nouns"
+      ],
+      [
+        "付近",
+        "ふきん",
+        "fukin",
+        "neighbourhood; neighborhood; vicinity; environs",
+        "Nouns"
+      ],
+      [
+        "街",
+        "がい",
+        "gai",
+        "… street; … quarter; … district",
+        "Nouns"
+      ],
+      [
+        "合宿",
+        "がっしゅく",
+        "gasshuku",
+        "lodging together; training camp; boarding house",
+        "Nouns"
+      ],
+      [
+        "発揮",
+        "はっき",
+        "hakki",
+        "show (of power, ability, etc.); exhibition; demonstration; display; manifestation; exhibition, demonstration, utilization, display",
+        "Nouns"
+      ],
+      [
+        "日当たり",
+        "ひあたり",
+        "hiatari",
+        "exposure to the sun; sunny place",
+        "Verbs"
+      ],
+      [
+        "保育園",
+        "ほいくえん",
+        "hoikuen",
+        "nursery school; day nursery; preschool",
+        "Nouns"
+      ],
+      [
+        "舗装",
+        "ほそう",
+        "hosou",
+        "pavement; road surface",
+        "Nouns"
+      ],
+      [
+        "放課後",
+        "ほうかご",
+        "houkago",
+        "after school",
+        "Nouns"
+      ],
+      [
+        "方面",
+        "ほうめん",
+        "houmen",
+        "direction; district; area; direction, district, field (e.g., of study)",
+        "Nouns"
+      ],
+      [
+        "居場所",
+        "いばしょ",
+        "ibasho",
+        "whereabouts; place; location; place where one belongs; where one fits in; place where one can be oneself",
+        "Nouns"
+      ],
+      [
+        "地元",
+        "じもと",
+        "jimoto",
+        "home area; home town; local",
+        "Nouns"
+      ],
+      [
+        "住宅地",
+        "じゅうたくち",
+        "juutakuchi",
+        "housing district; residential district",
+        "Nouns"
+      ],
+      [
+        "過度",
+        "かど",
+        "kado",
+        "excessive; immoderate",
+        "Nouns"
+      ],
+      [
+        "介護施設",
+        "かいごしせつ",
+        "kaigoshisetsu",
+        "nursing home; rest home",
+        "Nouns"
+      ],
+      [
+        "開店",
+        "かいてん",
+        "kaiten",
+        "opening a new shop; opening a shop (for the day)",
+        "Nouns"
+      ],
+      [
+        "観光地",
+        "かんこうち",
+        "kankouchi",
+        "tourist attraction; sight-seeing area",
+        "Nouns"
+      ],
+      [
+        "箇所",
+        "かしょ",
+        "kasho",
+        "passage; place; point; part",
+        "Nouns"
+      ],
+      [
+        "帰省",
+        "きせい",
+        "kisei",
+        "homecoming; returning home",
+        "Nouns"
+      ],
+      [
+        "根元/根本",
+        "こんげん",
+        "kongen",
+        "root; source; origin; foundation; base; principle",
+        "Nouns"
+      ],
+      [
+        "固定",
+        "こてい",
+        "kotei",
+        "fixing (in place); securing; anchoring; fastening down; fixing (e.g. salary, capital); keeping the same",
+        "Nouns"
+      ],
+      [
+        "公演",
+        "こうえん",
+        "kouen",
+        "public performance",
+        "Nouns"
+      ],
+      [
+        "校外",
+        "こうがい",
+        "kougai",
+        "out-of-school; off-campus",
+        "Nouns"
+      ],
+      [
+        "公害",
+        "こうがい",
+        "kougai",
+        "pollution; public nuisance; contamination",
+        "Nouns"
+      ],
+      [
+        "区切り",
+        "くぎり",
+        "kugiri",
+        "punctuation; pause; juncture; end; (place to) stop",
+        "Nouns"
+      ],
+      [
+        "空間",
+        "くうかん",
+        "kuukan",
+        "space; room; airspace",
+        "Nouns"
+      ],
+      [
+        "協会",
+        "きょうかい",
+        "kyoukai",
+        "association; society; organization; organisation",
+        "Nouns"
+      ],
+      [
+        "町並み",
+        "まちなみ",
+        "machinami",
+        "townscape; street (of stores and houses); (look of) stores and houses on street",
+        "Nouns"
+      ],
+      [
+        "窓際",
+        "まどぎわ",
+        "madogiwa",
+        "(at the) window",
+        "Nouns"
+      ],
+      [
+        "満員",
+        "まん'いん",
+        "man’in",
+        "full house; no vacancy; sold out; standing room only; full (of people); crowded",
+        "Nouns"
+      ],
+      [
+        "名所",
+        "めいしょ",
+        "meisho",
+        "famous place",
+        "Nouns"
+      ],
+      [
+        "目的地",
+        "もくてきち",
+        "mokutekichi",
+        "place of destination",
+        "Nouns"
+      ],
+      [
+        "内",
+        "ない",
+        "nai",
+        "(suffix) inside; within",
+        "Nouns"
+      ],
+      [
+        "入居",
+        "にゅうきょ",
+        "nyuukyo",
+        "moving into (house)",
+        "Nouns"
+      ],
+      [
+        "入居者",
+        "にゅうきょしゃ",
+        "nyuukyosha",
+        "tenant (esp. residential tenant in apartment block); occupant; inhabitant; inmate",
+        "Nouns"
+      ],
+      [
+        "大通り",
+        "おおどおり",
+        "oodoori",
+        "main street",
+        "Nouns"
+      ],
+      [
+        "来店",
+        "らいてん",
+        "raiten",
+        "coming to a store (restaurant, bar, shop, etc.)",
+        "Verbs"
+      ],
+      [
+        "来店者",
+        "らいてんしゃ",
+        "raitensha",
+        "visitor (to a shop or restaurant); customer (visiting a store or restaurant); patron",
+        "Verbs"
+      ],
+      [
+        "陸上",
+        "りくじょう",
+        "rikujou",
+        "(on) land; ground; shore",
+        "Nouns"
+      ],
+      [
+        "領域",
+        "りょういき",
+        "ryouiki",
+        "area; domain; territory; field; range; region; regime",
+        "Nouns"
+      ],
+      [
+        "坂道",
+        "さかみち",
+        "sakamichi",
+        "hill road",
+        "Nouns"
+      ],
+      [
+        "整備",
+        "せいび",
+        "seibi",
+        "maintenance; servicing; putting in place; establishment; development; preparation; provision; outfitting; adjustment, completion, consolidation",
+        "Nouns"
+      ],
+      [
+        "正門",
+        "せいもん",
+        "seimon",
+        "main gate; main entrance",
+        "Nouns"
+      ],
+      [
+        "専門店",
+        "せんもんてん",
+        "senmonten",
+        "specialist shop; shop specializing in a few types of product",
+        "Nouns"
+      ],
+      [
+        "節電",
+        "せつでん",
+        "setsuden",
+        "conservation of electricity; brownout",
+        "Nouns"
+      ],
+      [
+        "沈める",
+        "しずめる",
+        "shizumeru",
+        "to sink; to submerge; to floor (an opponent)",
+        "Verbs"
+      ],
+      [
+        "商店街",
+        "しょうてんがい",
+        "shoutengai",
+        "shopping district; shopping street; downtown",
+        "Nouns"
+      ],
+      [
+        "宿泊先",
+        "しゅくはくさき",
+        "shukuhakusaki",
+        "lodging place",
+        "Nouns"
+      ],
+      [
+        "出身地",
+        "しゅっしんち",
+        "shusshinchi",
+        "birthplace; native place",
+        "Nouns"
+      ],
+      [
+        "修学旅行",
+        "しゅうがくりょこう",
+        "shuugakuryokou",
+        "excursion; field trip; school trip",
+        "Nouns"
+      ],
+      [
+        "周辺",
+        "しゅうへん",
+        "shuuhen",
+        "circumference; outskirts; environs; around; in the area of; in the vicinity of; circumference, outskirts, environs,(computer) peripheral",
+        "Nouns"
+      ],
+      [
+        "住まい",
+        "すまい",
+        "sumai",
+        "dwelling; house; residence; address",
+        "Nouns"
+      ],
+      [
+        "退場",
+        "たいじょう",
+        "taijou",
+        "exit (from a stage); leaving; exit",
+        "Nouns"
+      ],
+      [
+        "宅配",
+        "たくはい",
+        "takuhai",
+        "home delivery",
+        "Nouns"
+      ],
+      [
+        "宅配便",
+        "たくはいびん",
+        "takuhaibin",
+        "express home delivery service",
+        "Nouns"
+      ],
+      [
+        "庭園",
+        "ていえん",
+        "teien",
+        "garden; park",
+        "Nouns"
+      ],
+      [
+        "停止",
+        "ていし",
+        "teishi",
+        "stoppage; coming to a stop; halt; standstill; ceasing (movement, activity, etc.); suspension (of operations); interruption (e.g. of electricity supply); cutting off; suspension, interruption, stoppage, ban",
+        "Verbs"
+      ],
+      [
+        "脇道",
+        "わきみち",
+        "wakimichi",
+        "side road; byroad",
+        "Nouns"
+      ],
+      [
+        "呼びかける",
+        "よびかける",
+        "yobikakeru",
+        "to call out to; to hail; to address; to appeal",
+        "Verbs"
+      ],
+      [
+        "税関",
+        "ぜいかん",
+        "zeikan",
+        "customs; customs house",
+        "Nouns"
+      ]
+    ],
+    "Communication": [
+      [
+        "Kanji",
+        "Furigana",
+        "Romaji",
+        "Meaning",
+        "Group"
+      ],
+      [
+        "言う",
+        "いう",
+        "iu",
+        "to say, to tell",
+        "Verbs"
+      ],
+      [
+        "意味",
+        "いみ",
+        "imi",
+        "meaning",
+        "Nouns"
+      ],
+      [
+        "書く",
+        "かく",
+        "kaku",
+        "to write",
+        "Verbs"
+      ],
+      [
+        "声",
+        "こえ",
+        "koe",
+        "voice",
+        "Nouns"
+      ],
+      [
+        "答える",
+        "こたえる",
+        "kotaeru",
+        "to answer",
+        "Verbs"
+      ],
+      [
+        "質問",
+        "しつもん",
+        "shitsumon",
+        "question",
+        "Nouns"
+      ],
+      [
+        "頼む",
+        "たのむ",
+        "tanomu",
+        "to ask, to request",
+        "Verbs"
+      ],
+      [
+        "どうも",
+        "どうも",
+        "doumo",
+        "thanks",
+        "Nouns"
+      ],
+      [
+        "名前",
+        "なまえ",
+        "namae",
+        "name",
+        "Nouns"
+      ],
+      [
+        "話",
+        "はなし",
+        "hanashi",
+        "conversation, tale; talk, story",
+        "Nouns"
+      ],
+      [
+        "話す",
+        "はなす",
+        "hanasu",
+        "to talk, to speak, to tell",
+        "Verbs"
+      ],
+      [
+        "もう",
+        "もう",
+        "mou",
+        "already, yet; (one) more; already",
+        "Nouns"
+      ],
+      [
+        "問題",
+        "もんだい",
+        "mondai",
+        "problem, question",
+        "Nouns"
+      ],
+      [
+        "呼ぶ",
+        "よぶ",
+        "yobu",
+        "to call out, to invite",
+        "Verbs"
+      ],
+      [
+        "読む",
+        "よむ",
+        "yomu",
+        "to read",
+        "Verbs"
+      ],
+      [
+        "挨拶",
+        "あいさつ",
+        "aisatsu",
+        "greeting",
+        "Nouns"
+      ],
+      [
+        "英語",
+        "英語",
+        "eigo",
+        "English language",
+        "Nouns"
+      ],
+      [
+        "送る",
+        "おくる",
+        "okuru",
+        "to send",
+        "Verbs"
+      ],
+      [
+        "聞こえる",
+        "きこえる",
+        "kikoeru",
+        "to be heard",
+        "Verbs"
+      ],
+      [
+        "",
+        "くださる",
+        "kudasaru",
+        "to give (to me) respectful",
+        "Verbs"
+      ],
+      [
+        "",
+        "くれる",
+        "kureru",
+        "to give (to me) simple form",
+        "Verbs"
+      ],
+      [
+        "ご存知",
+        "ごぞんじ",
+        "gozonji",
+        "knowing, acquaintance",
+        "Nouns"
+      ],
+      [
+        "答",
+        "こたえ",
+        "kotae",
+        "response",
+        "Nouns"
+      ],
+      [
+        "ご覧になる",
+        "ごらんになる",
+        "goranninaru",
+        "to see(respectful)",
+        "Verbs"
+      ],
+      [
+        "叱る",
+        "しかる",
+        "shikaru",
+        "to scold",
+        "Verbs"
+      ],
+      [
+        "辞典",
+        "じてん",
+        "jiten",
+        "dictionary",
+        "Nouns"
+      ],
+      [
+        "紹介",
+        "しょうかい",
+        "shoukai",
+        "introduction",
+        "Nouns"
+      ],
+      [
+        "招待",
+        "しょうたい",
+        "shoutai",
+        "invitation; to invite",
+        "Verbs"
+      ],
+      [
+        "承知",
+        "しょうち",
+        "shouchi",
+        "consentment; to consent",
+        "Verbs"
+      ],
+      [
+        "知らせる",
+        "しらせる",
+        "shiraseru",
+        "to notify",
+        "Verbs"
+      ],
+      [
+        "説明",
+        "せつめい",
+        "setsumei",
+        "explanation",
+        "Nouns"
+      ],
+      [
+        "相談",
+        "そうだん",
+        "soudan",
+        "to discuss",
+        "Verbs"
+      ],
+      [
+        "尋ねる",
+        "たずねる",
+        "tazuneru",
+        "to ask",
+        "Verbs"
+      ],
+      [
+        "チェック",
+        "ちぇっく",
+        "chekku",
+        "to check",
+        "Verbs"
+      ],
+      [
+        "伝える",
+        "つたえる",
+        "tsutaeru",
+        "to report",
+        "Verbs"
+      ],
+      [
+        "電報",
+        "でんぽう",
+        "denpou",
+        "telegram",
+        "Nouns"
+      ],
+      [
+        "鳴る",
+        "なる",
+        "naru",
+        "sound, ring",
+        "Nouns"
+      ],
+      [
+        "拝見",
+        "はいけん",
+        "haiken",
+        "to look at, find out (respectful)",
+        "Verbs"
+      ],
+      [
+        "発音",
+        "はつおん",
+        "hatsuon",
+        "pronunciation",
+        "Nouns"
+      ],
+      [
+        "ファックス",
+        "ふぁっくす",
+        "fakkusu",
+        "fax",
+        "Nouns"
+      ],
+      [
+        "返事",
+        "へんじ",
+        "henji",
+        "reply",
+        "Nouns"
+      ],
+      [
+        "放送",
+        "ほうそう",
+        "housou",
+        "to broadcast",
+        "Verbs"
+      ],
+      [
+        "褒める",
+        "ほめる",
+        "homeru",
+        "praise, speak well of",
+        "Nouns"
+      ],
+      [
+        "翻訳",
+        "ほんやく",
+        "honyaku",
+        "translation",
+        "Nouns"
+      ],
+      [
+        "申し上げる",
+        "もうしあげる",
+        "moushiageru",
+        "to say, to tell (respectful)",
+        "Verbs"
+      ],
+      [
+        "申す",
+        "もうす",
+        "mousu",
+        "to be called, to say (respectful)",
+        "Verbs"
+      ],
+      [
+        "約束",
+        "やくそく",
+        "yakusoku",
+        "promise",
+        "Nouns"
+      ],
+      [
+        "連絡",
+        "れんらく",
+        "renraku",
+        "contact",
+        "Nouns"
+      ],
+      [
+        "敬語",
+        "けいご",
+        "keigo",
+        "Honorifics",
+        "Nouns"
+      ],
+      [
+        "おしゃべりする",
+        "おしゃべりする",
+        "oshaberisuru",
+        "Talk",
+        "Verbs"
+      ],
+      [
+        "叫ぶ",
+        "さけぶ",
+        "sakebu",
+        "Scream, shout, howl; to shout, to cry",
+        "Verbs"
+      ],
+      [
+        "黙る",
+        "だまる",
+        "damaru",
+        "to be silent",
+        "Verbs"
+      ],
+      [
+        "断る",
+        "ことわる",
+        "kotowaru",
+        "to refuse, to decline, to dismiss",
+        "Verbs"
+      ],
+      [
+        "感謝する",
+        "かんしゃする",
+        "kanshasuru",
+        "Thank you, thank you",
+        "Verbs"
+      ],
+      [
+        "お詫び",
+        "おわび",
+        "owabi",
+        "Sorry",
+        "Nouns"
+      ],
+      [
+        "お辞儀",
+        "おじぎ",
+        "ojigi",
+        "Bow",
+        "Nouns"
+      ],
+      [
+        "握手",
+        "あくしゅ",
+        "akushu",
+        "Shake hands; handshake",
+        "Nouns"
+      ],
+      [
+        "噂する",
+        "うわさする",
+        "uwasasuru",
+        "Rumors, gossip",
+        "Verbs"
+      ],
+      [
+        "情報",
+        "じょうほう",
+        "jouhou",
+        "information,(military) intelligence; Information",
+        "Nouns"
+      ],
+      [
+        "宣伝する",
+        "せんでんする",
+        "sendensuru",
+        "Propaganda",
+        "Verbs"
+      ],
+      [
+        "広告",
+        "こうこく",
+        "koukoku",
+        "Advertisement",
+        "Nouns"
+      ],
+      [
+        "注目する",
+        "ちゅうもくする",
+        "chuumokusuru",
+        "Focus attention",
+        "Verbs"
+      ],
+      [
+        "通訳する",
+        "つうやくする",
+        "tsuuyakusuru",
+        "Interpret",
+        "Verbs"
+      ],
+      [
+        "翻訳する",
+        "ほんやくする",
+        "honyakusuru",
+        "Translate",
+        "Verbs"
+      ],
+      [
+        "伝言する",
+        "でんごんする",
+        "dengonsuru",
+        "Texting",
+        "Verbs"
+      ],
+      [
+        "報告する",
+        "ほうこくする",
+        "houkokusuru",
+        "Report",
+        "Verbs"
+      ],
+      [
+        "理解する",
+        "りかいする",
+        "rikaisuru",
+        "Explain",
+        "Verbs"
+      ],
+      [
+        "許す",
+        "ゆるす",
+        "yurusu",
+        "Forgive, forgive; to permit, to allow, to approve",
+        "Verbs"
+      ],
+      [
+        "謝る",
+        "あやまる",
+        "ayamaru",
+        "Sorry",
+        "Nouns"
+      ],
+      [
+        "表情",
+        "ひょうじょう",
+        "hyoujou",
+        "Protest; facial expression",
+        "Nouns"
+      ],
+      [
+        "提案する",
+        "ていあんする",
+        "teiansuru",
+        "Propose",
+        "Verbs"
+      ],
+      [
+        "やり取りする",
+        "やりとりする",
+        "yaritorisuru",
+        "Exchange",
+        "Verbs"
+      ],
+      [
+        "合図",
+        "あいず",
+        "aizu",
+        "Token; sign, signal",
+        "Nouns"
+      ],
+      [
+        "強調する",
+        "きょうちょうする",
+        "kyouchousuru",
+        "Emphasize",
+        "Verbs"
+      ],
+      [
+        "説明する",
+        "せつめいする",
+        "setsumeisuru",
+        "Explanation",
+        "Verbs"
+      ],
+      [
+        "省略する",
+        "しょうりゃくする",
+        "shouryakusuru",
+        "Omit",
+        "Verbs"
+      ],
+      [
+        "伝わる",
+        "つたわる",
+        "tsutawaru",
+        "Transmit",
+        "Nouns"
+      ],
+      [
+        "表れる",
+        "あらわれる",
+        "arawareru",
+        "Appear",
+        "Nouns"
+      ],
+      [
+        "表す",
+        "あらわす",
+        "arawasu",
+        "Express, manifest; to express, to show, to reveal",
+        "Verbs"
+      ],
+      [
+        "赤字",
+        "あかじ",
+        "akaji",
+        "(being in) the red; deficit; red letter; red writing; corrections (by a teacher or proofreader) written in red",
+        "Nouns"
+      ],
+      [
+        "悪意",
+        "あくい",
+        "akui",
+        "ill will; spite; evil intention; malice; bad meaning",
+        "Nouns"
+      ],
+      [
+        "宛",
+        "あて",
+        "ate",
+        "addressed to",
+        "Nouns"
+      ],
+      [
+        "着実",
+        "ちゃくじつ",
+        "chakujitsu",
+        "steady; sound; solid; reliable; trustworthy",
+        "Nouns"
+      ],
+      [
+        "中継",
+        "ちゅうけい",
+        "chuukei",
+        "relay; relay broadcasting",
+        "Nouns"
+      ],
+      [
+        "伝達",
+        "でんたつ",
+        "dentatsu",
+        "transmission (e.g. news, chemical signals, electricity); communication; delivery; conveyance; transfer; relay; propagation; conduction",
+        "Nouns"
+      ],
+      [
+        "読者",
+        "どくしゃ",
+        "dokusha",
+        "reader",
+        "Nouns"
+      ],
+      [
+        "導入",
+        "どうにゅう",
+        "dounyuu",
+        "introduction; bringing in; leading in; installation",
+        "Nouns"
+      ],
+      [
+        "触れ合い",
+        "ふれあい",
+        "fureai",
+        "contact; connectedness; rapport; mutual touching",
+        "Nouns"
+      ],
+      [
+        "概要",
+        "がいよう",
+        "gaiyou",
+        "outline; summary; overview; abridgment; synopsis",
+        "Nouns"
+      ],
+      [
+        "愚痴",
+        "ぐち",
+        "guchi",
+        "idle complaint; grumble",
+        "Nouns"
+      ],
+      [
+        "話し声",
+        "はなしごえ",
+        "hanashigoe",
+        "speaking voice; talking voice",
+        "Nouns"
+      ],
+      [
+        "話し手",
+        "はなして",
+        "hanashite",
+        "speaker",
+        "Nouns"
+      ],
+      [
+        "反発",
+        "はんぱつ",
+        "hanpatsu",
+        "opposition; rebellion; revolt; resistance; backlash; refusal; rebounding; recoiling; repulsion",
+        "Nouns"
+      ],
+      [
+        "反論",
+        "はんろん",
+        "hanron",
+        "objection; refutation; rebuttal; counterargument",
+        "Nouns"
+      ],
+      [
+        "発言",
+        "はつげん",
+        "hatsugen",
+        "statement; remark; observation; utterance; speech; proposal",
+        "Nouns"
+      ],
+      [
+        "返信",
+        "へんしん",
+        "henshin",
+        "reply",
+        "Nouns"
+      ],
+      [
+        "編集",
+        "へんしゅう",
+        "henshuu",
+        "editing, compilation, editorial (e.g. committee)",
+        "Nouns"
+      ],
+      [
+        "返答",
+        "へんとう",
+        "hentou",
+        "reply; answer",
+        "Nouns"
+      ],
+      [
+        "引き止める",
+        "ひきとめる",
+        "hikitomeru",
+        "to detain; to check; to restrain",
+        "Verbs"
+      ],
+      [
+        "筆記",
+        "ひっき",
+        "hikki",
+        "(taking) notes; copying; writing",
+        "Nouns"
+      ],
+      [
+        "非難",
+        "ひなん",
+        "hinan",
+        "criticism; blame; censure; attack; reproach",
+        "Nouns"
+      ],
+      [
+        "ひそひそ",
+        "ひそひそ",
+        "hisohiso",
+        "in a whisper; in a low voice; in undertones",
+        "Nouns"
+      ],
+      [
+        "報道",
+        "ほうどう",
+        "houdou",
+        "information; report; journalism; news",
+        "Nouns"
+      ],
+      [
+        "放映",
+        "ほうえい",
+        "houei",
+        "televising; broadcasting; airing",
+        "Nouns"
+      ],
+      [
+        "報告書",
+        "ほうこくしょ",
+        "houkokusho",
+        "(written) report",
+        "Nouns"
+      ],
+      [
+        "表示",
+        "ひょうじ",
+        "hyouji",
+        "indication; expression; showing; manifestation; demonstration; display; displaying",
+        "Nouns"
+      ],
+      [
+        "評論",
+        "ひょうろん",
+        "hyouron",
+        "criticism; critique",
+        "Nouns"
+      ],
+      [
+        "一覧",
+        "いちらん",
+        "ichiran",
+        "look; glance; sight; inspection; summary; list; table; catalog; catalogue",
+        "Nouns"
+      ],
+      [
+        "意義",
+        "いぎ",
+        "igi",
+        "meaning; significance",
+        "Nouns"
+      ],
+      [
+        "言い訳",
+        "いいわけ",
+        "iiwake",
+        "excuse; explanation",
+        "Nouns"
+      ],
+      [
+        "時点",
+        "じてん",
+        "jiten",
+        "point in time; occasion",
+        "Nouns"
+      ],
+      [
+        "事典",
+        "じてん",
+        "jiten",
+        "encyclopedia; cyclopedia",
+        "Nouns"
+      ],
+      [
+        "解説",
+        "かいせつ",
+        "kaisetsu",
+        "explanation; commentary; exposition; elucidation",
+        "Nouns"
+      ],
+      [
+        "回答",
+        "かいとう",
+        "kaitou",
+        "reply; answer",
+        "Nouns"
+      ],
+      [
+        "勧誘",
+        "かん'ゆう",
+        "kan’yuu",
+        "invitation; solicitation; canvassing; canvasing; inducement; persuasion; encouragement",
+        "Nouns"
+      ],
+      [
+        "仮に",
+        "かり に",
+        "kari ni",
+        "supposing; even if; granting that; for argument’s sake; temporarily; provisionally; for the time being",
+        "Nouns"
+      ],
+      [
+        "掲載",
+        "けいさい",
+        "keisai",
+        "publication (e.g. of an article in a newspaper); carrying (e.g. a story); running (e.g. a serial); insertion (e.g. of an advertisement); printing; posting (e.g. on the web)",
+        "Nouns"
+      ],
+      [
+        "応える",
+        "こたえる",
+        "kotaeru",
+        "to respond; to answer; to meet (e.g. demands, expectations)",
+        "Verbs"
+      ],
+      [
+        "言葉遣い",
+        "ことばずかい",
+        "kotobazukai",
+        "speech; expression; wording; language",
+        "Nouns"
+      ],
+      [
+        "苦情",
+        "くじょう",
+        "kujou",
+        "complaint; troubles; objection; grievance",
+        "Nouns"
+      ],
+      [
+        "見分ける",
+        "みわける",
+        "miwakeru",
+        "to distinguish; to recognize; to recognise; to tell apart; to differentiate (both figuratively and visually)",
+        "Verbs"
+      ],
+      [
+        "問題点",
+        "もんだいてん",
+        "mondaiten",
+        "the problem (at issue); the point at issue; problematic issue; problem",
+        "Nouns"
+      ],
+      [
+        "無線",
+        "むせん",
+        "musen",
+        "radio (communication); wireless; not using wires",
+        "Nouns"
+      ],
+      [
+        "生中継",
+        "なまちゅうけい",
+        "namachuukei",
+        "live broadcast (radio, TV); live coverage",
+        "Nouns"
+      ],
+      [
+        "入門",
+        "にゅうもん",
+        "nyuumon",
+        "entering an institution; beginning training; primer; manual; introduction (to)",
+        "Nouns"
+      ],
+      [
+        "音量",
+        "おんりょう",
+        "onryou",
+        "volume (sound)",
+        "Nouns"
+      ],
+      [
+        "大声",
+        "おおごえ",
+        "oogoe",
+        "loud voice",
+        "Nouns"
+      ],
+      [
+        "応答",
+        "おうとう",
+        "outou",
+        "reply; answer; response",
+        "Nouns"
+      ],
+      [
+        "乱暴",
+        "らんぼう",
+        "ranbou",
+        "violence; assault; running riot; rough (e.g. handling); reckless; careless; coarse; rude; unreasonable (e.g. demand); wild (e.g. argument); rude, violent, rough, lawless, unreasonable, reckless",
+        "Nouns"
+      ],
+      [
+        "略す",
+        "りゃくす",
+        "ryakusu",
+        "to abbreviate; to omit; to abbreviate; to omit",
+        "Verbs"
+      ],
+      [
+        "最新",
+        "さいしん",
+        "saishin",
+        "latest; newest; late-breaking (news)",
+        "Nouns"
+      ],
+      [
+        "ささやく",
+        "ささやく",
+        "sasayaku",
+        "to whisper; to murmur",
+        "Verbs"
+      ],
+      [
+        "焦点",
+        "しょうてん",
+        "shouten",
+        "focus (e.g. photographic); focal point",
+        "Nouns"
+      ],
+      [
+        "取材",
+        "しゅざい",
+        "shuzai",
+        "news coverage; collecting data (e.g. for an article); covering (something for media)",
+        "Nouns"
+      ],
+      [
+        "対",
+        "たい",
+        "tai",
+        "opposite; opposition; versus; vs.; v.",
+        "Nouns"
+      ],
+      [
+        "対抗",
+        "たいこう",
+        "taikou",
+        "opposition; antagonism",
+        "Nouns"
+      ],
+      [
+        "問い合わせる",
+        "といあわせる",
+        "toiawaseru",
+        "to enquire; to inquire; to seek information",
+        "Verbs"
+      ],
+      [
+        "問いかける",
+        "といかける",
+        "toikakeru",
+        "to ask a question; to begin to ask a question",
+        "Verbs"
+      ],
+      [
+        "特集",
+        "とくしゅう",
+        "tokushuu",
+        "feature (e.g. newspaper); special edition; report",
+        "Nouns"
+      ],
+      [
+        "登場",
+        "とうじょう",
+        "toujou",
+        "entry (on stage); appearance (on screen); entrance; introduction (into a market)",
+        "Nouns"
+      ],
+      [
+        "呟く",
+        "つぶやく",
+        "tsubuyaku",
+        "to mutter; to murmur; to grumble",
+        "Verbs"
+      ],
+      [
+        "通知",
+        "つうち",
+        "tsuuchi",
+        "notice; notification; report; posting",
+        "Nouns"
+      ],
+      [
+        "打ち消す",
+        "うちけす",
+        "uchikesu",
+        "to deny; to contradict; to negate (esp. a sound); to drown out",
+        "Verbs"
+      ],
+      [
+        "受け答え",
+        "うけこたえ",
+        "ukekotae",
+        "reply; response; answer",
+        "Nouns"
+      ],
+      [
+        "うなずく",
+        "うなずく",
+        "unazuku",
+        "to nod; to bow one’s head in assent; to agree",
+        "Verbs"
+      ],
+      [
+        "占う",
+        "うらなう",
+        "uranau",
+        "to tell someone’s fortune; to forecast; to predict; to divine",
+        "Verbs"
+      ],
+      [
+        "枠組み",
+        "わくぐみ",
+        "wakugumi",
+        "frame; framework; outline",
+        "Nouns"
+      ],
+      [
+        "割り込む",
+        "わりこむ",
+        "warikomu",
+        "to cut into (a line, conversation, etc.); to force oneself into (e.g. a crowd); to wedge oneself into; to squeeze oneself into; to intrude on; to interrupt",
+        "Verbs"
+      ],
+      [
+        "約束事",
+        "やくそくごと",
+        "yakusokugoto",
+        "promise; vow; engagement; convention; rule; resolution",
+        "Nouns"
+      ],
+      [
+        "野党",
+        "やとう",
+        "yatou",
+        "opposition party; political opposition; opposition",
+        "Nouns"
+      ],
+      [
+        "読み込む",
+        "よみこむ",
+        "yomikomu",
+        "to read thoroughly; to read repeatedly; to read (extra meaning) into (something)",
+        "Verbs"
+      ],
+      [
+        "要旨",
+        "ようし",
+        "youshi",
+        "point; essentials; gist; summary; fundamentals",
+        "Nouns"
+      ],
+      [
+        "雑談",
+        "ざつだん",
+        "zatsudan",
+        "chatting; idle talk",
+        "Nouns"
+      ]
+    ],
+    "Body & Health": [
+      [
+        "Kanji",
+        "Furigana",
+        "Romaji",
+        "Meaning",
+        "Group"
+      ],
+      [
+        "足",
+        "あし",
+        "ashi",
+        "leg, foot",
+        "Nouns"
+      ],
+      [
+        "頭",
+        "あたま",
+        "atama",
+        "head",
+        "Nouns"
+      ],
+      [
+        "痛い",
+        "いたい",
+        "itai",
+        "to be painful",
+        "Verbs"
+      ],
+      [
+        "後ろ",
+        "うしろ",
+        "ushiro",
+        "back, rear, behind",
+        "Nouns"
+      ],
+      [
+        "お腹",
+        "おなか",
+        "onaka",
+        "stomach",
+        "Nouns"
+      ],
+      [
+        "顔",
+        "かお",
+        "kao",
+        "face",
+        "Nouns"
+      ],
+      [
+        "風邪",
+        "かぜ",
+        "kaze",
+        "a cold",
+        "Nouns"
+      ],
+      [
+        "体",
+        "からだ",
+        "karada",
+        "body",
+        "Nouns"
+      ],
+      [
+        "薬",
+        "くすり",
+        "kusuri",
+        "medicine",
+        "Nouns"
+      ],
+      [
+        "口",
+        "くち",
+        "kuchi",
+        "mouth, opening",
+        "Nouns"
+      ],
+      [
+        "元気",
+        "げんき",
+        "genki",
+        "vigor, health, vitality",
+        "Nouns"
+      ],
+      [
+        "石鹸",
+        "せっけん",
+        "sekken",
+        "soap",
+        "Nouns"
+      ],
+      [
+        "手",
+        "て",
+        "te",
+        "hand",
+        "Nouns"
+      ],
+      [
+        "歯",
+        "は",
+        "ha",
+        "teeth; tooth",
+        "Nouns"
+      ],
+      [
+        "鼻",
+        "はな",
+        "hana",
+        "nose",
+        "Nouns"
+      ],
+      [
+        "病気",
+        "びょうき",
+        "byouki",
+        "ill, sick; illness",
+        "Nouns"
+      ],
+      [
+        "耳",
+        "みみ",
+        "mimi",
+        "ear",
+        "Nouns"
+      ],
+      [
+        "目",
+        "め",
+        "me",
+        "eye",
+        "Nouns"
+      ],
+      [
+        "椅子",
+        "いす",
+        "isu",
+        "chair",
+        "Nouns"
+      ],
+      [
+        "具合",
+        "ぐあい",
+        "guai",
+        "condition, health",
+        "Nouns"
+      ],
+      [
+        "首",
+        "くび",
+        "kubi",
+        "neck",
+        "Nouns"
+      ],
+      [
+        "怪我",
+        "けが",
+        "kega",
+        "an injury; to injure",
+        "Verbs"
+      ],
+      [
+        "背中",
+        "せなか",
+        "senaka",
+        "back of the body",
+        "Nouns"
+      ],
+      [
+        "退院",
+        "たいいん",
+        "taiin",
+        "to leave hospital",
+        "Verbs"
+      ],
+      [
+        "血",
+        "ち",
+        "chi",
+        "blood",
+        "Nouns"
+      ],
+      [
+        "力",
+        "ちから",
+        "chikara",
+        "strengh, power; strength, power",
+        "Nouns"
+      ],
+      [
+        "注射",
+        "ちゅうしゃ",
+        "chuusha",
+        "injection",
+        "Nouns"
+      ],
+      [
+        "治る",
+        "なおる",
+        "naoru",
+        "to be cured, to heal",
+        "Verbs"
+      ],
+      [
+        "入院",
+        "にゅういん",
+        "nyuuin",
+        "be hospitalized; to hospitalise",
+        "Verbs"
+      ],
+      [
+        "熱",
+        "ねつ",
+        "netsu",
+        "fever",
+        "Nouns"
+      ],
+      [
+        "眠い",
+        "ねむい",
+        "nemui",
+        "to be sleepy",
+        "Verbs"
+      ],
+      [
+        "",
+        "のど",
+        "nodo",
+        "throat",
+        "Nouns"
+      ],
+      [
+        "歯医者",
+        "はいしゃ",
+        "haisha",
+        "dentist",
+        "Nouns"
+      ],
+      [
+        "髭",
+        "ひげ",
+        "hige",
+        "a mustache, a beard",
+        "Nouns"
+      ],
+      [
+        "指",
+        "ゆび",
+        "yubi",
+        "finger",
+        "Nouns"
+      ],
+      [
+        "冷房",
+        "れいぼう",
+        "reibou",
+        "air conditioning",
+        "Nouns"
+      ],
+      [
+        "命",
+        "いのち",
+        "inochi",
+        "Fate, life; command, decree, life, destiny; Life",
+        "Nouns"
+      ],
+      [
+        "身長",
+        "しんちょう",
+        "shinchou",
+        "height (of body), stature",
+        "Nouns"
+      ],
+      [
+        "体重",
+        "たいじゅう",
+        "taijuu",
+        "Weight",
+        "Nouns"
+      ],
+      [
+        "お尻",
+        "おしり",
+        "oshiri",
+        "Butt",
+        "Nouns"
+      ],
+      [
+        "両手",
+        "りょうて",
+        "ryoute",
+        "Two hands",
+        "Nouns"
+      ],
+      [
+        "治す",
+        "なおす",
+        "naosu",
+        "Treatment",
+        "Nouns"
+      ],
+      [
+        "頭痛",
+        "ずつう",
+        "zutsuu",
+        "Headache",
+        "Nouns"
+      ],
+      [
+        "涙",
+        "なみだ",
+        "namida",
+        "Tear",
+        "Nouns"
+      ],
+      [
+        "健康（な）",
+        "けんこう",
+        "kenkou",
+        "Healthy",
+        "Nouns"
+      ],
+      [
+        "強める",
+        "つよめる",
+        "tsuyomeru",
+        "Get healthy",
+        "Nouns"
+      ],
+      [
+        "意地悪する",
+        "いじわるする",
+        "ijiwarusuru",
+        "Bad heart, bad stomach",
+        "Verbs"
+      ],
+      [
+        "体力",
+        "たいりょく",
+        "tairyoku",
+        "Physical",
+        "Nouns"
+      ],
+      [
+        "胃",
+        "い",
+        "i",
+        "Stomach",
+        "Nouns"
+      ],
+      [
+        "血液",
+        "けつえき",
+        "ketsueki",
+        "Blood",
+        "Nouns"
+      ],
+      [
+        "治療する",
+        "ちりょうする",
+        "chiryousuru",
+        "Therapy",
+        "Verbs"
+      ],
+      [
+        "症状",
+        "しょうじょう",
+        "shoujou",
+        "symptoms, condition",
+        "Nouns"
+      ],
+      [
+        "鼻水",
+        "はなみず",
+        "hanamizu",
+        "Runny nose",
+        "Nouns"
+      ],
+      [
+        "栄養",
+        "えいよう",
+        "eiyou",
+        "nutrition, nourishment",
+        "Nouns"
+      ],
+      [
+        "手術",
+        "しゅじゅつ",
+        "shujutsu",
+        "Surgery; surgical operation",
+        "Nouns"
+      ],
+      [
+        "死亡する",
+        "しぼうする",
+        "shibousuru",
+        "Death",
+        "Verbs"
+      ],
+      [
+        "一生",
+        "いっしょう",
+        "isshou",
+        "Life, forever; whole life, a lifetime, all through life",
+        "Nouns"
+      ],
+      [
+        "仰向け",
+        "あおむけ",
+        "aomuke",
+        "face up",
+        "Nouns"
+      ],
+      [
+        "縮める",
+        "ちぢめる",
+        "chidjimeru",
+        "to shorten; to reduce; to condense; to shrink; to make (one’s body) smaller; to draw in (one’s legs); to duck (one’s head)",
+        "Verbs"
+      ],
+      [
+        "電源",
+        "でんげん",
+        "dengen",
+        "source of electricity; electrical power; power (button on TV, etc.)",
+        "Nouns"
+      ],
+      [
+        "伝染",
+        "でんせん",
+        "densen",
+        "contagion; infection",
+        "Nouns"
+      ],
+      [
+        "不機嫌",
+        "ふきげん",
+        "fukigen",
+        "pout; displeasure; ill humor; ill humour; sullenness",
+        "Nouns"
+      ],
+      [
+        "福祉",
+        "ふくし",
+        "fukushi",
+        "welfare; well-being; social welfare; social security; social service",
+        "Nouns"
+      ],
+      [
+        "振り向く",
+        "ふりむく",
+        "furimuku",
+        "to turn one’s face; to turn around; to look over one’s shoulder",
+        "Verbs"
+      ],
+      [
+        "偏食",
+        "へんしょく",
+        "henshoku",
+        "unbalanced diet",
+        "Nouns"
+      ],
+      [
+        "引き渡す",
+        "ひきわたす",
+        "hikiwatasu",
+        "to deliver; to extradite; to stretch across; to hand over",
+        "Verbs"
+      ],
+      [
+        "異",
+        "い",
+        "i",
+        "(prefix) different",
+        "Nouns"
+      ],
+      [
+        "一面",
+        "いちめん",
+        "ichimen",
+        "one face; one surface; the whole surface; one aspect; one side; (on) the other hand",
+        "Nouns"
+      ],
+      [
+        "遺伝",
+        "いでん",
+        "iden",
+        "heredity; (genetic) inheritance",
+        "Nouns"
+      ],
+      [
+        "遺伝子",
+        "いでんし",
+        "idenshi",
+        "gene; genetic",
+        "Nouns"
+      ],
+      [
+        "意地悪",
+        "いじわる",
+        "ijiwaru",
+        "malicious; ill-tempered; unkind",
+        "Nouns"
+      ],
+      [
+        "生き残る",
+        "いきのこる",
+        "ikinokoru",
+        "to survive",
+        "Verbs"
+      ],
+      [
+        "一気に",
+        "いっき に",
+        "ikki ni",
+        "in one go; in one gulp; in one breath; without stopping; without pausing; without resting; in one sitting; at a stretch; all at once",
+        "Nouns"
+      ],
+      [
+        "自治体",
+        "じちたい",
+        "jichitai",
+        "municipality; local government; self-governing body; autonomous body",
+        "Nouns"
+      ],
+      [
+        "上半身",
+        "じょうはんしん",
+        "jouhanshin",
+        "upper half of (one’s) body; upper body; bust",
+        "Nouns"
+      ],
+      [
+        "受診",
+        "じゅしん",
+        "jushin",
+        "having a medical examination; seeing a doctor",
+        "Nouns"
+      ],
+      [
+        "花粉症",
+        "かふんしょう",
+        "kafunshou",
+        "hay fever; pollinosis (allergy to pollen)",
+        "Verbs"
+      ],
+      [
+        "看護師",
+        "かんごし",
+        "kangoshi",
+        "(hospital) nurse; registered nurse",
+        "Nouns"
+      ],
+      [
+        "肩幅",
+        "かたはば",
+        "katahaba",
+        "shoulder width (breadth)",
+        "Nouns"
+      ],
+      [
+        "偏る",
+        "かたよる",
+        "katayoru",
+        "to lean (to one side); to incline; to be unbalanced (e.g. diet); to be unduly weighted towards; to be concentrated on; to be partial; to be biased; to be prejudiced",
+        "Verbs"
+      ],
+      [
+        "活力",
+        "かつりょく",
+        "katsuryoku",
+        "vitality; energy; dynamism",
+        "Nouns"
+      ],
+      [
+        "検診",
+        "けんしん",
+        "kenshin",
+        "physical examination; medical examination; health checkup; health screening",
+        "Nouns"
+      ],
+      [
+        "高熱",
+        "こうねつ",
+        "kounetsu",
+        "high fever",
+        "Nouns"
+      ],
+      [
+        "くしゃみ",
+        "くしゃみ",
+        "kushami",
+        "sneeze",
+        "Nouns"
+      ],
+      [
+        "まぶた",
+        "まぶた",
+        "mabuta",
+        "eyelid; eyelids",
+        "Nouns"
+      ],
+      [
+        "真っ先",
+        "まっさき",
+        "massaki",
+        "the head; the foremost; beginning; the very front",
+        "Nouns"
+      ],
+      [
+        "面する",
+        "めんする",
+        "mensuru",
+        "to face on; to look out on to",
+        "Verbs"
+      ],
+      [
+        "向き合う",
+        "むきあう",
+        "mukiau",
+        "to be opposite; to face each other; to confront (an issue); to face",
+        "Verbs"
+      ],
+      [
+        "奥底",
+        "おくそこ",
+        "okusoko",
+        "depths; bottom (of one’s heart)",
+        "Nouns"
+      ],
+      [
+        "思い切り",
+        "おもいきり",
+        "omoikiri",
+        "with all one’s strength; with all one’s heart; to the utmost; resolution; decisiveness",
+        "Verbs"
+      ],
+      [
+        "理解力",
+        "りかいりょく",
+        "rikairyoku",
+        "(power of) understanding; comprehensive faculty",
+        "Nouns"
+      ],
+      [
+        "力",
+        "りょく",
+        "ryoku",
+        "(suffix) strength; power; proficiency; ability",
+        "Nouns"
+      ],
+      [
+        "芯",
+        "しん",
+        "shin",
+        "wick; marrow; staple (for stapler); (pencil) lead; stuffing; pith; core; heart; centre; center",
+        "Nouns"
+      ],
+      [
+        "しわ",
+        "しわ",
+        "shiwa",
+        "wrinkle; crease; ripple",
+        "Nouns"
+      ],
+      [
+        "体調",
+        "たいちょう",
+        "taichou",
+        "physical condition; state of health",
+        "Nouns"
+      ],
+      [
+        "体型",
+        "たいけい",
+        "taikei",
+        "figure; body shape; build; physique; form",
+        "Nouns"
+      ],
+      [
+        "体内",
+        "たいない",
+        "tainai",
+        "interior of the body",
+        "Nouns"
+      ],
+      [
+        "体質",
+        "たいしつ",
+        "taishitsu",
+        "constitution (physical); physical make-up; predisposition (to disease); disposition; tendency; character (of a group, organization, etc.); innate characteristics; make-up; nature; culture",
+        "Verbs"
+      ],
+      [
+        "手書き",
+        "てがき",
+        "tegaki",
+        "handwriting; handwritten; hand-painted; hand-drawn",
+        "Nouns"
+      ],
+      [
+        "提供",
+        "ていきょう",
+        "teikyou",
+        "offer; tender; providing; supplying; making available; donating (blood, organs, etc.); sponsoring (a TV program)",
+        "Nouns"
+      ],
+      [
+        "手元",
+        "てもと",
+        "temoto",
+        "at hand; on hand; nearby; close at hand; way of moving one’s arms; skill; money at hand; pocket money",
+        "Nouns"
+      ],
+      [
+        "特効薬",
+        "とっこうやく",
+        "tokkouyaku",
+        "specific medicine; wonder drug; silver bullet",
+        "Nouns"
+      ],
+      [
+        "薬品",
+        "やくひん",
+        "yakuhin",
+        "medicine; chemicals",
+        "Nouns"
+      ],
+      [
+        "容姿",
+        "ようし",
+        "youshi",
+        "(physical) appearance (of a person); one’s face and figure",
+        "Nouns"
+      ],
+      [
+        "存分",
+        "ぞんぶん",
+        "zonbun",
+        "to one’s heart’s content; as much as one wants",
+        "Verbs"
+      ],
+      [
+        "頭脳",
+        "ずのう",
+        "zunou",
+        "head, brains, intellect",
+        "Nouns"
+      ]
+    ],
+    "Transportation": [
+      [
+        "Kanji",
+        "Furigana",
+        "Romaji",
+        "Meaning",
+        "Group"
+      ],
+      [
+        "切符",
+        "きっぷ",
+        "kippu",
+        "ticket",
+        "Nouns"
+      ],
+      [
+        "車",
+        "くるま",
+        "kuruma",
+        "car, vehicle",
+        "Nouns"
+      ],
+      [
+        "自転車",
+        "じてんしゃ",
+        "jitensha",
+        "bicycle",
+        "Nouns"
+      ],
+      [
+        "自動車",
+        "じどうしゃ",
+        "jidousha",
+        "car, vehicle; Automobile",
+        "Nouns"
+      ],
+      [
+        "タクシー",
+        "タクシー",
+        "takushii",
+        "taxi",
+        "Nouns"
+      ],
+      [
+        "地下鉄",
+        "ちかてつ",
+        "chikatetsu",
+        "subway; underground train",
+        "Nouns"
+      ],
+      [
+        "電車",
+        "でんしゃ",
+        "densha",
+        "electric train",
+        "Nouns"
+      ],
+      [
+        "バス",
+        "バス",
+        "basu",
+        "bus",
+        "Nouns"
+      ],
+      [
+        "飛行機",
+        "ひこうき",
+        "hikouki",
+        "aeroplane",
+        "Nouns"
+      ],
+      [
+        "汽車",
+        "きしゃ",
+        "kisha",
+        "steam train",
+        "Nouns"
+      ],
+      [
+        "急行",
+        "きゅうこう",
+        "kyuukou",
+        "speedy, express",
+        "Nouns"
+      ],
+      [
+        "交通",
+        "こうつう",
+        "koutsuu",
+        "traffic, transportation",
+        "Nouns"
+      ],
+      [
+        "坂",
+        "さか",
+        "saka",
+        "slope, hill",
+        "Nouns"
+      ],
+      [
+        "特急",
+        "とっきゅう",
+        "tokkyuu",
+        "limites express train; limited express train (faster than an express train)",
+        "Nouns"
+      ],
+      [
+        "乗り換える",
+        "のりかえる",
+        "norikaeru",
+        "to tansfer, change; to change between buses or trains",
+        "Verbs"
+      ],
+      [
+        "乗り物",
+        "のりもの",
+        "norimono",
+        "vehicle",
+        "Nouns"
+      ],
+      [
+        "船",
+        "ふね",
+        "fune",
+        "ship, boat",
+        "Nouns"
+      ],
+      [
+        "港",
+        "みなと",
+        "minato",
+        "harbour",
+        "Nouns"
+      ],
+      [
+        "帰国する",
+        "きこくする",
+        "kikokusuru",
+        "Back home",
+        "Verbs"
+      ],
+      [
+        "帰省する",
+        "きせいする",
+        "kiseisuru",
+        "Come home",
+        "Verbs"
+      ],
+      [
+        "帰宅する",
+        "きたくする",
+        "kitakusuru",
+        "Go home",
+        "Verbs"
+      ],
+      [
+        "道路",
+        "どうろ",
+        "douro",
+        "road, highway",
+        "Nouns"
+      ],
+      [
+        "乗る",
+        "のる",
+        "noru",
+        "Go up",
+        "Nouns"
+      ],
+      [
+        "乗せる",
+        "のせる",
+        "noseru",
+        "Put up, put up; to place on (something), to take on board, to give a ride",
+        "Verbs"
+      ],
+      [
+        "下りる/降りる",
+        "おりる",
+        "oriru",
+        "Down",
+        "Nouns"
+      ],
+      [
+        "下ろす、降ろす",
+        "おろす",
+        "orosu",
+        "Give down",
+        "Nouns"
+      ],
+      [
+        "通う",
+        "かよう",
+        "kayou",
+        "Go back and forth",
+        "Nouns"
+      ],
+      [
+        "渋滞する",
+        "じゅうたいする",
+        "juutaisuru",
+        "Traffic jam, congestion",
+        "Verbs"
+      ],
+      [
+        "階段",
+        "かいだん",
+        "kaidan",
+        "Stair",
+        "Nouns"
+      ],
+      [
+        "駐輪所",
+        "ちゅうりんじょ",
+        "chuurinjo",
+        "bicycle parking place",
+        "Nouns"
+      ],
+      [
+        "駅前",
+        "えきまえ",
+        "ekimae",
+        "in front of station",
+        "Nouns"
+      ],
+      [
+        "乗車",
+        "じょうしゃ",
+        "jousha",
+        "boarding (a train, bus, etc.); getting into (e.g. a taxi); taking a train, entraining",
+        "Nouns"
+      ],
+      [
+        "削る",
+        "けずる",
+        "kezuru",
+        "to shave (wood, leather, etc.); to sharpen (e.g. pencil); to plane; to whittle; to pare; to scrape off; to erode; to cut down (budget, expenses, staff, time, etc.); to curtail; to reduce; to cut down little by little, to take a percentage",
+        "Verbs"
+      ],
+      [
+        "貴社",
+        "きしゃ",
+        "kisha",
+        "your company (honorific)",
+        "Nouns"
+      ],
+      [
+        "鍛える",
+        "きたえる",
+        "kitaeru",
+        "to forge; to temper; to drill; to train; to discipline",
+        "Verbs"
+      ],
+      [
+        "乗り越える",
+        "のりこえる",
+        "norikoeru",
+        "to climb over; to get over; to ride across; to overcome; to surpass; to overtake",
+        "Verbs"
+      ],
+      [
+        "追い越す",
+        "おいこす",
+        "oikosu",
+        "to pass (e.g. car); to overtake; to surpass; to outstrip; to get ahead of; to outdistance",
+        "Verbs"
+      ],
+      [
+        "追い抜く",
+        "おいぬく",
+        "oinuku",
+        "to pass (a car); to overtake; to surpass; to outstrip; to outdistance; to outsail",
+        "Verbs"
+      ],
+      [
+        "来日",
+        "らいにち",
+        "rainichi",
+        "arrival in Japan; coming to Japan; visit to Japan",
+        "Verbs"
+      ],
+      [
+        "車内",
+        "しゃない",
+        "shanai",
+        "inside a train, car, etc.",
+        "Nouns"
+      ],
+      [
+        "車窓",
+        "しゃそう",
+        "shasou",
+        "train window; car window",
+        "Nouns"
+      ],
+      [
+        "出発点",
+        "しゅっぱつてん",
+        "shuppatsuten",
+        "starting point; point of departure",
+        "Nouns"
+      ],
+      [
+        "逃避",
+        "とうひ",
+        "touhi",
+        "escape; evasion; flight",
+        "Nouns"
+      ],
+      [
+        "到達",
+        "とうたつ",
+        "toutatsu",
+        "reaching; attaining; arrival",
+        "Nouns"
+      ]
+    ],
+    "Onomatopoeia": [
+      [
+        "Kanji",
+        "Furigana",
+        "Romaji",
+        "Meaning",
+        "Group"
+      ],
+      [
+        "がらがら",
+        "がらがら",
+        "garagara",
+        "with a clatter; with a rattle",
+        "Sounds & voices"
+      ],
+      [
+        "こつこつ",
+        "こつこつ",
+        "kotsukotsu",
+        "unflaggingly; steadily; untiringly; laboriously; knocking; tapping; clicking; drumming",
+        "Sounds & voices"
+      ],
+      [
+        "ざわざわ",
+        "ざわざわ",
+        "zawazawa",
+        "noisily (e.g. from many people talking); creating a commotion; rustling (leaves); feeling a chill; getting the chills",
+        "Sounds & voices"
+      ],
+      [
+        "どきどき",
+        "どきどき",
+        "dokidoki",
+        "throb, beat (fast)",
+        "Sounds & voices"
+      ],
+      [
+        "ひそひそ",
+        "ひそひそ",
+        "hisohiso",
+        "in a whisper; in a low voice; in undertones",
+        "Sounds & voices"
+      ],
+      [
+        "ぶつぶつ",
+        "ぶつぶつ",
+        "butsubutsu",
+        "grumbling, complaining in a small voice",
+        "Sounds & voices"
+      ],
+      [
+        "",
+        "どんどん",
+        "dondon",
+        "more and more",
+        "Sounds & voices"
+      ],
+      [
+        "ばったり",
+        "ばったり",
+        "battari",
+        "with a clash (thud), with a bang, plump, flop",
+        "Sounds & voices"
+      ],
+      [
+        "ぴかぴか",
+        "ぴかぴか",
+        "pikapika",
+        "glitter, sparkle",
+        "Sounds & voices"
+      ],
+      [
+        "いらいら",
+        "いらいら",
+        "iraira",
+        "getting nervous, irritation",
+        "Feelings & states"
+      ],
+      [
+        "ぐっすり",
+        "ぐっすり",
+        "gussuri",
+        "sound asleep, fast asleep",
+        "Feelings & states"
+      ],
+      [
+        "じっと",
+        "じっと",
+        "jitto",
+        "fixedly, firmly, patiently, quietly",
+        "Feelings & states"
+      ],
+      [
+        "くたくた",
+        "くたくた",
+        "kutakuta",
+        "exhausted; tired; withered; worn out",
+        "Feelings & states"
+      ],
+      [
+        "ぐったり",
+        "ぐったり",
+        "guttari",
+        "limply; wearily; listlessly; languidly; exhaustedly; unenergetically",
+        "Feelings & states"
+      ],
+      [
+        "うとうと",
+        "うとうと",
+        "utouto",
+        "falling into a doze; dozing off; nodding off",
+        "Feelings & states"
+      ],
+      [
+        "おどおど",
+        "おどおど",
+        "odoodo",
+        "coweringly, hesitantly",
+        "Feelings & states"
+      ],
+      [
+        "ふらふら",
+        "ふらふら",
+        "furafura",
+        "unsteadily (e.g. on one’s feet); shakily; staggering; tottering; reeling; dizzily; giddily; wavering (in one’s mind); unsteadily; indecisively",
+        "Feelings & states"
+      ],
+      [
+        "まごまご",
+        "まごまご",
+        "magomago",
+        "confused",
+        "Feelings & states"
+      ],
+      [
+        "ぺこぺこ",
+        "ぺこぺこ",
+        "pekopeko",
+        "fawn, be very hungry",
+        "Feelings & states"
+      ],
+      [
+        "生き生き",
+        "いきいき",
+        "ikiiki",
+        "in a lively way; vividly; freshly; animatedly; actively; energetically",
+        "Feelings & states"
+      ],
+      [
+        "うろうろ",
+        "うろうろ",
+        "urouro",
+        "restlessly; aimlessly; without purpose; loiteringly, aimless wandering",
+        "Actions & descriptions"
+      ],
+      [
+        "ぶらぶら",
+        "ぶらぶら",
+        "burabura",
+        "dangle heavily, swing, sway to and fro, aimlessly, idly, lazily, loiter, loaf, be idle, stroll idly",
+        "Actions & descriptions"
+      ],
+      [
+        "ずるずる",
+        "ずるずる",
+        "zuruzuru",
+        "sound or act of dragging, loose, inconclusive but unwanted situation, trailingly",
+        "Actions & descriptions"
+      ],
+      [
+        "ぐんぐん",
+        "ぐんぐん",
+        "gungun",
+        "rapidly; vigorously; by leaps and bounds; steadily",
+        "Actions & descriptions"
+      ],
+      [
+        "のろのろ",
+        "のろのろ",
+        "noronoro",
+        "slowly, sluggishly",
+        "Actions & descriptions"
+      ],
+      [
+        "ごちゃごちゃ",
+        "ごちゃごちゃ",
+        "gochagocha",
+        "messy; confused; chaotic; disorderly; mixed-up; jumbled up",
+        "Actions & descriptions"
+      ],
+      [
+        "ふわふわ",
+        "ふわふわ",
+        "fuwafuwa",
+        "light, soft",
+        "Actions & descriptions"
+      ],
+      [
+        "さらさら",
+        "さらさら",
+        "sarasara",
+        "rustling; murmuring; fluently; silky; smooth and dry; free-flowing",
+        "Actions & descriptions"
+      ],
+      [
+        "すらすら",
+        "すらすら",
+        "surasura",
+        "smoothly; easily; readily",
+        "Actions & descriptions"
+      ],
+      [
+        "すっきり",
+        "すっきり",
+        "sukkiri",
+        "refreshingly; with a feeling of relief; pleasantly; (a weight) off one’s shoulder; shapely; neatly; cleanly; without trouble; shapely, clear, neat",
+        "Actions & descriptions"
+      ],
+      [
+        "くっきり",
+        "くっきり",
+        "kukkiri",
+        "distinctly, clearly, boldly",
+        "Actions & descriptions"
+      ],
+      [
+        "",
+        "はっきり",
+        "hakkiri",
+        "clearly",
+        "Actions & descriptions"
+      ],
+      [
+        "",
+        "しっかり",
+        "shikkari",
+        "firmly, steadily",
+        "Actions & descriptions"
+      ],
+      [
+        "きっぱり",
+        "きっぱり",
+        "kippari",
+        "clearly; plainly; distinctly",
+        "Actions & descriptions"
+      ],
+      [
+        "ぎりぎり",
+        "ぎりぎり",
+        "girigiri",
+        "just barely; only just; at the very limit; at the last moment",
+        "Actions & descriptions"
+      ],
+      [
+        "ぴったり",
+        "ぴったり",
+        "pittari",
+        "exactly, neatly, sharp",
+        "Actions & descriptions"
+      ],
+      [
+        "だぶだぶ",
+        "だぶだぶ",
+        "dabudabu",
+        "loose, baggy",
+        "Actions & descriptions"
+      ],
+      [
+        "ちょくちょく",
+        "ちょくちょく",
+        "chokuchoku",
+        "often, frequently, now and then, occasionally",
+        "Actions & descriptions"
+      ],
+      [
+        "だんだん",
+        "だんだん",
+        "dandan",
+        "gradually",
+        "Actions & descriptions"
       ]
     ]
   }

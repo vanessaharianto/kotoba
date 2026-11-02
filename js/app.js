@@ -552,26 +552,34 @@
   function renderDeckPicker(){
     const list=document.getElementById('deck-list');
     if(!list)return;
-    list.innerHTML='';
-    const jlptOrder={N5:0,N4:1,N3:2,N2:3,N1:4};
-    const orderedDecks=[...sheetCandidates].sort((a,b)=>{
-      const aLevel=jlptOrder[a.name],bLevel=jlptOrder[b.name];
-      if(aLevel!==undefined||bLevel!==undefined){
-        if(aLevel===undefined)return 1;
-        if(bLevel===undefined)return -1;
-        return aLevel-bLevel;
-      }
-      return sheetCandidates.indexOf(a)-sheetCandidates.indexOf(b);
-    });
-    orderedDecks.forEach(c=>{
-      const article=document.createElement('article'); article.className='deck-card';
-      const eyebrow=document.createElement('span'); eyebrow.className='level-tag';
-      eyebrow.textContent=/^N[1-5]$/.test(c.name)?`JLPT ${c.name}`:(/verb/i.test(c.name)?'Grammar':'Vocabulary');
-      const title=document.createElement('h3'); title.textContent=c.name;
-      const count=document.createElement('p'); count.textContent=`${c.cards.length.toLocaleString()} cards`;
-      const button=document.createElement('button'); button.className='deck-start'; button.type='button'; button.textContent='Study this deck →';
-      button.addEventListener('click',()=>{ allCards=c.cards; currentSheetName=c.name; startStudy(); });
-      article.append(eyebrow,title,count,button); list.appendChild(article);
+    list.replaceChildren();
+    const groups=[
+      {title:'JLPT vocabulary',description:'Study words by JLPT level, from N5 through N1.',matches:c=>/^N[1-5]$/.test(c.name),sort:(a,b)=>Number(b.name.slice(1))-Number(a.name.slice(1))},
+      {title:'Conjugation practice',description:'Verb and adjective decks with dedicated word-form drills.',matches:c=>['Godan - Verb','Ichidan - Verb','Irregular - Verb','い-Adjectives','な-Adjectives'].includes(c.name)},
+      {title:'Topic vocabulary',description:'Focused vocabulary sets for specific interests and situations.',matches:c=>!/^N[1-5]$/.test(c.name)&&!['Godan - Verb','Ichidan - Verb','Irregular - Verb','い-Adjectives','な-Adjectives','Trans-Intrans Pairs','Adverbs','Pronouns','Counters','Expressions & Grammar','Particles'].includes(c.name)},
+      {title:'Quick reference',description:'Useful word categories, pairs, and grammar building blocks.',matches:c=>['Trans-Intrans Pairs','Adverbs','Pronouns','Counters','Expressions & Grammar','Particles'].includes(c.name)}
+    ];
+    groups.forEach(group=>{
+      const decks=sheetCandidates.filter(group.matches);
+      if(!decks.length)return;
+      if(group.sort)decks.sort(group.sort);
+      const section=document.createElement('section');section.className='deck-category';
+      const heading=document.createElement('div');heading.className='deck-category-heading';
+      const title=document.createElement('h4');title.textContent=group.title;
+      const description=document.createElement('p');description.textContent=group.description;
+      heading.append(title,description);
+      const grid=document.createElement('div');grid.className='deck-grid';
+      decks.forEach(c=>{
+        const article=document.createElement('article');article.className='deck-card';
+        const eyebrow=document.createElement('span');eyebrow.className='level-tag';
+        eyebrow.textContent=/^N[1-5]$/.test(c.name)?'JLPT '+c.name:group.title==='Conjugation practice'?'Form practice':group.title==='Quick reference'?'Reference':'Topic deck';
+        const cardTitle=document.createElement('h3');cardTitle.textContent=c.name;
+        const count=document.createElement('p');count.textContent=c.cards.length.toLocaleString()+' cards';
+        const button=document.createElement('button');button.className='deck-start';button.type='button';button.textContent='Study this deck →';
+        button.addEventListener('click',()=>{allCards=c.cards;currentSheetName=c.name;startStudy();});
+        article.append(eyebrow,cardTitle,count,button);grid.appendChild(article);
+      });
+      section.append(heading,grid);list.appendChild(section);
     });
     const kanaList=document.getElementById('kana-deck-list');
     if(kanaList){
@@ -580,7 +588,7 @@
         const article=document.createElement('article');article.className='deck-card kana-deck-card';
         const eyebrow=document.createElement('span');eyebrow.className='level-tag';eyebrow.textContent='Kana recognition';
         const title=document.createElement('h3');title.textContent=deck.name;
-        const count=document.createElement('p');count.textContent=`${deck.cards.length} cards · basic, voiced & combined sounds`;
+        const count=document.createElement('p');count.textContent=deck.cards.length+' cards · basic, voiced & combined sounds';
         const button=document.createElement('button');button.className='deck-start';button.type='button';button.textContent='Study kana →';
         button.addEventListener('click',()=>{allCards=deck.cards;currentSheetName=deck.name;startStudy();});
         article.append(eyebrow,title,count,button);kanaList.appendChild(article);
@@ -591,7 +599,7 @@
   function buildDictionaryItems(){
     const byKey=new Map();
     sheetCandidates.forEach(deck=>{
-      if(!/^N[1-5]$/.test(deck.name))return;
+      if(!/^N[1-5]$/.test(deck.name)&&deck.name!=='Baking')return;
       deck.cards.forEach(card=>{
         if(!card.meaning||(!card.kanji&&!card.furigana))return;
         const key=`${card.kanji||card.front}|${card.furigana||''}`;
