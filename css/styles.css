@@ -590,3 +590,9 @@ header p{margin:2px 0 0; font-size:.8rem; color:var(--ink-soft);}
 .daily-encouragement .sub-en{display:block;max-height:0;overflow:hidden;opacity:0;font-size:.78rem;line-height:1.5;color:var(--ink-soft);transition:opacity .22s ease,max-height .22s ease}
 .daily-encouragement .sub-en.is-visible{max-height:2.5rem;opacity:1}
 @media(prefers-reduced-motion:reduce){.daily-encouragement .sub-en{transition:none}}
+
+/* Deck picker study-path groups */
+.deck-categories{display:grid;gap:22px}
+.deck-category-heading{margin:0 0 10px}
+.deck-category-heading h4{margin:0;font-size:1rem;color:var(--ink)}
+.deck-category-heading p{margin:5px 0 0;color:var(--ink-soft);font-size:.82rem;line-height:1.55}
